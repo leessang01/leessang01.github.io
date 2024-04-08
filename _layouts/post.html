@@ -126,7 +126,7 @@ tail_includes:
           {{ site.data.locales[lang].copyright.license.name }}
         </a>
         {% endcapture %}
-
+	
           {{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', _replacement }}
         {% endif %}
       </div>
