@@ -1,19 +1,19 @@
 ---
 title: Jekyll에 Chirpy 테마 적용하여 Github 블로그 만들기 (1)
-date: 2024-04-09 11:30:00 +9000
+date: 2024-04-09 11:30:00 +0000
 categories:
   - 블로그
 tags:
   - github
-  - chirpy
   - jekyll
+  - chirpy
 ---
 * TOC
 {: toc}
 ---
 **Ubuntu 환경**에서 Jekyll을 이용해 블로그 구조를 생성하고, Chirpy 테마를 적용하여, Github을 통해 호스팅하기까지 과정을 기록합니다[^jekyll_docs].
 
-첫 번째 글에서는 환경구성에 대해 다루어 보겠습니다. 이 과정에서 버전 충돌이나 어떤 문제가 자주 발생했는데, 에러 로그를 보고 구글링을 하거나 여러 블로그를 참고했습니다. 주먹구구식으로 하나씩 해결하기 위해 시간을 할애했지만 여전히 문제가 해결되지 않거나, 다른 문제가 발생하거나, 무언가 제대로 동작하지 않았습니다.[^blog_ref1][^blog_ref2][^blog_ref3][^blog_ref4][^blog_ref5][^blog_ref6][^blog_ref7]
+첫 번째 글에서는 **환경구성**에 대해 다루어 보겠습니다. 이 과정에서 버전 충돌이나 어떤 문제가 자주 발생했는데, 에러 로그를 보고 구글링을 하거나 여러 블로그를 참고했습니다. 주먹구구식으로 하나씩 해결하기 위해 시간을 할애했지만 여전히 문제가 해결되지 않거나, 다른 문제가 발생하거나, 무언가 제대로 동작하지 않았습니다.[^blog_ref1][^blog_ref2][^blog_ref3][^blog_ref4][^blog_ref5][^blog_ref6][^blog_ref7]
 
 따라서 **2024년 4월** 시점에서 처음부터 끝까지 문제없이 수행할 수 있는 방법을 정리해보았습니다. 물론 Window, Linux, Mac 등 운영체제마다 마주할 수 있는 문제나 세부 설치 과정이 다르겠지만 각 라이브러리의 버전은 꼼꼼히 확인하여 설치하는 것을 권장합니다.
 
@@ -55,6 +55,8 @@ Ruby (>=3.0), which is required by gem 'jekyll-theme-chirpy', is not available i
 
 
 #### **rbenv 설치**
+> rbenv - manage your application's Ruby environment
+
 저장소 업데이트
 ```bash
 sudo apt update
@@ -106,16 +108,26 @@ ruby -v
 
 
 #### **설치된 gem 버전 확인**
+> RubyGems is a package manager for Ruby
+
 ruby 설치 시 딸려오는 gem 버전 확인
 ```bash
 gem -v
 # 3.5.3
 ```
 
+#### **설치된 bundle(bundler) 버전 확인** 
+> bundle - Ruby Dependency Management
+
+ruby 설치 시 딸려오는 bundle(bundler) 버전 확인
+```bash
+bundle -v
+# Bundler version 2.5.7
+```
 
 ---
-### **Node 설치**
-> 이 부분을 누락하면 이후 Chirpy 테마를 초기화하는 과정 `bash tools/init`에서 문제가 발생합니다.
+### **Node 설치 (Github Fork only)**
+> 이 부분을 누락하면 이후 Chirpy 테마를 Github Fork로 설치하고 초기화하는 과정 `bash tools/init`에서 문제가 발생합니다.
 {: .prompt-warning }
 
 아래의 순서를 따라 여러 node 버전을 설치 및 관리해주는 **nvm(node version manager)**을 통해 **node(node.js)**와 **npm**을 설치할 수 있습니다[^node_installation].
