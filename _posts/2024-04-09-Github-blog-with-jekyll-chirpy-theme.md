@@ -1,5 +1,5 @@
 ---
-title: Github으로 블로그 만들기 (1)
+title: Jekyll에 Chirpy 테마 적용하여 Github 블로그 만들기 (1)
 date: 2024-04-09 11:30:00 +9000
 categories:
   - 블로그
@@ -8,10 +8,14 @@ tags:
   - chirpy
   - jekyll
 ---
+* TOC
+{: toc}
+---
+**Ubuntu 환경**에서 Jekyll을 이용해 블로그 구조를 생성하고, Chirpy 테마를 적용하여, Github을 통해 호스팅하기까지 과정을 기록합니다[^jekyll_docs].
 
-Ubuntu 환경에서 Jekyll을 이용해 블로그 구조를 생성하고, Chirpy 테마를 적용하여, Github을 통해 호스팅하기까지 과정을 기록합니다[^jekyll_docs].
+첫 번째 글에서는 환경구성에 대해 다루어 보겠습니다. 이 과정에서 버전 충돌이나 어떤 문제가 자주 발생했는데, 에러 로그를 보고 구글링을 하거나 여러 블로그를 참고했습니다. 주먹구구식으로 하나씩 해결하기 위해 시간을 할애했지만 여전히 문제가 해결되지 않거나, 다른 문제가 발생하거나, 무언가 제대로 동작하지 않았습니다.[^blog_ref1][^blog_ref2][^blog_ref3][^blog_ref4][^blog_ref5][^blog_ref6][^blog_ref7]
 
-첫 번째 글에서는 환경구성에 대해 다루어 보겠습니다. 이 과정에서 버전 충돌이나 어떤 문제가 자주 생겼는데, 에러 로그를 보고 구글링이나 주먹구구식으로 하나씩 해결해도 결국 무언가 제대로 동작하지 않는 경우가 많았습니다. Window, Linux, Mac 등 운영체제마다 세부 설치 과정은 다르겠지만 각 라이브러리의 버전은 꼼꼼히 확인하여 설치하는 것을 권장합니다.
+따라서 **2024년 4월** 시점에서 처음부터 끝까지 문제없이 수행할 수 있는 방법을 정리해보았습니다. 물론 Window, Linux, Mac 등 운영체제마다 마주할 수 있는 문제나 세부 설치 과정이 다르겠지만 각 라이브러리의 버전은 꼼꼼히 확인하여 설치하는 것을 권장합니다.
 
 ---
 ## **설치환경구성**
@@ -154,7 +158,7 @@ nvm을 통해 원하는 node 버전 설치. 제 환경에서는 `--lts` 옵션�
 nvm install [<version>]
 ```
 
-현재 설치된 node 버전 확인 후 원하는 버전 적용
+현재 설치된 node 버전 확인
 ```bash
 nvm ls
 # ->     v20.12.1
@@ -162,7 +166,13 @@ nvm ls
 #         system
 ```
 
-node 버전 확인
+원하는 node 버전 적용
+```bash
+nvm use 20.12.1
+# Now using node v20.12.1 (npm v10.5.0)
+```
+ 
+node 버전 적용 확인
 ```bash
 node -v
 # v20.12.1
@@ -186,7 +196,14 @@ npm -v
 
 ## **참고**
 
-[^jekyll_docs]: Jekyll on Ubuntu, <https://jekyllrb.com/docs/installation/ubuntu/>
-[^ruby_installation]: Linux : Ubuntu 20.04 : Ruby 설치 방법, 예제, 명령어, <https://jjeongil.tistory.com/1970>
-[^node_installation]: Linux : Ubuntu 22.04 : Node.js and npm 설치 방법, 예제, 명령어, <https://jjeongil.tistory.com/2106>
-[^fssl_meaning]: curl -fsSL 옵션 의미, <https://explainshell.com/explain?cmd=curl+-fsSL+example.org#>
+[^jekyll_docs]: Jekyll on Ubuntu, [link](https://jekyllrb.com/docs/installation/ubuntu/)
+[^blog_ref1]: Jekyll Chirpy 테마 사용하여 블로그 만들기, [link](https://www.irgroup.org/posts/jekyll-chirpy/)
+[^blog_ref2]: 이거하나로 GitHub Blog 만들기, [link](https://www.handongbee.com/posts/GitHub-Blog-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/)
+[^blog_ref3]: 나만의 블로그 만들기 Git hub blog!! (github.io), [link](https://supermemi.tistory.com/entry/%EB%82%98%EB%A7%8C%EC%9D%98-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-Git-hub-blog-GitHubio)
+[^blog_ref4]: Github 블로그 만들기 - 1. 시작하기, [link](https://tired-o.github.io/posts/github-blog-1/)
+[^blog_ref5]: Github 블로그 만들기 (1), [link](https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(1)/)
+[^blog_ref6]: 개인 Blog 만드는 절차 with Jekyll & GitHub Pages, [link](https://cjy-tech.github.io/make-blog-with-jekyll-and-github_pages/)
+[^blog_ref7]: Jekyll Chirpy(v6.0.1) 테마를 활용한 Github 블로그 만들기(2023.6 기준), [link](https://jjikin.com/posts/Jekyll-Chirpy-%ED%85%8C%EB%A7%88%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0(2023-6%EC%9B%94-%EA%B8%B0%EC%A4%80)/#%EC%BB%A4%EC%8A%A4%ED%84%B0%EB%A7%88%EC%9D%B4%EC%A7%95-%EA%B0%84-%EC%9D%B4%EC%8A%88-%ED%95%B4%EA%B2%B0)
+[^ruby_installation]: Linux : Ubuntu 20.04 : Ruby 설치 방법, 예제, 명령어, [link](https://jjeongil.tistory.com/1970)
+[^node_installation]: Linux : Ubuntu 22.04 : Node.js and npm 설치 방법, 예제, 명령어, [link](https://jjeongil.tistory.com/2106)
+[^fssl_meaning]: curl -fsSL 옵션 의미, [link](https://explainshell.com/explain?cmd=curl+-fsSL+example.org#)
