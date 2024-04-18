@@ -32,7 +32,7 @@ tags:
 | Chirpy | jekyll-theme-chirpy (6.5.5)                                | `bundle info jekyll-theme-chirpy` |
 
 
-### **Ruby 설치**
+## **Ruby 설치**
 > 최신 Chirpy 테마를 적용하려면 `ruby v3.0` 이상을 설치하는 것을 권장합니다. 처음에 단순히 `sudo apt install ruby-full`로 시도했다가 `ruby v2.7.x`이 설치되었고 이후 Chirpy 테마 초기화 후 `bundle install` 과정에서 버전 충돌로 인해 낭패를 봤습니다.\
 > Github에서는 `ruby v2.7` 버전을 사용하는 것 같은데 어떻게 충돌이 없는지 의아하네요.
 {: .prompt-warning }
@@ -54,7 +54,7 @@ Ruby (>=3.0), which is required by gem 'jekyll-theme-chirpy', is not available i
 아래의 순서를 따라 여러 ruby 버전을 설치 및 관리해주는 **rbenv**를 통해 **ruby**와 **gem**을 설치할 수 있습니다[^ruby_installation].
 
 
-#### **rbenv 설치**
+### **rbenv 설치**
 > rbenv - manage your application's Ruby environment
 
 저장소 업데이트
@@ -88,7 +88,7 @@ rbenv -v
 ```
 
 
-#### **rbevn를 통해 ruby 설치**
+### **rbevn를 통해 ruby 설치**
 rbenv를 통해 현재 설치 가능한 ruby 버전 목록 확인
 ```bash
 rbenv install -l
@@ -107,7 +107,7 @@ ruby -v
 ```
 
 
-#### **설치된 gem 버전 확인**
+### **설치된 gem 버전 확인**
 > RubyGems is a package manager for Ruby
 
 ruby 설치 시 딸려오는 gem 버전 확인
@@ -116,7 +116,7 @@ gem -v
 # 3.5.3
 ```
 
-#### **설치된 bundle(bundler) 버전 확인** 
+### **설치된 bundle(bundler) 버전 확인** 
 > bundle - Ruby Dependency Management
 
 ruby 설치 시 딸려오는 bundle(bundler) 버전 확인
@@ -126,14 +126,14 @@ bundle -v
 ```
 
 ---
-### **Node 설치 (Github Fork only)**
-> 이 부분을 누락하면 이후 Chirpy 테마를 Github Fork로 설치하고 초기화하는 과정 `bash tools/init`에서 문제가 발생합니다.
+## **Node 설치 (Chirpy 테마 개발자 버전만 필요)**
+> 다음 글에서 **Chirpy 테마 개발자 버전**을 Github Fork로 설치하고자 하는 경우에만 필요한 과정입니다. 이 부분을 누락하면 초기화 단계 `bash tools/init`에서 문제가 발생합니다.
 {: .prompt-warning }
 
 아래의 순서를 따라 여러 node 버전을 설치 및 관리해주는 **nvm(node version manager)**을 통해 **node(node.js)**와 **npm**을 설치할 수 있습니다[^node_installation].
 
 
-#### **nvm 설치**
+### **nvm 설치**
 curl fsSL[^fssl_meaning]을 통해 nvm 설치
 ```bash
 curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
@@ -146,7 +146,7 @@ nvm -v
 ```
 
 
-#### **nvm을 통해 node 설치**
+### **nvm을 통해 node 설치**
 >`nvm list-remote` 명령어를 통해 나열되는 버전 중 현재 Ubuntu 버전에 적합한 node를 설치해야 합니다. 예를 들어  `Ubuntu 20.04.6 LTS`에서는 `node v20.12.1`이 정상 동작했지만 `Ubuntu 16.04.7 LTS`에서는 더 낮은 버전을 설치해야 했습니다.\
 >단, 최신 Chirpy 테마(현재 시점에서 `v6.5.5` 기준)에서는 일부 라이브러리에서 `node v18` 이상을 요구하고 있기 때문에 Chirpy 테마 초기화 과정(`bash tools/init`)에서 경고 로그가 발생할 수 있습니다.
 {: .prompt-warning }
@@ -191,7 +191,7 @@ node -v
 ```
 
 
-#### **설치된 npm 버전 확인**
+### **설치된 npm 버전 확인**
 node 설치 시 딸려오는 npm 버전 확인
 ```bash
 npm -v
