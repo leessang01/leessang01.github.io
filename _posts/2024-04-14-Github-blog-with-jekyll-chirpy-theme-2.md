@@ -161,15 +161,14 @@ bundle exec jekyll serve
 # Server running... press ctrl-c to stop
 ```
 
-**정리**
+## **정리**
 > Ubuntu 환경에서 Jekyll을 이용해 블로그 구조를 생성하고, Chirpy 테마를 적용하여, Github을 통해 호스팅하기
 
 이번 글에서는 Jekyll 설치와 Chirpy 테마를 적용하는 방법에 대해서 알아보았습니다. Jekyll은 Chirpy 테마 설치 과정 중 함께 설치되기 때문에 별도의 설치 과정이 필요없지만 Jekyll의 기본 블로그를 생성하고 로컬 환경에서 띄워 볼 수 있었습니다. 그리고 Chirpy 테마 설치는 Starter를 이용하는 방법과 개발자 버전을 이용하는 방법이 있었으며 Chirpy 테마 개발에 기여할 목적이 있거나 복잡한 튜닝을 하실 분이 아니라면 개인적으로는 전자의 방법을 추천합니다. Starter가 Chirpy 테마의 버전 업데이트도 더 쉽기 때문입니다[^chirpy_upgrade-guide].
 
----
-## 참고
+## **참고**
 [^jekyll_docs]: Jekyll on Ubuntu, Jekyll, [link](https://jekyllrb.com/docs/installation/ubuntu/)
 [^jekyll_quick-start]: Jekyll Quick-start instructions, Jekyll, [link](https://jekyllrb-ko.github.io)
-[^chirpy_getting-started]: Getting Started, Chirpt, [link](https://chirpy.cotes.page/posts/getting-started/)
+[^chirpy_getting-started]: Getting Started, Chirpy, [link](https://chirpy.cotes.page/posts/getting-started/)
 [^github_pat]: Support for password authentication was removed, Github, [link](https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed)
 [^chirpy_upgrade-guide]: Upgrade Guide, Chirpy, [link](https://github.com/cotes2020/jekyll-theme-chirpy/wiki/Upgrade-Guide)
