@@ -30,8 +30,7 @@ tags:
 | npm    | 10.5.0                                                     | `npm -v`                          |
 | Jekyll | jekyll 4.3.3                                               | `bunlde exec jekyll -v`           |
 | Chirpy | jekyll-theme-chirpy (6.5.5)                                | `bundle info jekyll-theme-chirpy` |
-|        |                                                            |                                   |
-|        |                                                            |                                   |
+
 이번 글에서는 Ubuntu 환경에서 위 목록 중 다음의 항목에 대해서 다룹니다.
 - [x] Ruby
 - [x] Gem
