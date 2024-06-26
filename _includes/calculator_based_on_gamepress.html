@@ -3,7 +3,7 @@
 	<link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
 	<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
 
-	<table id="ranking_table" style="width:100%;">
+	<table id="ranking_table" class="table table-striped table-bordered nowrap" style="width:100%;">
 		<thead></thead>
 		<tfoot></tfoot>
 		<tbody></tbody>
@@ -159,117 +159,94 @@
 		fetchChargedMove();
 
 		function fetchPokemon() {
-			$.ajax({
-				url: "/assets/pokemonGoDB/pokemon.json",
-				dataType: 'json',
-				async: false,
-				success: function (data) {
-					$.each(data, function (i) {
-						var pkm = {
-							id: data[i].pokemon_id,
-							name: data[i].pokemon_name_kor,
-							form: data[i].form.toLowerCase(),
-							form_kor: data[i].form_kor,
-							baseAtk: data[i].base_attack,
-							baseDef: data[i].base_defense,
-							baseStm: data[i].base_stamina,
-							//fastMove: parseMovesFromString(data[i].fast_moves),
-							fastMove: data[i].fast_moves.concat(data[i].elite_fast_moves).concat(data[i].exclusive_fast_moves),
-							chargedMove: data[i].charged_moves.concat(data[i].elite_charged_moves).concat(data[i].exclusive_charged_moves),
-							pokeType1: data[i].type[0].toLowerCase(),
-							pokeType2: data[i].type.length > 1 ? data[i].type[1].toLowerCase() : "none",
-							hasShadow: data[i].has_shadow,
-							isShadow: data[i].is_shadow,
-							isPurified: data[i].is_purified
-						};
-						Data.Pokemon.push(pkm);
-					});
-					Data.Pokemon.sort((a, b) => (a.name < b.name ? -1 : 1));
-					Data.Pokemon.sorted = true;
-				},
-				complete: function () { }
-			});
+            var data = {{ site.data.pokemongo.pokemon | jsonify }};
+        
+            $.each(data, function (i) {
+                var pkm = {
+                    id: data[i].pokemon_id,
+                    name: data[i].pokemon_name_kor,
+                    form: data[i].form.toLowerCase(),
+                    form_kor: data[i].form_kor,
+                    baseAtk: data[i].base_attack,
+                    baseDef: data[i].base_defense,
+                    baseStm: data[i].base_stamina,
+                    //fastMove: parseMovesFromString(data[i].fast_moves),
+                    fastMove: data[i].fast_moves.concat(data[i].elite_fast_moves).concat(data[i].exclusive_fast_moves),
+                    chargedMove: data[i].charged_moves.concat(data[i].elite_charged_moves).concat(data[i].exclusive_charged_moves),
+                    pokeType1: data[i].type[0].toLowerCase(),
+                    pokeType2: data[i].type.length > 1 ? data[i].type[1].toLowerCase() : "none",
+                    hasShadow: data[i].has_shadow,
+                    isShadow: data[i].is_shadow,
+                    isPurified: data[i].is_purified
+                };
+                Data.Pokemon.push(pkm);
+            });
+            Data.Pokemon.sort((a, b) => (a.name < b.name ? -1 : 1));
+            Data.Pokemon.sorted = true;
 		}
 
-		function fetchMegaPokemon() {
-			$.ajax({
-				url: "/assets/pokemonGoDB/mega_pokemon.json",
-				dataType: 'json',
-				async: false,
-				success: function (data) {
-					$.each(data, function (i) {
-						var pkm = {
-							id: data[i].pokemon_id,
-							name: data[i].mega_name_kor,
-							form: data[i].form.toLowerCase(),
-							form_kor: data[i].form_kor,
-							baseAtk: data[i].stats.base_attack,
-							baseDef: data[i].stats.base_defense,
-							baseStm: data[i].stats.base_stamina,
-							fastMove: data[i].fast_moves.concat(data[i].elite_fast_moves).concat(data[i].exclusive_fast_moves),
-							chargedMove: data[i].charged_moves.concat(data[i].elite_charged_moves).concat(data[i].exclusive_charged_moves),
-							pokeType1: data[i].type[0].toLowerCase(),
-							pokeType2: data[i].type.length > 1 ? data[i].type[1].toLowerCase() : "none"
-						};
-						Data.Pokemon.push(pkm);
-					});
-					Data.Pokemon.sort((a, b) => (a.name < b.name ? -1 : 1));
-					Data.Pokemon.sorted = true;
-				},
-				complete: function () { }
-			});
-		}
+        
+        function fetchMegaPokemon() {
+            var data = {{ site.data.pokemongo.mega_pokemon | jsonify }};
+        
+            $.each(data, function (i) {
+                var pkm = {
+                    id: data[i].pokemon_id,
+                    name: data[i].mega_name_kor,
+                    form: data[i].form.toLowerCase(),
+                    form_kor: data[i].form_kor,
+                    baseAtk: data[i].stats.base_attack,
+                    baseDef: data[i].stats.base_defense,
+                    baseStm: data[i].stats.base_stamina,
+                    fastMove: data[i].fast_moves.concat(data[i].elite_fast_moves).concat(data[i].exclusive_fast_moves),
+                    chargedMove: data[i].charged_moves.concat(data[i].elite_charged_moves).concat(data[i].exclusive_charged_moves),
+                    pokeType1: data[i].type[0].toLowerCase(),
+                    pokeType2: data[i].type.length > 1 ? data[i].type[1].toLowerCase() : "none"
+                };
+                Data.Pokemon.push(pkm);
+            });
+            Data.Pokemon.sort((a, b) => (a.name < b.name ? -1 : 1));
+            Data.Pokemon.sorted = true;
+        }
 
 		function fetchFastMove() {
-			$.ajax({
-				url: "/assets/pokemonGoDB/fast_moves.json",
-				dataType: 'json',
-				async: false,
-				success: function (data) {
-					$.each(data, function (i) {
-						var fmove = {
-							id: data[i].move_id,
-							name: data[i].name,
-							name_kor: data[i].name_kor,
-							energyDelta: data[i].energy_delta,
-							power: data[i].power,
-							duration: data[i].duration,
-							dws: data[i].damage_window_start,
-							type: data[i].type.toLowerCase()
-						};
-						Data.FastMoves.push(fmove);
-					});
-					Data.FastMoves.sort((a, b) => (a.name < b.name ? -1 : 1));
-					Data.FastMoves.sorted = true;
-				},
-				complete: function () { }
-			});
+            var data = {{ site.data.pokemongo.fast_moves | jsonify }};
+
+            $.each(data, function (i) {
+                var fmove = {
+                    id: data[i].move_id,
+                    name: data[i].name,
+                    name_kor: data[i].name_kor,
+                    energyDelta: data[i].energy_delta,
+                    power: data[i].power,
+                    duration: data[i].duration,
+                    dws: data[i].damage_window_start,
+                    type: data[i].type.toLowerCase()
+                };
+                Data.FastMoves.push(fmove);
+            });
+            Data.FastMoves.sort((a, b) => (a.name < b.name ? -1 : 1));
+            Data.FastMoves.sorted = true;
 		}
 
 		function fetchChargedMove() {
-			$.ajax({
-				url: "/assets/pokemonGoDB/charged_moves.json",
-				dataType: 'json',
-				async: false,
-				success: function (data) {
-					$.each(data, function (i) {
-						var cmove = {
-							id: data[i].move_id,
-							name: data[i].name,
-							name_kor: data[i].name_kor,
-							energyDelta: data[i].energy_delta,
-							power: data[i].power,
-							duration: data[i].duration,
-							dws: data[i].damage_window_start,
-							type: data[i].type.toLowerCase()
-						};
-						Data.ChargedMoves.push(cmove);
-					});
-					Data.ChargedMoves.sort((a, b) => (a.name < b.name ? -1 : 1));
-					Data.ChargedMoves.sorted = true;
-				},
-				complete: function () { }
-			});
+            var data = {{ site.data.pokemongo.charged_moves | jsonify }};
+
+            $.each(data, function (i) {
+                var cmove = {
+                    id: data[i].move_id,
+                    name: data[i].name,
+                    name_kor: data[i].name_kor,
+                    energyDelta: data[i].energy_delta,
+                    power: data[i].power,
+                    duration: data[i].duration,
+                    dws: data[i].damage_window_start,
+                    type: data[i].type.toLowerCase()
+                };
+                Data.ChargedMoves.push(cmove);
+            });
+            Data.ChargedMoves.sort((a, b) => (a.name < b.name ? -1 : 1));
+            Data.ChargedMoves.sorted = true;
 		}
 
 		function calculateDPS(pokemon, kwargs) {
@@ -370,6 +347,7 @@
 				lengthChange: false,
 				autoWidth: false,
 				deferRender: true,
+                responsive: true,
 				columns: [
 					{ title: "CP", data: "cp", width: "10%" },
 					{ title: "포켓몬", data: "name", width: "20%" },
