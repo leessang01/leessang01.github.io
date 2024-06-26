@@ -1,0 +1,1316 @@
+[
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Venusaur",
+        "pokemon_id": 3,
+        "pokemon_name": "Venusaur",
+        "stats": {
+            "base_attack": 241,
+            "base_defense": 246,
+            "base_stamina": 190
+        },
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "charged_moves": [
+            "Sludge Bomb",
+            "Petal Blizzard",
+            "Solar Beam"
+        ],
+        "elite_charged_moves": [
+            "Frenzy Plant"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Razor Leaf",
+            "Vine Whip"
+        ],
+        "mega_name_kor": "이상해꽃(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Charizard X",
+        "pokemon_id": 6,
+        "pokemon_name": "Charizard",
+        "stats": {
+            "base_attack": 273,
+            "base_defense": 213,
+            "base_stamina": 186
+        },
+        "type": [
+            "Fire",
+            "Dragon"
+        ],
+        "charged_moves": [
+            "Fire Blast",
+            "Dragon Claw",
+            "Overheat"
+        ],
+        "elite_charged_moves": [
+            "Blast Burn",
+            "Flamethrower"
+        ],
+        "elite_fast_moves": [
+            "Ember",
+            "Wing Attack",
+            "Dragon Breath"
+        ],
+        "fast_moves": [
+            "Fire Spin",
+            "Air Slash"
+        ],
+        "mega_name_kor": "리자몽(메가X)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Charizard Y",
+        "pokemon_id": 6,
+        "pokemon_name": "Charizard",
+        "stats": {
+            "base_attack": 319,
+            "base_defense": 212,
+            "base_stamina": 186
+        },
+        "type": [
+            "Fire",
+            "Flying"
+        ],
+        "charged_moves": [
+            "Fire Blast",
+            "Dragon Claw",
+            "Overheat"
+        ],
+        "elite_charged_moves": [
+            "Blast Burn",
+            "Flamethrower"
+        ],
+        "elite_fast_moves": [
+            "Ember",
+            "Wing Attack",
+            "Dragon Breath"
+        ],
+        "fast_moves": [
+            "Fire Spin",
+            "Air Slash"
+        ],
+        "mega_name_kor": "리자몽(메가Y)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Blastoise",
+        "pokemon_id": 9,
+        "pokemon_name": "Blastoise",
+        "stats": {
+            "base_attack": 264,
+            "base_defense": 237,
+            "base_stamina": 188
+        },
+        "type": [
+            "Water"
+        ],
+        "charged_moves": [
+            "Flash Cannon",
+            "Ice Beam",
+            "Hydro Pump",
+            "Skull Bash"
+        ],
+        "elite_charged_moves": [
+            "Hydro Cannon"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Water Gun",
+            "Bite"
+        ],
+        "mega_name_kor": "거북왕(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 100,
+        "form": "Normal",
+        "mega_energy_required": 20,
+        "mega_name": "Mega Beedrill",
+        "pokemon_id": 15,
+        "pokemon_name": "Beedrill",
+        "stats": {
+            "base_attack": 303,
+            "base_defense": 148,
+            "base_stamina": 163
+        },
+        "type": [
+            "Bug",
+            "Poison"
+        ],
+        "charged_moves": [
+            "Sludge Bomb",
+            "Aerial Ace",
+            "X Scissor",
+            "Fell Stinger"
+        ],
+        "elite_charged_moves": [
+            "Drill Run"
+        ],
+        "elite_fast_moves": [
+            "Bug Bite"
+        ],
+        "fast_moves": [
+            "Infestation",
+            "Poison Jab"
+        ],
+        "mega_name_kor": "독침붕(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 100,
+        "form": "Normal",
+        "mega_energy_required": 20,
+        "mega_name": "Mega Pidgeot",
+        "pokemon_id": 18,
+        "pokemon_name": "Pidgeot",
+        "stats": {
+            "base_attack": 280,
+            "base_defense": 175,
+            "base_stamina": 195
+        },
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "charged_moves": [
+            "Hurricane",
+            "Aerial Ace",
+            "Brave Bird",
+            "Feather Dance"
+        ],
+        "elite_charged_moves": [
+            "Air Cutter"
+        ],
+        "elite_fast_moves": [
+            "Wing Attack",
+            "Gust"
+        ],
+        "fast_moves": [
+            "Air Slash",
+            "Steel Wing"
+        ],
+        "mega_name_kor": "피죤투(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Alakazam",
+        "pokemon_id": 65,
+        "pokemon_name": "Alakazam",
+        "stats": {
+            "base_attack": 367,
+            "base_defense": 207,
+            "base_stamina": 146
+        },
+        "type": [
+            "Psychic"
+        ],
+        "charged_moves": [
+            "Futuresight",
+            "Focus Blast",
+            "Shadow Ball",
+            "Fire Punch"
+        ],
+        "elite_charged_moves": [
+            "Dazzling Gleam",
+            "Psychic"
+        ],
+        "elite_fast_moves": [
+            "Counter"
+        ],
+        "fast_moves": [
+            "Psycho Cut",
+            "Confusion"
+        ],
+        "mega_name_kor": "후딘(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 100,
+        "form": "2021",
+        "mega_energy_required": 20,
+        "mega_name": "Mega Slowbro",
+        "pokemon_id": 80,
+        "pokemon_name": "Slowbro",
+        "stats": {
+            "base_attack": 224,
+            "base_defense": 259,
+            "base_stamina": 216
+        },
+        "type": [
+            "Water",
+            "Psychic"
+        ],
+        "charged_moves": [
+            "Water Pulse",
+            "Psychic",
+            "Ice Beam",
+            "Scald"
+        ],
+        "elite_charged_moves": [
+            "Surf"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Water Gun",
+            "Confusion"
+        ],
+        "mega_name_kor": "야도란(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Gengar",
+        "pokemon_id": 94,
+        "pokemon_name": "Gengar",
+        "stats": {
+            "base_attack": 349,
+            "base_defense": 199,
+            "base_stamina": 155
+        },
+        "type": [
+            "Ghost",
+            "Poison"
+        ],
+        "charged_moves": [
+            "Shadow Ball",
+            "Focus Blast",
+            "Sludge Bomb"
+        ],
+        "elite_charged_moves": [
+            "Sludge Wave",
+            "Dark Pulse",
+            "Psychic",
+            "Shadow Punch"
+        ],
+        "elite_fast_moves": [
+            "Lick"
+        ],
+        "fast_moves": [
+            "Sucker Punch",
+            "Hex",
+            "Shadow Claw"
+        ],
+        "mega_name_kor": "팬텀(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Kangaskhan",
+        "pokemon_id": 115,
+        "pokemon_name": "Kangaskhan",
+        "stats": {
+            "base_attack": 246,
+            "base_defense": 210,
+            "base_stamina": 233
+        },
+        "type": [
+            "Normal"
+        ],
+        "charged_moves": [
+            "Crunch",
+            "Earthquake",
+            "Outrage",
+            "Power Up Punch"
+        ],
+        "elite_charged_moves": [
+            "Brick Break",
+            "Stomp"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Mud Slap",
+            "Low Kick"
+        ],
+        "mega_name_kor": "캥카(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Pinsir",
+        "pokemon_id": 127,
+        "pokemon_name": "Pinsir",
+        "stats": {
+            "base_attack": 305,
+            "base_defense": 231,
+            "base_stamina": 163
+        },
+        "type": [
+            "Bug",
+            "Flying"
+        ],
+        "charged_moves": [
+            "Vice Grip",
+            "X Scissor",
+            "Close Combat",
+            "Super Power"
+        ],
+        "elite_charged_moves": [
+            "Submission"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Rock Smash",
+            "Bug Bite",
+            "Fury Cutter"
+        ],
+        "mega_name_kor": "쁘사이저(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 300,
+        "form": "Normal",
+        "mega_energy_required": 60,
+        "mega_name": "Mega Gyarados",
+        "pokemon_id": 130,
+        "pokemon_name": "Gyarados",
+        "stats": {
+            "base_attack": 292,
+            "base_defense": 247,
+            "base_stamina": 216
+        },
+        "type": [
+            "Water",
+            "Dark"
+        ],
+        "charged_moves": [
+            "Hydro Pump",
+            "Crunch",
+            "Outrage",
+            "Twister"
+        ],
+        "elite_charged_moves": [
+            "Dragon Pulse",
+            "Aqua Tail"
+        ],
+        "elite_fast_moves": [
+            "Dragon Tail"
+        ],
+        "fast_moves": [
+            "Bite",
+            "Waterfall",
+            "Dragon Breath"
+        ],
+        "mega_name_kor": "갸라도스(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Aerodactyl",
+        "pokemon_id": 142,
+        "pokemon_name": "Aerodactyl",
+        "stats": {
+            "base_attack": 292,
+            "base_defense": 210,
+            "base_stamina": 190
+        },
+        "type": [
+            "Rock",
+            "Flying"
+        ],
+        "charged_moves": [
+            "Ancient Power",
+            "Iron Head",
+            "Hyper Beam",
+            "Rock Slide",
+            "Earth Power"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Steel Wing",
+            "Bite",
+            "Rock Throw"
+        ],
+        "mega_name_kor": "프테라(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Ampharos",
+        "pokemon_id": 181,
+        "pokemon_name": "Ampharos",
+        "stats": {
+            "base_attack": 294,
+            "base_defense": 203,
+            "base_stamina": 207
+        },
+        "type": [
+            "Electric",
+            "Dragon"
+        ],
+        "charged_moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Thunder",
+            "Power Gem",
+            "Thunder Punch",
+            "Brutal Swing",
+            "Trailblaze"
+        ],
+        "elite_charged_moves": [
+            "Dragon Pulse"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Charge Beam",
+            "Volt Switch"
+        ],
+        "mega_name_kor": "전룡(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Steelix",
+        "pokemon_id": 208,
+        "pokemon_name": "Steelix",
+        "stats": {
+            "base_attack": 212,
+            "base_defense": 327,
+            "base_stamina": 181
+        },
+        "type": [
+            "Steel",
+            "Ground"
+        ],
+        "charged_moves": [
+            "Earthquake",
+            "Heavy Slam",
+            "Crunch",
+            "Psychic Fangs",
+            "Breaking Swipe"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Iron Tail",
+            "Dragon Tail",
+            "Thunder Fang"
+        ],
+        "mega_name_kor": "강철톤(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Scizor",
+        "pokemon_id": 212,
+        "pokemon_name": "Scizor",
+        "stats": {
+            "base_attack": 279,
+            "base_defense": 250,
+            "base_stamina": 172
+        },
+        "type": [
+            "Bug",
+            "Steel"
+        ],
+        "charged_moves": [
+            "X Scissor",
+            "Iron Head",
+            "Night Slash",
+            "Trailblaze"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Bullet Punch",
+            "Fury Cutter"
+        ],
+        "mega_name_kor": "핫삼(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Heracross",
+        "pokemon_id": 214,
+        "pokemon_name": "Heracross",
+        "stats": {
+            "base_attack": 334,
+            "base_defense": 223,
+            "base_stamina": 190
+        },
+        "type": [
+            "Bug",
+            "Fighting"
+        ],
+        "charged_moves": [
+            "Megahorn",
+            "Close Combat",
+            "Earthquake",
+            "Rock Blast"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Counter",
+            "Struggle Bug"
+        ],
+        "mega_name_kor": "헤라크로스(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 100,
+        "form": "Normal",
+        "mega_energy_required": 20,
+        "mega_name": "Mega Houndoom",
+        "pokemon_id": 229,
+        "pokemon_name": "Houndoom",
+        "stats": {
+            "base_attack": 289,
+            "base_defense": 194,
+            "base_stamina": 181
+        },
+        "type": [
+            "Dark",
+            "Fire"
+        ],
+        "charged_moves": [
+            "Crunch",
+            "Fire Blast",
+            "Foul Play",
+            "Flamethrower"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Snarl",
+            "Fire Fang"
+        ],
+        "mega_name_kor": "헬가(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 300,
+        "form": "Normal",
+        "mega_energy_required": 60,
+        "mega_name": "Mega Tyranitar",
+        "pokemon_id": 248,
+        "pokemon_name": "Tyranitar",
+        "stats": {
+            "base_attack": 309,
+            "base_defense": 276,
+            "base_stamina": 225
+        },
+        "type": [
+            "Rock",
+            "Dark"
+        ],
+        "charged_moves": [
+            "Fire Blast",
+            "Crunch",
+            "Stone Edge",
+            "Brutal Swing"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [
+            "Smack Down"
+        ],
+        "fast_moves": [
+            "Bite",
+            "Iron Tail"
+        ],
+        "mega_name_kor": "마기라스(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Sceptile",
+        "pokemon_id": 254,
+        "pokemon_name": "Sceptile",
+        "stats": {
+            "base_attack": 320,
+            "base_defense": 186,
+            "base_stamina": 172
+        },
+        "type": [
+            "Grass",
+            "Dragon"
+        ],
+        "charged_moves": [
+            "Leaf Blade",
+            "Aerial Ace",
+            "Earthquake",
+            "Dragon Claw",
+            "Breaking Swipe"
+        ],
+        "elite_charged_moves": [
+            "Frenzy Plant"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Fury Cutter",
+            "Bullet Seed"
+        ],
+        "mega_name_kor": "나무킹(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Blaziken",
+        "pokemon_id": 257,
+        "pokemon_name": "Blaziken",
+        "stats": {
+            "base_attack": 329,
+            "base_defense": 168,
+            "base_stamina": 190
+        },
+        "type": [
+            "Fire",
+            "Fighting"
+        ],
+        "charged_moves": [
+            "Focus Blast",
+            "Overheat",
+            "Brave Bird",
+            "Blaze Kick"
+        ],
+        "elite_charged_moves": [
+            "Blast Burn",
+            "Stone Edge"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Counter",
+            "Fire Spin"
+        ],
+        "mega_name_kor": "번치코(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Swampert",
+        "pokemon_id": 260,
+        "pokemon_name": "Swampert",
+        "stats": {
+            "base_attack": 283,
+            "base_defense": 218,
+            "base_stamina": 225
+        },
+        "type": [
+            "Water",
+            "Ground"
+        ],
+        "charged_moves": [
+            "Earthquake",
+            "Sludge Wave",
+            "Surf",
+            "Muddy Water"
+        ],
+        "elite_charged_moves": [
+            "Hydro Cannon"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Mud Shot",
+            "Water Gun"
+        ],
+        "mega_name_kor": "대짱이(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Gardevoir",
+        "pokemon_id": 282,
+        "pokemon_name": "Gardevoir",
+        "stats": {
+            "base_attack": 326,
+            "base_defense": 229,
+            "base_stamina": 169
+        },
+        "type": [
+            "Psychic",
+            "Fairy"
+        ],
+        "charged_moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Shadow Ball",
+            "Triple Axel"
+        ],
+        "elite_charged_moves": [
+            "Synchronoise"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Confusion",
+            "Charge Beam",
+            "Charm",
+            "Magical Leaf"
+        ],
+        "mega_name_kor": "가디안(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 100,
+        "form": "Costume_2020",
+        "mega_energy_required": 20,
+        "mega_name": "Mega Sableye",
+        "pokemon_id": 302,
+        "pokemon_name": "Sableye",
+        "stats": {
+            "base_attack": 151,
+            "base_defense": 216,
+            "base_stamina": 137
+        },
+        "type": [
+            "Dark",
+            "Ghost"
+        ],
+        "charged_moves": [
+            "Power Gem",
+            "Foul Play",
+            "Shadow Sneak"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Shadow Claw",
+            "Feint Attack"
+        ],
+        "mega_name_kor": "깜까미(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Aggron",
+        "pokemon_id": 306,
+        "pokemon_name": "Aggron",
+        "stats": {
+            "base_attack": 247,
+            "base_defense": 331,
+            "base_stamina": 172
+        },
+        "type": [
+            "Steel"
+        ],
+        "charged_moves": [
+            "Thunder",
+            "Stone Edge",
+            "Heavy Slam",
+            "Rock Tomb",
+            "Meteor Beam"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Dragon Tail",
+            "Iron Tail",
+            "Smack Down"
+        ],
+        "mega_name_kor": "보스로라(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 100,
+        "form": "Normal",
+        "mega_energy_required": 20,
+        "mega_name": "Mega Medicham",
+        "pokemon_id": 308,
+        "pokemon_name": "Medicham",
+        "stats": {
+            "base_attack": 205,
+            "base_defense": 179,
+            "base_stamina": 155
+        },
+        "type": [
+            "Fighting",
+            "Psychic"
+        ],
+        "charged_moves": [
+            "Ice Punch",
+            "Psychic",
+            "Dynamic Punch",
+            "Power Up Punch"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Psycho Cut",
+            "Counter"
+        ],
+        "mega_name_kor": "요가램(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 100,
+        "form": "Normal",
+        "mega_energy_required": 20,
+        "mega_name": "Mega Manectric",
+        "pokemon_id": 310,
+        "pokemon_name": "Manectric",
+        "stats": {
+            "base_attack": 286,
+            "base_defense": 179,
+            "base_stamina": 172
+        },
+        "type": [
+            "Electric"
+        ],
+        "charged_moves": [
+            "Thunder",
+            "Wild Charge",
+            "Flame Burst",
+            "Overheat",
+            "Psychic Fangs"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Snarl",
+            "Charge Beam",
+            "Thunder Fang"
+        ],
+        "mega_name_kor": "썬더볼트(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 300,
+        "form": "Normal",
+        "mega_energy_required": 60,
+        "mega_name": "Mega Altaria",
+        "pokemon_id": 334,
+        "pokemon_name": "Altaria",
+        "stats": {
+            "base_attack": 222,
+            "base_defense": 218,
+            "base_stamina": 181
+        },
+        "type": [
+            "Dragon",
+            "Fairy"
+        ],
+        "charged_moves": [
+            "Sky Attack",
+            "Dazzling Gleam",
+            "Dragon Pulse"
+        ],
+        "elite_charged_moves": [
+            "Moonblast"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Peck",
+            "Dragon Breath"
+        ],
+        "mega_name_kor": "파비코리(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 100,
+        "form": "Normal",
+        "mega_energy_required": 20,
+        "mega_name": "Mega Banette",
+        "pokemon_id": 354,
+        "pokemon_name": "Banette",
+        "stats": {
+            "base_attack": 312,
+            "base_defense": 160,
+            "base_stamina": 162
+        },
+        "type": [
+            "Ghost"
+        ],
+        "charged_moves": [
+            "Shadow Ball",
+            "Dazzling Gleam",
+            "Thunder"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Hex",
+            "Shadow Claw"
+        ],
+        "mega_name_kor": "다크펫(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Absol",
+        "pokemon_id": 359,
+        "pokemon_name": "Absol",
+        "stats": {
+            "base_attack": 314,
+            "base_defense": 130,
+            "base_stamina": 163
+        },
+        "type": [
+            "Dark"
+        ],
+        "charged_moves": [
+            "Dark Pulse",
+            "Thunder",
+            "Megahorn",
+            "Payback"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Psycho Cut",
+            "Snarl"
+        ],
+        "mega_name_kor": "앱솔(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Glalie",
+        "pokemon_id": 362,
+        "pokemon_name": "Glalie",
+        "stats": {
+            "base_attack": 252,
+            "base_defense": 168,
+            "base_stamina": 190
+        },
+        "type": [
+            "Ice"
+        ],
+        "charged_moves": [
+            "Avalanche",
+            "Gyro Ball",
+            "Shadow Ball"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Ice Shard",
+            "Frost Breath"
+        ],
+        "mega_name_kor": "얼음귀신(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 300,
+        "form": "Normal",
+        "mega_energy_required": 60,
+        "mega_name": "Mega Salamence",
+        "pokemon_id": 373,
+        "pokemon_name": "Salamence",
+        "stats": {
+            "base_attack": 310,
+            "base_defense": 251,
+            "base_stamina": 216
+        },
+        "type": [
+            "Dragon",
+            "Flying"
+        ],
+        "charged_moves": [
+            "Fire Blast",
+            "Hydro Pump",
+            "Draco Meteor",
+            "Fly"
+        ],
+        "elite_charged_moves": [
+            "Outrage"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Dragon Tail",
+            "Fire Fang",
+            "Bite"
+        ],
+        "mega_name_kor": "보만다(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 300,
+        "form": "Normal",
+        "mega_energy_required": 60,
+        "mega_name": "Mega Latias",
+        "pokemon_id": 380,
+        "pokemon_name": "Latias",
+        "stats": {
+            "base_attack": 289,
+            "base_defense": 297,
+            "base_stamina": 190
+        },
+        "type": [
+            "Dragon",
+            "Psychic"
+        ],
+        "charged_moves": [
+            "Psychic",
+            "Outrage",
+            "Thunder"
+        ],
+        "elite_charged_moves": [
+            "Mist Ball"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Dragon Breath",
+            "Zen Headbutt",
+            "Charm"
+        ],
+        "mega_name_kor": "라티아스(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 300,
+        "form": "Normal",
+        "mega_energy_required": 60,
+        "mega_name": "Mega Latios",
+        "pokemon_id": 381,
+        "pokemon_name": "Latios",
+        "stats": {
+            "base_attack": 335,
+            "base_defense": 241,
+            "base_stamina": 190
+        },
+        "type": [
+            "Dragon",
+            "Psychic"
+        ],
+        "charged_moves": [
+            "Psychic",
+            "Dragon Claw",
+            "Solar Beam"
+        ],
+        "elite_charged_moves": [
+            "Luster Purge"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Dragon Breath",
+            "Zen Headbutt"
+        ],
+        "mega_name_kor": "라티오스(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 400,
+        "form": "Normal",
+        "mega_energy_required": 80,
+        "mega_name": "Primal Kyogre",
+        "pokemon_id": 382,
+        "pokemon_name": "Kyogre",
+        "stats": {
+            "base_attack": 353,
+            "base_defense": 268,
+            "base_stamina": 218
+        },
+        "type": [
+            "Water"
+        ],
+        "charged_moves": [
+            "Hydro Pump",
+            "Blizzard",
+            "Thunder",
+            "Surf"
+        ],
+        "elite_charged_moves": [
+            "Origin Pulse"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Waterfall"
+        ],
+        "mega_name_kor": "가이오가(원시)"
+    },
+    {
+        "first_time_mega_energy_required": 400,
+        "form": "Normal",
+        "mega_energy_required": 80,
+        "mega_name": "Primal Groudon",
+        "pokemon_id": 383,
+        "pokemon_name": "Groudon",
+        "stats": {
+            "base_attack": 353,
+            "base_defense": 268,
+            "base_stamina": 218
+        },
+        "type": [
+            "Ground",
+            "Fire"
+        ],
+        "charged_moves": [
+            "Earthquake",
+            "Fire Blast",
+            "Solar Beam"
+        ],
+        "elite_charged_moves": [
+            "Fire Punch",
+            "Precipice Blades"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Mud Shot",
+            "Dragon Tail"
+        ],
+        "mega_name_kor": "그란돈(원시)"
+    },
+    {
+        "first_time_mega_energy_required": 400,
+        "form": "Normal",
+        "mega_energy_required": 80,
+        "mega_name": "Mega Rayquaza",
+        "pokemon_id": 384,
+        "pokemon_name": "Rayquaza",
+        "stats": {
+            "base_attack": 377,
+            "base_defense": 210,
+            "base_stamina": 227
+        },
+        "type": [
+            "Dragon",
+            "Flying"
+        ],
+        "charged_moves": [
+            "Outrage",
+            "Aerial Ace",
+            "Ancient Power"
+        ],
+        "elite_charged_moves": [
+            "Hurricane",
+            "Breaking Swipe"
+        ],
+        "elite_fast_moves": [],
+	"exclusive_charged_moves": [
+            "Dragon Ascent"
+	],
+        "fast_moves": [
+            "Air Slash",
+            "Dragon Tail"
+        ],
+        "mega_name_kor": "레쿠쟈(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Lopunny",
+        "pokemon_id": 428,
+        "pokemon_name": "Lopunny",
+        "stats": {
+            "base_attack": 282,
+            "base_defense": 214,
+            "base_stamina": 163
+        },
+        "type": [
+            "Normal",
+            "Fighting"
+        ],
+        "charged_moves": [
+            "Fire Punch",
+            "Hyper Beam",
+            "Focus Blast",
+            "Triple Axel"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Pound",
+            "Low Kick",
+            "Double Kick"
+        ],
+        "mega_name_kor": "이어롭(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 300,
+        "form": "Normal",
+        "mega_energy_required": 60,
+        "mega_name": "Mega Garchomp",
+        "pokemon_id": 445,
+        "pokemon_name": "Garchomp",
+        "stats": {
+            "base_attack": 339,
+            "base_defense": 222,
+            "base_stamina": 239
+        },
+        "type": [
+            "Dragon",
+            "Ground"
+        ],
+        "charged_moves": [
+            "Outrage",
+            "Earthquake",
+            "Fire Blast",
+            "Sand Tomb"
+        ],
+        "elite_charged_moves": [
+            "Earth Power"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Dragon Tail",
+            "Mud Shot"
+        ],
+        "mega_name_kor": "한카리아스(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Abomasnow",
+        "pokemon_id": 460,
+        "pokemon_name": "Abomasnow",
+        "stats": {
+            "base_attack": 240,
+            "base_defense": 191,
+            "base_stamina": 207
+        },
+        "type": [
+            "Grass",
+            "Ice"
+        ],
+        "charged_moves": [
+            "Blizzard",
+            "Energy Ball",
+            "Outrage",
+            "Weather Ball Ice",
+            "Icy Wind"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Powder Snow",
+            "Razor Leaf",
+            "Leafage"
+        ],
+        "mega_name_kor": "눈설왕(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 300,
+        "form": "Normal",
+        "mega_energy_required": 60,
+        "mega_name": "Mega Diancie",
+        "pokemon_id": 719,
+        "pokemon_name": "Diancie",
+        "stats": {
+            "base_attack": 342,
+            "base_defense": 235,
+            "base_stamina": 137
+        },
+        "type": [
+            "Rock",
+            "Fairy"
+        ],
+        "charged_moves": [
+            "Rock Slide",
+            "Moonblast",
+            "Power Gem"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Tackle",
+            "Rock Throw"
+        ],
+        "mega_name_kor": "디안시(메가)"
+    }
+]
