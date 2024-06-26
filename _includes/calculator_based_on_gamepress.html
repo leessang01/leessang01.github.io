@@ -151,12 +151,6 @@
 
 		};
 
-
-		fetchPokemon();
-		fetchMegaPokemon();
-		fetchFastMove();
-		fetchChargedMove();
-
 		function fetchPokemon() {
             var data = {{ site.data.pokemongo.pokemon | jsonify }};
         
@@ -337,6 +331,11 @@
 		}
 
 		$(function () {
+            fetchPokemon();
+            fetchMegaPokemon();
+            fetchFastMove();
+            fetchChargedMove();
+
 			var table = $("#ranking_table").DataTable({
 				lengthChange: false,
 				autoWidth: false,
@@ -398,12 +397,15 @@
 			PokemonCollection = Data.Pokemon.concat(ShadowPokemon);
 
 			for (let pkm of PokemonCollection) {
-				if (pkm.isShadow)
+				if (pkm.isShadow) {
 					pkm.name = "그림자 " + pkm.name;
-				if (pkm.isPurified)
+                }
+				if (pkm.isPurified) {
 					pkm.name = "정화 " + pkm.name;
-				if (pkm.form !== "normal")
-					pkm.name = pkm.name + "(" + (pkm.form_kor ? pkm.form_kor : pkm.form) + ")"
+                }
+				if (pkm.form !== "normal"){
+					pkm.name = pkm.name + "(" + (pkm.form_kor ? pkm.form_kor : pkm.form) + ")";
+                }
 				for (let fmove of pkm.fastMove) {
 					for (let cmove of pkm.chargedMove) {
 						var pkmInstance = {};
@@ -414,8 +416,9 @@
 						pkmInstance.cmove = cmoveInstance ? cmoveInstance : "none";
 
 						if (pkmInstance.fmove == "none" || pkmInstance.cmove == "none" ||
-							pkmInstance.baseAtk < 1 || pkmInstance.baseDef < 1 || pkmInstance.baseStm < 1)
-							continue
+							pkmInstance.baseAtk < 1 || pkmInstance.baseDef < 1 || pkmInstance.baseStm < 1){
+							continue;
+                        }
 
 						pkmInstance.cpm = DEFAULT_ATTACKER_CPM;
 						pkmInstance.cp = calculateCP(pkmInstance);
