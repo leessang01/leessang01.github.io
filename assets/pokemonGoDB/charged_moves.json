@@ -9,7 +9,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Normal",
         "damage_window_start": 2050,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "김밥말이"
     },
     {
         "critical_chance": 0.05,
@@ -21,7 +22,8 @@
         "stamina_loss_scaler": 0.15,
         "type": "Normal",
         "damage_window_start": 3300,
-        "damage_window_end": 3600
+        "damage_window_end": 3600,
+        "name_kor": "파괴광선"
     },
     {
         "critical_chance": 0.05,
@@ -33,7 +35,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Dark",
         "damage_window_start": 1400,
-        "damage_window_end": 2300
+        "damage_window_end": 2300,
+        "name_kor": "악의파동"
     },
     {
         "critical_chance": 0.05,
@@ -45,7 +48,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Poison",
         "damage_window_start": 1200,
-        "damage_window_end": 1550
+        "damage_window_end": 1550,
+        "name_kor": "오물공격"
     },
     {
         "critical_chance": 0.05,
@@ -57,7 +61,8 @@
         "stamina_loss_scaler": 0.055,
         "type": "Normal",
         "damage_window_start": 1100,
-        "damage_window_end": 1500
+        "damage_window_end": 1500,
+        "name_kor": "찝기"
     },
     {
         "critical_chance": 0.05,
@@ -69,7 +74,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Fire",
         "damage_window_start": 2100,
-        "damage_window_end": 2400
+        "damage_window_end": 2400,
+        "name_kor": "화염바퀴"
     },
     {
         "critical_chance": 0.05,
@@ -81,7 +87,8 @@
         "stamina_loss_scaler": 0.12,
         "type": "Bug",
         "damage_window_start": 1700,
-        "damage_window_end": 1900
+        "damage_window_end": 1900,
+        "name_kor": "메가혼"
     },
     {
         "critical_chance": 0.05,
@@ -93,7 +100,8 @@
         "stamina_loss_scaler": 0.09,
         "type": "Fire",
         "damage_window_start": 1500,
-        "damage_window_end": 1700
+        "damage_window_end": 1700,
+        "name_kor": "화염방사"
     },
     {
         "critical_chance": 0.05,
@@ -105,7 +113,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Ground",
         "damage_window_start": 2800,
-        "damage_window_end": 4500
+        "damage_window_end": 4500,
+        "name_kor": "구멍파기"
     },
     {
         "critical_chance": 0.25,
@@ -117,7 +126,8 @@
         "stamina_loss_scaler": 0.1,
         "type": "Fighting",
         "damage_window_start": 800,
-        "damage_window_end": 1200
+        "damage_window_end": 1200,
+        "name_kor": "크로스촙"
     },
     {
         "critical_chance": 0.05,
@@ -129,7 +139,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Psychic",
         "damage_window_start": 1300,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "환상빔"
     },
     {
         "critical_chance": 0.05,
@@ -141,7 +152,8 @@
         "stamina_loss_scaler": 0.1,
         "type": "Ground",
         "damage_window_start": 2700,
-        "damage_window_end": 3500
+        "damage_window_end": 3500,
+        "name_kor": "지진"
     },
     {
         "critical_chance": 0.5,
@@ -153,7 +165,8 @@
         "stamina_loss_scaler": 0.1,
         "type": "Rock",
         "damage_window_start": 700,
-        "damage_window_end": 2100
+        "damage_window_end": 2100,
+        "name_kor": "스톤에지"
     },
     {
         "critical_chance": 0.05,
@@ -165,7 +178,8 @@
         "stamina_loss_scaler": 0.075,
         "type": "Ice",
         "damage_window_start": 1300,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "냉동펀치"
     },
     {
         "critical_chance": 0.05,
@@ -177,7 +191,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Psychic",
         "damage_window_start": 1100,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "하트스탬프"
     },
     {
         "critical_chance": 0.05,
@@ -189,7 +204,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Electric",
         "damage_window_start": 1700,
-        "damage_window_end": 2100
+        "damage_window_end": 2100,
+        "name_kor": "방전"
     },
     {
         "critical_chance": 0.05,
@@ -201,7 +217,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Steel",
         "damage_window_start": 1600,
-        "damage_window_end": 2500
+        "damage_window_end": 2500,
+        "name_kor": "러스터캐논"
     },
     {
         "critical_chance": 0.05,
@@ -213,7 +230,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Flying",
         "damage_window_start": 1700,
-        "damage_window_end": 2100
+        "damage_window_end": 2100,
+        "name_kor": "회전부리"
     },
     {
         "critical_chance": 0.05,
@@ -225,7 +243,8 @@
         "stamina_loss_scaler": 0.09,
         "type": "Ice",
         "damage_window_start": 1300,
-        "damage_window_end": 2800
+        "damage_window_end": 2800,
+        "name_kor": "냉동빔"
     },
     {
         "critical_chance": 0.05,
@@ -237,7 +256,8 @@
         "stamina_loss_scaler": 0.11,
         "type": "Ice",
         "damage_window_start": 1500,
-        "damage_window_end": 2900
+        "damage_window_end": 2900,
+        "name_kor": "눈보라"
     },
     {
         "critical_chance": 0.05,
@@ -249,7 +269,8 @@
         "stamina_loss_scaler": 0.095,
         "type": "Fire",
         "damage_window_start": 1700,
-        "damage_window_end": 2800
+        "damage_window_end": 2800,
+        "name_kor": "열풍"
     },
     {
         "critical_chance": 0.05,
@@ -261,7 +282,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Flying",
         "damage_window_start": 1900,
-        "damage_window_end": 2200
+        "damage_window_end": 2200,
+        "name_kor": "제비반환"
     },
     {
         "critical_chance": 0.25,
@@ -273,7 +295,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Ground",
         "damage_window_start": 1700,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "드릴라이너"
     },
     {
         "critical_chance": 0.05,
@@ -285,7 +308,8 @@
         "stamina_loss_scaler": 0.09,
         "type": "Grass",
         "damage_window_start": 1700,
-        "damage_window_end": 2300
+        "damage_window_end": 2300,
+        "name_kor": "꽃보라"
     },
     {
         "critical_chance": 0.05,
@@ -298,7 +322,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Grass",
         "damage_window_start": 950,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "메가드레인"
     },
     {
         "critical_chance": 0.05,
@@ -310,7 +335,8 @@
         "stamina_loss_scaler": 0.09,
         "type": "Bug",
         "damage_window_start": 2000,
-        "damage_window_end": 3100
+        "damage_window_end": 3100,
+        "name_kor": "벌레의야단법석"
     },
     {
         "critical_chance": 0.05,
@@ -322,7 +348,8 @@
         "stamina_loss_scaler": 0.05,
         "type": "Poison",
         "damage_window_start": 900,
-        "damage_window_end": 1400
+        "damage_window_end": 1400,
+        "name_kor": "맹독엄니"
     },
     {
         "critical_chance": 0.25,
@@ -334,7 +361,8 @@
         "stamina_loss_scaler": 0.07,
         "type": "Dark",
         "damage_window_start": 1300,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "깜짝베기"
     },
     {
         "critical_chance": 0.05,
@@ -346,7 +374,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Water",
         "damage_window_start": 1450,
-        "damage_window_end": 1700
+        "damage_window_end": 1700,
+        "name_kor": "거품광선"
     },
     {
         "critical_chance": 0.05,
@@ -358,7 +387,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Fighting",
         "damage_window_start": 1800,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "지옥의바퀴"
     },
     {
         "critical_chance": 0.05,
@@ -370,7 +400,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Fighting",
         "damage_window_start": 1300,
-        "damage_window_end": 1650
+        "damage_window_end": 1650,
+        "name_kor": "로킥"
     },
     {
         "critical_chance": 0.05,
@@ -382,7 +413,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Water",
         "damage_window_start": 1700,
-        "damage_window_end": 2100
+        "damage_window_end": 2100,
+        "name_kor": "아쿠아제트"
     },
     {
         "critical_chance": 0.05,
@@ -394,7 +426,8 @@
         "stamina_loss_scaler": 0.09,
         "type": "Water",
         "damage_window_start": 1200,
-        "damage_window_end": 1650
+        "damage_window_end": 1650,
+        "name_kor": "아쿠아테일"
     },
     {
         "critical_chance": 0.05,
@@ -406,7 +439,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Grass",
         "damage_window_start": 1200,
-        "damage_window_end": 1900
+        "damage_window_end": 1900,
+        "name_kor": "씨폭탄"
     },
     {
         "critical_chance": 0.05,
@@ -418,7 +452,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Psychic",
         "damage_window_start": 2000,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "사이코쇼크"
     },
     {
         "critical_chance": 0.05,
@@ -430,7 +465,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Rock",
         "damage_window_start": 2850,
-        "damage_window_end": 3100
+        "damage_window_end": 3100,
+        "name_kor": "원시의힘"
     },
     {
         "critical_chance": 0.25,
@@ -442,7 +478,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Rock",
         "damage_window_start": 2250,
-        "damage_window_end": 3000
+        "damage_window_end": 3000,
+        "name_kor": "암석봉인"
     },
     {
         "critical_chance": 0.05,
@@ -454,7 +491,8 @@
         "stamina_loss_scaler": 0.075,
         "type": "Rock",
         "damage_window_start": 1500,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "스톤샤워"
     },
     {
         "critical_chance": 0.05,
@@ -466,7 +504,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Rock",
         "damage_window_start": 1950,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "파워젬"
     },
     {
         "critical_chance": 0.05,
@@ -478,7 +517,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Ghost",
         "damage_window_start": 2200,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "야습"
     },
     {
         "critical_chance": 0.05,
@@ -490,7 +530,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Ghost",
         "damage_window_start": 1300,
-        "damage_window_end": 1500
+        "damage_window_end": 1500,
+        "name_kor": "섀도펀치"
     },
     {
         "critical_chance": 0.05,
@@ -502,7 +543,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Ghost",
         "damage_window_start": 1850,
-        "damage_window_end": 2100
+        "damage_window_end": 2100,
+        "name_kor": "괴상한바람"
     },
     {
         "critical_chance": 0.05,
@@ -514,7 +556,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Ghost",
         "damage_window_start": 2400,
-        "damage_window_end": 2800
+        "damage_window_end": 2800,
+        "name_kor": "섀도볼"
     },
     {
         "critical_chance": 0.05,
@@ -526,7 +569,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Steel",
         "damage_window_start": 2200,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "마그넷봄"
     },
     {
         "critical_chance": 0.05,
@@ -538,7 +582,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Steel",
         "damage_window_start": 1300,
-        "damage_window_end": 1700
+        "damage_window_end": 1700,
+        "name_kor": "아이언헤드"
     },
     {
         "critical_chance": 0.05,
@@ -551,7 +596,8 @@
         "stamina_loss_scaler": 0.05,
         "type": "Electric",
         "damage_window_start": 1200,
-        "damage_window_end": 2400
+        "damage_window_end": 2400,
+        "name_kor": "파라볼라차지"
     },
     {
         "critical_chance": 0.05,
@@ -563,7 +609,8 @@
         "stamina_loss_scaler": 0.075,
         "type": "Electric",
         "damage_window_start": 1700,
-        "damage_window_end": 1550
+        "damage_window_end": 1550,
+        "name_kor": "번개펀치"
     },
     {
         "critical_chance": 0.05,
@@ -575,7 +622,8 @@
         "stamina_loss_scaler": 0.11,
         "type": "Electric",
         "damage_window_start": 1200,
-        "damage_window_end": 2200
+        "damage_window_end": 2200,
+        "name_kor": "번개"
     },
     {
         "critical_chance": 0.05,
@@ -587,7 +635,8 @@
         "stamina_loss_scaler": 0.09,
         "type": "Electric",
         "damage_window_start": 1800,
-        "damage_window_end": 2300
+        "damage_window_end": 2300,
+        "name_kor": "10만볼트"
     },
     {
         "critical_chance": 0.05,
@@ -599,7 +648,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Dragon",
         "damage_window_start": 950,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "회오리"
     },
     {
         "critical_chance": 0.05,
@@ -611,7 +661,8 @@
         "stamina_loss_scaler": 0.085,
         "type": "Dragon",
         "damage_window_start": 2150,
-        "damage_window_end": 3300
+        "damage_window_end": 3300,
+        "name_kor": "용의파동"
     },
     {
         "critical_chance": 0.25,
@@ -623,7 +674,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Dragon",
         "damage_window_start": 1100,
-        "damage_window_end": 1300
+        "damage_window_end": 1300,
+        "name_kor": "드래곤클로"
     },
     {
         "critical_chance": 0.05,
@@ -635,7 +687,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Fairy",
         "damage_window_start": 3200,
-        "damage_window_end": 3500
+        "damage_window_end": 3500,
+        "name_kor": "차밍보이스"
     },
     {
         "critical_chance": 0.05,
@@ -648,7 +701,8 @@
         "stamina_loss_scaler": 0.05,
         "type": "Fairy",
         "damage_window_start": 1000,
-        "damage_window_end": 1300
+        "damage_window_end": 1300,
+        "name_kor": "드레인키스"
     },
     {
         "critical_chance": 0.05,
@@ -660,7 +714,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Fairy",
         "damage_window_start": 2100,
-        "damage_window_end": 3300
+        "damage_window_end": 3300,
+        "name_kor": "매지컬샤인"
     },
     {
         "critical_chance": 0.05,
@@ -672,7 +727,8 @@
         "stamina_loss_scaler": 0.095,
         "type": "Fairy",
         "damage_window_start": 2200,
-        "damage_window_end": 3700
+        "damage_window_end": 3700,
+        "name_kor": "문포스"
     },
     {
         "critical_chance": 0.05,
@@ -684,7 +740,8 @@
         "stamina_loss_scaler": 0.1,
         "type": "Fairy",
         "damage_window_start": 1300,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "치근거리기"
     },
     {
         "critical_chance": 0.25,
@@ -696,7 +753,8 @@
         "stamina_loss_scaler": 0.07,
         "type": "Poison",
         "damage_window_start": 900,
-        "damage_window_end": 1300
+        "damage_window_end": 1300,
+        "name_kor": "크로스포이즌"
     },
     {
         "critical_chance": 0.05,
@@ -708,7 +766,8 @@
         "stamina_loss_scaler": 0.09,
         "type": "Poison",
         "damage_window_start": 1100,
-        "damage_window_end": 2100
+        "damage_window_end": 2100,
+        "name_kor": "오물폭탄"
     },
     {
         "critical_chance": 0.05,
@@ -720,7 +779,8 @@
         "stamina_loss_scaler": 0.095,
         "type": "Poison",
         "damage_window_start": 2000,
-        "damage_window_end": 3000
+        "damage_window_end": 3000,
+        "name_kor": "오물웨이브"
     },
     {
         "critical_chance": 0.05,
@@ -732,7 +792,8 @@
         "stamina_loss_scaler": 0.12,
         "type": "Poison",
         "damage_window_start": 1700,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "더스트슈트"
     },
     {
         "critical_chance": 0.05,
@@ -744,7 +805,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Ground",
         "damage_window_start": 1000,
-        "damage_window_end": 1400
+        "damage_window_end": 1400,
+        "name_kor": "뼈다귀치기"
     },
     {
         "critical_chance": 0.05,
@@ -756,7 +818,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Ground",
         "damage_window_start": 2600,
-        "damage_window_end": 3100
+        "damage_window_end": 3100,
+        "name_kor": "땅고르기"
     },
     {
         "critical_chance": 0.05,
@@ -768,7 +831,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Ground",
         "damage_window_start": 1700,
-        "damage_window_end": 2100
+        "damage_window_end": 2100,
+        "name_kor": "진흙폭탄"
     },
     {
         "critical_chance": 0.05,
@@ -780,7 +844,8 @@
         "stamina_loss_scaler": 0.075,
         "type": "Bug",
         "damage_window_start": 1800,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "시그널빔"
     },
     {
         "critical_chance": 0.05,
@@ -792,7 +857,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Bug",
         "damage_window_start": 1200,
-        "damage_window_end": 1400
+        "damage_window_end": 1400,
+        "name_kor": "시저크로스"
     },
     {
         "critical_chance": 0.05,
@@ -804,7 +870,8 @@
         "stamina_loss_scaler": 0.05,
         "type": "Fire",
         "damage_window_start": 2900,
-        "damage_window_end": 3450
+        "damage_window_end": 3450,
+        "name_kor": "니트로차지"
     },
     {
         "critical_chance": 0.05,
@@ -816,7 +883,8 @@
         "stamina_loss_scaler": 0.07,
         "type": "Fire",
         "damage_window_start": 1000,
-        "damage_window_end": 2100
+        "damage_window_end": 2100,
+        "name_kor": "불꽃튀기기"
     },
     {
         "critical_chance": 0.05,
@@ -828,7 +896,8 @@
         "stamina_loss_scaler": 0.11,
         "type": "Fire",
         "damage_window_start": 3100,
-        "damage_window_end": 3900
+        "damage_window_end": 3900,
+        "name_kor": "불대문자"
     },
     {
         "critical_chance": 0.05,
@@ -840,7 +909,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Water",
         "damage_window_start": 1500,
-        "damage_window_end": 2100
+        "damage_window_end": 2100,
+        "name_kor": "소금물"
     },
     {
         "critical_chance": 0.05,
@@ -852,7 +922,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Water",
         "damage_window_start": 2200,
-        "damage_window_end": 2900
+        "damage_window_end": 2900,
+        "name_kor": "물의파동"
     },
     {
         "critical_chance": 0.05,
@@ -864,7 +935,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Water",
         "damage_window_start": 1300,
-        "damage_window_end": 3400
+        "damage_window_end": 3400,
+        "name_kor": "열탕"
     },
     {
         "critical_chance": 0.05,
@@ -876,7 +948,8 @@
         "stamina_loss_scaler": 0.11,
         "type": "Water",
         "damage_window_start": 900,
-        "damage_window_end": 3000
+        "damage_window_end": 3000,
+        "name_kor": "하이드로펌프"
     },
     {
         "critical_chance": 0.05,
@@ -888,7 +961,8 @@
         "stamina_loss_scaler": 0.09,
         "type": "Psychic",
         "damage_window_start": 1300,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "사이코키네시스"
     },
     {
         "critical_chance": 0.05,
@@ -900,7 +974,8 @@
         "stamina_loss_scaler": 0.1,
         "type": "Psychic",
         "damage_window_start": 1000,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "사이코브레이크"
     },
     {
         "critical_chance": 0.05,
@@ -912,7 +987,8 @@
         "stamina_loss_scaler": 0.055,
         "type": "Ice",
         "damage_window_start": 2000,
-        "damage_window_end": 2800
+        "damage_window_end": 2800,
+        "name_kor": "얼어붙은바람"
     },
     {
         "critical_chance": 0.05,
@@ -925,7 +1001,8 @@
         "stamina_loss_scaler": 0.075,
         "type": "Grass",
         "damage_window_start": 1200,
-        "damage_window_end": 2200
+        "damage_window_end": 2200,
+        "name_kor": "기가드레인"
     },
     {
         "critical_chance": 0.05,
@@ -937,7 +1014,8 @@
         "stamina_loss_scaler": 0.075,
         "type": "Fire",
         "damage_window_start": 1500,
-        "damage_window_end": 1900
+        "damage_window_end": 1900,
+        "name_kor": "불꽃펀치"
     },
     {
         "critical_chance": 0.05,
@@ -949,7 +1027,8 @@
         "stamina_loss_scaler": 0.12,
         "type": "Grass",
         "damage_window_start": 2700,
-        "damage_window_end": 4700
+        "damage_window_end": 4700,
+        "name_kor": "솔라빔"
     },
     {
         "critical_chance": 0.25,
@@ -961,7 +1040,8 @@
         "stamina_loss_scaler": 0.09,
         "type": "Grass",
         "damage_window_start": 1250,
-        "damage_window_end": 2200
+        "damage_window_end": 2200,
+        "name_kor": "리프블레이드"
     },
     {
         "duration": 2600,
@@ -972,7 +1052,8 @@
         "stamina_loss_scaler": 0.12,
         "type": "Grass",
         "damage_window_start": 1250,
-        "damage_window_end": 2350
+        "damage_window_end": 2350,
+        "name_kor": "파워휩"
     },
     {
         "critical_chance": 0.25,
@@ -984,7 +1065,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Flying",
         "damage_window_start": 1800,
-        "damage_window_end": 2500
+        "damage_window_end": 2500,
+        "name_kor": "에어커터"
     },
     {
         "critical_chance": 0.05,
@@ -996,7 +1078,8 @@
         "stamina_loss_scaler": 0.11,
         "type": "Flying",
         "damage_window_start": 1200,
-        "damage_window_end": 2400
+        "damage_window_end": 2400,
+        "name_kor": "폭풍"
     },
     {
         "critical_chance": 0.25,
@@ -1008,7 +1091,8 @@
         "stamina_loss_scaler": 0.075,
         "type": "Fighting",
         "damage_window_start": 800,
-        "damage_window_end": 1400
+        "damage_window_end": 1400,
+        "name_kor": "깨트리기"
     },
     {
         "critical_chance": 0.05,
@@ -1020,7 +1104,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Normal",
         "damage_window_start": 2000,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "스피드스타"
     },
     {
         "critical_chance": 0.05,
@@ -1032,7 +1117,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Normal",
         "damage_window_start": 800,
-        "damage_window_end": 1650
+        "damage_window_end": 1650,
+        "name_kor": "뿔찌르기"
     },
     {
         "critical_chance": 0.05,
@@ -1044,7 +1130,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Normal",
         "damage_window_start": 1100,
-        "damage_window_end": 1500
+        "damage_window_end": 1500,
+        "name_kor": "짓밟기"
     },
     {
         "critical_chance": 0.05,
@@ -1056,7 +1143,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Normal",
         "damage_window_start": 1500,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "필살앞니"
     },
     {
         "critical_chance": 0.05,
@@ -1068,7 +1156,8 @@
         "stamina_loss_scaler": 0.085,
         "type": "Normal",
         "damage_window_start": 1200,
-        "damage_window_end": 1700
+        "damage_window_end": 1700,
+        "name_kor": "누르기"
     },
     {
         "duration": 1900,
@@ -1080,7 +1169,8 @@
         "stamina_loss_scaler": 0,
         "type": "Normal",
         "damage_window_start": 1500,
-        "damage_window_end": 1700
+        "damage_window_end": 1700,
+        "name_kor": "잠자기"
     },
     {
         "duration": 2200,
@@ -1091,7 +1181,8 @@
         "stamina_loss_scaler": 0.1,
         "type": "Normal",
         "damage_window_start": 1200,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "발버둥"
     },
     {
         "critical_chance": 0.05,
@@ -1103,7 +1194,8 @@
         "stamina_loss_scaler": 0.08,
         "type": "Water",
         "damage_window_start": 2500,
-        "damage_window_end": 4600
+        "damage_window_end": 4600,
+        "name_kor": "열탕"
     },
     {
         "critical_chance": 0.05,
@@ -1115,7 +1207,8 @@
         "stamina_loss_scaler": 0.11,
         "type": "Water",
         "damage_window_start": 2200,
-        "damage_window_end": 4300
+        "damage_window_end": 4300,
+        "name_kor": "하이드로펌프"
     },
     {
         "critical_chance": 0.05,
@@ -1127,7 +1220,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Normal",
         "damage_window_start": 2050,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "김밥말이"
     },
     {
         "critical_chance": 0.05,
@@ -1139,7 +1233,8 @@
         "stamina_loss_scaler": 0.06,
         "type": "Normal",
         "damage_window_start": 2050,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "김밥말이"
     },
     {
         "duration": 1000,
@@ -1148,7 +1243,8 @@
         "name": "Water Gun Blastoise",
         "power": 10,
         "stamina_loss_scaler": 0.01,
-        "type": "Water"
+        "type": "Water",
+        "name_kor": "물대포"
     },
     {
         "critical_chance": 0.05,
@@ -1160,7 +1256,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Fighting",
         "damage_window_start": 1000,
-        "damage_window_end": 2300
+        "damage_window_end": 2300,
+        "name_kor": "인파이트"
     },
     {
         "critical_chance": 0.05,
@@ -1172,7 +1269,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Fighting",
         "damage_window_start": 1200,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "폭발펀치"
     },
     {
         "critical_chance": 0.05,
@@ -1184,7 +1282,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Fighting",
         "damage_window_start": 3000,
-        "damage_window_end": 3500
+        "damage_window_end": 3500,
+        "name_kor": "기합구슬"
     },
     {
         "critical_chance": 0.05,
@@ -1196,7 +1295,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Ice",
         "damage_window_start": 3350,
-        "damage_window_end": 3550
+        "damage_window_end": 3550,
+        "name_kor": "오로라빔"
     },
     {
         "critical_chance": 0.05,
@@ -1208,7 +1308,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Electric",
         "damage_window_start": 1700,
-        "damage_window_end": 2100
+        "damage_window_end": 2100,
+        "name_kor": "와일드볼트"
     },
     {
         "critical_chance": 0.05,
@@ -1220,7 +1321,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Electric",
         "damage_window_start": 3000,
-        "damage_window_end": 3500
+        "damage_window_end": 3500,
+        "name_kor": "전자포"
     },
     {
         "critical_chance": 0.05,
@@ -1232,7 +1334,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Ice",
         "damage_window_start": 1700,
-        "damage_window_end": 2100
+        "damage_window_end": 2100,
+        "name_kor": "눈사태"
     },
     {
         "critical_chance": 0.05,
@@ -1244,7 +1347,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Flying",
         "damage_window_start": 1000,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "브레이브버드"
     },
     {
         "critical_chance": 0.05,
@@ -1256,7 +1360,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Flying",
         "damage_window_start": 1500,
-        "damage_window_end": 1700
+        "damage_window_end": 1700,
+        "name_kor": "불새"
     },
     {
         "critical_chance": 0.05,
@@ -1268,7 +1373,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Ground",
         "damage_window_start": 1700,
-        "damage_window_end": 4000
+        "damage_window_end": 4000,
+        "name_kor": "모래지옥"
     },
     {
         "critical_chance": 0.05,
@@ -1280,7 +1386,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Rock",
         "damage_window_start": 1600,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "록블라스트"
     },
     {
         "critical_chance": 0.05,
@@ -1292,7 +1399,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Bug",
         "damage_window_start": 1700,
-        "damage_window_end": 3500
+        "damage_window_end": 3500,
+        "name_kor": "은빛바람"
     },
     {
         "critical_chance": 0.05,
@@ -1304,7 +1412,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Ghost",
         "damage_window_start": 2100,
-        "damage_window_end": 2500
+        "damage_window_end": 2500,
+        "name_kor": "나이트헤드"
     },
     {
         "critical_chance": 0.05,
@@ -1316,7 +1425,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Steel",
         "damage_window_start": 3000,
-        "damage_window_end": 3300
+        "damage_window_end": 3300,
+        "name_kor": "자이로볼"
     },
     {
         "critical_chance": 0.05,
@@ -1328,7 +1438,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Steel",
         "damage_window_start": 1500,
-        "damage_window_end": 1900
+        "damage_window_end": 1900,
+        "name_kor": "헤비봄버"
     },
     {
         "critical_chance": 0.05,
@@ -1340,7 +1451,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Fire",
         "damage_window_start": 2600,
-        "damage_window_end": 3800
+        "damage_window_end": 3800,
+        "name_kor": "오버히트"
     },
     {
         "critical_chance": 0.05,
@@ -1352,7 +1464,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Grass",
         "damage_window_start": 1700,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "풀묶기"
     },
     {
         "critical_chance": 0.05,
@@ -1364,7 +1477,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Grass",
         "damage_window_start": 3000,
-        "damage_window_end": 3800
+        "damage_window_end": 3800,
+        "name_kor": "에너지볼"
     },
     {
         "critical_chance": 0.05,
@@ -1376,7 +1490,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Psychic",
         "damage_window_start": 1400,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "미래예지"
     },
     {
         "critical_chance": 0.05,
@@ -1388,7 +1503,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Psychic",
         "damage_window_start": 2300,
-        "damage_window_end": 2500
+        "damage_window_end": 2500,
+        "name_kor": "미러코트"
     },
     {
         "critical_chance": 0.05,
@@ -1400,7 +1516,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Dragon",
         "damage_window_start": 2500,
-        "damage_window_end": 3700
+        "damage_window_end": 3700,
+        "name_kor": "역린"
     },
     {
         "critical_chance": 0.05,
@@ -1412,7 +1529,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Dark",
         "damage_window_start": 1300,
-        "damage_window_end": 3000
+        "damage_window_end": 3000,
+        "name_kor": "깨물어부수기"
     },
     {
         "critical_chance": 0.05,
@@ -1424,7 +1542,8 @@
         "stamina_loss_scaler": 0.04,
         "type": "Dark",
         "damage_window_start": 1700,
-        "damage_window_end": 1900
+        "damage_window_end": 1900,
+        "name_kor": "속임수"
     },
     {
         "duration": 1700,
@@ -1435,7 +1554,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Water",
         "damage_window_start": 1400,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "파도타기"
     },
     {
         "duration": 3600,
@@ -1446,7 +1566,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Dragon",
         "damage_window_start": 3000,
-        "damage_window_end": 3500
+        "damage_window_end": 3500,
+        "name_kor": "용성군"
     },
     {
         "duration": 1700,
@@ -1457,7 +1578,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Steel",
         "damage_window_start": 1400,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "파멸의소원"
     },
     {
         "duration": 4000,
@@ -1468,7 +1590,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Psychic",
         "damage_window_start": 3500,
-        "damage_window_end": 4000
+        "damage_window_end": 4000,
+        "name_kor": "사이코부스트"
     },
     {
         "duration": 1700,
@@ -1479,7 +1602,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Water",
         "damage_window_start": 1400,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "근원의파동"
     },
     {
         "duration": 1700,
@@ -1490,7 +1614,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ground",
         "damage_window_start": 1400,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "단애의칼"
     },
     {
         "duration": 1600,
@@ -1501,7 +1626,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fire",
         "damage_window_start": 1350,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "웨더볼"
     },
     {
         "duration": 1600,
@@ -1512,7 +1638,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ice",
         "damage_window_start": 1350,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "웨더볼"
     },
     {
         "duration": 1600,
@@ -1523,7 +1650,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Rock",
         "damage_window_start": 1350,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "웨더볼"
     },
     {
         "duration": 1600,
@@ -1534,7 +1662,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Water",
         "damage_window_start": 1350,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "웨더볼"
     },
     {
         "duration": 2600,
@@ -1545,7 +1674,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Grass",
         "damage_window_start": 2145,
-        "damage_window_end": 2550
+        "damage_window_end": 2550,
+        "name_kor": "하드플랜트"
     },
     {
         "duration": 3300,
@@ -1556,7 +1686,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fire",
         "damage_window_start": 2750,
-        "damage_window_end": 3200
+        "damage_window_end": 3200,
+        "name_kor": "블라스트번"
     },
     {
         "critical_chance": 0.05,
@@ -1568,7 +1699,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Water",
         "damage_window_start": 500,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "하이드로캐논"
     },
     {
         "critical_chance": 0.05,
@@ -1580,7 +1712,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Normal",
         "damage_window_start": 2700,
-        "damage_window_end": 2850
+        "damage_window_end": 2850,
+        "name_kor": "비장의무기"
     },
     {
         "critical_chance": 0.05,
@@ -1592,7 +1725,8 @@
         "stamina_loss_scaler": 0.065,
         "type": "Steel",
         "damage_window_start": 2300,
-        "damage_window_end": 2500
+        "damage_window_end": 2500,
+        "name_kor": "코멧펀치"
     },
     {
         "duration": 3100,
@@ -1603,7 +1737,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Normal",
         "damage_window_start": 1800,
-        "damage_window_end": 2300
+        "damage_window_end": 2300,
+        "name_kor": "로켓박치기"
     },
     {
         "duration": 3000,
@@ -1614,7 +1749,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Poison",
         "damage_window_start": 2100,
-        "damage_window_end": 2800
+        "damage_window_end": 2800,
+        "name_kor": "애시드봄"
     },
     {
         "duration": 3600,
@@ -1625,7 +1761,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ground",
         "damage_window_start": 2700,
-        "damage_window_end": 3400
+        "damage_window_end": 3400,
+        "name_kor": "대지의힘"
     },
     {
         "duration": 1900,
@@ -1636,7 +1773,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Water",
         "damage_window_start": 1500,
-        "damage_window_end": 1750
+        "damage_window_end": 1750,
+        "name_kor": "집게해머"
     },
     {
         "duration": 2900,
@@ -1647,7 +1785,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Bug",
         "damage_window_start": 2400,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "덤벼들기"
     },
     {
         "duration": 1900,
@@ -1658,7 +1797,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Normal",
         "damage_window_start": 1200,
-        "damage_window_end": 1700
+        "damage_window_end": 1700,
+        "name_kor": "브레이크클로"
     },
     {
         "duration": 2300,
@@ -1669,7 +1809,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Water",
         "damage_window_start": 1300,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "대포무노포"
     },
     {
         "duration": 2400,
@@ -1680,7 +1821,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Steel",
         "damage_window_start": 1800,
-        "damage_window_end": 2200
+        "damage_window_end": 2200,
+        "name_kor": "미러샷"
     },
     {
         "duration": 3000,
@@ -1691,7 +1833,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fighting",
         "damage_window_start": 2100,
-        "damage_window_end": 2800
+        "damage_window_end": 2800,
+        "name_kor": "엄청난힘"
     },
     {
         "duration": 2200,
@@ -1702,7 +1845,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Bug",
         "damage_window_start": 1800,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "마지막일침"
     },
     {
         "duration": 3100,
@@ -1713,7 +1857,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Grass",
         "damage_window_start": 2000,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "그래스믹서"
     },
     {
         "duration": 2500,
@@ -1724,7 +1869,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Bug",
         "damage_window_start": 1150,
-        "damage_window_end": 1400
+        "damage_window_end": 1400,
+        "name_kor": "흡혈"
     },
     {
         "duration": 2400,
@@ -1735,7 +1881,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fighting",
         "damage_window_start": 1000,
-        "damage_window_end": 1500
+        "damage_window_end": 1500,
+        "name_kor": "드레인펀치"
     },
     {
         "duration": 2800,
@@ -1746,7 +1893,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ghost",
         "damage_window_start": 2250,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "섀도본"
     },
     {
         "duration": 2200,
@@ -1757,7 +1905,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Water",
         "damage_window_start": 1200,
-        "damage_window_end": 1900
+        "damage_window_end": 1900,
+        "name_kor": "탁류"
     },
     {
         "duration": 1200,
@@ -1768,7 +1917,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fire",
         "damage_window_start": 450,
-        "damage_window_end": 800
+        "damage_window_end": 800,
+        "name_kor": "블레이즈킥"
     },
     {
         "duration": 1300,
@@ -1779,7 +1929,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Water",
         "damage_window_start": 650,
-        "damage_window_end": 1000
+        "damage_window_end": 1000,
+        "name_kor": "셸블레이드"
     },
     {
         "duration": 2000,
@@ -1790,7 +1941,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fighting",
         "damage_window_start": 1700,
-        "damage_window_end": 1900
+        "damage_window_end": 1900,
+        "name_kor": "그로우펀치"
     },
     {
         "duration": 4700,
@@ -1801,7 +1953,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Normal",
         "damage_window_start": 1000,
-        "damage_window_end": 2400
+        "damage_window_end": 2400,
+        "name_kor": "기가임팩트"
     },
     {
         "duration": 2000,
@@ -1812,7 +1965,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Normal",
         "damage_window_start": 1000,
-        "damage_window_end": 1800
+        "damage_window_end": 1800,
+        "name_kor": "화풀이"
     },
     {
         "duration": 700,
@@ -1823,7 +1977,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Normal",
         "damage_window_start": 100,
-        "damage_window_end": 350
+        "damage_window_end": 350,
+        "name_kor": "은혜갚기"
     },
     {
         "duration": 2600,
@@ -1834,7 +1989,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Psychic",
         "damage_window_start": 850,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "싱크로노이즈"
     },
     {
         "duration": 1900,
@@ -1845,7 +2001,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Normal",
         "damage_window_start": 500,
-        "damage_window_end": 1500
+        "damage_window_end": 1500,
+        "name_kor": "뿔드릴"
     },
     {
         "duration": 2800,
@@ -1856,7 +2013,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ground",
         "damage_window_start": 1000,
-        "damage_window_end": 2300
+        "damage_window_end": 2300,
+        "name_kor": "땅가르기"
     },
     {
         "duration": 1200,
@@ -1867,7 +2025,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fighting",
         "damage_window_start": 500,
-        "damage_window_end": 1000
+        "damage_window_end": 1000,
+        "name_kor": "성스러운칼"
     },
     {
         "duration": 2300,
@@ -1878,7 +2037,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fighting",
         "damage_window_start": 1000,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "플라잉프레스"
     },
     {
         "duration": 1800,
@@ -1889,7 +2049,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fighting",
         "damage_window_start": 1000,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "파동탄"
     },
     {
         "duration": 2200,
@@ -1900,7 +2061,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Dark",
         "damage_window_start": 1100,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "보복"
     },
     {
         "duration": 3600,
@@ -1911,7 +2073,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Rock",
         "damage_window_start": 2000,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "암석포"
     },
     {
         "duration": 3400,
@@ -1922,7 +2085,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Flying",
         "damage_window_start": 3200,
-        "damage_window_end": 3400
+        "damage_window_end": 3400,
+        "name_kor": "에어로블라스트"
     },
     {
         "duration": 2000,
@@ -1933,7 +2097,8 @@
         "stamina_loss_scaler": 0,
         "type": "Normal",
         "damage_window_start": 1600,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "테크노버스터"
     },
     {
         "duration": 2000,
@@ -1944,7 +2109,8 @@
         "stamina_loss_scaler": 0,
         "type": "Fire",
         "damage_window_start": 1400,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "테크노버스터"
     },
     {
         "duration": 2000,
@@ -1955,7 +2121,8 @@
         "stamina_loss_scaler": 0,
         "type": "Ice",
         "damage_window_start": 1400,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "테크노버스터"
     },
     {
         "duration": 2000,
@@ -1966,7 +2133,8 @@
         "stamina_loss_scaler": 0,
         "type": "Water",
         "damage_window_start": 1500,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "테크노버스터"
     },
     {
         "duration": 2000,
@@ -1977,7 +2145,8 @@
         "stamina_loss_scaler": 0,
         "type": "Electric",
         "damage_window_start": 1600,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "테크노버스터"
     },
     {
         "duration": 1800,
@@ -1988,7 +2157,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Flying",
         "damage_window_start": 1200,
-        "damage_window_end": 1500
+        "damage_window_end": 1500,
+        "name_kor": "공중날기"
     },
     {
         "duration": 2800,
@@ -1999,7 +2169,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fire",
         "damage_window_start": 1700,
-        "damage_window_end": 2500
+        "damage_window_end": 2500,
+        "name_kor": "V제너레이트"
     },
     {
         "duration": 2500,
@@ -2010,7 +2181,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Grass",
         "damage_window_start": 1100,
-        "damage_window_end": 1250
+        "damage_window_end": 1250,
+        "name_kor": "리프스톰"
     },
     {
         "duration": 2500,
@@ -2021,7 +2193,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Normal",
         "damage_window_start": 1300,
-        "damage_window_end": 2400
+        "damage_window_end": 2400,
+        "name_kor": "트라이어택"
     },
     {
         "duration": 2800,
@@ -2032,7 +2205,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Flying",
         "damage_window_start": 1700,
-        "damage_window_end": 2500
+        "damage_window_end": 2500,
+        "name_kor": "깃털댄스"
     },
     {
         "duration": 1600,
@@ -2043,7 +2217,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Normal",
         "damage_window_start": 1350,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "웨더볼"
     },
     {
         "duration": 1200,
@@ -2054,7 +2229,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Psychic",
         "damage_window_start": 400,
-        "damage_window_end": 1100
+        "damage_window_end": 1100,
+        "name_kor": "사이코팽"
     },
     {
         "duration": 2600,
@@ -2065,7 +2241,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fire",
         "damage_window_start": 1200,
-        "damage_window_end": 2400
+        "damage_window_end": 2400,
+        "name_kor": "성스러운불꽃"
     },
     {
         "duration": 2200,
@@ -2076,51 +2253,56 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ice",
         "damage_window_start": 1200,
-        "damage_window_end": 1800
+        "damage_window_end": 1800,
+        "name_kor": "고드름침"
     },
     {
         "duration": 3400,
         "energy_delta": -100,
         "move_id": 360,
-        "name": "Aeroblast",
+        "name": "Aeroblast Plus",
         "power": 200,
         "stamina_loss_scaler": 0.01,
         "type": "Flying",
         "damage_window_start": 3200,
-        "damage_window_end": 3400
+        "damage_window_end": 3400,
+        "name_kor": "에어로블라스트+"
     },
     {
         "duration": 3400,
         "energy_delta": -100,
         "move_id": 361,
-        "name": "Aeroblast",
+        "name": "Aeroblast Plus Plus",
         "power": 225,
         "stamina_loss_scaler": 0.01,
         "type": "Flying",
         "damage_window_start": 3200,
-        "damage_window_end": 3400
+        "damage_window_end": 3400,
+        "name_kor": "에어로블라스트++"
     },
     {
         "duration": 2600,
         "energy_delta": -100,
         "move_id": 362,
-        "name": "Sacred Fire",
+        "name": "Sacred Fire Plus",
         "power": 135,
         "stamina_loss_scaler": 0.01,
         "type": "Fire",
         "damage_window_start": 1200,
-        "damage_window_end": 2400
+        "damage_window_end": 2400,
+        "name_kor": "성스러운불꽃+"
     },
     {
         "duration": 2600,
         "energy_delta": -100,
         "move_id": 363,
-        "name": "Sacred Fire",
+        "name": "Sacred Fire Plus Plus",
         "power": 155,
         "stamina_loss_scaler": 0.01,
         "type": "Fire",
         "damage_window_start": 1200,
-        "damage_window_end": 2400
+        "damage_window_end": 2400,
+        "name_kor": "성스러운불꽃++"
     },
     {
         "duration": 2000,
@@ -2131,7 +2313,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Flying",
         "damage_window_start": 600,
-        "damage_window_end": 1700
+        "damage_window_end": 1700,
+        "name_kor": "애크러뱃"
     },
     {
         "duration": 1500,
@@ -2142,7 +2325,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Psychic",
         "damage_window_start": 500,
-        "damage_window_end": 1500
+        "damage_window_end": 1500,
+        "name_kor": "러스터퍼지"
     },
     {
         "duration": 2000,
@@ -2153,7 +2337,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Psychic",
         "damage_window_start": 1200,
-        "damage_window_end": 1700
+        "damage_window_end": 1700,
+        "name_kor": "미스트볼"
     },
     {
         "duration": 1900,
@@ -2164,7 +2349,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Dark",
         "damage_window_start": 1200,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "세차게휘두르기"
     },
     {
         "duration": 2700,
@@ -2175,7 +2361,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Grass",
         "damage_window_start": 2500,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "시드플레어"
     },
     {
         "duration": 1700,
@@ -2186,7 +2373,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Dark",
         "damage_window_start": 500,
-        "damage_window_end": 1600
+        "damage_window_end": 1600,
+        "name_kor": "블로킹"
     },
     {
         "duration": 1900,
@@ -2197,7 +2385,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ghost",
         "damage_window_start": 1700,
-        "damage_window_end": 1900
+        "damage_window_end": 1900,
+        "name_kor": "섀도다이브"
     },
     {
         "duration": 1900,
@@ -2208,7 +2397,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Rock",
         "damage_window_start": 1000,
-        "damage_window_end": 1900
+        "damage_window_end": 1900,
+        "name_kor": "메테오빔"
     },
     {
         "duration": 2000,
@@ -2219,7 +2409,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Electric",
         "damage_window_start": 1250,
-        "damage_window_end": 1800
+        "damage_window_end": 1800,
+        "name_kor": "크로스썬더"
     },
     {
         "duration": 2200,
@@ -2230,7 +2421,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fire",
         "damage_window_start": 1500,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "크로스플레임"
     },
     {
         "duration": 3600,
@@ -2241,7 +2433,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ghost",
         "damage_window_start": 2800,
-        "damage_window_end": 3000
+        "damage_window_end": 3000,
+        "name_kor": "폴터가이스트"
     },
     {
         "duration": 1600,
@@ -2252,7 +2445,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ground",
         "damage_window_start": 1000,
-        "damage_window_end": 1200
+        "damage_window_end": 1200,
+        "name_kor": "10만마력"
     },
     {
         "duration": 2500,
@@ -2263,7 +2457,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ice",
         "damage_window_start": 1500,
-        "damage_window_end": 2500
+        "damage_window_end": 2500,
+        "name_kor": "얼어붙은세계"
     },
     {
         "duration": 800,
@@ -2274,7 +2469,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Dragon",
         "damage_window_start": 270,
-        "damage_window_end": 700
+        "damage_window_end": 700,
+        "name_kor": "와이드브레이커"
     },
     {
         "duration": 2300,
@@ -2285,7 +2481,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Normal",
         "damage_window_start": 1000,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "폭음파"
     },
     {
         "duration": 2000,
@@ -2296,7 +2493,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Steel",
         "damage_window_start": 1300,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "더블펀처"
     },
     {
         "duration": 2000,
@@ -2307,7 +2505,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fire",
         "damage_window_start": 1300,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "매지컬플레임"
     },
     {
         "duration": 3000,
@@ -2318,7 +2517,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Water",
         "damage_window_start": 2000,
-        "damage_window_end": 2700
+        "damage_window_end": 2700,
+        "name_kor": "아쿠아브레이크"
     },
     {
         "duration": 3500,
@@ -2329,7 +2529,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Flying",
         "damage_window_start": 3250,
-        "damage_window_end": 3400
+        "damage_window_end": 3400,
+        "name_kor": "화룡점정"
     },
     {
         "duration": 2500,
@@ -2340,7 +2541,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fire",
         "damage_window_start": 1300,
-        "damage_window_end": 2800
+        "damage_window_end": 2800,
+        "name_kor": "마그마스톰"
     },
     {
         "duration": 2500,
@@ -2351,7 +2553,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Dragon",
         "damage_window_start": 1370,
-        "damage_window_end": 2950
+        "damage_window_end": 2950,
+        "name_kor": "공간절단"
     },
     {
         "duration": 2000,
@@ -2362,7 +2565,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Flying",
         "damage_window_start": 1500,
-        "damage_window_end": 1900
+        "damage_window_end": 1900,
+        "name_kor": "데스윙"
     },
     {
         "duration": 2100,
@@ -2373,7 +2577,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fairy",
         "damage_window_start": 1400,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "자연의분노"
     },
     {
         "duration": 2000,
@@ -2384,7 +2589,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ice",
         "damage_window_start": 1500,
-        "damage_window_end": 1700
+        "damage_window_end": 1700,
+        "name_kor": "트리플악셀"
     },
     {
         "duration": 2000,
@@ -2395,7 +2601,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Grass",
         "damage_window_start": 1200,
-        "damage_window_end": 1900
+        "damage_window_end": 1900,
+        "name_kor": "개척하기"
     },
     {
         "duration": 3200,
@@ -2406,7 +2613,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ground",
         "damage_window_start": 1600,
-        "damage_window_end": 2500
+        "damage_window_end": 2500,
+        "name_kor": "열사의대지"
     },
     {
         "duration": 2200,
@@ -2417,7 +2625,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Dragon",
         "damage_window_start": 1050,
-        "damage_window_end": 2500
+        "damage_window_end": 2500,
+        "name_kor": "시간의포효"
     },
     {
         "duration": 2300,
@@ -2428,7 +2637,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Flying",
         "damage_window_start": 1800,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "찬바람폭풍"
     },
     {
         "duration": 2300,
@@ -2439,7 +2649,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ground",
         "damage_window_start": 1800,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "열사의폭풍"
     },
     {
         "duration": 2300,
@@ -2450,7 +2661,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Electric",
         "damage_window_start": 1800,
-        "damage_window_end": 2600
+        "damage_window_end": 2600,
+        "name_kor": "번개폭풍"
     },
     {
         "duration": 2500,
@@ -2461,7 +2673,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ghost",
         "damage_window_start": 2000,
-        "damage_window_end": 3400
+        "damage_window_end": 3400,
+        "name_kor": "그림자꿰매기"
     },
     {
         "duration": 3400,
@@ -2472,7 +2685,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Electric",
         "damage_window_start": 2000,
-        "damage_window_end": 2500
+        "damage_window_end": 2500,
+        "name_kor": "볼트태클"
     },
     {
         "duration": 2000,
@@ -2483,7 +2697,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Dark",
         "damage_window_start": 1200,
-        "damage_window_end": 2000
+        "damage_window_end": 2000,
+        "name_kor": "DD래리어트"
     },
     {
         "duration": 500,
@@ -2494,7 +2709,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Psychic",
         "damage_window_start": 300,
-        "damage_window_end": 600
+        "damage_window_end": 600,
+        "name_kor": "사이코웨이브"
     },
     {
         "duration": 700,
@@ -2505,7 +2721,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Steel",
         "damage_window_start": 400,
-        "damage_window_end": 900
+        "damage_window_end": 900,
+        "name_kor": "금속음"
     },
     {
         "duration": 500,
@@ -2516,7 +2733,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ground",
         "damage_window_start": 300,
-        "damage_window_end": 600
+        "damage_window_end": 600,
+        "name_kor": "모래뿌리기"
     },
     {
         "duration": 3100,
@@ -2527,7 +2745,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Steel",
         "damage_window_start": 2300,
-        "damage_window_end": 3100
+        "damage_window_end": 3100,
+        "name_kor": "메테오드라이브"
     },
     {
         "duration": 3100,
@@ -2538,7 +2757,8 @@
         "stamina_loss_scaler": 0.01,
         "type": "Ghost",
         "damage_window_start": 2300,
-        "damage_window_end": 3100
+        "damage_window_end": 3100,
+        "name_kor": "섀도레이"
     },
     {
         "duration": 1500,
@@ -2549,6 +2769,7 @@
         "stamina_loss_scaler": 0.01,
         "type": "Fighting",
         "damage_window_start": 450,
-        "damage_window_end": 800
+        "damage_window_end": 800,
+        "name_kor": "무릎차기"
     }
 ]

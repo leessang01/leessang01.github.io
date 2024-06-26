@@ -14,25 +14,11 @@
         "type": [
             "Grass",
             "Poison"
-        ],
-        "charged_moves": [
-            "Sludge Bomb",
-            "Petal Blizzard",
-            "Solar Beam"
-        ],
-        "elite_charged_moves": [
-            "Frenzy Plant"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Razor Leaf",
-            "Vine Whip"
-        ],
-        "mega_name_kor": "이상해꽃(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
-        "form": "Normal",
+        "form": "X",
         "mega_energy_required": 40,
         "mega_name": "Mega Charizard X",
         "pokemon_id": 6,
@@ -45,30 +31,11 @@
         "type": [
             "Fire",
             "Dragon"
-        ],
-        "charged_moves": [
-            "Fire Blast",
-            "Dragon Claw",
-            "Overheat"
-        ],
-        "elite_charged_moves": [
-            "Blast Burn",
-            "Flamethrower"
-        ],
-        "elite_fast_moves": [
-            "Ember",
-            "Wing Attack",
-            "Dragon Breath"
-        ],
-        "fast_moves": [
-            "Fire Spin",
-            "Air Slash"
-        ],
-        "mega_name_kor": "리자몽(메가X)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
-        "form": "Normal",
+        "form": "Y",
         "mega_energy_required": 40,
         "mega_name": "Mega Charizard Y",
         "pokemon_id": 6,
@@ -81,26 +48,7 @@
         "type": [
             "Fire",
             "Flying"
-        ],
-        "charged_moves": [
-            "Fire Blast",
-            "Dragon Claw",
-            "Overheat"
-        ],
-        "elite_charged_moves": [
-            "Blast Burn",
-            "Flamethrower"
-        ],
-        "elite_fast_moves": [
-            "Ember",
-            "Wing Attack",
-            "Dragon Breath"
-        ],
-        "fast_moves": [
-            "Fire Spin",
-            "Air Slash"
-        ],
-        "mega_name_kor": "리자몽(메가Y)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -116,22 +64,7 @@
         },
         "type": [
             "Water"
-        ],
-        "charged_moves": [
-            "Flash Cannon",
-            "Ice Beam",
-            "Hydro Pump",
-            "Skull Bash"
-        ],
-        "elite_charged_moves": [
-            "Hydro Cannon"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Water Gun",
-            "Bite"
-        ],
-        "mega_name_kor": "거북왕(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 100,
@@ -148,24 +81,7 @@
         "type": [
             "Bug",
             "Poison"
-        ],
-        "charged_moves": [
-            "Sludge Bomb",
-            "Aerial Ace",
-            "X Scissor",
-            "Fell Stinger"
-        ],
-        "elite_charged_moves": [
-            "Drill Run"
-        ],
-        "elite_fast_moves": [
-            "Bug Bite"
-        ],
-        "fast_moves": [
-            "Infestation",
-            "Poison Jab"
-        ],
-        "mega_name_kor": "독침붕(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 100,
@@ -182,25 +98,7 @@
         "type": [
             "Normal",
             "Flying"
-        ],
-        "charged_moves": [
-            "Hurricane",
-            "Aerial Ace",
-            "Brave Bird",
-            "Feather Dance"
-        ],
-        "elite_charged_moves": [
-            "Air Cutter"
-        ],
-        "elite_fast_moves": [
-            "Wing Attack",
-            "Gust"
-        ],
-        "fast_moves": [
-            "Air Slash",
-            "Steel Wing"
-        ],
-        "mega_name_kor": "피죤투(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -216,29 +114,11 @@
         },
         "type": [
             "Psychic"
-        ],
-        "charged_moves": [
-            "Futuresight",
-            "Focus Blast",
-            "Shadow Ball",
-            "Fire Punch"
-        ],
-        "elite_charged_moves": [
-            "Dazzling Gleam",
-            "Psychic"
-        ],
-        "elite_fast_moves": [
-            "Counter"
-        ],
-        "fast_moves": [
-            "Psycho Cut",
-            "Confusion"
-        ],
-        "mega_name_kor": "후딘(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 100,
-        "form": "2021",
+        "form": "Normal",
         "mega_energy_required": 20,
         "mega_name": "Mega Slowbro",
         "pokemon_id": 80,
@@ -251,22 +131,7 @@
         "type": [
             "Water",
             "Psychic"
-        ],
-        "charged_moves": [
-            "Water Pulse",
-            "Psychic",
-            "Ice Beam",
-            "Scald"
-        ],
-        "elite_charged_moves": [
-            "Surf"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Water Gun",
-            "Confusion"
-        ],
-        "mega_name_kor": "야도란(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -283,27 +148,7 @@
         "type": [
             "Ghost",
             "Poison"
-        ],
-        "charged_moves": [
-            "Shadow Ball",
-            "Focus Blast",
-            "Sludge Bomb"
-        ],
-        "elite_charged_moves": [
-            "Sludge Wave",
-            "Dark Pulse",
-            "Psychic",
-            "Shadow Punch"
-        ],
-        "elite_fast_moves": [
-            "Lick"
-        ],
-        "fast_moves": [
-            "Sucker Punch",
-            "Hex",
-            "Shadow Claw"
-        ],
-        "mega_name_kor": "팬텀(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -319,23 +164,7 @@
         },
         "type": [
             "Normal"
-        ],
-        "charged_moves": [
-            "Crunch",
-            "Earthquake",
-            "Outrage",
-            "Power Up Punch"
-        ],
-        "elite_charged_moves": [
-            "Brick Break",
-            "Stomp"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Mud Slap",
-            "Low Kick"
-        ],
-        "mega_name_kor": "캥카(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -352,23 +181,7 @@
         "type": [
             "Bug",
             "Flying"
-        ],
-        "charged_moves": [
-            "Vice Grip",
-            "X Scissor",
-            "Close Combat",
-            "Super Power"
-        ],
-        "elite_charged_moves": [
-            "Submission"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Rock Smash",
-            "Bug Bite",
-            "Fury Cutter"
-        ],
-        "mega_name_kor": "쁘사이저(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 300,
@@ -385,26 +198,7 @@
         "type": [
             "Water",
             "Dark"
-        ],
-        "charged_moves": [
-            "Hydro Pump",
-            "Crunch",
-            "Outrage",
-            "Twister"
-        ],
-        "elite_charged_moves": [
-            "Dragon Pulse",
-            "Aqua Tail"
-        ],
-        "elite_fast_moves": [
-            "Dragon Tail"
-        ],
-        "fast_moves": [
-            "Bite",
-            "Waterfall",
-            "Dragon Breath"
-        ],
-        "mega_name_kor": "갸라도스(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -421,22 +215,7 @@
         "type": [
             "Rock",
             "Flying"
-        ],
-        "charged_moves": [
-            "Ancient Power",
-            "Iron Head",
-            "Hyper Beam",
-            "Rock Slide",
-            "Earth Power"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Steel Wing",
-            "Bite",
-            "Rock Throw"
-        ],
-        "mega_name_kor": "프테라(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -453,25 +232,7 @@
         "type": [
             "Electric",
             "Dragon"
-        ],
-        "charged_moves": [
-            "Zap Cannon",
-            "Focus Blast",
-            "Thunder",
-            "Power Gem",
-            "Thunder Punch",
-            "Brutal Swing",
-            "Trailblaze"
-        ],
-        "elite_charged_moves": [
-            "Dragon Pulse"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Charge Beam",
-            "Volt Switch"
-        ],
-        "mega_name_kor": "전룡(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -488,22 +249,7 @@
         "type": [
             "Steel",
             "Ground"
-        ],
-        "charged_moves": [
-            "Earthquake",
-            "Heavy Slam",
-            "Crunch",
-            "Psychic Fangs",
-            "Breaking Swipe"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Iron Tail",
-            "Dragon Tail",
-            "Thunder Fang"
-        ],
-        "mega_name_kor": "강철톤(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -520,20 +266,7 @@
         "type": [
             "Bug",
             "Steel"
-        ],
-        "charged_moves": [
-            "X Scissor",
-            "Iron Head",
-            "Night Slash",
-            "Trailblaze"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Bullet Punch",
-            "Fury Cutter"
-        ],
-        "mega_name_kor": "핫삼(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -550,20 +283,7 @@
         "type": [
             "Bug",
             "Fighting"
-        ],
-        "charged_moves": [
-            "Megahorn",
-            "Close Combat",
-            "Earthquake",
-            "Rock Blast"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Counter",
-            "Struggle Bug"
-        ],
-        "mega_name_kor": "헤라크로스(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 100,
@@ -580,20 +300,7 @@
         "type": [
             "Dark",
             "Fire"
-        ],
-        "charged_moves": [
-            "Crunch",
-            "Fire Blast",
-            "Foul Play",
-            "Flamethrower"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Snarl",
-            "Fire Fang"
-        ],
-        "mega_name_kor": "헬가(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 300,
@@ -610,22 +317,7 @@
         "type": [
             "Rock",
             "Dark"
-        ],
-        "charged_moves": [
-            "Fire Blast",
-            "Crunch",
-            "Stone Edge",
-            "Brutal Swing"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [
-            "Smack Down"
-        ],
-        "fast_moves": [
-            "Bite",
-            "Iron Tail"
-        ],
-        "mega_name_kor": "마기라스(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -642,23 +334,7 @@
         "type": [
             "Grass",
             "Dragon"
-        ],
-        "charged_moves": [
-            "Leaf Blade",
-            "Aerial Ace",
-            "Earthquake",
-            "Dragon Claw",
-            "Breaking Swipe"
-        ],
-        "elite_charged_moves": [
-            "Frenzy Plant"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Fury Cutter",
-            "Bullet Seed"
-        ],
-        "mega_name_kor": "나무킹(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -675,23 +351,7 @@
         "type": [
             "Fire",
             "Fighting"
-        ],
-        "charged_moves": [
-            "Focus Blast",
-            "Overheat",
-            "Brave Bird",
-            "Blaze Kick"
-        ],
-        "elite_charged_moves": [
-            "Blast Burn",
-            "Stone Edge"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Counter",
-            "Fire Spin"
-        ],
-        "mega_name_kor": "번치코(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -708,22 +368,7 @@
         "type": [
             "Water",
             "Ground"
-        ],
-        "charged_moves": [
-            "Earthquake",
-            "Sludge Wave",
-            "Surf",
-            "Muddy Water"
-        ],
-        "elite_charged_moves": [
-            "Hydro Cannon"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Mud Shot",
-            "Water Gun"
-        ],
-        "mega_name_kor": "대짱이(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -740,28 +385,11 @@
         "type": [
             "Psychic",
             "Fairy"
-        ],
-        "charged_moves": [
-            "Psychic",
-            "Dazzling Gleam",
-            "Shadow Ball",
-            "Triple Axel"
-        ],
-        "elite_charged_moves": [
-            "Synchronoise"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Confusion",
-            "Charge Beam",
-            "Charm",
-            "Magical Leaf"
-        ],
-        "mega_name_kor": "가디안(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 100,
-        "form": "Costume_2020",
+        "form": "Normal",
         "mega_energy_required": 20,
         "mega_name": "Mega Sableye",
         "pokemon_id": 302,
@@ -774,19 +402,7 @@
         "type": [
             "Dark",
             "Ghost"
-        ],
-        "charged_moves": [
-            "Power Gem",
-            "Foul Play",
-            "Shadow Sneak"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Shadow Claw",
-            "Feint Attack"
-        ],
-        "mega_name_kor": "깜까미(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -802,22 +418,7 @@
         },
         "type": [
             "Steel"
-        ],
-        "charged_moves": [
-            "Thunder",
-            "Stone Edge",
-            "Heavy Slam",
-            "Rock Tomb",
-            "Meteor Beam"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Dragon Tail",
-            "Iron Tail",
-            "Smack Down"
-        ],
-        "mega_name_kor": "보스로라(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 100,
@@ -834,20 +435,7 @@
         "type": [
             "Fighting",
             "Psychic"
-        ],
-        "charged_moves": [
-            "Ice Punch",
-            "Psychic",
-            "Dynamic Punch",
-            "Power Up Punch"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Psycho Cut",
-            "Counter"
-        ],
-        "mega_name_kor": "요가램(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 100,
@@ -863,22 +451,7 @@
         },
         "type": [
             "Electric"
-        ],
-        "charged_moves": [
-            "Thunder",
-            "Wild Charge",
-            "Flame Burst",
-            "Overheat",
-            "Psychic Fangs"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Snarl",
-            "Charge Beam",
-            "Thunder Fang"
-        ],
-        "mega_name_kor": "썬더볼트(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 300,
@@ -895,21 +468,7 @@
         "type": [
             "Dragon",
             "Fairy"
-        ],
-        "charged_moves": [
-            "Sky Attack",
-            "Dazzling Gleam",
-            "Dragon Pulse"
-        ],
-        "elite_charged_moves": [
-            "Moonblast"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Peck",
-            "Dragon Breath"
-        ],
-        "mega_name_kor": "파비코리(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 100,
@@ -925,19 +484,7 @@
         },
         "type": [
             "Ghost"
-        ],
-        "charged_moves": [
-            "Shadow Ball",
-            "Dazzling Gleam",
-            "Thunder"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Hex",
-            "Shadow Claw"
-        ],
-        "mega_name_kor": "다크펫(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -953,20 +500,7 @@
         },
         "type": [
             "Dark"
-        ],
-        "charged_moves": [
-            "Dark Pulse",
-            "Thunder",
-            "Megahorn",
-            "Payback"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Psycho Cut",
-            "Snarl"
-        ],
-        "mega_name_kor": "앱솔(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -982,19 +516,7 @@
         },
         "type": [
             "Ice"
-        ],
-        "charged_moves": [
-            "Avalanche",
-            "Gyro Ball",
-            "Shadow Ball"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Ice Shard",
-            "Frost Breath"
-        ],
-        "mega_name_kor": "얼음귀신(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 300,
@@ -1011,23 +533,7 @@
         "type": [
             "Dragon",
             "Flying"
-        ],
-        "charged_moves": [
-            "Fire Blast",
-            "Hydro Pump",
-            "Draco Meteor",
-            "Fly"
-        ],
-        "elite_charged_moves": [
-            "Outrage"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Dragon Tail",
-            "Fire Fang",
-            "Bite"
-        ],
-        "mega_name_kor": "보만다(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 300,
@@ -1044,22 +550,7 @@
         "type": [
             "Dragon",
             "Psychic"
-        ],
-        "charged_moves": [
-            "Psychic",
-            "Outrage",
-            "Thunder"
-        ],
-        "elite_charged_moves": [
-            "Mist Ball"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Dragon Breath",
-            "Zen Headbutt",
-            "Charm"
-        ],
-        "mega_name_kor": "라티아스(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 300,
@@ -1076,21 +567,7 @@
         "type": [
             "Dragon",
             "Psychic"
-        ],
-        "charged_moves": [
-            "Psychic",
-            "Dragon Claw",
-            "Solar Beam"
-        ],
-        "elite_charged_moves": [
-            "Luster Purge"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Dragon Breath",
-            "Zen Headbutt"
-        ],
-        "mega_name_kor": "라티오스(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 400,
@@ -1106,21 +583,7 @@
         },
         "type": [
             "Water"
-        ],
-        "charged_moves": [
-            "Hydro Pump",
-            "Blizzard",
-            "Thunder",
-            "Surf"
-        ],
-        "elite_charged_moves": [
-            "Origin Pulse"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Waterfall"
-        ],
-        "mega_name_kor": "가이오가(원시)"
+        ]
     },
     {
         "first_time_mega_energy_required": 400,
@@ -1137,22 +600,7 @@
         "type": [
             "Ground",
             "Fire"
-        ],
-        "charged_moves": [
-            "Earthquake",
-            "Fire Blast",
-            "Solar Beam"
-        ],
-        "elite_charged_moves": [
-            "Fire Punch",
-            "Precipice Blades"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Mud Shot",
-            "Dragon Tail"
-        ],
-        "mega_name_kor": "그란돈(원시)"
+        ]
     },
     {
         "first_time_mega_energy_required": 400,
@@ -1169,25 +617,7 @@
         "type": [
             "Dragon",
             "Flying"
-        ],
-        "charged_moves": [
-            "Outrage",
-            "Aerial Ace",
-            "Ancient Power"
-        ],
-        "elite_charged_moves": [
-            "Hurricane",
-            "Breaking Swipe"
-        ],
-        "elite_fast_moves": [],
-	"exclusive_charged_moves": [
-            "Dragon Ascent"
-	],
-        "fast_moves": [
-            "Air Slash",
-            "Dragon Tail"
-        ],
-        "mega_name_kor": "레쿠쟈(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -1204,21 +634,7 @@
         "type": [
             "Normal",
             "Fighting"
-        ],
-        "charged_moves": [
-            "Fire Punch",
-            "Hyper Beam",
-            "Focus Blast",
-            "Triple Axel"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Pound",
-            "Low Kick",
-            "Double Kick"
-        ],
-        "mega_name_kor": "이어롭(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 300,
@@ -1235,22 +651,7 @@
         "type": [
             "Dragon",
             "Ground"
-        ],
-        "charged_moves": [
-            "Outrage",
-            "Earthquake",
-            "Fire Blast",
-            "Sand Tomb"
-        ],
-        "elite_charged_moves": [
-            "Earth Power"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Dragon Tail",
-            "Mud Shot"
-        ],
-        "mega_name_kor": "한카리아스(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 200,
@@ -1267,22 +668,7 @@
         "type": [
             "Grass",
             "Ice"
-        ],
-        "charged_moves": [
-            "Blizzard",
-            "Energy Ball",
-            "Outrage",
-            "Weather Ball Ice",
-            "Icy Wind"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Powder Snow",
-            "Razor Leaf",
-            "Leafage"
-        ],
-        "mega_name_kor": "눈설왕(메가)"
+        ]
     },
     {
         "first_time_mega_energy_required": 300,
@@ -1299,18 +685,6 @@
         "type": [
             "Rock",
             "Fairy"
-        ],
-        "charged_moves": [
-            "Rock Slide",
-            "Moonblast",
-            "Power Gem"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Tackle",
-            "Rock Throw"
-        ],
-        "mega_name_kor": "디안시(메가)"
+        ]
     }
 ]
