@@ -3,31 +3,6 @@
         "base_attack": 118,
         "base_defense": 111,
         "base_stamina": 128,
-        "form": "Fall_2019",
-        "pokemon_id": 1,
-        "pokemon_name": "Bulbasaur",
-        "type": [
-            "Grass",
-            "Poison"
-        ],
-        "charged_moves": [
-            "Sludge Bomb",
-            "Seed Bomb",
-            "Power Whip"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Vine Whip",
-            "Tackle"
-        ],
-        "pokemon_name_kor": "이상해씨",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 118,
-        "base_defense": 111,
-        "base_stamina": 128,
         "form": "Normal",
         "pokemon_id": 1,
         "pokemon_name": "Bulbasaur",
@@ -78,33 +53,6 @@
         "base_attack": 198,
         "base_defense": 189,
         "base_stamina": 190,
-        "form": "Copy_2019",
-        "pokemon_id": 3,
-        "pokemon_name": "Venusaur",
-        "type": [
-            "Grass",
-            "Poison"
-        ],
-        "charged_moves": [
-            "Sludge Bomb",
-            "Petal Blizzard",
-            "Solar Beam"
-        ],
-        "elite_charged_moves": [
-            "Frenzy Plant"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Razor Leaf",
-            "Vine Whip"
-        ],
-        "pokemon_name_kor": "이상해꽃",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 198,
-        "base_defense": 189,
-        "base_stamina": 190,
         "form": "Normal",
         "pokemon_id": 3,
         "pokemon_name": "Venusaur",
@@ -126,30 +74,6 @@
             "Vine Whip"
         ],
         "pokemon_name_kor": "이상해꽃",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 116,
-        "base_defense": 93,
-        "base_stamina": 118,
-        "form": "Fall_2019",
-        "pokemon_id": 4,
-        "pokemon_name": "Charmander",
-        "type": [
-            "Fire"
-        ],
-        "charged_moves": [
-            "Flame Charge",
-            "Flame Burst",
-            "Flamethrower"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Ember",
-            "Scratch"
-        ],
-        "pokemon_name_kor": "파이리",
         "has_shadow": true
     },
     {
@@ -206,38 +130,6 @@
         "base_attack": 223,
         "base_defense": 173,
         "base_stamina": 186,
-        "form": "Copy_2019",
-        "pokemon_id": 6,
-        "pokemon_name": "Charizard",
-        "type": [
-            "Fire",
-            "Flying"
-        ],
-        "charged_moves": [
-            "Fire Blast",
-            "Dragon Claw",
-            "Overheat"
-        ],
-        "elite_charged_moves": [
-            "Blast Burn",
-            "Flamethrower"
-        ],
-        "elite_fast_moves": [
-            "Ember",
-            "Wing Attack",
-            "Dragon Breath"
-        ],
-        "fast_moves": [
-            "Fire Spin",
-            "Air Slash"
-        ],
-        "pokemon_name_kor": "리자몽",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 223,
-        "base_defense": 173,
-        "base_stamina": 186,
         "form": "Normal",
         "pokemon_id": 6,
         "pokemon_name": "Charizard",
@@ -264,30 +156,6 @@
             "Air Slash"
         ],
         "pokemon_name_kor": "리자몽",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 94,
-        "base_defense": 121,
-        "base_stamina": 127,
-        "form": "Fall_2019",
-        "pokemon_id": 7,
-        "pokemon_name": "Squirtle",
-        "type": [
-            "Water"
-        ],
-        "charged_moves": [
-            "Aqua Jet",
-            "Aqua Tail",
-            "Water Pulse"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Bubble",
-            "Tackle"
-        ],
-        "pokemon_name_kor": "꼬부기",
         "has_shadow": true
     },
     {
@@ -336,33 +204,6 @@
             "Bite"
         ],
         "pokemon_name_kor": "어니부기",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 171,
-        "base_defense": 207,
-        "base_stamina": 188,
-        "form": "Copy_2019",
-        "pokemon_id": 9,
-        "pokemon_name": "Blastoise",
-        "type": [
-            "Water"
-        ],
-        "charged_moves": [
-            "Flash Cannon",
-            "Ice Beam",
-            "Hydro Pump",
-            "Skull Bash"
-        ],
-        "elite_charged_moves": [
-            "Hydro Cannon"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Water Gun",
-            "Bite"
-        ],
-        "pokemon_name_kor": "거북왕",
         "has_shadow": true
     },
     {
@@ -621,7 +462,7 @@
         "base_attack": 103,
         "base_defense": 70,
         "base_stamina": 102,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 19,
         "pokemon_name": "Rattata",
         "type": [
@@ -670,7 +511,7 @@
         "base_attack": 135,
         "base_defense": 154,
         "base_stamina": 181,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 20,
         "pokemon_name": "Raticate",
         "type": [
@@ -824,62 +665,6 @@
         "base_attack": 112,
         "base_defense": 96,
         "base_stamina": 111,
-        "form": "Adventure_hat_2020",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Copy_2019",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
         "form": "Costume_2020",
         "pokemon_id": 25,
         "pokemon_name": "Pikachu",
@@ -928,138 +713,6 @@
         "base_attack": 112,
         "base_defense": 96,
         "base_stamina": 111,
-        "form": "Fall_2019",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Flying_01",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge",
-            "Fly"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Flying_02",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge",
-            "Fly"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Flying_03",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge",
-            "Fly"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Flying_04",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge",
-            "Fly"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
         "form": "Flying_5th_anniv",
         "pokemon_id": 25,
         "pokemon_name": "Pikachu",
@@ -1076,30 +729,6 @@
         "elite_fast_moves": [
             "Present"
         ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Flying_okinawa",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge",
-            "Fly"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
         "fast_moves": [
             "Thunder Shock",
             "Quick Attack"
@@ -1301,336 +930,7 @@
         "base_attack": 112,
         "base_defense": 96,
         "base_stamina": 111,
-        "form": "Jeju",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Kariyushi",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Normal",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Pop_star",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Draining Kiss",
-            "Thunder Punch",
-            "Play Rough"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Thunder Shock",
-            "Charm"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Rock_star",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Meteor Mash",
-            "Thunder Punch",
-            "Play Rough"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Thunder Shock",
-            "Charm"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Summer_2023_a",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Summer_2023_b",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Summer_2023_c",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Summer_2023_d",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Summer_2023_e",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Tshirt_01",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Tshirt_02",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Tshirt_03",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Vs_2019",
+        "form": "Libre",
         "pokemon_id": 25,
         "pokemon_name": "Pikachu",
         "type": [
@@ -1650,94 +950,10 @@
         "pokemon_name_kor": "피카츄"
     },
     {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Wcs_2022",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Wcs_2023",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
-        "base_attack": 112,
-        "base_defense": 96,
-        "base_stamina": 111,
-        "form": "Winter_2020",
-        "pokemon_id": 25,
-        "pokemon_name": "Pikachu",
-        "type": [
-            "Electric"
-        ],
-        "charged_moves": [
-            "Discharge",
-            "Thunderbolt",
-            "Wild Charge"
-        ],
-        "elite_charged_moves": [
-            "Surf",
-            "Thunder"
-        ],
-        "elite_fast_moves": [
-            "Present"
-        ],
-        "fast_moves": [
-            "Thunder Shock",
-            "Quick Attack"
-        ],
-        "pokemon_name_kor": "피카츄"
-    },
-    {
         "base_attack": 201,
         "base_defense": 154,
         "base_stamina": 155,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 26,
         "pokemon_name": "Raichu",
         "type": [
@@ -1793,7 +1009,7 @@
         "base_attack": 125,
         "base_defense": 129,
         "base_stamina": 137,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 27,
         "pokemon_name": "Sandshrew",
         "type": [
@@ -1845,7 +1061,7 @@
         "base_attack": 177,
         "base_defense": 195,
         "base_stamina": 181,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 28,
         "pokemon_name": "Sandslash",
         "type": [
@@ -2111,7 +1327,7 @@
         "base_attack": 96,
         "base_defense": 109,
         "base_stamina": 116,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 37,
         "pokemon_name": "Vulpix",
         "type": [
@@ -2161,7 +1377,7 @@
         "base_attack": 170,
         "base_defense": 193,
         "base_stamina": 177,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 38,
         "pokemon_name": "Ninetales",
         "type": [
@@ -2511,7 +1727,7 @@
         "base_attack": 108,
         "base_defense": 81,
         "base_stamina": 67,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 50,
         "pokemon_name": "Diglett",
         "type": [
@@ -2562,7 +1778,7 @@
         "base_attack": 201,
         "base_defense": 142,
         "base_stamina": 111,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 51,
         "pokemon_name": "Dugtrio",
         "type": [
@@ -2613,7 +1829,7 @@
         "base_attack": 99,
         "base_defense": 78,
         "base_stamina": 120,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 52,
         "pokemon_name": "Meowth",
         "type": [
@@ -2689,7 +1905,7 @@
         "base_attack": 158,
         "base_defense": 136,
         "base_stamina": 163,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 53,
         "pokemon_name": "Persian",
         "type": [
@@ -3331,7 +2547,7 @@
         "base_attack": 132,
         "base_defense": 132,
         "base_stamina": 120,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 74,
         "pokemon_name": "Geodude",
         "type": [
@@ -3381,7 +2597,7 @@
         "base_attack": 164,
         "base_defense": 164,
         "base_stamina": 146,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 75,
         "pokemon_name": "Graveler",
         "type": [
@@ -3434,7 +2650,7 @@
         "base_attack": 211,
         "base_defense": 198,
         "base_stamina": 190,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 76,
         "pokemon_name": "Golem",
         "type": [
@@ -3591,31 +2807,6 @@
         "base_attack": 109,
         "base_defense": 98,
         "base_stamina": 207,
-        "form": "2020",
-        "pokemon_id": 79,
-        "pokemon_name": "Slowpoke",
-        "type": [
-            "Water",
-            "Psychic"
-        ],
-        "charged_moves": [
-            "Water Pulse",
-            "Psyshock",
-            "Psychic"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Water Gun",
-            "Confusion"
-        ],
-        "pokemon_name_kor": "야돈",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 109,
-        "base_defense": 98,
-        "base_stamina": 207,
         "form": "가라르",
         "pokemon_id": 79,
         "pokemon_name": "Slowpoke",
@@ -3659,34 +2850,6 @@
             "Confusion"
         ],
         "pokemon_name_kor": "야돈",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 177,
-        "base_defense": 180,
-        "base_stamina": 216,
-        "form": "2021",
-        "pokemon_id": 80,
-        "pokemon_name": "Slowbro",
-        "type": [
-            "Water",
-            "Psychic"
-        ],
-        "charged_moves": [
-            "Water Pulse",
-            "Psychic",
-            "Ice Beam",
-            "Scald"
-        ],
-        "elite_charged_moves": [
-            "Surf"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Water Gun",
-            "Confusion"
-        ],
-        "pokemon_name_kor": "야도란",
         "has_shadow": true
     },
     {
@@ -3964,7 +3127,7 @@
         "base_attack": 135,
         "base_defense": 90,
         "base_stamina": 190,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 88,
         "pokemon_name": "Grimer",
         "type": [
@@ -4013,7 +3176,7 @@
         "base_attack": 190,
         "base_defense": 172,
         "base_stamina": 233,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 89,
         "pokemon_name": "Muk",
         "type": [
@@ -4175,39 +3338,6 @@
             "Astonish"
         ],
         "pokemon_name_kor": "고우스트",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 261,
-        "base_defense": 149,
-        "base_stamina": 155,
-        "form": "Costume_2020",
-        "pokemon_id": 94,
-        "pokemon_name": "Gengar",
-        "type": [
-            "Ghost",
-            "Poison"
-        ],
-        "charged_moves": [
-            "Shadow Ball",
-            "Focus Blast",
-            "Sludge Bomb"
-        ],
-        "elite_charged_moves": [
-            "Sludge Wave",
-            "Dark Pulse",
-            "Psychic",
-            "Shadow Punch"
-        ],
-        "elite_fast_moves": [
-            "Lick"
-        ],
-        "fast_moves": [
-            "Sucker Punch",
-            "Hex",
-            "Shadow Claw"
-        ],
-        "pokemon_name_kor": "팬텀",
         "has_shadow": true
     },
     {
@@ -4509,7 +3639,7 @@
         "base_attack": 230,
         "base_defense": 153,
         "base_stamina": 216,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 103,
         "pokemon_name": "Exeggutor",
         "type": [
@@ -4588,7 +3718,7 @@
         "base_attack": 144,
         "base_defense": 186,
         "base_stamina": 155,
-        "form": "Alola",
+        "form": "알로라",
         "pokemon_id": 105,
         "pokemon_name": "Marowak",
         "type": [
@@ -5349,37 +4479,6 @@
         "base_attack": 165,
         "base_defense": 174,
         "base_stamina": 277,
-        "form": "Costume_2020",
-        "pokemon_id": 131,
-        "pokemon_name": "Lapras",
-        "type": [
-            "Water",
-            "Ice"
-        ],
-        "charged_moves": [
-            "Hydro Pump",
-            "Surf",
-            "Blizzard",
-            "Skull Bash"
-        ],
-        "elite_charged_moves": [
-            "Dragon Pulse",
-            "Ice Beam"
-        ],
-        "elite_fast_moves": [
-            "Ice Shard"
-        ],
-        "fast_moves": [
-            "Frost Breath",
-            "Water Gun"
-        ],
-        "pokemon_name_kor": "라프라스",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 165,
-        "base_defense": 174,
-        "base_stamina": 277,
         "form": "Normal",
         "pokemon_id": 131,
         "pokemon_name": "Lapras",
@@ -5426,56 +4525,6 @@
             "Transform"
         ],
         "pokemon_name_kor": "메타몽"
-    },
-    {
-        "base_attack": 104,
-        "base_defense": 114,
-        "base_stamina": 146,
-        "form": "Gofest_2024_mtiara",
-        "pokemon_id": 133,
-        "pokemon_name": "Eevee",
-        "type": [
-            "Normal"
-        ],
-        "charged_moves": [
-            "Dig",
-            "Swift"
-        ],
-        "elite_charged_moves": [
-            "Last Resort",
-            "Body Slam"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Quick Attack",
-            "Tackle"
-        ],
-        "pokemon_name_kor": "이브이"
-    },
-    {
-        "base_attack": 104,
-        "base_defense": 114,
-        "base_stamina": 146,
-        "form": "Gofest_2024_stiara",
-        "pokemon_id": 133,
-        "pokemon_name": "Eevee",
-        "type": [
-            "Normal"
-        ],
-        "charged_moves": [
-            "Dig",
-            "Swift"
-        ],
-        "elite_charged_moves": [
-            "Last Resort",
-            "Body Slam"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Quick Attack",
-            "Tackle"
-        ],
-        "pokemon_name_kor": "이브이"
     },
     {
         "base_attack": 104,
@@ -5725,34 +4774,6 @@
         "base_defense": 159,
         "base_stamina": 190,
         "form": "Normal",
-        "pokemon_id": 142,
-        "pokemon_name": "Aerodactyl",
-        "type": [
-            "Rock",
-            "Flying"
-        ],
-        "charged_moves": [
-            "Ancient Power",
-            "Iron Head",
-            "Hyper Beam",
-            "Rock Slide",
-            "Earth Power"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Steel Wing",
-            "Bite",
-            "Rock Throw"
-        ],
-        "pokemon_name_kor": "프테라",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 221,
-        "base_defense": 159,
-        "base_stamina": 190,
-        "form": "Summer_2023",
         "pokemon_id": 142,
         "pokemon_name": "Aerodactyl",
         "type": [
@@ -6049,7 +5070,8 @@
         "base_attack": 182,
         "base_defense": 278,
         "base_stamina": 214,
-        "form": "A",
+        "form": "Armored",
+        "form_kor": "아머드",
         "pokemon_id": 150,
         "pokemon_name": "Mewtwo",
         "type": [
@@ -6070,7 +5092,7 @@
             "Iron Tail"
         ],
         "pokemon_name_kor": "뮤츠",
-        "has_shadow": true
+        "has_shadow": false
     },
     {
         "base_attack": 300,
@@ -7281,7 +6303,7 @@
         "base_attack": 75,
         "base_defense": 66,
         "base_stamina": 146,
-        "form": "Paldea",
+        "form": "팔데아",
         "pokemon_id": 194,
         "pokemon_name": "Wooper",
         "type": [
@@ -7335,33 +6357,6 @@
         "base_attack": 261,
         "base_defense": 175,
         "base_stamina": 163,
-        "form": "Gofest_2024_sscarf",
-        "pokemon_id": 196,
-        "pokemon_name": "Espeon",
-        "type": [
-            "Psychic"
-        ],
-        "charged_moves": [
-            "Psybeam",
-            "Psychic",
-            "Futuresight",
-            "Psychic Fangs"
-        ],
-        "elite_charged_moves": [
-            "Last Resort",
-            "Shadow Ball"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Confusion",
-            "Zen Headbutt"
-        ],
-        "pokemon_name_kor": "에브이"
-    },
-    {
-        "base_attack": 261,
-        "base_defense": 175,
-        "base_stamina": 163,
         "form": "Normal",
         "pokemon_id": 196,
         "pokemon_name": "Espeon",
@@ -7384,31 +6379,6 @@
             "Zen Headbutt"
         ],
         "pokemon_name_kor": "에브이"
-    },
-    {
-        "base_attack": 126,
-        "base_defense": 240,
-        "base_stamina": 216,
-        "form": "Gofest_2024_mscarf",
-        "pokemon_id": 197,
-        "pokemon_name": "Umbreon",
-        "type": [
-            "Dark"
-        ],
-        "charged_moves": [
-            "Dark Pulse",
-            "Foul Play"
-        ],
-        "elite_charged_moves": [
-            "Last Resort",
-            "Psychic"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Feint Attack",
-            "Snarl"
-        ],
-        "pokemon_name_kor": "블래키"
     },
     {
         "base_attack": 126,
@@ -7458,34 +6428,6 @@
             "Feint Attack"
         ],
         "pokemon_name_kor": "니로우",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 177,
-        "base_defense": 180,
-        "base_stamina": 216,
-        "form": "2022",
-        "pokemon_id": 199,
-        "pokemon_name": "Slowking",
-        "type": [
-            "Water",
-            "Psychic"
-        ],
-        "charged_moves": [
-            "Blizzard",
-            "Psychic",
-            "Fire Blast",
-            "Scald"
-        ],
-        "elite_charged_moves": [
-            "Surf"
-        ],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Water Gun",
-            "Confusion"
-        ],
-        "pokemon_name_kor": "야도킹",
         "has_shadow": true
     },
     {
@@ -8229,32 +7171,6 @@
         "base_defense": 90,
         "base_stamina": 128,
         "form": "Normal",
-        "pokemon_id": 225,
-        "pokemon_name": "Delibird",
-        "type": [
-            "Ice",
-            "Flying"
-        ],
-        "charged_moves": [
-            "Ice Punch",
-            "Icy Wind",
-            "Aerial Ace",
-            "Fly",
-            "Triple Axel"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Present"
-        ],
-        "pokemon_name_kor": "딜리버드",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 128,
-        "base_defense": 90,
-        "base_stamina": 128,
-        "form": "Winter_2020",
         "pokemon_id": 225,
         "pokemon_name": "Delibird",
         "type": [
@@ -10348,31 +9264,6 @@
         "base_attack": 141,
         "base_defense": 136,
         "base_stamina": 137,
-        "form": "Costume_2020",
-        "pokemon_id": 302,
-        "pokemon_name": "Sableye",
-        "type": [
-            "Dark",
-            "Ghost"
-        ],
-        "charged_moves": [
-            "Power Gem",
-            "Foul Play",
-            "Shadow Sneak"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Shadow Claw",
-            "Feint Attack"
-        ],
-        "pokemon_name_kor": "깜까미",
-        "has_shadow": true
-    },
-    {
-        "base_attack": 141,
-        "base_defense": 136,
-        "base_stamina": 137,
         "form": "Normal",
         "pokemon_id": 302,
         "pokemon_name": "Sableye",
@@ -11612,6 +10503,7 @@
         "base_defense": 139,
         "base_stamina": 172,
         "form": "Normal",
+        "form_kor": "노말",
         "pokemon_id": 351,
         "pokemon_name": "Castform",
         "type": [
@@ -11636,6 +10528,7 @@
         "base_defense": 139,
         "base_stamina": 172,
         "form": "Rainy",
+        "form_kor": "빗방울",
         "pokemon_id": 351,
         "pokemon_name": "Castform",
         "type": [
@@ -11659,6 +10552,7 @@
         "base_defense": 139,
         "base_stamina": 172,
         "form": "Snowy",
+        "form_kor": "설운",
         "pokemon_id": 351,
         "pokemon_name": "Castform",
         "type": [
@@ -11682,6 +10576,7 @@
         "base_defense": 139,
         "base_stamina": 172,
         "form": "Sunny",
+        "form_kor": "태양",
         "pokemon_id": 351,
         "pokemon_name": "Castform",
         "type": [
@@ -12520,9 +11415,9 @@
             "Breaking Swipe"
         ],
         "elite_fast_moves": [],
-	"exclusive_charged_moves": [
-            "Dragon Ascent"
-	],
+        "exclusive_charged_moves": [
+                "Dragon Ascent"
+        ],
         "fast_moves": [
             "Air Slash",
             "Dragon Tail"
@@ -12558,6 +11453,7 @@
         "base_defense": 46,
         "base_stamina": 137,
         "form": "Attack",
+        "form_kor": "어택",
         "pokemon_id": 386,
         "pokemon_name": "Deoxys",
         "type": [
@@ -12581,6 +11477,7 @@
         "base_defense": 330,
         "base_stamina": 137,
         "form": "Defense",
+        "form_kor": "디펜스",
         "pokemon_id": 386,
         "pokemon_name": "Deoxys",
         "type": [
@@ -12604,6 +11501,7 @@
         "base_defense": 115,
         "base_stamina": 137,
         "form": "Normal",
+        "form_kor": "노말",
         "pokemon_id": 386,
         "pokemon_name": "Deoxys",
         "type": [
@@ -12627,6 +11525,7 @@
         "base_defense": 218,
         "base_stamina": 137,
         "form": "Speed",
+        "form_kor": "스피드",
         "pokemon_id": 386,
         "pokemon_name": "Deoxys",
         "type": [
@@ -13286,6 +12185,7 @@
         "base_defense": 83,
         "base_stamina": 120,
         "form": "Plant",
+        "form_kor": "초록",
         "pokemon_id": 412,
         "pokemon_name": "Burmy",
         "type": [
@@ -13307,6 +12207,7 @@
         "base_defense": 83,
         "base_stamina": 120,
         "form": "Sandy",
+        "form_kor": "모래땅",
         "pokemon_id": 412,
         "pokemon_name": "Burmy",
         "type": [
@@ -13328,6 +12229,7 @@
         "base_defense": 83,
         "base_stamina": 120,
         "form": "Trash",
+        "form_kor": "슈레",
         "pokemon_id": 412,
         "pokemon_name": "Burmy",
         "type": [
@@ -13349,6 +12251,7 @@
         "base_defense": 180,
         "base_stamina": 155,
         "form": "Plant",
+        "form_kor": "초록",
         "pokemon_id": 413,
         "pokemon_name": "Wormadam",
         "type": [
@@ -13373,6 +12276,7 @@
         "base_defense": 180,
         "base_stamina": 155,
         "form": "Sandy",
+        "form_kor": "모래땅",
         "pokemon_id": 413,
         "pokemon_name": "Wormadam",
         "type": [
@@ -13397,6 +12301,7 @@
         "base_defense": 175,
         "base_stamina": 155,
         "form": "Trash",
+        "form_kor": "슈레",
         "pokemon_id": 413,
         "pokemon_name": "Wormadam",
         "type": [
@@ -15383,6 +14288,7 @@
         "base_defense": 225,
         "base_stamina": 205,
         "form": "Origin",
+        "form_kor": "오리진",
         "pokemon_id": 483,
         "pokemon_name": "Dialga",
         "type": [
@@ -15396,9 +14302,9 @@
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
-	"exclusive_charged_moves": [
-            "Roar Of Time"	
-	],
+        "exclusive_charged_moves": [
+                "Roar Of Time"	
+        ],
         "fast_moves": [
             "Dragon Breath",
             "Metal Claw"
@@ -15435,6 +14341,7 @@
         "base_defense": 223,
         "base_stamina": 189,
         "form": "Origin",
+        "form_kor": "오리진",
         "pokemon_id": 484,
         "pokemon_name": "Palkia",
         "type": [
@@ -15449,9 +14356,9 @@
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
-	"exclusive_charged_moves": [
-            "Spacial Rend"
-	],
+        "exclusive_charged_moves": [
+                "Spacial Rend"
+        ],
         "fast_moves": [
             "Dragon Breath",
             "Dragon Tail"
@@ -15515,6 +14422,7 @@
         "base_defense": 225,
         "base_stamina": 284,
         "form": "Altered",
+        "form_kor": "어나더",
         "pokemon_id": 487,
         "pokemon_name": "Giratina",
         "type": [
@@ -15541,6 +14449,7 @@
         "base_defense": 187,
         "base_stamina": 284,
         "form": "Origin",
+        "form_kor": "오리진",
         "pokemon_id": 487,
         "pokemon_name": "Giratina",
         "type": [
@@ -17692,7 +16601,7 @@
         "base_defense": 114,
         "base_stamina": 233,
         "form": "Galarian_standard",
-	"form_kor": "가라르|노말",
+	    "form_kor": "가라르|노말",
         "pokemon_id": 555,
         "pokemon_name": "Darmanitan",
         "type": [
@@ -17718,7 +16627,7 @@
         "base_defense": 123,
         "base_stamina": 233,
         "form": "Galarian_zen",
-	"form_kor": "가라르|달마",
+	    "form_kor": "가라르|달마",
         "pokemon_id": 555,
         "pokemon_name": "Darmanitan",
         "type": [
@@ -17744,7 +16653,7 @@
         "base_defense": 114,
         "base_stamina": 233,
         "form": "Standard",
-	"form_kor": "노말",
+	    "form_kor": "노말",
         "pokemon_id": 555,
         "pokemon_name": "Darmanitan",
         "type": [
@@ -19427,57 +18336,10 @@
         "pokemon_name_kor": "코고미"
     },
     {
-        "base_attack": 128,
-        "base_defense": 74,
-        "base_stamina": 146,
-        "form": "Winter_2020",
-        "pokemon_id": 613,
-        "pokemon_name": "Cubchoo",
-        "type": [
-            "Ice"
-        ],
-        "charged_moves": [
-            "Ice Punch",
-            "Icy Wind",
-            "Play Rough"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Powder Snow",
-            "Charm"
-        ],
-        "pokemon_name_kor": "코고미"
-    },
-    {
         "base_attack": 233,
         "base_defense": 152,
         "base_stamina": 216,
         "form": "Normal",
-        "pokemon_id": 614,
-        "pokemon_name": "Beartic",
-        "type": [
-            "Ice"
-        ],
-        "charged_moves": [
-            "Ice Punch",
-            "Surf",
-            "Play Rough",
-            "Liquidation"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Powder Snow",
-            "Charm"
-        ],
-        "pokemon_name_kor": "툰베어"
-    },
-    {
-        "base_attack": 233,
-        "base_defense": 152,
-        "base_stamina": 216,
-        "form": "Winter_2020",
         "pokemon_id": 614,
         "pokemon_name": "Beartic",
         "type": [
@@ -20195,7 +19057,7 @@
         "base_defense": 164,
         "base_stamina": 188,
         "form": "Incarnate",
-	"form_kor": "화신폼",
+	    "form_kor": "화신폼",
         "pokemon_id": 641,
         "pokemon_name": "Tornadus",
         "type": [
@@ -20220,7 +19082,7 @@
         "base_defense": 189,
         "base_stamina": 188,
         "form": "Therian",
-	"form_kor": "영물폼",
+	    "form_kor": "영물폼",
         "pokemon_id": 641,
         "pokemon_name": "Tornadus",
         "type": [
@@ -20247,7 +19109,7 @@
         "base_defense": 164,
         "base_stamina": 188,
         "form": "Incarnate",
-	"form_kor": "화신폼",
+	    "form_kor": "화신폼",
         "pokemon_id": 642,
         "pokemon_name": "Thundurus",
         "type": [
@@ -20273,7 +19135,7 @@
         "base_defense": 161,
         "base_stamina": 188,
         "form": "Therian",
-	"form_kor": "영물폼",
+	    "form_kor": "영물폼",
         "pokemon_id": 642,
         "pokemon_name": "Thundurus",
         "type": [
@@ -20355,7 +19217,7 @@
         "base_defense": 182,
         "base_stamina": 205,
         "form": "Incarnate",
-	"form_kor": "화신폼",
+	    "form_kor": "화신폼",
         "pokemon_id": 645,
         "pokemon_name": "Landorus",
         "type": [
@@ -20381,7 +19243,7 @@
         "base_defense": 179,
         "base_stamina": 205,
         "form": "Therian",
-	"form_kor": "영물폼",
+	    "form_kor": "영물폼",
         "pokemon_id": 645,
         "pokemon_name": "Landorus",
         "type": [
@@ -24492,6 +23354,7 @@
         "base_defense": 187,
         "base_stamina": 173,
         "form": "Confined",
+        "form_kor": "굴레에 빠진",
         "pokemon_id": 720,
         "pokemon_name": "Hoopa",
         "type": [
@@ -24516,6 +23379,7 @@
         "base_defense": 191,
         "base_stamina": 173,
         "form": "Unbound",
+        "form_kor": "굴레를 벗어난",
         "pokemon_id": 720,
         "pokemon_name": "Hoopa",
         "type": [
@@ -27283,6 +26147,9 @@
             "Psycho Cut",
             "Shadow Claw"
         ],
+        "exclusive_charged_moves": [
+            "Moongeist Beam"
+        ],
         "pokemon_name_kor": "네크로즈마"
     },
     {
@@ -27309,6 +26176,9 @@
             "Metal Claw",
             "Psycho Cut",
             "Shadow Claw"
+        ],
+        "exclusive_charged_moves": [
+            "Sunsteel Strike"
         ],
         "pokemon_name_kor": "네크로즈마"
     },
@@ -27342,20 +26212,17 @@
         "base_defense": 196,
         "base_stamina": 200,
         "form": "Ultra",
+        "form_kor": "울트라",
         "pokemon_id": 800,
         "pokemon_name": "Necrozma",
         "type": [
             "Psychic",
             "Dragon"
         ],
-        "charged_moves": [
-            "Struggle"
-        ],
+        "charged_moves": [],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
-        "fast_moves": [
-            "Struggle"
-        ],
+        "fast_moves": [],
         "pokemon_name_kor": "네크로즈마"
     },
     {
@@ -29564,6 +28431,7 @@
         "base_defense": 240,
         "base_stamina": 192,
         "form": "Crowned_sword",
+        "form_kor": "검왕",
         "pokemon_id": 888,
         "pokemon_name": "Zacian",
         "type": [
@@ -29591,6 +28459,7 @@
         "base_defense": 236,
         "base_stamina": 192,
         "form": "Hero",
+        "form_kor": "역전의 용사",
         "pokemon_id": 888,
         "pokemon_name": "Zacian",
         "type": [
@@ -29617,6 +28486,7 @@
         "base_defense": 292,
         "base_stamina": 192,
         "form": "Crowned_shield",
+        "form_kor": "방패왕",
         "pokemon_id": 889,
         "pokemon_name": "Zamazenta",
         "type": [
@@ -29644,6 +28514,7 @@
         "base_defense": 236,
         "base_stamina": 192,
         "form": "Hero",
+        "form_kor": "역전의 용사",
         "pokemon_id": 889,
         "pokemon_name": "Zamazenta",
         "type": [
@@ -29742,6 +28613,7 @@
         "base_defense": 177,
         "base_stamina": 225,
         "form": "Rapid_strike",
+        "form_kor": "연격의 태세",
         "pokemon_id": 892,
         "pokemon_name": "Urshifu",
         "type": [
@@ -29768,6 +28640,7 @@
         "base_defense": 177,
         "base_stamina": 225,
         "form": "Single_strike",
+        "form_kor": "일격의 태세",
         "pokemon_id": 892,
         "pokemon_name": "Urshifu",
         "type": [
@@ -29911,6 +28784,7 @@
         "base_defense": 246,
         "base_stamina": 205,
         "form": "Ice_rider",
+        "form_kor": "백마 탄 모습",
         "pokemon_id": 898,
         "pokemon_name": "Calyrex",
         "type": [
@@ -29960,6 +28834,7 @@
         "base_defense": 194,
         "base_stamina": 205,
         "form": "Shadow_rider",
+        "form_kor": "흑마 탄 모습",
         "pokemon_id": 898,
         "pokemon_name": "Calyrex",
         "type": [
@@ -30118,7 +28993,7 @@
         "base_defense": 162,
         "base_stamina": 179,
         "form": "Incarnate",
-	"form_kor": "화신폼",
+	    "form_kor": "화신폼",
         "pokemon_id": 905,
         "pokemon_name": "Enamorus",
         "type": [
