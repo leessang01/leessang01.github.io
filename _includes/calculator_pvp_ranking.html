@@ -278,6 +278,8 @@
 			var extendLevelCap = $('input[name="bestBuddy"]').is(":checked") ? 1 : 0;
 			var levelCap = DEFAULT_LEVEL_CAP + extendLevelCap;
 			var cpm = 0;
+			var pokemonList = [];
+			var maxOverall = 0;
 			for (let atk=minIv; atk<16; atk++) {
 				for (let def=minIv; def<16; def++) {
 					for (let stm=minIv; stm<16; stm++) {
@@ -298,24 +300,27 @@
 						var pkmInstance = {};
 						$.extend(pkmInstance, pkm);
 						pkmInstance.cp = calcCP;
-						pkmInstance.level = level;
+						pkmInstance.level = level.toFixed(1);
 						pkmInstance.atkiv = atk;
 						pkmInstance.defiv = def;
 						pkmInstance.stmiv = stm;
 						pkmInstance.atk = (pkmInstance.baseAtk + atk) * cpm;
 						pkmInstance.def = (pkmInstance.baseDef + def) * cpm;
 						pkmInstance.stm = rounddown((pkmInstance.baseStm + stm) * cpm, 0);
-						var mult = pkmInstance.atk * pkmInstance.def * pkmInstance.stm;
-						pkmInstance.overall = round(mult / 1000, 0);
-						pkmInstance.scp = round((Math.pow(mult, 2/3) / 10), 0);
+						pkmInstance.overall = pkmInstance.atk * pkmInstance.def * pkmInstance.stm;
+						if(pkmInstance.overall > maxOverall){
+							maxOverall = pkmInstance.overall;
+						}
+						pkmInstance.scp = round((Math.pow(pkmInstance.overall, 2/3) / 10), 0);
 						pkmInstance.atk = rounddown(pkmInstance.atk, 1);
 						pkmInstance.def = rounddown(pkmInstance.def, 1);
-						
-						table.row.add(pkmInstance);
+						pokemonList.push(pkmInstance);
+						// table.row.add(pkmInstance);
 					}
 				}
 			}
-
+			pokemonList.forEach(x => x.overall = round((x.overall / maxOverall) * 100, 2));
+			table.rows.add(pokemonList);
 			table.order([0, 'desc']);
 			table.draw();
 		}
@@ -331,7 +336,7 @@
                 responsive: true,
 				sDom: 'lrtip',
 				columns: [
-					{ title: "스탯곱", data: "overall", width: "10%" },
+					{ title: "스탯곱(%)", data: "overall", width: "10%" },
 					{ title: "CP", data: "cp", width: "10%" },
 					{ title: "SCP", data: "scp", width: "10%" },
 					{ title: "레벨", data: "level", width: "10%" },
