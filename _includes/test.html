@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DataTables Example</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+</head>
+<body>
+
+<div>
+    <label for="minAttack">Min Base Attack:</label>
+    <select id="minAttack" name="minAttack">
+        <!-- Options will be populated by JavaScript -->
+    </select>
+    <label for="maxAttack">Max Base Attack:</label>
+    <select id="maxAttack" name="maxAttack">
+        <!-- Options will be populated by JavaScript -->
+    </select>
+    <button id="filterButton">Filter</button>
+</div>
+
+<table id="pokemonTable" class="display">
+    <thead>
+        <tr>
+            <th>Pokemon Name</th>
+            <th>Base Attack</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Initial data can be loaded here or via JavaScript -->
+    </tbody>
+</table>
+
+<script>
+// Sample data
+const pokemonData = [
+    { "base_attack": 118, "pokemon_name": "A" },
+    { "base_attack": 121, "pokemon_name": "B" },
+    { "base_attack": 131, "pokemon_name": "C" },
+    { "base_attack": 150, "pokemon_name": "D" }
+];
+
+$(document).ready(function() {
+    // Initialize DataTable
+    const table = $('#pokemonTable').DataTable({
+        data: pokemonData,
+        columns: [
+            { data: 'pokemon_name' },
+            { data: 'base_attack' }
+        ]
+    });
+
+    // Populate select elements with options
+    const baseAttacks = Array.from(new Set(pokemonData.map(pokemon => pokemon.base_attack))).sort((a, b) => a - b);
+    
+    const minAttackSelect = $('#minAttack');
+    const maxAttackSelect = $('#maxAttack');
+    
+    baseAttacks.forEach(attack => {
+        minAttackSelect.append(new Option(attack, attack));
+        maxAttackSelect.append(new Option(attack, attack));
+    });
+
+    // Set initial values
+    minAttackSelect.val(Math.min(...baseAttacks));
+    maxAttackSelect.val(Math.max(...baseAttacks));
+
+    // Filter button click event
+    $('#filterButton').on('click', function() {
+        const minAttack = parseInt($('#minAttack').val(), 10);
+        const maxAttack = parseInt($('#maxAttack').val(), 10);
+
+        // Filter data based on user inputs
+        const filteredData = pokemonData.filter(pokemon => 
+            pokemon.base_attack >= minAttack && pokemon.base_attack <= maxAttack
+        );
+
+        // Clear and update DataTable with filtered data
+        table.clear().rows.add(filteredData).draw();
+    });
+});
+</script>
+
+</body>
+</html>
