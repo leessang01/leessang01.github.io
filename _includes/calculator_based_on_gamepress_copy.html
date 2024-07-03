@@ -15,7 +15,27 @@
 		<input type="radio" name="league" value="10000"/> 마스터리그
 		<input type="checkbox" name="bestBuddy"/> 베스트파트너
 	</div>
-	
+	<table>
+		<thead>
+			<tr>
+				<td>공격</td>
+				<td>방어</td>
+				<td>체력</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input type="text" id="minAtk" name="minAtk" placeholder="min"></td>
+				<td><input type="text" id="minDef" name="minDef" placeholder="min"></td>
+				<td><input type="text" id="minStm" name="minStm" placeholder="min"></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="maxAtk" name="maxAtk" placeholder="max"></td>
+				<td><input type="text" id="maxDef" name="maxDef" placeholder="max"></td>
+				<td><input type="text" id="maxStm" name="maxStm" placeholder="max"></td>
+			</tr>
+		</tbody>
+	</table>
 	<table id="ranking_table" class="table table-striped table-bordered nowrap" style="width:100%;">
 		<thead></thead>
 		<tfoot></tfoot>
@@ -348,16 +368,40 @@
 				updateTable();
 			});
 
-			$('#filterButton').on('click', function() {
-				const minAttack = parseInt($('#minAttack').val(), 10);
-				const maxAttack = parseInt($('#maxAttack').val(), 10);
+			$('#minAtk, #maxAtk, #minDef, #maxDef, #minStm, #maxStm').keyup( function() {
+				table.draw();
+			} );
 
-				const filteredData = pokemonData.filter(pokemon => 
-					pokemon.base_attack >= minAttack && pokemon.base_attack <= maxAttack
-				);
-
-				table.clear().rows.add(filteredData).draw();
-    		});
+			$.fn.dataTable.ext.search.push( function( settings, data, dataIndex ) {
+				var minArr = [];
+				var maxArr = [];
+				var statArr = [];
+				minArr.push($('#minAtk').val() * 1);
+				minArr.push($('#minDef').val() * 1);
+				minArr.push($('#minStm').val() * 1);
+				
+				maxArr.push($('#maxAtk').val() * 1);
+				maxArr.push($('#maxDef').val() * 1);
+				maxArr.push($('#maxStm').val() * 1);
+				var offset = 7;
+				statArr.push(parseFloat( data[offset] ) || 0);
+				statArr.push(parseFloat( data[offset+1] ) || 0);
+				statArr.push(parseFloat( data[offset+2] ) || 0);
+				
+				var output = true;
+				for(let i=0; i<3; i++){
+					var col = false;
+					if ( ( minArr[i] == '' && maxArr[i] == '' ) ||
+						( minArr[i] == '' && statArr[i] <= maxArr[i] ) ||
+						( minArr[i] <= statArr[i] && '' == maxArr[i] ) ||
+						( minArr[i] <= statArr[i] && statArr[i] <= maxArr[i] ) ) {
+						col = true;
+					}
+					output = output && col;
+				}
+				return output;
+			}
+			);
 		});
 	</script>
 </html>
