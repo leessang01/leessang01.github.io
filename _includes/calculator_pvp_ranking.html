@@ -6,33 +6,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
 
 	<div>
-		<label for="pokemonList">이름</label>
+		<label for="pokemonList">포켓몬 이름</label>
 		<select id="pokemonList" name="pokemonList" placeholder="이름 입력" style="width: 200px;"></select>
 	</div>
 	<div>
+		<input type="radio" name="league" value="500" checked="checked"/> 리틀컵
 		<input type="radio" name="league" value="1500" checked="checked"/> 슈퍼리그
 		<input type="radio" name="league" value="2500"/> 하이퍼리그
 		<input type="radio" name="league" value="10000"/> 마스터리그
+	</div>
+	<div>
 		<input type="checkbox" name="bestBuddy"/> 베스트파트너
 	</div>
 	<table>
 		<thead>
 			<tr>
-				<td>공격</td>
-				<td>방어</td>
-				<td>체력</td>
+				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><input type="text" id="minAtk" name="minAtk" placeholder="min"></td>
-				<td><input type="text" id="minDef" name="minDef" placeholder="min"></td>
-				<td><input type="text" id="minStm" name="minStm" placeholder="min"></td>
+				<td>유효공격</td>
+				<td><input type="text" id="minAtk" name="minAtk" placeholder="Min"></td>
+				<td><input type="text" id="maxAtk" name="maxAtk" placeholder="Max"></td>
+				
 			</tr>
 			<tr>
-				<td><input type="text" id="maxAtk" name="maxAtk" placeholder="max"></td>
-				<td><input type="text" id="maxDef" name="maxDef" placeholder="max"></td>
-				<td><input type="text" id="maxStm" name="maxStm" placeholder="max"></td>
+				<td>유효방어</td>
+				<td><input type="text" id="minDef" name="minDef" placeholder="Min"></td>
+				<td><input type="text" id="maxDef" name="maxDef" placeholder="Max"></td>
+			</tr>
+			<tr>
+				<td>유효체력</td>
+				<td><input type="text" id="minStm" name="minStm" placeholder="Min"></td>
+				<td><input type="text" id="maxStm" name="maxStm" placeholder="Max"></td>
 			</tr>
 		</tbody>
 	</table>
@@ -320,6 +329,7 @@
 				autoWidth: false,
 				deferRender: true,
                 responsive: true,
+				sDom: 'lrtip',
 				columns: [
 					{ title: "스탯곱", data: "overall", width: "10%" },
 					{ title: "CP", data: "cp", width: "10%" },
