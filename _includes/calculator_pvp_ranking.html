@@ -2,7 +2,49 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
 	<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
 
+	<div>
+		<label for="pokemonList">포켓몬 이름</label>
+		<select id="pokemonList" name="pokemonList" placeholder="이름 입력" style="width: 200px;"></select>
+	</div>
+	<div>
+		<input type="radio" name="league" value="500" checked="checked"/> 리틀컵
+		<input type="radio" name="league" value="1500" checked="checked"/> 슈퍼리그
+		<input type="radio" name="league" value="2500"/> 하이퍼리그
+		<input type="radio" name="league" value="10000"/> 마스터리그
+	</div>
+	<div>
+		<input type="checkbox" name="bestBuddy"/> 베스트파트너
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>유효공격</td>
+				<td><input type="text" id="minAtk" name="minAtk" placeholder="Min"></td>
+				<td><input type="text" id="maxAtk" name="maxAtk" placeholder="Max"></td>
+				
+			</tr>
+			<tr>
+				<td>유효방어</td>
+				<td><input type="text" id="minDef" name="minDef" placeholder="Min"></td>
+				<td><input type="text" id="maxDef" name="maxDef" placeholder="Max"></td>
+			</tr>
+			<tr>
+				<td>유효체력</td>
+				<td><input type="text" id="minStm" name="minStm" placeholder="Min"></td>
+				<td><input type="text" id="maxStm" name="maxStm" placeholder="Max"></td>
+			</tr>
+		</tbody>
+	</table>
 	<table id="ranking_table" class="table table-striped table-bordered nowrap" style="width:100%;">
 		<thead></thead>
 		<tfoot></tfoot>
@@ -10,6 +52,10 @@
 	</table>
 
 	<script>
+		var TARGET_CP = 1500;
+		var TARGET_POKEMON = {};
+		var MIN_IV = 0;
+		var DEFAULT_LEVEL_CAP = 50;
 		var DEFAULT_ATTACKER_LEVEL = 40;
 		var DEFAULT_ATTACKER_CPM = 0.7903;
 		var DEFAULT_ATTACKER_IVs = [15, 15, 15];
@@ -25,6 +71,7 @@
 		var DEFAULT_STAB = 1.2;
 		var GM = {};
 		var list = [];
+		var CPM = [0.0939999967813491, 0.135137430784308, 0.166397869586944, 0.192650914456886, 0.215732470154762, 0.236572655026622, 0.255720049142837, 0.273530381100769, 0.290249884128570, 0.306057381335773, 0.321087598800659, 0.335445032295077, 0.349212676286697, 0.362457748778790, 0.375235587358474, 0.387592411085168, 0.399567276239395, 0.411193549517250, 0.422500014305114, 0.432926413410414, 0.443107545375824, 0.453059953871985, 0.462798386812210, 0.472336077786704, 0.481684952974319, 0.490855810259008, 0.499858438968658, 0.508701756943992, 0.517393946647644, 0.525942508771329, 0.534354329109191, 0.542635762230353, 0.550792694091796, 0.558830599438087, 0.566754519939422, 0.574569148039264, 0.582278907299041, 0.589887911977272, 0.597400009632110, 0.604823657502073, 0.612157285213470, 0.619404110566050, 0.626567125320434, 0.633649181622743, 0.640652954578399, 0.647580963301656, 0.654435634613037, 0.661219263506722, 0.667934000492096, 0.674581899290818, 0.681164920330047, 0.687684905887771, 0.694143652915954, 0.700542893277978, 0.706884205341339, 0.713169102333341, 0.719399094581604, 0.725575616972598, 0.731700003147125, 0.734741011137376, 0.737769484519958, 0.740785574597326, 0.743789434432983, 0.746781208702482, 0.749761044979095, 0.752729105305821, 0.755685508251190, 0.758630366519684, 0.761563837528228, 0.764486065255226, 0.767397165298461, 0.770297273971590, 0.773186504840850, 0.776064945942412, 0.778932750225067, 0.781790064808426, 0.784636974334716, 0.787473583646825, 0.790300011634826, 0.792803950958807, 0.795300006866455, 0.797803921486970, 0.800300002098083, 0.802803892322847, 0.805299997329711, 0.807803863460723, 0.810299992561340, 0.812803834895026, 0.815299987792968, 0.817803806620319, 0.820299983024597, 0.822803778631297, 0.825299978256225, 0.827803750922782, 0.830299973487854, 0.832803753381377, 0.835300028324127, 0.837803755931569, 0.840300023555755, 0.842803729034748, 0.845300018787384, 0.847803702398935, 0.850300014019012, 0.852803676019539, 0.855300009250640, 0.857803649892077, 0.860300004482269, 0.862803624012168, 0.865299999713897];
 		var Data = {
 			BattleSettings: {
 				'dodgeDurationMs': 500,
@@ -199,245 +246,172 @@
             Data.Pokemon.sorted = true;
         }
 
-		function fetchFastMove() {
-            var data = {{ site.data.pokemongo.fast_moves | jsonify }};
-
-            $.each(data, function (i) {
-                var fmove = {
-                    id: data[i].move_id,
-                    name: data[i].name,
-                    name_kor: data[i].name_kor,
-                    energyDelta: data[i].energy_delta,
-                    power: data[i].power,
-                    duration: data[i].duration,
-                    dws: data[i].damage_window_start,
-                    type: data[i].type.toLowerCase()
-                };
-                Data.FastMoves.push(fmove);
-            });
-            Data.FastMoves.sort((a, b) => (a.name < b.name ? -1 : 1));
-            Data.FastMoves.sorted = true;
-		}
-
-		function fetchChargedMove() {
-            var data = {{ site.data.pokemongo.charged_moves | jsonify }};
-
-            $.each(data, function (i) {
-                var cmove = {
-                    id: data[i].move_id,
-                    name: data[i].name,
-                    name_kor: data[i].name_kor,
-                    energyDelta: data[i].energy_delta,
-                    power: data[i].power,
-                    duration: data[i].duration,
-                    dws: data[i].damage_window_start,
-                    type: data[i].type.toLowerCase()
-                };
-                Data.ChargedMoves.push(cmove);
-            });
-            Data.ChargedMoves.sort((a, b) => (a.name < b.name ? -1 : 1));
-            Data.ChargedMoves.sorted = true;
-		}
-
-		function calculateDPS(pokemon, kwargs) {
-			var x = kwargs.x, y = kwargs.y;
-			if (x == undefined || y == undefined) {
-				var intakeProfile = calculateDPSIntake(pokemon, kwargs);
-				x = (x == undefined ? intakeProfile.x : x);
-				y = (y == undefined ? intakeProfile.y : y);
-			}
-
-			var FDmg = damage(pokemon, kwargs.enemy, pokemon.fmove, kwargs.weather);
-			var CDmg = damage(pokemon, kwargs.enemy, pokemon.cmove, kwargs.weather);
-			var FE = pokemon.fmove.energyDelta;
-			var CE = -pokemon.cmove.energyDelta;
-
-
-			var FDur = pokemon.fmove.duration / 1000;
-			var CDur = pokemon.cmove.duration / 1000;
-			var CDWS = pokemon.cmove.dws / 1000;
-
-			if (CE >= 100) {
-				CE = CE + 0.5 * FE + 0.5 * y * CDWS;
-			}
-
-			var FDPS = FDmg / FDur;
-			var FEPS = FE / FDur;
-			var CDPS = CDmg / CDur;
-			var CEPS = CE / CDur;
-
-			pokemon.st = pokemon.stm / y;
-			pokemon.dps = (FDPS * CEPS + CDPS * FEPS) / (CEPS + FEPS) + (CDPS - FDPS) / (CEPS + FEPS) * (1 / 2 - x / pokemon.stm) * y;
-			pokemon.tdo = pokemon.dps * pokemon.st;
-
-			if (pokemon.dps > CDPS) {
-				pokemon.dps = CDPS;
-				pokemon.tdo = pokemon.dps * pokemon.st;
-			} else if (pokemon.dps < FDPS) {
-				pokemon.dps = FDPS;
-				pokemon.tdo = pokemon.dps * pokemon.st;
-			}
-			return pokemon.dps;
-
-		}
-
-
-		function calculateDPSIntake(pokemon, kwargs) {
-			if (kwargs.genericEnemy) {
-				if (kwargs.battleMode == "pvp") {
-					return {
-						x: -pokemon.cmove.energyDelta * 0.5,
-						y: DEFAULT_ENEMY_DPS1 * 1.5 / pokemon.def
-					};
-				} else {
-					return {
-						x: -pokemon.cmove.energyDelta * 0.5 + pokemon.fmove.energyDelta * 0.5,
-						y: DEFAULT_ENEMY_DPS1 / pokemon.def
-					};
-				}
-			}
-		}
-        
-		function damage(attacker, defender, move, weather) {
-			var multipliers = 1;
-			if(attacker.pokeType.some(function(x){
-				return x == move.type;
-			})) {
-				multipliers *= DEFAULT_STAB;
-			}
-
-			var Effectiveness = Data.BattleSettings.TypeEffectiveness;
-
-			for(let pokeType in defender.pokeType){
-				multipliers *= Effectiveness[move.type][pokeType] || 1;
-			}
-
-			return 0.5 * attacker.atk / defender.def * move.power * multipliers + 0.5;
-		}
-
 		function round(value, numDigits) {
 			var multiplier = Math.pow(10, parseInt(numDigits) || 0);
 			return (Math.round(value * multiplier) / multiplier).toFixed(numDigits);
 		}
 
-		function calculateCP(pkm) {
-			var cpm = parseFloat(pkm.cpm);
-			var atk = pkm.atk || (pkm.baseAtk + DEFAULT_ATTACKER_IVs[0]) * cpm;
-			var def = pkm.def || (pkm.baseDef + DEFAULT_ATTACKER_IVs[1]) * cpm;
-			var stm = pkm.stm || (pkm.baseStm + DEFAULT_ATTACKER_IVs[2]) * cpm;
+		function rounddown(value, numDigits) {
+			var multiplier = Math.pow(10, parseInt(numDigits) || 0);
+			return (Math.floor(value * multiplier) / multiplier).toFixed(numDigits);
+		}
+
+		function calculateCP(pkm, cpm, atkiv, defiv, stmiv) {
+			var atk = (pkm.baseAtk + atkiv) * cpm;
+			var def = (pkm.baseDef + defiv) * cpm;
+			var stm = (pkm.baseStm + stmiv) * cpm;
 			return Math.max(10, Math.floor(atk * Math.sqrt(def * stm) / 10));
+		}
+
+		function updateTable(){
+			var table = $("#ranking_table").DataTable();
+			var pkm = TARGET_POKEMON;
+			var minIv = MIN_IV;
+			var targetCP = TARGET_CP;
+			table.clear();
+			if(minIv < 0 || minIv > 15){
+				minIv = 0;
+			}
+			if(pkm.name == undefined){
+				return;
+			}
+			var extendLevelCap = $('input[name="bestBuddy"]').is(":checked") ? 1 : 0;
+			var levelCap = DEFAULT_LEVEL_CAP + extendLevelCap;
+			var cpm = 0;
+			for (let atk=minIv; atk<16; atk++) {
+				for (let def=minIv; def<16; def++) {
+					for (let stm=minIv; stm<16; stm++) {
+						var level = 0.5;
+						var calcCP = 10;
+						
+						while((level < levelCap) && (calcCP < targetCP)){
+							level += 0.5;
+							cpm = CPM[(level - 1) * 2];
+							calcCP = calculateCP(pkm, cpm, atk, def, stm);
+						}
+						if(calcCP > targetCP){
+							level -= 0.5;
+							cpm = CPM[(level - 1) * 2];
+							calcCP = calculateCP(pkm, cpm, atk, def, stm);
+						}
+						
+						var pkmInstance = {};
+						$.extend(pkmInstance, pkm);
+						pkmInstance.cp = calcCP;
+						pkmInstance.level = level;
+						pkmInstance.atkiv = atk;
+						pkmInstance.defiv = def;
+						pkmInstance.stmiv = stm;
+						pkmInstance.atk = (pkmInstance.baseAtk + atk) * cpm;
+						pkmInstance.def = (pkmInstance.baseDef + def) * cpm;
+						pkmInstance.stm = rounddown((pkmInstance.baseStm + stm) * cpm, 0);
+						var mult = pkmInstance.atk * pkmInstance.def * pkmInstance.stm;
+						pkmInstance.overall = round(mult / 1000, 0);
+						pkmInstance.scp = round((Math.pow(mult, 2/3) / 10), 0);
+						pkmInstance.atk = rounddown(pkmInstance.atk, 1);
+						pkmInstance.def = rounddown(pkmInstance.def, 1);
+						
+						table.row.add(pkmInstance);
+					}
+				}
+			}
+
+			table.order([0, 'desc']);
+			table.draw();
 		}
 
 		$(function () {
             fetchPokemon();
             fetchMegaPokemon();
-            fetchFastMove();
-            fetchChargedMove();
 
 			var table = $("#ranking_table").DataTable({
 				lengthChange: false,
 				autoWidth: false,
 				deferRender: true,
                 responsive: true,
+				sDom: 'lrtip',
 				columns: [
+					{ title: "스탯곱", data: "overall", width: "10%" },
 					{ title: "CP", data: "cp", width: "10%" },
-					{ title: "포켓몬", data: "name", width: "20%" },
-					{ title: "일반공격", data: "fmove.name_kor", type: "string", width: "20%" },
-					{ title: "차징공격", data: "cmove.name_kor", type: "string", width: "20%" },
-					{ title: "DPS", data: "dps", type: "num", width: "10%", orderSequence: ["desc", "asc"] },
-					{ title: "TDO", data: "tdo", type: "num", width: "10%", orderSequence: ["desc", "asc"] },
-					{ title: "ER", data: "overall", type: "num", width: "10%", orderSequence: ["desc", "asc"] }
+					{ title: "SCP", data: "scp", width: "10%" },
+					{ title: "레벨", data: "level", width: "10%" },
+					{ title: "공격", data: "atkiv", width: "10%" },
+					{ title: "방어", data: "defiv", width: "10%" },
+					{ title: "체력", data: "stmiv", width: "10%" },
+					{ title: "유효공격", data: "atk", width: "10%" },
+					{ title: "유효방어", data: "def", width: "10%" },
+					{ title: "유효체력", data: "stm", width: "10%" }
 				],
 				scrollX: true
+			}).draw();
+
+
+			$('#pokemonList').selectize({
+				sortField: 'text'
 			});
 
-			const dummyEnemy = {
-				name: "noTypeDummy",
-				pokeType: DEFAULT_ENEMY_POKETYPE1,
-				def: DEFAULT_ENEMY_CURRENT_DEFENSE
-			};
-
-			const fastMoveDict = Data.FastMoves.reduce((acc, move) => {
-				acc[move.name] = move;
-				return acc;
-			}, {});
-			const chargedMoveDict = Data.ChargedMoves.reduce((acc, move) => {
-				acc[move.name] = move;
-				return acc;
-			}, {});
-
-			var Context = {
-				weather: DEFAULT_WEATHER,
-				enemy: {},
-				genericEnemy: false,
-				genericEnemyFastMove: false,
-				genericEnemyChargedMove: false,
-				swapDiscount: false,
-				battleMode: 'pve',
-				allyMega: false,
-				allyMegaStab: false
-			};
-
-			Context.genericEnemy = true;
-			Context.enemy = dummyEnemy;
-
-			var ShadowPokemon = [];
-			for (let pkm of Data.Pokemon) {
-				if (pkm.hasShadow) {
-					var shadowPkmInstance = {};
-					$.extend(shadowPkmInstance, pkm);
-					shadowPkmInstance.isShadow = true;
-					ShadowPokemon.push(shadowPkmInstance);
-				}
-			}
-			var PokemonCollection = [];
-			PokemonCollection = Data.Pokemon.concat(ShadowPokemon);
-
-			for (let pkm of PokemonCollection) {
-				if (pkm.isShadow) {
-					pkm.name = "그림자 " + pkm.name;
+			const selectize = $('#pokemonList')[0].selectize;
+			
+			var len = Data.Pokemon.length;
+			for (let idx=0; idx<len; idx++){
+				var name = Data.Pokemon[idx].name;
+				if (Data.Pokemon[idx].form !== "normal"){
+					name = Data.Pokemon[idx].name + "(" + (Data.Pokemon[idx].form_kor ? Data.Pokemon[idx].form_kor : Data.Pokemon[idx].form) + ")";
                 }
-				if (pkm.isPurified) {
-					pkm.name = "정화 " + pkm.name;
-                }
-				if (pkm.form !== "normal"){
-					pkm.name = pkm.name + "(" + (pkm.form_kor ? pkm.form_kor : pkm.form) + ")";
-                }
-				if (pkm.baseAtk < 1 || pkm.baseDef < 1 || pkm.baseStm < 1) {
+				if (Data.Pokemon[idx].baseAtk < 1 || Data.Pokemon[idx].baseDef < 1 || Data.Pokemon[idx].baseStm < 1) {
 					continue;
 				}
-
-				pkm.cpm = DEFAULT_ATTACKER_CPM;
-				pkm.cp = calculateCP(pkm);
-				pkm.atk = (pkm.baseAtk + DEFAULT_ATTACKER_IVs[0]) * pkm.cpm * (pkm.isShadow ? Data.BattleSettings.shadowPokemonAttackBonusMultiplier : 1);
-				pkm.def = (pkm.baseDef + DEFAULT_ATTACKER_IVs[1]) * pkm.cpm * (pkm.isShadow ? Data.BattleSettings.shadowPokemonDefenseBonusMultiplier : 1);
-				pkm.stm = (pkm.baseStm + DEFAULT_ATTACKER_IVs[2]) * pkm.cpm;
-				
-				for (let fmove of pkm.fastMove) {
-					for (let cmove of pkm.chargedMove) {
-						var pkmInstance = {};
-						$.extend(pkmInstance, pkm);
-						var fmoveInstance = fastMoveDict[fmove];
-						var cmoveInstance = chargedMoveDict[cmove];
-						pkmInstance.fmove = fmoveInstance ? fmoveInstance : "none";
-						pkmInstance.cmove = cmoveInstance ? cmoveInstance : "none";
-
-						if (pkmInstance.fmove == "none" || pkmInstance.cmove == "none") {
-							continue;
-                        }
-
-						calculateDPS(pkmInstance, Context);
-						pkmInstance.dps = round(pkmInstance.dps, 3);
-						pkmInstance.tdo = round(pkmInstance.tdo, 1);
-						pkmInstance.overall = round((pkmInstance.dps ** 3 * pkmInstance.tdo) ** 0.25, 2);
-						table.row.add(pkmInstance);
-					}
-				}
+				selectize.addOption({ value: idx, text: name });
 			}
+			
+			selectize.on('change', function() {
+        		var idx = selectize.getValue();
+				TARGET_POKEMON = Data.Pokemon[idx];
+				updateTable();
+			});
 
+			$('input[type=radio][name="league"]').change(function() {
+				TARGET_CP = $(this).val();
+				updateTable();
+			});
+			$('input[type=checkbox][name="bestBuddy"]').change(function() {
+				updateTable();
+			});
 
-			table.order([4, 'desc']);
-			table.draw();
+			$('#minAtk, #maxAtk, #minDef, #maxDef, #minStm, #maxStm').keyup( function() {
+				table.draw();
+			} );
+
+			$.fn.dataTable.ext.search.push( function( settings, data, dataIndex ) {
+				var minArr = [];
+				var maxArr = [];
+				var statArr = [];
+				minArr.push($('#minAtk').val() * 1);
+				minArr.push($('#minDef').val() * 1);
+				minArr.push($('#minStm').val() * 1);
+				
+				maxArr.push($('#maxAtk').val() * 1);
+				maxArr.push($('#maxDef').val() * 1);
+				maxArr.push($('#maxStm').val() * 1);
+				var offset = 7;
+				statArr.push(parseFloat( data[offset] ) || 0);
+				statArr.push(parseFloat( data[offset+1] ) || 0);
+				statArr.push(parseFloat( data[offset+2] ) || 0);
+				
+				var output = true;
+				for(let i=0; i<3; i++){
+					var col = false;
+					if ( ( minArr[i] == '' && maxArr[i] == '' ) ||
+						( minArr[i] == '' && statArr[i] <= maxArr[i] ) ||
+						( minArr[i] <= statArr[i] && '' == maxArr[i] ) ||
+						( minArr[i] <= statArr[i] && statArr[i] <= maxArr[i] ) ) {
+						col = true;
+					}
+					output = output && col;
+				}
+				return output;
+			}
+			);
 		});
 	</script>
 </html>
