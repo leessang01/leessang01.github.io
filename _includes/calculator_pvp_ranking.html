@@ -18,30 +18,29 @@
 	<div>
 		<input type="checkbox" name="bestBuddy"/> 베스트파트너
 	</div>
-	<table>
-		<thead>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</thead>
+	<table border="2">
 		<tbody>
 			<tr>
-				<td>유효공격</td>
-				<td><input type="text" id="minAtk" name="minAtk" placeholder="Min"></td>
-				<td><input type="text" id="maxAtk" name="maxAtk" placeholder="Max"></td>
+				<td style="width: 10%;">공격개체</td>
+				<td style="width: 10%;"><input type="text" id="ivAtk" name="ivAtk" placeholder="0-15" style="width: 100%;"></td>
+				<td style="width: 10%;">유효공격</td>
+				<td style="width: 10%;"><input type="text" id="minAtk" name="minAtk" placeholder="Min" style="width: 100%;"></td>
+				<td style="width: 10%;"><input type="text" id="maxAtk" name="maxAtk" placeholder="Max" style="width: 100%;"></td>
 				
 			</tr>
 			<tr>
+				<td>방어개체</td>
+				<td><input type="text" id="ivDef" name="ivDef" placeholder="0-15" style="width: 100%;"></td>
 				<td>유효방어</td>
-				<td><input type="text" id="minDef" name="minDef" placeholder="Min"></td>
-				<td><input type="text" id="maxDef" name="maxDef" placeholder="Max"></td>
+				<td><input type="text" id="minDef" name="minDef" placeholder="Min" style="width: 100%;"></td>
+				<td><input type="text" id="maxDef" name="maxDef" placeholder="Max" style="width: 100%;"></td>
 			</tr>
 			<tr>
+				<td>체력개체</td>
+				<td><input type="text" id="ivStm" name="ivStm" placeholder="0-15" style="width: 100%;"></td>
 				<td>유효체력</td>
-				<td><input type="text" id="minStm" name="minStm" placeholder="Min"></td>
-				<td><input type="text" id="maxStm" name="maxStm" placeholder="Max"></td>
+				<td><input type="text" id="minStm" name="minStm" placeholder="Min" style="width: 100%;"></td>
+				<td><input type="text" id="maxStm" name="maxStm" placeholder="Max" style="width: 100%;"></td>
 			</tr>
 		</tbody>
 	</table>
@@ -382,36 +381,56 @@
 				updateTable();
 			});
 
-			$('#minAtk, #maxAtk, #minDef, #maxDef, #minStm, #maxStm').keyup( function() {
+			$('#minAtk, #maxAtk, #minDef, #maxDef, #minStm, #maxStm, #ivAtk, #ivDef, #ivStm').keyup( function() {
 				table.draw();
 			} );
 
 			$.fn.dataTable.ext.search.push( function( settings, data, dataIndex ) {
-				var minArr = [];
-				var maxArr = [];
-				var statArr = [];
-				minArr.push($('#minAtk').val() * 1);
-				minArr.push($('#minDef').val() * 1);
-				minArr.push($('#minStm').val() * 1);
+				var inputMinStatArr = [];
+				var inputMaxStatArr = [];
+				var tableStatArr = [];
+				var inputIvArr = [];
+				var tableIvArr = [];
 				
-				maxArr.push($('#maxAtk').val() * 1);
-				maxArr.push($('#maxDef').val() * 1);
-				maxArr.push($('#maxStm').val() * 1);
 				var offset = 7;
-				statArr.push(parseFloat( data[offset] ) || 0);
-				statArr.push(parseFloat( data[offset+1] ) || 0);
-				statArr.push(parseFloat( data[offset+2] ) || 0);
+
+				inputMinStatArr.push($('#minAtk').val() || 0);
+				inputMinStatArr.push($('#minDef').val() || 0);
+				inputMinStatArr.push($('#minStm').val() || 0);
 				
+				inputMaxStatArr.push($('#maxAtk').val() || 0);
+				inputMaxStatArr.push($('#maxDef').val() || 0);
+				inputMaxStatArr.push($('#maxStm').val() || 0);
+				
+				tableStatArr.push(parseFloat( data[offset] ) || 0);
+				tableStatArr.push(parseFloat( data[offset+1] ) || 0);
+				tableStatArr.push(parseFloat( data[offset+2] ) || 0);
+
+				offset = 4;
+
+				inputIvArr.push($('#ivAtk').val() || 0);
+				inputIvArr.push($('#ivDef').val() || 0);
+				inputIvArr.push($('#ivStm').val() || 0);
+				
+				tableIvArr.push(parseFloat( data[offset] ) || 0);
+				tableIvArr.push(parseFloat( data[offset+1] ) || 0);
+				tableIvArr.push(parseFloat( data[offset+2] ) || 0);
+
 				var output = true;
 				for(let i=0; i<3; i++){
-					var col = false;
-					if ( ( minArr[i] == '' && maxArr[i] == '' ) ||
-						( minArr[i] == '' && statArr[i] <= maxArr[i] ) ||
-						( minArr[i] <= statArr[i] && '' == maxArr[i] ) ||
-						( minArr[i] <= statArr[i] && statArr[i] <= maxArr[i] ) ) {
-						col = true;
+					var statFilter = false;
+					if ( ( inputMinStatArr[i] == '' && inputMaxStatArr[i] == '' ) ||
+						( inputMinStatArr[i] == '' && tableStatArr[i] <= inputMaxStatArr[i] ) ||
+						( inputMinStatArr[i] <= tableStatArr[i] && '' == inputMaxStatArr[i] ) ||
+						( inputMinStatArr[i] <= tableStatArr[i] && tableStatArr[i] <= inputMaxStatArr[i] )) {
+						statFilter = true;
 					}
-					output = output && col;
+					var ivFilter = false;
+					if ( ( inputIvArr[i] == '') ||
+						( inputIvArr[i] == tableIvArr[i]) ){
+						ivFilter = true;
+					}
+					output = output && statFilter && ivFilter;
 				}
 				return output;
 			}
