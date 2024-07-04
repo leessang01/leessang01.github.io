@@ -3,8 +3,11 @@ title: 포켓몬고 PVP 개체 순위표
 description: >-
     포켓몬고 PVP 개체에 따른 순위를 검색하고 필터링 할 수 있습니다.
 date: 2024-07-03 18:00:00 +0900
+lastmod: 2024-07-04 09:00:00 +0900
 categories: [포켓몬고, 분석]
 tags: [PVP, 개체, 고배리, 랭킹]
+image:
+    path: /assets/img/preview-iv-ranking.png
 ---
 
 ## 사용방법
@@ -30,3 +33,4 @@ tags: [PVP, 개체, 고배리, 랭킹]
 ## 참고
 
 - pvpoke, [link](https://pvpoke.com/)
+- 포켓몬Go & 포켓몬슬립 자료실, BlueMystik, [link](https://blog.naver.com/suikun2002)

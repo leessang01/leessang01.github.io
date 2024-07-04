@@ -307,13 +307,13 @@
 						pkmInstance.atk = (pkmInstance.baseAtk + atk) * cpm;
 						pkmInstance.def = (pkmInstance.baseDef + def) * cpm;
 						pkmInstance.stm = rounddown((pkmInstance.baseStm + stm) * cpm, 0);
-						pkmInstance.overall = pkmInstance.atk * pkmInstance.def * pkmInstance.stm;
+						pkmInstance.overall = round(pkmInstance.atk * pkmInstance.def * pkmInstance.stm, 0);
 						if(pkmInstance.overall > maxOverall){
 							maxOverall = pkmInstance.overall;
 						}
-						pkmInstance.scp = round((Math.pow(pkmInstance.overall, 2/3) / 10), 0);
-						pkmInstance.atk = rounddown(pkmInstance.atk, 1);
-						pkmInstance.def = rounddown(pkmInstance.def, 1);
+						pkmInstance.scp = rounddown((Math.pow(pkmInstance.overall, 2/3) / 10), 0);
+						pkmInstance.atk = round(pkmInstance.atk, 1);
+						pkmInstance.def = round(pkmInstance.def, 1);
 						pokemonList.push(pkmInstance);
 					}
 				}
