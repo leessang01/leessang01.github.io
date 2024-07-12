@@ -109,7 +109,25 @@
 					"steel": "강철",
 					"dragon": "드래곤",
 					"flying": "비행",
-					"psychic": "에스퍼"
+					"psychic": "에스퍼",
+                    "풀": "grass",
+                    "땅": "ground",
+                    "불꽃": "fire",
+                    "악": "dark",
+                    "고스트": "ghost",
+                    "페어리": "fairy",
+                    "격투": "fighting",
+                    "독": "poison",
+                    "노말": "normal",
+                    "바위": "rock",
+                    "물": "water",
+                    "전기": "electric",
+                    "벌레": "bug",
+                    "얼음": "ice",
+                    "강철": "steel",
+                    "드래곤": "dragon",
+                    "비행": "flying",
+                    "에스퍼": "psychic"
 				},
 
 				FriendSettings: [
@@ -367,33 +385,41 @@
 		}
 
 		function filterRow(data, filterString) {
-			const andConditions = filterString.split("&").map(cond => cond.trim());
+			const andConditions = filterString.split("&").filter(Boolean).map(cond => cond.trim());
 			return andConditions.every(andCondition => {
-				const orConditions = andCondition.split(",").map(cond => cond.trim());
+				const orConditions = andCondition.split(",").filter(Boolean).map(cond => cond.trim());
 				
-				return orConditions.some(orCondition => applyStringCondition(data, orCondition));
+				return orConditions.some(orCondition => {
+                    if(orCondition.startsWith("!")){
+                        return !applyStringCondition(data, orCondition.substring(1));
+                    } else {
+                        return applyStringCondition(data, orCondition);
+                    }
+                });
 			});
 		}
 				
 		function applyStringCondition(data, condition) {
 			if (condition.startsWith("@1")) {
-				if (data[9].normalize("NFC").includes(condition.substring(2))){
-					return true;
-				}
-				return false;
+				return (data[9].normalize("NFC").includes(condition.substring(2)));
 			} else if (condition.startsWith("@2")) {
-				if (data[10].normalize("NFC").includes(condition.substring(2))){
-					return true;
-				}
-				return false;
+				return (data[10].normalize("NFC").includes(condition.substring(2)));
 			} else if (condition.startsWith("@")) {
-				if (data[9].normalize("NFC").includes(condition.substring(2)) || data[10].normalize("NFC").includes(condition.substring(2))
-					|| data[2].normalize("NFC").includes(condition.substring(2)) || data[3].normalize("NFC").includes(condition.substring(2))) {
-					return true;
-				}
-				return false;
+				return (data[9].normalize("NFC").includes(condition.substring(1)) || data[10].normalize("NFC").includes(condition.substring(1))
+					|| data[2].normalize("NFC").includes(condition.substring(1)) || data[3].normalize("NFC").includes(condition.substring(1)));
+            } else if (condition.startsWith(">")) {
+                var Effectiveness = Data.BattleSettings.TypeEffectiveness;
+                var Translation = Data.BattleSettings.TypeTranslation;
+                var cmoveTypeEng = Translation[data[10].normalize("NFC")];
+                var opponentTypeEng = Translation[condition.substring(1).normalize("NFC")];
+                
+                if (opponentTypeEng == undefined || cmoveTypeEng == undefined){
+                    return false;
+                }
+                
+                return (Effectiveness[cmoveTypeEng][opponentTypeEng] || 1) > 1;
 			} else {
-				return data[1].normalize("NFC").includes(condition);
+				return data[1].normalize("NFC").includes(condition) || data[7].normalize("NFC").includes(condition) || data[8].normalize("NFC").includes(condition);
 			}
 		}
 
