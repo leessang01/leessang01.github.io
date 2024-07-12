@@ -3,6 +3,14 @@
 	<link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
 	<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
 
+	<table>
+		<tbody>
+			<tr>
+				<td><input type="text" id="searchX" name="searchX" placeholder="검색어"></td>
+			</tr>
+		</tbody>
+	</table>
+
 	<table id="ranking_table" class="table table-striped table-bordered nowrap" style="width:100%;">
 		<thead></thead>
 		<tfoot></tfoot>
@@ -81,6 +89,27 @@
 					"dragon": "WINDY",
 					"flying": "WINDY",
 					"psychic": "WINDY"
+				},
+
+				TypeTranslation: {
+					"grass": "풀",
+					"ground": "땅",
+					"fire": "불꽃",
+					"dark": "악",
+					"ghost": "고스트",
+					"fairy": "페어리",
+					"fighting": "격투",
+					"poison": "독",
+					"normal": "노말",
+					"rock": "바위",
+					"water": "물",
+					"electric": "전기",
+					"bug": "벌레",
+					"ice": "얼음",
+					"steel": "강철",
+					"dragon": "드래곤",
+					"flying": "비행",
+					"psychic": "에스퍼"
 				},
 
 				FriendSettings: [
@@ -328,6 +357,46 @@
 			return Math.max(10, Math.floor(atk * Math.sqrt(def * stm) / 10));
 		}
 
+		function filterRowBackup(data, filterString) {
+			const orConditions = filterString.split(",").map(cond => cond.trim());
+			return orConditions.some(orCondition => {
+				const andConditions = orCondition.split("&").map(cond => cond.trim());
+				
+				return andConditions.every(andCondition => applyStringCondition(data, andCondition));
+			});
+		}
+
+		function filterRow(data, filterString) {
+			const andConditions = filterString.split("&").map(cond => cond.trim());
+			return andConditions.every(andCondition => {
+				const orConditions = andCondition.split(",").map(cond => cond.trim());
+				
+				return orConditions.some(orCondition => applyStringCondition(data, orCondition));
+			});
+		}
+				
+		function applyStringCondition(data, condition) {
+			if (condition.startsWith("@1")) {
+				if (data[9].normalize("NFC").includes(condition.substring(2))){
+					return true;
+				}
+				return false;
+			} else if (condition.startsWith("@2")) {
+				if (data[10].normalize("NFC").includes(condition.substring(2))){
+					return true;
+				}
+				return false;
+			} else if (condition.startsWith("@")) {
+				if (data[9].normalize("NFC").includes(condition.substring(2)) || data[10].normalize("NFC").includes(condition.substring(2))
+					|| data[2].normalize("NFC").includes(condition.substring(2)) || data[3].normalize("NFC").includes(condition.substring(2))) {
+					return true;
+				}
+				return false;
+			} else {
+				return data[1].normalize("NFC").includes(condition);
+			}
+		}
+
 		$(function () {
             fetchPokemon();
             fetchMegaPokemon();
@@ -339,14 +408,19 @@
 				autoWidth: false,
 				deferRender: true,
                 responsive: true,
+				sDom: 'lrtip',
 				columns: [
-					{ title: "CP", data: "cp", width: "10%" },
+					{ title: "CP", data: "cp", width: "10%", searchable: false },
 					{ title: "포켓몬", data: "name", width: "20%" },
 					{ title: "일반공격", data: "fmove.name_kor", type: "string", width: "20%" },
 					{ title: "차징공격", data: "cmove.name_kor", type: "string", width: "20%" },
-					{ title: "DPS", data: "dps", type: "num", width: "10%", orderSequence: ["desc", "asc"] },
-					{ title: "TDO", data: "tdo", type: "num", width: "10%", orderSequence: ["desc", "asc"] },
-					{ title: "ER", data: "overall", type: "num", width: "10%", orderSequence: ["desc", "asc"] }
+					{ title: "DPS", data: "dps", type: "num", width: "10%", orderSequence: ["desc", "asc"], searchable: false },
+					{ title: "TDO", data: "tdo", type: "num", width: "10%", orderSequence: ["desc", "asc"], searchable: false },
+					{ title: "ER", data: "overall", type: "num", width: "10%", orderSequence: ["desc", "asc"], searchable: false },
+					{ title: "포켓몬속성1", data: "pokeType1_kor", visible: false },
+					{ title: "포켓몬속성2", data: "pokeType2_kor", visible: false },
+					{ title: "일반공격속성", data: "fmove.type_kor", visible: false },
+					{ title: "차징공격속성", data: "cmove.type_kor", visible: false }
 				],
 				scrollX: true
 			});
@@ -365,7 +439,7 @@
 				acc[move.name] = move;
 				return acc;
 			}, {});
-
+			
 			var Context = {
 				weather: DEFAULT_WEATHER,
 				enemy: {},
@@ -413,6 +487,10 @@
 				pkm.def = (pkm.baseDef + DEFAULT_ATTACKER_IVs[1]) * pkm.cpm * (pkm.isShadow ? Data.BattleSettings.shadowPokemonDefenseBonusMultiplier : 1);
 				pkm.stm = (pkm.baseStm + DEFAULT_ATTACKER_IVs[2]) * pkm.cpm;
 				
+				var TypeTranslation = Data.BattleSettings.TypeTranslation;
+				pkm.pokeType1_kor = TypeTranslation[pkm.pokeType[0]];
+				pkm.pokeType2_kor = TypeTranslation[pkm.pokeType[1]] == undefined ? "단일" : TypeTranslation[pkm.pokeType[1]];
+				
 				for (let fmove of pkm.fastMove) {
 					for (let cmove of pkm.chargedMove) {
 						var pkmInstance = {};
@@ -430,6 +508,8 @@
 						pkmInstance.dps = round(pkmInstance.dps, 3);
 						pkmInstance.tdo = round(pkmInstance.tdo, 1);
 						pkmInstance.overall = round((pkmInstance.dps ** 3 * pkmInstance.tdo) ** 0.25, 2);
+						pkmInstance.fmove.type_kor = TypeTranslation[pkmInstance.fmove.type];
+						pkmInstance.cmove.type_kor = TypeTranslation[pkmInstance.cmove.type];
 						table.row.add(pkmInstance);
 					}
 				}
@@ -438,6 +518,22 @@
 
 			table.order([4, 'desc']);
 			table.draw();
+
+			$('#searchX').keyup( function() {
+				table.draw();
+			} );
+
+			$.fn.dataTable.ext.search.push( function( settings, data, dataIndex ) {
+				var filterString = $('#searchX').val();
+				//var name = data[2].normalize("NFC");
+
+				//if(filterString == '' || name.includes(conditions[0]) ){
+				if(filterString == '' || filterRow(data, filterString) ){
+					return true;
+				}
+
+				return false;
+			});
 		});
 	</script>
 </html>
