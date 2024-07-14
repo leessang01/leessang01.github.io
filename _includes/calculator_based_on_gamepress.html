@@ -3,13 +3,9 @@
 	<link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
 	<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
 
-	<table>
-		<tbody>
-			<tr>
-				<td><input type="text" id="searchX" name="searchX" placeholder="검색어"></td>
-			</tr>
-		</tbody>
-	</table>
+	<div style="padding-bottom:10px;">
+	   <input type="text" id="searchX" name="searchX" placeholder="검색어" style="width:100%;">
+	</div>
 
 	<table id="ranking_table" class="table table-striped table-bordered nowrap" style="width:100%;">
 		<thead></thead>
@@ -384,6 +380,7 @@
 			});
 		}
 
+        /**
 		function filterRow(data, filterString) {
 			const andConditions = filterString.split("&").filter(Boolean).map(cond => cond.trim());
 			return andConditions.every(andCondition => {
@@ -398,6 +395,37 @@
                 });
 			});
 		}
+        **/
+        
+        function filterRow(str, filterString) {
+            const conditions = filterString.split(/([&|,])/).map(cond => cond.trim()).filter(Boolean);
+            var result = null;
+            var currentOp = null;
+            for (let i = 0; i < conditions.length; i++) {
+                const condition = conditions[i];
+                
+                if (condition === "&" || condition === ",") {
+                    currentOp = condition;
+                } else {
+                    var conditionResult = null;
+                    if(condition.startsWith("!")){
+                        conditionResult = !applyStringCondition(str, condition.substring(1));
+                    } else {
+                        conditionResult = applyStringCondition(str, condition);
+                    }
+                    
+
+                    if (currentOp === "&") {
+                        result = result && conditionResult;
+                    } else if (currentOp === ",") {
+                        result = result || conditionResult;
+                    } else {
+                        result = conditionResult;
+                    }
+                }
+            }
+            return result;
+        }
 				
 		function applyStringCondition(data, condition) {
 			if (condition.startsWith("@1")) {
