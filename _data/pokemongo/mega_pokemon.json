@@ -1312,5 +1312,39 @@
             "Rock Throw"
         ],
         "mega_name_kor": "디안시(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Lucario",
+        "pokemon_id": 448,
+        "pokemon_name": "Lucario",
+        "stats": {
+            "base_attack": 310,
+            "base_defense": 175,
+            "base_stamina": 172
+        },
+        "type": [
+            "Fighting",
+            "Steel"
+        ],
+        "charged_moves": [
+            "Flash Cannon",
+            "Shadow Ball",
+            "Close Combat",
+            "Power Up Punch",
+            "Aura Sphere",
+            "Blaze Kick",
+            "Thunder Punch"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Counter",
+            "Bullet Punch"
+        ],
+        "mega_name_kor": "루카리오(메가)"
     }
+    
 ]
