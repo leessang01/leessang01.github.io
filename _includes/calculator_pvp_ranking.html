@@ -306,7 +306,7 @@
 						pkmInstance.atk = (pkmInstance.baseAtk + atk) * cpm;
 						pkmInstance.def = (pkmInstance.baseDef + def) * cpm;
 						pkmInstance.stm = rounddown((pkmInstance.baseStm + stm) * cpm, 0);
-						pkmInstance.overall = round(pkmInstance.atk * pkmInstance.def * pkmInstance.stm, 0);
+						pkmInstance.overall = Number(round(pkmInstance.atk * pkmInstance.def * pkmInstance.stm, 0));
 						if(pkmInstance.overall > maxOverall){
 							maxOverall = pkmInstance.overall;
 						}
