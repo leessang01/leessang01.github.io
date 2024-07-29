@@ -1339,7 +1339,9 @@
             "Thunder Punch"
         ],
         "elite_charged_moves": [],
-        "elite_fast_moves": [],
+        "elite_fast_moves": [
+            "Force Palm"
+        ],
         "fast_moves": [
             "Counter",
             "Bullet Punch"

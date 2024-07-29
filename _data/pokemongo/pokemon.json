@@ -13244,7 +13244,9 @@
             "Thunder Punch"
         ],
         "elite_charged_moves": [],
-        "elite_fast_moves": [],
+        "elite_fast_moves": [
+            "Force Palm"
+        ],
         "fast_moves": [
             "Counter",
             "Bullet Punch"
@@ -29522,6 +29524,7 @@
         "base_defense": 157,
         "base_stamina": 179,
         "form": "Family_of_four",
+	"form_kor": "네식구",
         "pokemon_id": 925,
         "pokemon_name": "Maushold",
         "type": [
@@ -29546,6 +29549,7 @@
         "base_defense": 157,
         "base_stamina": 179,
         "form": "Family_of_three",
+	"form_kor": "세식구",
         "pokemon_id": 925,
         "pokemon_name": "Maushold",
         "type": [

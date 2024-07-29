@@ -910,5 +910,17 @@
         "damage_window_start": 1000,
         "damage_window_end": 1500,
         "name_kor": "지오컨트롤"
+    },
+    {
+        "duration": 900,
+        "energy_delta": 14,
+        "move_id": 462,
+        "name": "Force Palm",
+        "power": 9,
+        "stamina_loss_scaler": 0.01,
+        "type": "Fighting",
+        "damage_window_start": 700,
+        "damage_window_end": 900,
+        "name_kor": "발경"
     }
 ]
