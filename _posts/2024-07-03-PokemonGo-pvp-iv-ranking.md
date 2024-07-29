@@ -10,6 +10,12 @@ image:
     path: /assets/img/preview-iv-ranking.png
 ---
 
+## 포켓몬고 PVP 개체 순위표
+
+{% include calculator_pvp_ranking.html %}
+
+---
+
 ## 사용방법
 
 포켓몬의 이름을 검색하고 순위를 확인할 리그를 선택합니다. 기본 리그는 슈퍼리그입니다.
@@ -23,12 +29,6 @@ image:
 - 베스트파트너 선택 시, 레벨 제한이 50에서 51로 변경됩니다.
 - 공격개체, 방어개체, 체력개체에 대한 필터링을 적용할 수 있습니다.
 - 유효공격, 유효방어, 유효체력에 대한 최소/최대 필터링을 적용할 수 있습니다.
-
----
-
-## 포켓몬고 PVP 개체 순위표
-
-{% include calculator_pvp_ranking.html %}
 
 ---
 
