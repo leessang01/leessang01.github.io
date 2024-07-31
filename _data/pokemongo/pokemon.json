@@ -14496,7 +14496,8 @@
             "Psycho Cut",
             "Confusion"
         ],
-        "pokemon_name_kor": "크레세리아"
+        "pokemon_name_kor": "크레세리아",
+        "has_shadow": true
     },
     {
         "base_attack": 162,
@@ -15997,7 +15998,8 @@
             "Low Kick",
             "Pound"
         ],
-        "pokemon_name_kor": "으랏차"
+        "pokemon_name_kor": "으랏차",
+        "has_shadow": true
     },
     {
         "base_attack": 180,
@@ -16020,7 +16022,8 @@
             "Low Kick",
             "Poison Jab"
         ],
-        "pokemon_name_kor": "토쇠골"
+        "pokemon_name_kor": "토쇠골",
+        "has_shadow": true
     },
     {
         "base_attack": 243,
@@ -16045,7 +16048,8 @@
             "Counter",
             "Poison Jab"
         ],
-        "pokemon_name_kor": "노보청"
+        "pokemon_name_kor": "노보청",
+        "has_shadow": true
     },
     {
         "base_attack": 98,
@@ -16943,7 +16947,8 @@
             "Water Gun",
             "Bite"
         ],
-        "pokemon_name_kor": "프로토가"
+        "pokemon_name_kor": "프로토가",
+        "has_shadow": true
     },
     {
         "base_attack": 192,
@@ -16968,7 +16973,8 @@
             "Water Gun",
             "Rock Throw"
         ],
-        "pokemon_name_kor": "늑골라"
+        "pokemon_name_kor": "늑골라",
+        "has_shadow": true
     },
     {
         "base_attack": 213,
@@ -16992,7 +16998,8 @@
             "Quick Attack",
             "Wing Attack"
         ],
-        "pokemon_name_kor": "아켄"
+        "pokemon_name_kor": "아켄",
+        "has_shadow": true
     },
     {
         "base_attack": 292,
@@ -17016,7 +17023,8 @@
             "Steel Wing",
             "Wing Attack"
         ],
-        "pokemon_name_kor": "아케오스"
+        "pokemon_name_kor": "아케오스",
+        "has_shadow": true
     },
     {
         "base_attack": 96,
