@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breakpoints and Bulkpoints</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 20px;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Breakpoints Section -->
+        <div class="section">
+            <h2>Breakpoints</h2>
+            <label for="yInput">Enter y: </label>
+            <input type="number" id="yInput" value="1" oninput="calculateBreakpoints()">
+            <br>
+            <label for="kDropdown">Select k range: </label>
+            <select id="kDropdown" onchange="calculateBreakpoints()">
+                <option value="5">0 to 5</option>
+                <option value="10" selected>0 to 10</option>
+                <option value="20">0 to 20</option>
+            </select>
+            <ul id="breakpointsList"></ul>
+        </div>
+        <!-- Bulkpoints Section -->
+        <div class="section">
+            <h2>Bulkpoints</h2>
+            <label for="xInput">Enter x: </label>
+            <input type="number" id="xInput" value="1" oninput="calculateBulkpoints()">
+            <br>
+            <label for="divisorDropdown">Select max divisor: </label>
+            <select id="divisorDropdown" onchange="calculateBulkpoints()">
+                <option value="5">1 to 5</option>
+                <option value="10" selected>1 to 10</option>
+                <option value="20">1 to 20</option>
+            </select>
+            <ul id="bulkpointsList"></ul>
+        </div>
+    </div>
+
+    <script>
+        function calculateBreakpoints() {
+            const y = parseInt(document.getElementById('yInput').value);
+            const kRange = parseInt(document.getElementById('kDropdown').value);
+            const breakpointsList = document.getElementById('breakpointsList');
+            breakpointsList.innerHTML = ''; // Clear previous results
+
+            // Calculate breakpoints
+            if (y > 0) {
+                for (let k = 0; k <= kRange; k++) {
+                    const breakpoint = k * y;
+                    const li = document.createElement('li');
+                    li.textContent = `k = ${k}: x = ${breakpoint}`;
+                    breakpointsList.appendChild(li);
+                }
+            }
+        }
+
+        function calculateBulkpoints() {
+            const x = parseInt(document.getElementById('xInput').value);
+            const maxDivisor = parseInt(document.getElementById('divisorDropdown').value);
+            const bulkpointsList = document.getElementById('bulkpointsList');
+            bulkpointsList.innerHTML = ''; // Clear previous results
+
+            // Calculate bulkpoints
+            if (x > 0) {
+                for (let k = 1; k <= maxDivisor; k++) {
+                    if (x % k === 0) {
+                        const bulkpoint = x / k;
+                        const li = document.createElement('li');
+                        li.textContent = `k = ${k}: y = ${bulkpoint}`;
+                        bulkpointsList.appendChild(li);
+                    }
+                }
+            }
+        }
+
+        // Initial calculation to populate lists on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            calculateBreakpoints();
+            calculateBulkpoints();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,722 @@
+[
+    {
+        "energy_delta": 4,
+        "move_id": 200,
+        "name": "Fury Cutter",
+        "power": 2,
+        "turn_duration": 1,
+        "type": "Bug",
+        "name_kor": "연속자르기"
+    },
+    {
+        "energy_delta": 3,
+        "move_id": 201,
+        "name": "Bug Bite",
+        "power": 3,
+        "turn_duration": 1,
+        "type": "Bug",
+        "name_kor": "벌레먹기"
+    },
+    {
+        "energy_delta": 2,
+        "move_id": 202,
+        "name": "Bite",
+        "power": 4,
+        "turn_duration": 1,
+        "type": "Dark",
+        "name_kor": "물기"
+    },
+    {
+        "energy_delta": 7,
+        "move_id": 203,
+        "name": "Sucker Punch",
+        "power": 5,
+        "turn_duration": 2,
+        "type": "Dark",
+        "name_kor": "기습"
+    },
+    {
+        "energy_delta": 3,
+        "move_id": 204,
+        "name": "Dragon Breath",
+        "power": 4,
+        "turn_duration": 1,
+        "type": "Dragon",
+        "name_kor": "용의숨결"
+    },
+    {
+        "energy_delta": 9,
+        "move_id": 205,
+        "name": "Thunder Shock",
+        "power": 3,
+        "turn_duration": 2,
+        "type": "Electric",
+        "name_kor": "전기쇼크"
+    },
+    {
+        "energy_delta": 7,
+        "move_id": 206,
+        "name": "Spark",
+        "power": 5,
+        "turn_duration": 2,
+        "type": "Electric",
+        "name_kor": "스파크"
+    },
+    {
+        "energy_delta": 5,
+        "move_id": 207,
+        "name": "Low Kick",
+        "power": 4,
+        "turn_duration": 2,
+        "type": "Fighting",
+        "name_kor": "안다리걸기"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 208,
+        "name": "Karate Chop",
+        "power": 5,
+        "turn_duration": 2,
+        "type": "Fighting",
+        "name_kor": "태권당수"
+    },
+    {
+        "energy_delta": 6,
+        "move_id": 209,
+        "name": "Ember",
+        "power": 7,
+        "turn_duration": 2,
+        "type": "Fire",
+        "name_kor": "불꽃세례"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 210,
+        "name": "Wing Attack",
+        "power": 5,
+        "turn_duration": 2,
+        "type": "Flying",
+        "name_kor": "날개치기"
+    },
+    {
+        "energy_delta": 5,
+        "move_id": 211,
+        "name": "Peck",
+        "power": 6,
+        "turn_duration": 2,
+        "type": "Flying",
+        "name_kor": "쪼기"
+    },
+    {
+        "energy_delta": 3,
+        "move_id": 212,
+        "name": "Lick",
+        "power": 3,
+        "turn_duration": 1,
+        "type": "Ghost",
+        "name_kor": "핥기"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 213,
+        "name": "Shadow Claw",
+        "power": 6,
+        "turn_duration": 2,
+        "type": "Ghost",
+        "name_kor": "섀도클로"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 214,
+        "name": "Vine Whip",
+        "power": 5,
+        "turn_duration": 2,
+        "type": "Grass",
+        "name_kor": "덩굴채찍"
+    },
+    {
+        "energy_delta": 4,
+        "move_id": 215,
+        "name": "Razor Leaf",
+        "power": 10,
+        "turn_duration": 2,
+        "type": "Grass",
+        "name_kor": "잎날가르기"
+    },
+    {
+        "energy_delta": 9,
+        "move_id": 216,
+        "name": "Mud Shot",
+        "power": 3,
+        "turn_duration": 2,
+        "type": "Ground",
+        "name_kor": "머드샷"
+    },
+    {
+        "energy_delta": 10,
+        "move_id": 217,
+        "name": "Ice Shard",
+        "power": 9,
+        "turn_duration": 3,
+        "type": "Ice",
+        "name_kor": "얼음뭉치"
+    },
+    {
+        "energy_delta": 5,
+        "move_id": 218,
+        "name": "Frost Breath",
+        "power": 7,
+        "turn_duration": 2,
+        "type": "Ice",
+        "name_kor": "얼음숨결"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 219,
+        "name": "Quick Attack",
+        "power": 5,
+        "turn_duration": 2,
+        "type": "Normal",
+        "name_kor": "전광석화"
+    },
+    {
+        "energy_delta": 2,
+        "move_id": 220,
+        "name": "Scratch",
+        "power": 4,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "할퀴기"
+    },
+    {
+        "energy_delta": 3,
+        "move_id": 221,
+        "name": "Tackle",
+        "power": 3,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "몸통박치기"
+    },
+    {
+        "energy_delta": 4,
+        "move_id": 222,
+        "name": "Pound",
+        "power": 4,
+        "turn_duration": 2,
+        "type": "Normal",
+        "name_kor": "막치기"
+    },
+    {
+        "energy_delta": 2,
+        "move_id": 223,
+        "name": "Cut",
+        "power": 3,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "풀베기"
+    },
+    {
+        "energy_delta": 7,
+        "move_id": 224,
+        "name": "Poison Jab",
+        "power": 7,
+        "turn_duration": 2,
+        "type": "Poison",
+        "name_kor": "독찌르기"
+    },
+    {
+        "energy_delta": 5,
+        "move_id": 225,
+        "name": "Acid",
+        "power": 6,
+        "turn_duration": 2,
+        "type": "Poison",
+        "name_kor": "용해액"
+    },
+    {
+        "energy_delta": 9,
+        "move_id": 226,
+        "name": "Psycho Cut",
+        "power": 3,
+        "turn_duration": 2,
+        "type": "Psychic",
+        "name_kor": "사이코커터"
+    },
+    {
+        "energy_delta": 5,
+        "move_id": 227,
+        "name": "Rock Throw",
+        "power": 8,
+        "turn_duration": 2,
+        "type": "Rock",
+        "name_kor": "돌떨구기"
+    },
+    {
+        "energy_delta": 6,
+        "move_id": 228,
+        "name": "Metal Claw",
+        "power": 5,
+        "turn_duration": 2,
+        "type": "Steel",
+        "name_kor": "메탈클로"
+    },
+    {
+        "energy_delta": 7,
+        "move_id": 229,
+        "name": "Bullet Punch",
+        "power": 6,
+        "turn_duration": 2,
+        "type": "Steel",
+        "name_kor": "불릿펀치"
+    },
+    {
+        "energy_delta": 3,
+        "move_id": 230,
+        "name": "Water Gun",
+        "power": 3,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "물대포"
+    },
+    {
+        "energy_delta": 12,
+        "move_id": 231,
+        "name": "Splash",
+        "power": 0,
+        "turn_duration": 4,
+        "type": "Water",
+        "name_kor": "튀어오르기"
+    },
+    {
+        "energy_delta": 9,
+        "move_id": 233,
+        "name": "Mud Slap",
+        "power": 11,
+        "turn_duration": 3,
+        "type": "Ground",
+        "name_kor": "진흙뿌리기"
+    },
+    {
+        "energy_delta": 6,
+        "move_id": 234,
+        "name": "Zen Headbutt",
+        "power": 8,
+        "turn_duration": 3,
+        "type": "Psychic",
+        "name_kor": "사념의박치기"
+    },
+    {
+        "energy_delta": 12,
+        "move_id": 235,
+        "name": "Confusion",
+        "power": 16,
+        "turn_duration": 4,
+        "type": "Psychic",
+        "name_kor": "염동력"
+    },
+    {
+        "energy_delta": 9,
+        "move_id": 236,
+        "name": "Poison Sting",
+        "power": 3,
+        "turn_duration": 2,
+        "type": "Poison",
+        "name_kor": "독침"
+    },
+    {
+        "energy_delta": 11,
+        "move_id": 237,
+        "name": "Bubble",
+        "power": 8,
+        "turn_duration": 3,
+        "type": "Water",
+        "name_kor": "거품"
+    },
+    {
+        "energy_delta": 6,
+        "move_id": 238,
+        "name": "Feint Attack",
+        "power": 6,
+        "turn_duration": 2,
+        "type": "Dark",
+        "name_kor": "속여때리기"
+    },
+    {
+        "energy_delta": 7,
+        "move_id": 239,
+        "name": "Steel Wing",
+        "power": 7,
+        "turn_duration": 2,
+        "type": "Steel",
+        "name_kor": "강철날개"
+    },
+    {
+        "energy_delta": 5,
+        "move_id": 240,
+        "name": "Fire Fang",
+        "power": 8,
+        "turn_duration": 2,
+        "type": "Fire",
+        "name_kor": "불꽃엄니"
+    },
+    {
+        "energy_delta": 7,
+        "move_id": 241,
+        "name": "Rock Smash",
+        "power": 9,
+        "turn_duration": 3,
+        "type": "Fighting",
+        "name_kor": "바위깨기"
+    },
+    {
+        "energy_delta": 0,
+        "move_id": 242,
+        "name": "Transform",
+        "power": 0,
+        "turn_duration": 3,
+        "type": "Normal",
+        "name_kor": "변신"
+    },
+    {
+        "energy_delta": 7,
+        "move_id": 243,
+        "name": "Counter",
+        "power": 8,
+        "turn_duration": 2,
+        "type": "Fighting",
+        "name_kor": "카운터"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 244,
+        "name": "Powder Snow",
+        "power": 5,
+        "turn_duration": 2,
+        "type": "Ice",
+        "name_kor": "눈싸라기"
+    },
+    {
+        "energy_delta": 11,
+        "move_id": 249,
+        "name": "Charge Beam",
+        "power": 5,
+        "turn_duration": 3,
+        "type": "Electric",
+        "name_kor": "차지빔"
+    },
+    {
+        "energy_delta": 16,
+        "move_id": 250,
+        "name": "Volt Switch",
+        "power": 12,
+        "turn_duration": 4,
+        "type": "Electric",
+        "name_kor": "볼트체인지"
+    },
+    {
+        "energy_delta": 9,
+        "move_id": 253,
+        "name": "Dragon Tail",
+        "power": 13,
+        "turn_duration": 3,
+        "type": "Dragon",
+        "name_kor": "드래곤테일"
+    },
+    {
+        "energy_delta": 9,
+        "move_id": 255,
+        "name": "Air Slash",
+        "power": 9,
+        "turn_duration": 3,
+        "type": "Flying",
+        "name_kor": "에어슬래시"
+    },
+    {
+        "energy_delta": 12,
+        "move_id": 260,
+        "name": "Infestation",
+        "power": 6,
+        "turn_duration": 3,
+        "type": "Bug",
+        "name_kor": "엉겨붙기"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 261,
+        "name": "Struggle Bug",
+        "power": 9,
+        "turn_duration": 3,
+        "type": "Bug",
+        "name_kor": "벌레의저항"
+    },
+    {
+        "energy_delta": 10,
+        "move_id": 263,
+        "name": "Astonish",
+        "power": 9,
+        "turn_duration": 3,
+        "type": "Ghost",
+        "name_kor": "놀래키기"
+    },
+    {
+        "energy_delta": 12,
+        "move_id": 264,
+        "name": "Hex",
+        "power": 6,
+        "turn_duration": 3,
+        "type": "Ghost",
+        "name_kor": "병상첨병"
+    },
+    {
+        "energy_delta": 7,
+        "move_id": 266,
+        "name": "Iron Tail",
+        "power": 10,
+        "turn_duration": 3,
+        "type": "Steel",
+        "name_kor": "아이언테일"
+    },
+    {
+        "energy_delta": 10,
+        "move_id": 269,
+        "name": "Fire Spin",
+        "power": 10,
+        "turn_duration": 3,
+        "type": "Fire",
+        "name_kor": "회오리불꽃"
+    },
+    {
+        "energy_delta": 13,
+        "move_id": 271,
+        "name": "Bullet Seed",
+        "power": 5,
+        "turn_duration": 3,
+        "type": "Grass",
+        "name_kor": "씨기관총"
+    },
+    {
+        "energy_delta": 10,
+        "move_id": 274,
+        "name": "Extrasensory",
+        "power": 8,
+        "turn_duration": 3,
+        "type": "Psychic",
+        "name_kor": "신통력"
+    },
+    {
+        "energy_delta": 13,
+        "move_id": 278,
+        "name": "Snarl",
+        "power": 5,
+        "turn_duration": 3,
+        "type": "Dark",
+        "name_kor": "바크아웃"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 281,
+        "name": "Hidden Power",
+        "power": 9,
+        "turn_duration": 3,
+        "type": "Normal",
+        "name_kor": "잠재파워"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 282,
+        "name": "Take Down",
+        "power": 5,
+        "turn_duration": 3,
+        "type": "Normal",
+        "name_kor": "돌진"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 283,
+        "name": "Waterfall",
+        "power": 12,
+        "turn_duration": 3,
+        "type": "Water",
+        "name_kor": "폭포오르기"
+    },
+    {
+        "energy_delta": 12,
+        "move_id": 287,
+        "name": "Yawn",
+        "power": 0,
+        "turn_duration": 4,
+        "type": "Normal",
+        "name_kor": "하품"
+    },
+    {
+        "energy_delta": 12,
+        "move_id": 291,
+        "name": "Present",
+        "power": 3,
+        "turn_duration": 3,
+        "type": "Normal",
+        "name_kor": "프레젠트"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 297,
+        "name": "Smack Down",
+        "power": 12,
+        "turn_duration": 3,
+        "type": "Rock",
+        "name_kor": "떨어뜨리기"
+    },
+    {
+        "energy_delta": 6,
+        "move_id": 320,
+        "name": "Charm",
+        "power": 15,
+        "turn_duration": 3,
+        "type": "Fairy",
+        "name_kor": "애교부리기"
+    },
+    {
+        "energy_delta": 5,
+        "move_id": 325,
+        "name": "Lock On",
+        "power": 1,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "록온"
+    },
+    {
+        "energy_delta": 5,
+        "move_id": 326,
+        "name": "Thunder Fang",
+        "power": 8,
+        "turn_duration": 2,
+        "type": "Electric",
+        "name_kor": "번개엄니"
+    },
+    {
+        "energy_delta": 5,
+        "move_id": 327,
+        "name": "Ice Fang",
+        "power": 8,
+        "turn_duration": 2,
+        "type": "Ice",
+        "name_kor": "얼음엄니"
+    },
+    {
+        "energy_delta": 12,
+        "move_id": 345,
+        "name": "Gust",
+        "power": 16,
+        "turn_duration": 4,
+        "type": "Flying",
+        "name_kor": "바람일으키기"
+    },
+    {
+        "energy_delta": 20,
+        "move_id": 346,
+        "name": "Incinerate",
+        "power": 20,
+        "turn_duration": 5,
+        "type": "Fire",
+        "name_kor": "불태우기"
+    },
+    {
+        "energy_delta": 9,
+        "move_id": 350,
+        "name": "Fairy Wind",
+        "power": 3,
+        "turn_duration": 2,
+        "type": "Fairy",
+        "name_kor": "요정의바람"
+    },
+    {
+        "energy_delta": 12,
+        "move_id": 356,
+        "name": "Double Kick",
+        "power": 8,
+        "turn_duration": 3,
+        "type": "Fighting",
+        "name_kor": "두번차기"
+    },
+    {
+        "energy_delta": 10,
+        "move_id": 357,
+        "name": "Magical Leaf",
+        "power": 10,
+        "turn_duration": 3,
+        "type": "Grass",
+        "name_kor": "매지컬리프"
+    },
+    {
+        "energy_delta": 13,
+        "move_id": 368,
+        "name": "Rollout",
+        "power": 5,
+        "turn_duration": 3,
+        "type": "Rock",
+        "name_kor": "구르기"
+    },
+    {
+        "energy_delta": 14,
+        "move_id": 373,
+        "name": "Water Shuriken",
+        "power": 6,
+        "turn_duration": 3,
+        "type": "Water",
+        "name_kor": "물수리검"
+    },
+    {
+        "energy_delta": 7,
+        "move_id": 385,
+        "name": "Leafage",
+        "power": 6,
+        "turn_duration": 2,
+        "type": "Grass",
+        "name_kor": "나뭇잎"
+    },
+    {
+        "energy_delta": 13,
+        "move_id": 387,
+        "name": "Geomancy",
+        "power": 4,
+        "turn_duration": 3,
+        "type": "Fairy",
+        "name_kor": "지오컨트롤"
+    },
+    {
+        "energy_delta": 2,
+        "move_id": 401,
+        "name": "Psywave",
+        "power": 3,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "사이코웨이브"
+    },
+    {
+        "energy_delta": 8,
+        "move_id": 402,
+        "name": "Metal Sound",
+        "power": 3,
+        "turn_duration": 2,
+        "type": "Steel",
+        "name_kor": "금속음"
+    },
+    {
+        "energy_delta": 4,
+        "move_id": 403,
+        "name": "Sand Attack",
+        "power": 2,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "모래뿌리기"
+    },
+    {
+        "energy_delta": 10,
+        "move_id": 462,
+        "name": "Force Palm",
+        "power": 13,
+        "turn_duration": 3,
+        "type": "Fighting",
+        "name_kor": "발경"
+    }
+]

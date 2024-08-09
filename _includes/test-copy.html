@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectize.js Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+<body>
+
+<label for="pokemon">Choose a Pokémon:</label>
+<select id="pokemon" name="pokemon" placeholder="Select a Pokémon..." style="width: 200px;">
+</select>
+<table border="1">
+    <thead>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="width: 10%;">공격개체</td>
+            <td style="width: 50px;"><input type="text" id="ivAtk" name="ivAtk" placeholder="0-15" style="width: 80%;"></td>
+            <td>유효공격</td>
+            <td style="width: 50px;"><input type="text" id="minAtk" name="minAtk" placeholder="Min" style="width: 80%;"></td>
+            <td style="width: 50px;"><input type="text" id="maxAtk" name="maxAtk" placeholder="Max" style="width: 80%;"></td>
+            
+        </tr>
+        <tr>
+            <td>방어개체</td>
+            <td><input type="text" id="ivDef" name="ivDef" placeholder="0-15" style="width: 80%;"></td>
+            <td>유효방어</td>
+            <td><input type="text" id="minDef" name="minDef" placeholder="Min" style="width: 80%;"></td>
+            <td><input type="text" id="maxDef" name="maxDef" placeholder="Max" style="width: 80%;"></td>
+        </tr>
+        <tr>
+            <td>체력개체</td>
+            <td><input type="text" id="ivStm" name="ivStm" placeholder="0-15" style="width: 80%;"></td>
+            <td>유효체력</td>
+            <td><input type="text" id="minStm" name="minStm" placeholder="Min" style="width: 80%;"></td>
+            <td><input type="text" id="maxStm" name="maxStm" placeholder="Max" style="width: 80%;"></td>
+        </tr>
+    </tbody>
+</table>
+<script>
+$(document).ready(function() {
+    $('#pokemon').selectize({
+        sortField: 'text'
+    });
+
+    // Populate select options dynamically if needed
+    var pokemonData = [{"name":100, "type":"fire"}, {"name":"B"}, {"name":"C"}];
+    var pokemonName = pokemonData.reduce(x => x.name);
+    const selectize = $('#pokemon')[0].selectize;
+    for(let pokemonx in pokemonData){
+        selectize.addOption({ value: pokemonx, text: pokemonData[pokemonx].name });
+    }
+
+    selectize.on('change', function() {
+        var selectedValue = selectize.getValue();
+        alert("selected");
+    });
+});
+</script>
+
+</body>
+</html>

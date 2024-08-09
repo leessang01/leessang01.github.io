@@ -1,0 +1,2223 @@
+[
+    {
+        "energy_delta": -45,
+        "move_id": 13,
+        "name": "Wrap",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "김밥말이"
+    },
+    {
+        "energy_delta": -80,
+        "move_id": 14,
+        "name": "Hyper Beam",
+        "power": 150,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "파괴광선"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 16,
+        "name": "Dark Pulse",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Dark",
+        "name_kor": "악의파동"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 18,
+        "name": "Sludge",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Poison",
+        "name_kor": "오물공격"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 20,
+        "name": "Vice Grip",
+        "power": 40,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "찝기"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 21,
+        "name": "Flame Wheel",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "화염바퀴"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 22,
+        "name": "Megahorn",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Bug",
+        "name_kor": "메가혼"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 24,
+        "name": "Flamethrower",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "화염방사"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 26,
+        "name": "Dig",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "구멍파기"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 28,
+        "name": "Cross Chop",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "크로스촙"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 30,
+        "name": "Psybeam",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "환상빔"
+    },
+    {
+        "energy_delta": -65,
+        "move_id": 31,
+        "name": "Earthquake",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "지진"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 32,
+        "name": "Stone Edge",
+        "power": 100,
+        "turn_duration": 1,
+        "type": "Rock",
+        "name_kor": "스톤에지"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 33,
+        "name": "Ice Punch",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Ice",
+        "name_kor": "냉동펀치"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 34,
+        "name": "Heart Stamp",
+        "power": 40,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "하트스탬프"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 35,
+        "name": "Discharge",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Electric",
+        "name_kor": "방전"
+    },
+    {
+        "energy_delta": -70,
+        "move_id": 36,
+        "name": "Flash Cannon",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Steel",
+        "name_kor": "러스터캐논"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 38,
+        "name": "Drill Peck",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "회전부리"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 39,
+        "name": "Ice Beam",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Ice",
+        "name_kor": "냉동빔"
+    },
+    {
+        "energy_delta": -75,
+        "move_id": 40,
+        "name": "Blizzard",
+        "power": 140,
+        "turn_duration": 1,
+        "type": "Ice",
+        "name_kor": "눈보라"
+    },
+    {
+        "energy_delta": -75,
+        "move_id": 42,
+        "name": "Heat Wave",
+        "power": 95,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "열풍"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 45,
+        "name": "Aerial Ace",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "제비반환"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 46,
+        "name": "Drill Run",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "드릴라이너"
+    },
+    {
+        "energy_delta": -65,
+        "move_id": 47,
+        "name": "Petal Blizzard",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "꽃보라"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 48,
+        "name": "Mega Drain",
+        "power": 25,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "메가드레인"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.3,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -60,
+        "move_id": 49,
+        "name": "Bug Buzz",
+        "power": 100,
+        "turn_duration": 1,
+        "type": "Bug",
+        "name_kor": "벌레의야단법석"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -40,
+        "move_id": 50,
+        "name": "Poison Fang",
+        "power": 45,
+        "turn_duration": 1,
+        "type": "Poison",
+        "name_kor": "맹독엄니"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.125,
+            "attacker_attack_stat_stage_change": 2
+        },
+        "energy_delta": -35,
+        "move_id": 51,
+        "name": "Night Slash",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Dark",
+        "name_kor": "깜짝베기"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -40,
+        "move_id": 53,
+        "name": "Bubble Beam",
+        "power": 25,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "거품광선"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 54,
+        "name": "Submission",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "지옥의바퀴"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 56,
+        "name": "Low Sweep",
+        "power": 40,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "로킥"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 57,
+        "name": "Aqua Jet",
+        "power": 45,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "아쿠아제트"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 58,
+        "name": "Aqua Tail",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "아쿠아테일"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 59,
+        "name": "Seed Bomb",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "씨폭탄"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 60,
+        "name": "Psyshock",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "사이코쇼크"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.1,
+            "attacker_attack_stat_stage_change": 1,
+            "attacker_defense_stat_stage_change": 1
+        },
+        "energy_delta": -45,
+        "move_id": 62,
+        "name": "Ancient Power",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Rock",
+        "name_kor": "원시의힘"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -60,
+        "move_id": 63,
+        "name": "Rock Tomb",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Rock",
+        "name_kor": "암석봉인"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 64,
+        "name": "Rock Slide",
+        "power": 75,
+        "turn_duration": 1,
+        "type": "Rock",
+        "name_kor": "스톤샤워"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 65,
+        "name": "Power Gem",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Rock",
+        "name_kor": "파워젬"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 66,
+        "name": "Shadow Sneak",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Ghost",
+        "name_kor": "야습"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 67,
+        "name": "Shadow Punch",
+        "power": 40,
+        "turn_duration": 1,
+        "type": "Ghost",
+        "name_kor": "섀도펀치"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.1,
+            "attacker_attack_stat_stage_change": 1,
+            "attacker_defense_stat_stage_change": 1
+        },
+        "energy_delta": -45,
+        "move_id": 69,
+        "name": "Ominous Wind",
+        "power": 45,
+        "turn_duration": 1,
+        "type": "Ghost",
+        "name_kor": "괴상한바람"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 70,
+        "name": "Shadow Ball",
+        "power": 100,
+        "turn_duration": 1,
+        "type": "Ghost",
+        "name_kor": "섀도볼"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 72,
+        "name": "Magnet Bomb",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Steel",
+        "name_kor": "마그넷봄"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 74,
+        "name": "Iron Head",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Steel",
+        "name_kor": "아이언헤드"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 75,
+        "name": "Parabolic Charge",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Electric",
+        "name_kor": "파라볼라차지"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 77,
+        "name": "Thunder Punch",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Electric",
+        "name_kor": "번개펀치"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 78,
+        "name": "Thunder",
+        "power": 100,
+        "turn_duration": 1,
+        "type": "Electric",
+        "name_kor": "번개"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 79,
+        "name": "Thunderbolt",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Electric",
+        "name_kor": "10만볼트"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 80,
+        "name": "Twister",
+        "power": 45,
+        "turn_duration": 1,
+        "type": "Dragon",
+        "name_kor": "회오리"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 82,
+        "name": "Dragon Pulse",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Dragon",
+        "name_kor": "용의파동"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 83,
+        "name": "Dragon Claw",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Dragon",
+        "name_kor": "드래곤클로"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 84,
+        "name": "Disarming Voice",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Fairy",
+        "name_kor": "차밍보이스"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 85,
+        "name": "Draining Kiss",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Fairy",
+        "name_kor": "드레인키스"
+    },
+    {
+        "energy_delta": -70,
+        "move_id": 86,
+        "name": "Dazzling Gleam",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Fairy",
+        "name_kor": "매지컬샤인"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.1,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -60,
+        "move_id": 87,
+        "name": "Moonblast",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Fairy",
+        "name_kor": "문포스"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 88,
+        "name": "Play Rough",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Fairy",
+        "name_kor": "치근거리기"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.125,
+            "attacker_attack_stat_stage_change": 2
+        },
+        "energy_delta": -35,
+        "move_id": 89,
+        "name": "Cross Poison",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Poison",
+        "name_kor": "크로스포이즌"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 90,
+        "name": "Sludge Bomb",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Poison",
+        "name_kor": "오물폭탄"
+    },
+    {
+        "energy_delta": -65,
+        "move_id": 91,
+        "name": "Sludge Wave",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Poison",
+        "name_kor": "오물웨이브"
+    },
+    {
+        "energy_delta": -75,
+        "move_id": 92,
+        "name": "Gunk Shot",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Poison",
+        "name_kor": "더스트슈트"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 94,
+        "name": "Bone Club",
+        "power": 40,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "뼈다귀치기"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 95,
+        "name": "Bulldoze",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "땅고르기"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 96,
+        "name": "Mud Bomb",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "진흙폭탄"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.2,
+            "target_attack_stat_stage_change": -1,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -55,
+        "move_id": 99,
+        "name": "Signal Beam",
+        "power": 75,
+        "turn_duration": 1,
+        "type": "Bug",
+        "name_kor": "시그널빔"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 100,
+        "name": "X Scissor",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Bug",
+        "name_kor": "시저크로스"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_attack_stat_stage_change": 1
+        },
+        "energy_delta": -50,
+        "move_id": 101,
+        "name": "Flame Charge",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "니트로차지"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 102,
+        "name": "Flame Burst",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "불꽃튀기기"
+    },
+    {
+        "energy_delta": -80,
+        "move_id": 103,
+        "name": "Fire Blast",
+        "power": 140,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "불대문자"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 104,
+        "name": "Brine",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "소금물"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 105,
+        "name": "Water Pulse",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "물의파동"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.3,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -50,
+        "move_id": 106,
+        "name": "Scald",
+        "power": 85,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "열탕"
+    },
+    {
+        "energy_delta": -75,
+        "move_id": 107,
+        "name": "Hydro Pump",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "하이드로펌프"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.1,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -55,
+        "move_id": 108,
+        "name": "Psychic",
+        "power": 75,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "사이코키네시스"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 109,
+        "name": "Psystrike",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "사이코브레이크"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -45,
+        "move_id": 111,
+        "name": "Icy Wind",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Ice",
+        "name_kor": "얼어붙은바람"
+    },
+    {
+        "energy_delta": -80,
+        "move_id": 114,
+        "name": "Giga Drain",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "기가드레인"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 115,
+        "name": "Fire Punch",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "불꽃펀치"
+    },
+    {
+        "energy_delta": -80,
+        "move_id": 116,
+        "name": "Solar Beam",
+        "power": 150,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "솔라빔"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 117,
+        "name": "Leaf Blade",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "리프블레이드"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 118,
+        "name": "Power Whip",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "파워휩"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 121,
+        "name": "Air Cutter",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "에어커터"
+    },
+    {
+        "energy_delta": -65,
+        "move_id": 122,
+        "name": "Hurricane",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "폭풍"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -40,
+        "move_id": 123,
+        "name": "Brick Break",
+        "power": 40,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "깨트리기"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 125,
+        "name": "Swift",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "스피드스타"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 126,
+        "name": "Horn Attack",
+        "power": 40,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "뿔찌르기"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 127,
+        "name": "Stomp",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "짓밟기"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 129,
+        "name": "Hyper Fang",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "필살앞니"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 131,
+        "name": "Body Slam",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "누르기"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 132,
+        "name": "Rest",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "잠자기"
+    },
+    {
+        "energy_delta": -100,
+        "move_id": 133,
+        "name": "Struggle",
+        "power": 35,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "발버둥"
+    },
+    {
+        "energy_delta": -80,
+        "move_id": 134,
+        "name": "Scald Blastoise",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "열탕"
+    },
+    {
+        "energy_delta": -80,
+        "move_id": 135,
+        "name": "Hydro Pump Blastoise",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "하이드로펌프"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 136,
+        "name": "Wrap Green",
+        "power": 25,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "김밥말이"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 137,
+        "name": "Wrap Pink",
+        "power": 25,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "김밥말이"
+    },
+    {
+        "energy_delta": 4,
+        "move_id": 232,
+        "name": "Water Gun Blastoise",
+        "power": 6,
+        "turn_duration": 2,
+        "type": "Water",
+        "name_kor": "물대포"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_defense_stat_stage_change": -2
+        },
+        "energy_delta": -45,
+        "move_id": 245,
+        "name": "Close Combat",
+        "power": 100,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "인파이트"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 246,
+        "name": "Dynamic Punch",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "폭발펀치"
+    },
+    {
+        "energy_delta": -75,
+        "move_id": 247,
+        "name": "Focus Blast",
+        "power": 150,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "기합구슬"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 248,
+        "name": "Aurora Beam",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Ice",
+        "name_kor": "오로라빔"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_defense_stat_stage_change": -2
+        },
+        "energy_delta": -45,
+        "move_id": 251,
+        "name": "Wild Charge",
+        "power": 100,
+        "turn_duration": 1,
+        "type": "Electric",
+        "name_kor": "와일드볼트"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.66,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -80,
+        "move_id": 252,
+        "name": "Zap Cannon",
+        "power": 150,
+        "turn_duration": 1,
+        "type": "Electric",
+        "name_kor": "전자포"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 254,
+        "name": "Avalanche",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Ice",
+        "name_kor": "눈사태"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_defense_stat_stage_change": -3
+        },
+        "energy_delta": -55,
+        "move_id": 256,
+        "name": "Brave Bird",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "브레이브버드"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 257,
+        "name": "Sky Attack",
+        "power": 75,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "불새"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -40,
+        "move_id": 258,
+        "name": "Sand Tomb",
+        "power": 25,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "모래지옥"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 259,
+        "name": "Rock Blast",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Rock",
+        "name_kor": "록블라스트"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.1,
+            "attacker_attack_stat_stage_change": 1,
+            "attacker_defense_stat_stage_change": 1
+        },
+        "energy_delta": -45,
+        "move_id": 262,
+        "name": "Silver Wind",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Bug",
+        "name_kor": "은빛바람"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 265,
+        "name": "Night Shade",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Ghost",
+        "name_kor": "나이트헤드"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 267,
+        "name": "Gyro Ball",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Steel",
+        "name_kor": "자이로볼"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 268,
+        "name": "Heavy Slam",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Steel",
+        "name_kor": "헤비봄버"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_attack_stat_stage_change": -2
+        },
+        "energy_delta": -55,
+        "move_id": 270,
+        "name": "Overheat",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "오버히트"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 272,
+        "name": "Grass Knot",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "풀묶기"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.1,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -55,
+        "move_id": 273,
+        "name": "Energy Ball",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "에너지볼"
+    },
+    {
+        "energy_delta": -65,
+        "move_id": 275,
+        "name": "Futuresight",
+        "power": 120,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "미래예지"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 276,
+        "name": "Mirror Coat",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "미러코트"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 277,
+        "name": "Outrage",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Dragon",
+        "name_kor": "역린"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.3,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -45,
+        "move_id": 279,
+        "name": "Crunch",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Dark",
+        "name_kor": "깨물어부수기"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 280,
+        "name": "Foul Play",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Dark",
+        "name_kor": "속임수"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 284,
+        "name": "Surf",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "파도타기"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_attack_stat_stage_change": -2
+        },
+        "energy_delta": -65,
+        "move_id": 285,
+        "name": "Draco Meteor",
+        "power": 150,
+        "turn_duration": 1,
+        "type": "Dragon",
+        "name_kor": "용성군"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 286,
+        "name": "Doom Desire",
+        "power": 75,
+        "turn_duration": 1,
+        "type": "Steel",
+        "name_kor": "파멸의소원"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_attack_stat_stage_change": -2
+        },
+        "energy_delta": -35,
+        "move_id": 288,
+        "name": "Psycho Boost",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "사이코부스트"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 289,
+        "name": "Origin Pulse",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "근원의파동"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 290,
+        "name": "Precipice Blades",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "단애의칼"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 292,
+        "name": "Weather Ball Fire",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "웨더볼"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 293,
+        "name": "Weather Ball Ice",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Ice",
+        "name_kor": "웨더볼"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 294,
+        "name": "Weather Ball Rock",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Rock",
+        "name_kor": "웨더볼"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 295,
+        "name": "Weather Ball Water",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "웨더볼"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 296,
+        "name": "Frenzy Plant",
+        "power": 100,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "하드플랜트"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 298,
+        "name": "Blast Burn",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "블라스트번"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 299,
+        "name": "Hydro Cannon",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "하이드로캐논"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 300,
+        "name": "Last Resort",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "비장의무기"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 301,
+        "name": "Meteor Mash",
+        "power": 100,
+        "turn_duration": 1,
+        "type": "Steel",
+        "name_kor": "코멧펀치"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_defense_stat_stage_change": 1
+        },
+        "energy_delta": -75,
+        "move_id": 302,
+        "name": "Skull Bash",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "로켓박치기"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_defense_stat_stage_change": -2
+        },
+        "energy_delta": -45,
+        "move_id": 303,
+        "name": "Acid Spray",
+        "power": 20,
+        "turn_duration": 1,
+        "type": "Poison",
+        "name_kor": "애시드봄"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.1,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -55,
+        "move_id": 304,
+        "name": "Earth Power",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "대지의힘"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.125,
+            "attacker_attack_stat_stage_change": 2
+        },
+        "energy_delta": -50,
+        "move_id": 305,
+        "name": "Crabhammer",
+        "power": 85,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "집게해머"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -45,
+        "move_id": 306,
+        "name": "Lunge",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Bug",
+        "name_kor": "덤벼들기"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.5,
+            "target_attack_stat_stage_change": -2
+        },
+        "energy_delta": -50,
+        "move_id": 308,
+        "name": "Octazooka",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "대포무노포"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.3,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -35,
+        "move_id": 309,
+        "name": "Mirror Shot",
+        "power": 35,
+        "turn_duration": 1,
+        "type": "Steel",
+        "name_kor": "미러샷"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_attack_stat_stage_change": -1,
+            "attacker_defense_stat_stage_change": -1
+        },
+        "energy_delta": -40,
+        "move_id": 310,
+        "name": "Super Power",
+        "power": 85,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "엄청난힘"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_attack_stat_stage_change": 1
+        },
+        "energy_delta": -35,
+        "move_id": 311,
+        "name": "Fell Stinger",
+        "power": 20,
+        "turn_duration": 1,
+        "type": "Bug",
+        "name_kor": "마지막일침"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.5,
+            "target_attack_stat_stage_change": -2
+        },
+        "energy_delta": -40,
+        "move_id": 312,
+        "name": "Leaf Tornado",
+        "power": 45,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "그래스믹서"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_defense_stat_stage_change": 1
+        },
+        "energy_delta": -40,
+        "move_id": 314,
+        "name": "Drain Punch",
+        "power": 20,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "드레인펀치"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.2,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -45,
+        "move_id": 315,
+        "name": "Shadow Bone",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Ghost",
+        "name_kor": "섀도본"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.3,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -35,
+        "move_id": 316,
+        "name": "Muddy Water",
+        "power": 35,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "탁류"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 317,
+        "name": "Blaze Kick",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "블레이즈킥"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.5,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -35,
+        "move_id": 318,
+        "name": "Razor Shell",
+        "power": 35,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "셸블레이드"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_attack_stat_stage_change": 1
+        },
+        "energy_delta": -35,
+        "move_id": 319,
+        "name": "Power Up Punch",
+        "power": 20,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "그로우펀치"
+    },
+    {
+        "energy_delta": -80,
+        "move_id": 321,
+        "name": "Giga Impact",
+        "power": 150,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "기가임팩트"
+    },
+    {
+        "energy_delta": -70,
+        "move_id": 322,
+        "name": "Frustration",
+        "power": 10,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "화풀이"
+    },
+    {
+        "energy_delta": -70,
+        "move_id": 323,
+        "name": "Return",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "은혜갚기"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 324,
+        "name": "Synchronoise",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "싱크로노이즈"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 330,
+        "name": "Sacred Sword",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "성스러운칼"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 331,
+        "name": "Flying Press",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "플라잉프레스"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 332,
+        "name": "Aura Sphere",
+        "power": 100,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "파동탄"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 333,
+        "name": "Payback",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Dark",
+        "name_kor": "보복"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 334,
+        "name": "Rock Wrecker",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Rock",
+        "name_kor": "암석포"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.125,
+            "attacker_attack_stat_stage_change": 2
+        },
+        "energy_delta": -75,
+        "move_id": 335,
+        "name": "Aeroblast",
+        "power": 170,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "에어로블라스트"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 336,
+        "name": "Techno Blast Normal",
+        "power": 120,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "테크노버스터"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 337,
+        "name": "Techno Blast Burn",
+        "power": 120,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "테크노버스터"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 338,
+        "name": "Techno Blast Chill",
+        "power": 120,
+        "turn_duration": 1,
+        "type": "Ice",
+        "name_kor": "테크노버스터"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 339,
+        "name": "Techno Blast Water",
+        "power": 120,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "테크노버스터"
+    },
+    {
+        "energy_delta": -55,
+        "move_id": 340,
+        "name": "Techno Blast Shock",
+        "power": 120,
+        "turn_duration": 1,
+        "type": "Electric",
+        "name_kor": "테크노버스터"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 341,
+        "name": "Fly",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "공중날기"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_defense_stat_stage_change": -3
+        },
+        "energy_delta": -40,
+        "move_id": 342,
+        "name": "V Create",
+        "power": 95,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "V제너레이트"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_attack_stat_stage_change": -2
+        },
+        "energy_delta": -55,
+        "move_id": 343,
+        "name": "Leaf Storm",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "리프스톰"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.5,
+            "target_attack_stat_stage_change": -1,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -50,
+        "move_id": 344,
+        "name": "Tri Attack",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "트라이어택"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_attack_stat_stage_change": -2
+        },
+        "energy_delta": -50,
+        "move_id": 348,
+        "name": "Feather Dance",
+        "power": 35,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "깃털댄스"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 352,
+        "name": "Weather Ball Normal",
+        "power": 55,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "웨더볼"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -35,
+        "move_id": 353,
+        "name": "Psychic Fangs",
+        "power": 40,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "사이코팽"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.5,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -65,
+        "move_id": 358,
+        "name": "Sacred Fire",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "성스러운불꽃"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 359,
+        "name": "Icicle Spear",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Ice",
+        "name_kor": "고드름침"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.125,
+            "attacker_attack_stat_stage_change": 2
+        },
+        "energy_delta": -75,
+        "move_id": 360,
+        "name": "Aeroblast Plus",
+        "power": 170,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "에어로블라스트+"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.125,
+            "attacker_attack_stat_stage_change": 2
+        },
+        "energy_delta": -75,
+        "move_id": 361,
+        "name": "Aeroblast Plus Plus",
+        "power": 170,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "에어로블라스트++"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.5,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -65,
+        "move_id": 362,
+        "name": "Sacred Fire Plus",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "성스러운불꽃+"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.5,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -65,
+        "move_id": 363,
+        "name": "Sacred Fire Plus Plus",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "성스러운불꽃++"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 364,
+        "name": "Acrobatics",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "애크러뱃"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.5,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -60,
+        "move_id": 365,
+        "name": "Luster Purge",
+        "power": 120,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "러스터퍼지"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.5,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -60,
+        "move_id": 366,
+        "name": "Mist Ball",
+        "power": 120,
+        "turn_duration": 1,
+        "type": "Psychic",
+        "name_kor": "미스트볼"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 367,
+        "name": "Brutal Swing",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Dark",
+        "name_kor": "세차게휘두르기"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.4,
+            "target_defense_stat_stage_change": -2
+        },
+        "energy_delta": -75,
+        "move_id": 369,
+        "name": "Seed Flare",
+        "power": 130,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "시드플레어"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_defense_stat_stage_change": 1,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -40,
+        "move_id": 370,
+        "name": "Obstruct",
+        "power": 15,
+        "turn_duration": 1,
+        "type": "Dark",
+        "name_kor": "블로킹"
+    },
+    {
+        "energy_delta": -90,
+        "move_id": 371,
+        "name": "Shadow Force",
+        "power": 120,
+        "turn_duration": 1,
+        "type": "Ghost",
+        "name_kor": "섀도다이브"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_attack_stat_stage_change": 1
+        },
+        "energy_delta": -60,
+        "move_id": 372,
+        "name": "Meteor Beam",
+        "power": 120,
+        "turn_duration": 1,
+        "type": "Rock",
+        "name_kor": "메테오빔"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 374,
+        "name": "Fusion Bolt",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Electric",
+        "name_kor": "크로스썬더"
+    },
+    {
+        "energy_delta": -45,
+        "move_id": 375,
+        "name": "Fusion Flare",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "크로스플레임"
+    },
+    {
+        "energy_delta": -75,
+        "move_id": 376,
+        "name": "Poltergeist",
+        "power": 150,
+        "turn_duration": 1,
+        "type": "Ghost",
+        "name_kor": "폴터가이스트"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 377,
+        "name": "High Horsepower",
+        "power": 100,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "10만마력"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -40,
+        "move_id": 378,
+        "name": "Glaciate",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Ice",
+        "name_kor": "얼어붙은세계"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.5,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -35,
+        "move_id": 379,
+        "name": "Breaking Swipe",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Dragon",
+        "name_kor": "와이드브레이커"
+    },
+    {
+        "energy_delta": -70,
+        "move_id": 380,
+        "name": "Boomburst",
+        "power": 150,
+        "turn_duration": 1,
+        "type": "Normal",
+        "name_kor": "폭음파"
+    },
+    {
+        "energy_delta": -35,
+        "move_id": 381,
+        "name": "Double Iron Bash",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Steel",
+        "name_kor": "더블펀처"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -45,
+        "move_id": 382,
+        "name": "Mystical Fire",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "매지컬플레임"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.3,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -45,
+        "move_id": 383,
+        "name": "Liquidation",
+        "power": 70,
+        "turn_duration": 1,
+        "type": "Water",
+        "name_kor": "아쿠아브레이크"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_defense_stat_stage_change": -1
+        },
+        "energy_delta": -70,
+        "move_id": 384,
+        "name": "Dragon Ascent",
+        "power": 150,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "화룡점정"
+    },
+    {
+        "energy_delta": -40,
+        "move_id": 386,
+        "name": "Magma Storm",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Fire",
+        "name_kor": "마그마스톰"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 388,
+        "name": "Spacial Rend",
+        "power": 95,
+        "turn_duration": 1,
+        "type": "Dragon",
+        "name_kor": "공간절단"
+    },
+    {
+        "energy_delta": -50,
+        "move_id": 389,
+        "name": "Oblivion Wing",
+        "power": 85,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "데스윙"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -50,
+        "move_id": 390,
+        "name": "Natures Madness",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Fairy",
+        "name_kor": "자연의분노"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_attack_stat_stage_change": 1
+        },
+        "energy_delta": -45,
+        "move_id": 391,
+        "name": "Triple Axel",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Ice",
+        "name_kor": "트리플악셀"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_attack_stat_stage_change": 1
+        },
+        "energy_delta": -50,
+        "move_id": 392,
+        "name": "Trailblaze",
+        "power": 65,
+        "turn_duration": 1,
+        "type": "Grass",
+        "name_kor": "개척하기"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.3,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -50,
+        "move_id": 393,
+        "name": "Scorching Sands",
+        "power": 80,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "열사의대지"
+    },
+    {
+        "energy_delta": -65,
+        "move_id": 394,
+        "name": "Roar Of Time",
+        "power": 150,
+        "turn_duration": 1,
+        "type": "Dragon",
+        "name_kor": "시간의포효"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -45,
+        "move_id": 395,
+        "name": "Bleakwind Storm",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Flying",
+        "name_kor": "찬바람폭풍"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -45,
+        "move_id": 396,
+        "name": "Sandsear Storm",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Ground",
+        "name_kor": "열사의폭풍"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "target_attack_stat_stage_change": -1
+        },
+        "energy_delta": -45,
+        "move_id": 397,
+        "name": "Wildbolt Storm",
+        "power": 60,
+        "turn_duration": 1,
+        "type": "Electric",
+        "name_kor": "번개폭풍"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.33,
+            "target_defense_stat_stage_change": -1
+        },
+        "energy_delta": -40,
+        "move_id": 398,
+        "name": "Spirit Shackle",
+        "power": 50,
+        "turn_duration": 1,
+        "type": "Ghost",
+        "name_kor": "그림자꿰매기"
+    },
+    {
+        "buffs": {
+            "activation_chance": 1.0,
+            "attacker_defense_stat_stage_change": -1
+        },
+        "energy_delta": -50,
+        "move_id": 399,
+        "name": "Volt Tackle",
+        "power": 90,
+        "turn_duration": 1,
+        "type": "Electric",
+        "name_kor": "볼트태클"
+    },
+    {
+        "energy_delta": -60,
+        "move_id": 400,
+        "name": "Darkest Lariat",
+        "power": 120,
+        "turn_duration": 1,
+        "type": "Dark",
+        "name_kor": "DD래리어트"
+    },
+    {
+        "energy_delta": -65,
+        "move_id": 404,
+        "name": "Sunsteel Strike",
+        "power": 135,
+        "turn_duration": 1,
+        "type": "Steel",
+        "name_kor": "메테오드라이브"
+    },
+    {
+        "energy_delta": -65,
+        "move_id": 405,
+        "name": "Moongeist Beam",
+        "power": 135,
+        "turn_duration": 1,
+        "type": "Ghost",
+        "name_kor": "섀도레이"
+    },
+    {
+        "buffs": {
+            "activation_chance": 0.1,
+            "attacker_defense_stat_stage_change": -4
+        },
+        "energy_delta": -55,
+        "move_id": 408,
+        "name": "High Jump Kick",
+        "power": 110,
+        "turn_duration": 1,
+        "type": "Fighting",
+        "name_kor": "무릎차기"
+    }
+]

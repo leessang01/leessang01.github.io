@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Go PvP Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 20px;
+            width: 45%;
+        }
+        .selectize-control {
+            width: 100% !important; /* Make dropdowns wider */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Attacker Section -->
+        <div class="section">
+            <h2>Attacker</h2>
+            <label for="attackerSelect">Choose Attacker Pokémon: </label>
+            <select id="attackerSelect" placeholder="Pick an attacker..." style="width: 200px;"></select>
+            <label for="attackerMoveSelect">Choose Fast Move: </label>
+            <select id="attackerMoveSelect" placeholder="Pick a fast move..." style="width: 200px;"></select>
+        </div>
+        <!-- Opponent Section -->
+        <div class="section">
+            <h2>Opponent</h2>
+            <label for="opponentSelect">Choose Opponent Pokémon: </label>
+            <select id="opponentSelect" placeholder="Pick an opponent..." style="width: 200px;"></select>
+            <label for="opponentMoveSelect">Choose Fast Move: </label>
+            <select id="opponentMoveSelect" placeholder="Pick a fast move..." style="width: 200px;"></select>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Breakpoints Section -->
+        <div class="section">
+            <h2>Breakpoints</h2>
+            <ul id="breakpointsList"></ul>
+        </div>
+        <!-- Bulkpoints Section -->
+        <div class="section">
+            <h2>Bulkpoints</h2>
+            <ul id="bulkpointsList"></ul>
+        </div>
+    </div>
+
+    <script>
+        var TARGET_CP = 1500;
+		var ATTACKER_POKEMON = {};
+        var OPPONENT_POKEMON = {};
+		var MIN_IV = 0;
+		var DEFAULT_LEVEL_CAP = 50;
+		var DEFAULT_ATTACKER_LEVEL = 40;
+		var DEFAULT_ATTACKER_CPM = 0.7903;
+		var DEFAULT_ATTACKER_IVs = [15, 15, 15];
+		var DEFAULT_ENEMY_DPS1 = 900;
+		var DEFAULT_ENEMY_LEVEL = 40;
+		var DEFAULT_ENEMY_CPM = 0.7903;
+		var DEFAULT_ENEMY_IVs = [15, 15, 15];
+		var DEFAULT_ENEMY_CURRENT_DEFENSE = 160;
+		var DEFAULT_ENEMY_POKETYPE1 = 'none';
+		var DEFAULT_ENEMY_POKETYPE2 = 'none';
+		var DEFAULT_WEATHER = 'EXTREME';
+		var DEFAULT_TOTAL_ENERGY_GAINED = 400;
+		var DEFAULT_STAB = 1.2;
+		var GM = {};
+		var list = [];
+		var CPM = [0.0939999967813491, 0.135137430784308, 0.166397869586944, 0.192650914456886, 0.215732470154762, 0.236572655026622, 0.255720049142837, 0.273530381100769, 0.290249884128570, 0.306057381335773, 0.321087598800659, 0.335445032295077, 0.349212676286697, 0.362457748778790, 0.375235587358474, 0.387592411085168, 0.399567276239395, 0.411193549517250, 0.422500014305114, 0.432926413410414, 0.443107545375824, 0.453059953871985, 0.462798386812210, 0.472336077786704, 0.481684952974319, 0.490855810259008, 0.499858438968658, 0.508701756943992, 0.517393946647644, 0.525942508771329, 0.534354329109191, 0.542635762230353, 0.550792694091796, 0.558830599438087, 0.566754519939422, 0.574569148039264, 0.582278907299041, 0.589887911977272, 0.597400009632110, 0.604823657502073, 0.612157285213470, 0.619404110566050, 0.626567125320434, 0.633649181622743, 0.640652954578399, 0.647580963301656, 0.654435634613037, 0.661219263506722, 0.667934000492096, 0.674581899290818, 0.681164920330047, 0.687684905887771, 0.694143652915954, 0.700542893277978, 0.706884205341339, 0.713169102333341, 0.719399094581604, 0.725575616972598, 0.731700003147125, 0.734741011137376, 0.737769484519958, 0.740785574597326, 0.743789434432983, 0.746781208702482, 0.749761044979095, 0.752729105305821, 0.755685508251190, 0.758630366519684, 0.761563837528228, 0.764486065255226, 0.767397165298461, 0.770297273971590, 0.773186504840850, 0.776064945942412, 0.778932750225067, 0.781790064808426, 0.784636974334716, 0.787473583646825, 0.790300011634826, 0.792803950958807, 0.795300006866455, 0.797803921486970, 0.800300002098083, 0.802803892322847, 0.805299997329711, 0.807803863460723, 0.810299992561340, 0.812803834895026, 0.815299987792968, 0.817803806620319, 0.820299983024597, 0.822803778631297, 0.825299978256225, 0.827803750922782, 0.830299973487854, 0.832803753381377, 0.835300028324127, 0.837803755931569, 0.840300023555755, 0.842803729034748, 0.845300018787384, 0.847803702398935, 0.850300014019012, 0.852803676019539, 0.855300009250640, 0.857803649892077, 0.860300004482269, 0.862803624012168, 0.865299999713897];
+		var Data = {
+			BattleSettings: {
+				'dodgeDurationMs': 500,
+				'dodgeWindowMs': 700,
+				'swapDurationMs': 1000,
+				'quickSwapCooldownDurationMs': 60000,
+				'arenaEntryLagMs': 3000,
+				'arenaEarlyTerminationMs': 3000,
+				'fastMoveLagMs': 25,
+				'chargedMoveLagMs': 100,
+				'rejoinDurationMs': 10000,
+				'itemMenuAnimationTimeMs': 2000,
+				'maxReviveTimePerPokemonMs': 1000,
+				'timelimitGymMs': 100000,
+				'timelimitRaidMs': 180000,
+				'timelimitLegendaryRaidMs': 300000,
+				'timelimitPvPMs': 240000,
+				'shadowPokemonAttackBonusMultiplier': 1.2,
+				'shadowPokemonDefenseBonusMultiplier': 0.8333333,
+				'purifiedPokemonAttackMultiplierVsShadow': 1.0,
+				'sameTypeAttackBonusMultiplierMega': 1.3,
+				'megaPokemonStatMultiplier': 1.1,
+				'sameTypeAttackBonusMultiplier': 1.2,
+				'weatherAttackBonusMultiplier': 1.2,
+				'fastAttackBonusMultiplier': 1.3,
+				'chargeAttackBonusMultiplier': 1.3,
+				'attackBuffMultiplier': [0.5, 0.5714286, 0.6666667, 0.8, 1.0, 1.25, 1.5, 1.75, 2.0],
+				'defenseBuffMultiplier': [0.5, 0.5714286, 0.6666667, 0.8, 1.0, 1.25, 1.5, 1.75, 2.0],
+				'minimumStatStage': -4,
+				'maximumStatStage': 4,
+
+				'maxEnergy': 100,
+				'energyDeltaPerHealthLost': 0.5,
+				'dodgeDamageReductionPercent': 0.75,
+
+				TypeEffectiveness: { "bug": { "bug": 1, "dark": 1.6, "dragon": 1, "electric": 1, "fairy": 0.625, "fighting": 0.625, "fire": 0.625, "flying": 0.625, "ghost": 0.625, "grass": 1.6, "ground": 1, "ice": 1, "normal": 1, "poison": 0.625, "psychic": 1.6, "rock": 1, "steel": 0.625, "water": 1 }, "dark": { "bug": 1, "dark": 0.625, "dragon": 1, "electric": 1, "fairy": 0.625, "fighting": 0.625, "fire": 1, "flying": 1, "ghost": 1.6, "grass": 1, "ground": 1, "ice": 1, "normal": 1, "poison": 1, "psychic": 1.6, "rock": 1, "steel": 1, "water": 1 }, "dragon": { "bug": 1, "dark": 1, "dragon": 1.6, "electric": 1, "fairy": 0.390625, "fighting": 1, "fire": 1, "flying": 1, "ghost": 1, "grass": 1, "ground": 1, "ice": 1, "normal": 1, "poison": 1, "psychic": 1, "rock": 1, "steel": 0.625, "water": 1 }, "electric": { "bug": 1, "dark": 1, "dragon": 0.625, "electric": 0.625, "fairy": 1, "fighting": 1, "fire": 1, "flying": 1.6, "ghost": 1, "grass": 0.625, "ground": 0.390625, "ice": 1, "normal": 1, "poison": 1, "psychic": 1, "rock": 1, "steel": 1, "water": 1.6 }, "fairy": { "bug": 1, "dark": 1.6, "dragon": 1.6, "electric": 1, "fairy": 1, "fighting": 1.6, "fire": 0.625, "flying": 1, "ghost": 1, "grass": 1, "ground": 1, "ice": 1, "normal": 1, "poison": 0.625, "psychic": 1, "rock": 1, "steel": 0.625, "water": 1 }, "fighting": { "bug": 0.625, "dark": 1.6, "dragon": 1, "electric": 1, "fairy": 0.625, "fighting": 1, "fire": 1, "flying": 0.625, "ghost": 0.390625, "grass": 1, "ground": 1, "ice": 1.6, "normal": 1.6, "poison": 0.625, "psychic": 0.625, "rock": 1.6, "steel": 1.6, "water": 1 }, "fire": { "bug": 1.6, "dark": 1, "dragon": 0.625, "electric": 1, "fairy": 1, "fighting": 1, "fire": 0.625, "flying": 1, "ghost": 1, "grass": 1.6, "ground": 1, "ice": 1.6, "normal": 1, "poison": 1, "psychic": 1, "rock": 0.625, "steel": 1.6, "water": 0.625 }, "flying": { "bug": 1.6, "dark": 1, "dragon": 1, "electric": 0.625, "fairy": 1, "fighting": 1.6, "fire": 1, "flying": 1, "ghost": 1, "grass": 1.6, "ground": 1, "ice": 1, "normal": 1, "poison": 1, "psychic": 1, "rock": 0.625, "steel": 0.625, "water": 1 }, "ghost": { "bug": 1, "dark": 0.625, "dragon": 1, "electric": 1, "fairy": 1, "fighting": 1, "fire": 1, "flying": 1, "ghost": 1.6, "grass": 1, "ground": 1, "ice": 1, "normal": 0.390625, "poison": 1, "psychic": 1.6, "rock": 1, "steel": 1, "water": 1 }, "grass": { "bug": 0.625, "dark": 1, "dragon": 0.625, "electric": 1, "fairy": 1, "fighting": 1, "fire": 0.625, "flying": 0.625, "ghost": 1, "grass": 0.625, "ground": 1.6, "ice": 1, "normal": 1, "poison": 0.625, "psychic": 1, "rock": 1.6, "steel": 0.625, "water": 1.6 }, "ground": { "bug": 0.625, "dark": 1, "dragon": 1, "electric": 1.6, "fairy": 1, "fighting": 1, "fire": 1.6, "flying": 0.390625, "ghost": 1, "grass": 0.625, "ground": 1, "ice": 1, "normal": 1, "poison": 1.6, "psychic": 1, "rock": 1.6, "steel": 1.6, "water": 1 }, "ice": { "bug": 1, "dark": 1, "dragon": 1.6, "electric": 1, "fairy": 1, "fighting": 1, "fire": 0.625, "flying": 1.6, "ghost": 1, "grass": 1.6, "ground": 1.6, "ice": 0.625, "normal": 1, "poison": 1, "psychic": 1, "rock": 1, "steel": 0.625, "water": 0.625 }, "normal": { "bug": 1, "dark": 1, "dragon": 1, "electric": 1, "fairy": 1, "fighting": 1, "fire": 1, "flying": 1, "ghost": 0.390625, "grass": 1, "ground": 1, "ice": 1, "normal": 1, "poison": 1, "psychic": 1, "rock": 0.625, "steel": 0.625, "water": 1 }, "poison": { "bug": 1, "dark": 1, "dragon": 1, "electric": 1, "fairy": 1.6, "fighting": 1, "fire": 1, "flying": 1, "ghost": 0.625, "grass": 1.6, "ground": 0.625, "ice": 1, "normal": 1, "poison": 0.625, "psychic": 1, "rock": 0.625, "steel": 0.390625, "water": 1 }, "psychic": { "bug": 1, "dark": 0.390625, "dragon": 1, "electric": 1, "fairy": 1, "fighting": 1.6, "fire": 1, "flying": 1, "ghost": 1, "grass": 1, "ground": 1, "ice": 1, "normal": 1, "poison": 1.6, "psychic": 0.625, "rock": 1, "steel": 0.625, "water": 1 }, "rock": { "bug": 1.6, "dark": 1, "dragon": 1, "electric": 1, "fairy": 1, "fighting": 0.625, "fire": 1.6, "flying": 1.6, "ghost": 1, "grass": 1, "ground": 0.625, "ice": 1.6, "normal": 1, "poison": 1, "psychic": 1, "rock": 1, "steel": 0.625, "water": 1 }, "steel": { "bug": 1, "dark": 1, "dragon": 1, "electric": 0.625, "fairy": 1.6, "fighting": 1, "fire": 0.625, "flying": 1, "ghost": 1, "grass": 1, "ground": 1, "ice": 1.6, "normal": 1, "poison": 1, "psychic": 1, "rock": 1.6, "steel": 0.625, "water": 0.625 }, "water": { "bug": 1, "dark": 1, "dragon": 0.625, "electric": 1, "fairy": 1, "fighting": 1, "fire": 1.6, "flying": 1, "ghost": 1, "grass": 0.625, "ground": 1.6, "ice": 1, "normal": 1, "poison": 1, "psychic": 1, "rock": 1.6, "steel": 1, "water": 0.625 } },
+
+				TypeBoostedWeather: {
+					"grass": "CLEAR",
+					"ground": "CLEAR",
+					"fire": "CLEAR",
+					"dark": "FOG",
+					"ghost": "FOG",
+					"fairy": "CLOUDY",
+					"fighting": "CLOUDY",
+					"poison": "CLOUDY",
+					"normal": "PARTLY_CLOUDY",
+					"rock": "PARTLY_CLOUDY",
+					"water": "RAINY",
+					"electric": "RAINY",
+					"bug": "RAINY",
+					"ice": "SNOW",
+					"steel": "SNOW",
+					"dragon": "WINDY",
+					"flying": "WINDY",
+					"psychic": "WINDY"
+				},
+
+				FriendSettings: [
+					{
+						'name': "none",
+						'label': "Lv.0 Non-Friend",
+						'multiplier': 1.0
+					},
+					{
+						'name': "good",
+						'label': "Lv.1 Good Friend",
+						'multiplier': 1.03
+					},
+					{
+						'name': "great",
+						'label': "Lv.2 Great Friend",
+						'multiplier': 1.05
+					},
+					{
+						'name': "ultra",
+						'label': "Lv.3 Ultra Friend",
+						'multiplier': 1.07
+					},
+					{
+						'name': "best",
+						'label': "Lv.4 Best Friend",
+						'multiplier': 1.10
+					},
+				],
+			},
+
+
+			Weathers: [
+				{ 'name': 'EXTREME', 'label': "Extreme" },
+				{ 'name': 'CLEAR', 'label': "Clear" },
+				{ 'name': 'FOG', 'label': "Fog" },
+				{ 'name': 'CLOUDY', 'label': "Cloudy" },
+				{ 'name': 'PARTLY_CLOUDY', 'label': "Partly Cloudy" },
+				{ 'name': 'RAINY', 'label': "Rainy" },
+				{ 'name': 'SNOW', 'label': "Snow" },
+				{ 'name': 'WINDY', 'label': "Windy" }
+			],
+
+			RaidTierSettings: [
+				{ "name": "1", "label": "Tier 1", "cpm": 0.6, "maxHP": 600, "timelimit": 180000 },
+				{ "name": "2", "label": "Tier 2", "cpm": 0.67, "maxHP": 1800, "timelimit": 180000 },
+				{ "name": "3", "label": "Tier 3", "cpm": 0.7300000190734863, "maxHP": 3600, "timelimit": 180000 },
+				{ "name": "4", "label": "Tier 4", "cpm": 0.7900000214576721, "maxHP": 9000, "timelimit": 180000 },
+				{ "name": "5", "label": "Tier 5", "cpm": 0.7900000214576721, "maxHP": 15000, "timelimit": 300000 },
+				{ "name": "6", "label": "Tier 6", "cpm": 0.7900000214576721, "maxHP": 18750, "timelimit": 300000 }
+			],
+
+			RaidBosses: [],
+
+			Pokemon: [],
+
+			PokemonForms: [],
+
+			FastMoves: [],
+
+			ChargedMoves: [],
+
+			LevelSettings: [],
+
+			IndividualValues: [{ "name": "0", "value": 0 }, { "name": "1", "value": 1 }, { "name": "2", "value": 2 }, { "name": "3", "value": 3 }, { "name": "4", "value": 4 }, { "name": "5", "value": 5 }, { "name": "6", "value": 6 }, { "name": "7", "value": 7 }, { "name": "8", "value": 8 }, { "name": "9", "value": 9 }, { "name": "10", "value": 10 }, { "name": "11", "value": 11 }, { "name": "12", "value": 12 }, { "name": "13", "value": 13 }, { "name": "14", "value": 14 }, { "name": "15", "value": 15 }],
+
+			Users: []
+
+		};
+
+		function fetchPokemon() {
+            var data = {{ site.data.pokemongo.pokemon | jsonify }};
+        
+            $.each(data, function (i) {
+                var pkm = {
+                    id: data[i].pokemon_id,
+                    name: data[i].pokemon_name_kor,
+                    form: data[i].form.toLowerCase(),
+                    form_kor: data[i].form_kor,
+                    baseAtk: data[i].base_attack,
+                    baseDef: data[i].base_defense,
+                    baseStm: data[i].base_stamina,
+                    fastMove: data[i].fast_moves.concat(data[i].elite_fast_moves),
+                    chargedMove: data[i].charged_moves.concat(data[i].elite_charged_moves).concat(data[i].exclusive_charged_moves),
+                    pokeType: data[i].type.map(x => x.toLowerCase()),
+                    hasShadow: data[i].has_shadow,
+                    isShadow: data[i].is_shadow,
+                    isPurified: data[i].is_purified
+                };
+                Data.Pokemon.push(pkm);
+            });
+            Data.Pokemon.sort((a, b) => (a.name < b.name ? -1 : 1));
+            Data.Pokemon.sorted = true;
+		}
+
+        
+        function fetchMegaPokemon() {
+            var data = {{ site.data.pokemongo.mega_pokemon | jsonify }};
+        
+            $.each(data, function (i) {
+                var pkm = {
+                    id: data[i].pokemon_id,
+                    name: data[i].mega_name_kor,
+                    form: data[i].form.toLowerCase(),
+                    form_kor: data[i].form_kor,
+                    baseAtk: data[i].stats.base_attack,
+                    baseDef: data[i].stats.base_defense,
+                    baseStm: data[i].stats.base_stamina,
+                    fastMove: data[i].fast_moves.concat(data[i].elite_fast_moves),
+                    chargedMove: data[i].charged_moves.concat(data[i].elite_charged_moves).concat(data[i].exclusive_charged_moves),
+                    pokeType: data[i].type.map(x => x.toLowerCase())
+                };
+                Data.Pokemon.push(pkm);
+            });
+            Data.Pokemon.sort((a, b) => (a.name < b.name ? -1 : 1));
+            Data.Pokemon.sorted = true;
+        }
+
+        function fetchFastMove() {
+            var data = {{ site.data.pokemongo.pvp_fast_moves | jsonify }};
+
+            $.each(data, function (i) {
+                var fmove = {
+                    id: data[i].move_id,
+                    name: data[i].name,
+                    name_kor: data[i].name_kor,
+                    energyDelta: data[i].energy_delta,
+                    power: data[i].power,
+                    duration: data[i].turn_duration,
+                    type: data[i].type.toLowerCase()
+                };
+                Data.FastMoves.push(fmove);
+            });
+            Data.FastMoves.sort((a, b) => (a.name < b.name ? -1 : 1));
+            Data.FastMoves.sorted = true;
+		}
+
+		function round(value, numDigits) {
+			var multiplier = Math.pow(10, parseInt(numDigits) || 0);
+			return (Math.round(value * multiplier) / multiplier).toFixed(numDigits);
+		}
+
+		function rounddown(value, numDigits) {
+			var multiplier = Math.pow(10, parseInt(numDigits) || 0);
+			return (Math.floor(value * multiplier) / multiplier).toFixed(numDigits);
+		}
+
+		function calculateCP(pkm, cpm, atkiv, defiv, stmiv) {
+			var atk = (pkm.baseAtk + atkiv) * cpm;
+			var def = (pkm.baseDef + defiv) * cpm;
+			var stm = (pkm.baseStm + stmiv) * cpm;
+			return Math.max(10, Math.floor(atk * Math.sqrt(def * stm) / 10));
+		}
+        
+        // Example Pokémon data and movesets
+        const pokemonData = {
+            "Pikachu": { moves: ["Quick Attack", "Thunder Shock"] },
+            "Bulbasaur": { moves: ["Vine Whip", "Tackle"] },
+            "Charmander": { moves: ["Ember", "Scratch"] },
+            "Squirtle": { moves: ["Bubble", "Tackle"] }
+            // Add more Pokémon and their moves here
+        };
+
+        
+
+        // Function to update move selection based on chosen Pokémon
+        function updateMoveSelect(idx, moveSelectId, getFastMove) {
+            const moveSelect = $(moveSelectId)[0].selectize;
+            moveSelect.clearOptions();
+            if (Data.Pokemon[idx]) {
+                moveSelect.addOption(Data.Pokemon[idx].fastMove.map(name => {
+                    var fmoveInstance = getFastMove[name];
+                    return ({ value: name, text: fmoveInstance.name_kor });
+                }));
+
+            }
+            moveSelect.refreshOptions();
+        }
+
+        // Initialize Selectize for Pokémon selection
+        /*
+        const attackerSelectize = $('#attackerSelect').selectize({
+            options: Object.keys(pokemonData).map(name => ({ value: name, text: name })),
+            onChange(value) {
+                updateMoveSelect(value, '#attackerMoveSelect');
+                calculateBreakpointsAndBulkpoints(); // Recalculate on Pokémon change
+            }
+        });
+        
+
+        const opponentSelectize = $('#opponentSelect').selectize({
+            options: Object.keys(pokemonData).map(name => ({ value: name, text: name })),
+            onChange(value) {
+                updateMoveSelect(value, '#opponentMoveSelect');
+                calculateBreakpointsAndBulkpoints(); // Recalculate on Pokémon change
+            }
+        });
+        */
+
+        // Initialize empty Selectize for moves (they will be populated based on Pokémon)
+        $('#attackerMoveSelect').selectize({ options: [] });
+        $('#opponentMoveSelect').selectize({ options: [] });
+
+        // Function to calculate breakpoints and bulkpoints
+        function calculateBreakpointsAndBulkpoints() {
+            const attackerPokemon = $('#attackerSelect').val();
+            const opponentPokemon = $('#opponentSelect').val();
+            const breakpointsList = document.getElementById('breakpointsList');
+            const bulkpointsList = document.getElementById('bulkpointsList');
+
+            breakpointsList.innerHTML = ''; // Clear previous results
+            bulkpointsList.innerHTML = ''; // Clear previous results
+
+            // Simplified example calculations (replace with real calculations)
+            if (attackerPokemon && opponentPokemon) {
+                for (let k = 0; k <= 10; k++) {
+                    const breakpoint = k * 10; // Replace with real calculation
+                    const li = document.createElement('li');
+                    li.textContent = `k = ${k}: x = ${breakpoint} (Attacker: ${attackerPokemon})`;
+                    breakpointsList.appendChild(li);
+                }
+
+                for (let k = 1; k <= 10; k++) {
+                    if (10 % k === 0) { // Replace with real condition
+                        const bulkpoint = 10 / k; // Replace with real calculation
+                        const li = document.createElement('li');
+                        li.textContent = `k = ${k}: y = ${bulkpoint} (Opponent: ${opponentPokemon})`;
+                        bulkpointsList.appendChild(li);
+                    }
+                }
+            }
+        }
+
+        // Initial calculation to populate lists on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            calculateBreakpointsAndBulkpoints();
+        });
+
+        // Recalculate when a move is selected
+        $('#attackerMoveSelect').on('change', calculateBreakpointsAndBulkpoints);
+        $('#opponentMoveSelect').on('change', calculateBreakpointsAndBulkpoints);
+
+        $(function () {
+            fetchPokemon();
+            fetchMegaPokemon();
+            fetchFastMove();
+
+            const fastMoveDict = Data.FastMoves.reduce((acc, move) => {
+                acc[move.name] = move;
+                return acc;
+            }, {});
+
+            $('#attackerSelect').selectize({
+				sortField: 'text'
+			});
+            $('#opponentSelect').selectize({
+				sortField: 'text'
+			});
+
+            const attackerSelectize = $('#attackerSelect')[0].selectize;
+            const opponentSelectize = $('#opponentSelect')[0].selectize;
+            
+            var len = Data.Pokemon.length;
+			for (let idx=0; idx<len; idx++){
+				var name = Data.Pokemon[idx].name;
+				if (Data.Pokemon[idx].form !== "normal"){
+					name = Data.Pokemon[idx].name + "(" + (Data.Pokemon[idx].form_kor ? Data.Pokemon[idx].form_kor : Data.Pokemon[idx].form) + ")";
+                }
+				if (Data.Pokemon[idx].baseAtk < 1 || Data.Pokemon[idx].baseDef < 1 || Data.Pokemon[idx].baseStm < 1) {
+					continue;
+				}
+				attackerSelectize.addOption({ value: idx, text: name });
+                opponentSelectize.addOption({ value: idx, text: name });
+			}
+
+            attackerSelectize.on('change', function() {
+        		var idx = attackerSelectize.getValue();
+				ATTACKER_POKEMON = Data.Pokemon[idx];
+                updateMoveSelect(idx, '#attackerMoveSelect', fastMoveDict);
+			});
+            opponentSelectize.on('change', function() {
+        		var idx = opponentSelectize.getValue();
+				OPPONENT_POKEMON = Data.Pokemon[idx];
+                updateMoveSelect(idx, '#opponentMoveSelect', fastMoveDict);
+			});
+
+        });
+    </script>
+</body>
+</html>
