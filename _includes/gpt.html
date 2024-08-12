@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +7,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
     <style>
+        .league {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
         .container {
             display: flex;
             justify-content: space-around;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .section {
             border: 1px solid #000;
@@ -24,6 +28,12 @@
     </style>
 </head>
 <body>
+    <div class="league">
+        <input type="radio" name="league" value="500"/> 리틀컵
+        <input type="radio" name="league" value="1500"/> 슈퍼리그
+        <input type="radio" name="league" value="2500"/> 하이퍼리그
+        <input type="radio" name="league" value="10000" checked="checked"/> 마스터리그
+    </div>
     <div class="container">
         <!-- Attacker Section -->
         <div class="section">
@@ -32,6 +42,17 @@
             <select id="attackerSelect" placeholder="Pick an attacker..." style="width: 200px;"></select>
             <label for="attackerMoveSelect">Choose Fast Move: </label>
             <select id="attackerMoveSelect" placeholder="Pick a fast move..." style="width: 200px;"></select>
+            <div>
+                <h3>IV</h3>
+                <input type="number" id="attackerivAtk" name="attackerivAtk" placeholder="공 0-15" style="width: 30%;">
+                <input type="number" id="attackerivDef" name="attackerivDef" placeholder="방 0-15" style="width: 30%;">
+                <input type="number" id="attackerivStm" name="attackerivStm" placeholder="체 0-15" style="width: 30%;">
+            </div>
+            <div>
+                <h3>Option</h3>
+                <input type="checkbox" name="attackerBestBuddy"/> 베스트파트너
+                <input type="checkbox" name="attackerShadow"/> 그림자포켓몬
+            </div>
         </div>
         <!-- Opponent Section -->
         <div class="section">
@@ -40,6 +61,17 @@
             <select id="opponentSelect" placeholder="Pick an opponent..." style="width: 200px;"></select>
             <label for="opponentMoveSelect">Choose Fast Move: </label>
             <select id="opponentMoveSelect" placeholder="Pick a fast move..." style="width: 200px;"></select>
+            <div>
+                <h3>IV</h3>
+                <input type="number" id="opponentivAtk" name="opponentivAtk" placeholder="공 0-15" style="width: 30%;">
+                <input type="number" id="opponentivDef" name="opponentivDef" placeholder="방 0-15" style="width: 30%;">
+                <input type="number" id="opponentivStm" name="opponentivStm" placeholder="체 0-15" style="width: 30%;">
+            </div>
+            <div>
+                <h3>Option</h3>
+                <input type="checkbox" name="opponentBestBuddy"/> 베스트파트너
+                <input type="checkbox" name="opponentShadow"/> 그림자포켓몬
+            </div>
         </div>
     </div>
 
@@ -57,9 +89,11 @@
     </div>
 
     <script>
-        var TARGET_CP = 1500;
+        var TARGET_CP = 10000;
 		var ATTACKER_POKEMON = {};
         var OPPONENT_POKEMON = {};
+		var ATTACKER_FASTMOVE = {};
+        var OPPONENT_FASTMOVE = {};
 		var MIN_IV = 0;
 		var DEFAULT_LEVEL_CAP = 50;
 		var DEFAULT_ATTACKER_LEVEL = 40;
@@ -302,40 +336,35 @@
         // Function to update move selection based on chosen Pokémon
         function updateMoveSelect(idx, moveSelectId, getFastMove) {
             const moveSelect = $(moveSelectId)[0].selectize;
+            moveSelect.clear();
             moveSelect.clearOptions();
             if (Data.Pokemon[idx]) {
+                var defaultMove = undefined;
                 moveSelect.addOption(Data.Pokemon[idx].fastMove.map(name => {
+                    defaultMove = defaultMove ? defaultMove : name;
                     var fmoveInstance = getFastMove[name];
                     return ({ value: name, text: fmoveInstance.name_kor });
                 }));
-
+                moveSelect.setValue(defaultMove);
             }
             moveSelect.refreshOptions();
         }
 
-        // Initialize Selectize for Pokémon selection
-        /*
-        const attackerSelectize = $('#attackerSelect').selectize({
-            options: Object.keys(pokemonData).map(name => ({ value: name, text: name })),
-            onChange(value) {
-                updateMoveSelect(value, '#attackerMoveSelect');
-                calculateBreakpointsAndBulkpoints(); // Recalculate on Pokémon change
-            }
-        });
-        
-
-        const opponentSelectize = $('#opponentSelect').selectize({
-            options: Object.keys(pokemonData).map(name => ({ value: name, text: name })),
-            onChange(value) {
-                updateMoveSelect(value, '#opponentMoveSelect');
-                calculateBreakpointsAndBulkpoints(); // Recalculate on Pokémon change
-            }
-        });
-        */
-
         // Initialize empty Selectize for moves (they will be populated based on Pokémon)
         $('#attackerMoveSelect').selectize({ options: [] });
         $('#opponentMoveSelect').selectize({ options: [] });
+
+
+        function checkIv(input){
+            var output = parseInt(input);
+            if(input > 15){
+                output = 15;
+            }
+            if(input < 0){
+                output = 0;
+            }
+            return output;
+        }
 
         // Function to calculate breakpoints and bulkpoints
         function calculateBreakpointsAndBulkpoints() {
@@ -346,26 +375,102 @@
 
             breakpointsList.innerHTML = ''; // Clear previous results
             bulkpointsList.innerHTML = ''; // Clear previous results
-
+            
             // Simplified example calculations (replace with real calculations)
             if (attackerPokemon && opponentPokemon) {
-                for (let k = 0; k <= 10; k++) {
-                    const breakpoint = k * 10; // Replace with real calculation
-                    const li = document.createElement('li');
-                    li.textContent = `k = ${k}: x = ${breakpoint} (Attacker: ${attackerPokemon})`;
-                    breakpointsList.appendChild(li);
-                }
-
-                for (let k = 1; k <= 10; k++) {
-                    if (10 % k === 0) { // Replace with real condition
-                        const bulkpoint = 10 / k; // Replace with real calculation
+                // find level
+                var attackerivAtk = checkIv($('#attackerivAtk').val() || 0);
+                var attackerivDef = checkIv($('#attackerivDef').val() || 0);
+                var attackerivStm = checkIv($('#attackerivStm').val() || 0);
+                var isAttackerBestBuddy = $('input[type=checkbox][name="attackerBestBuddy"]').is(":checked");
+                var isAttackerShadow = $('input[type=checkbox][name="attackerShadow"]').is(":checked") ? 1.2 : 1;
+                var attackerLevel = findLevel(ATTACKER_POKEMON, attackerivAtk, attackerivDef, attackerivStm, isAttackerBestBuddy);
+                var opponentivAtk = checkIv($('#opponentivAtk').val() || 0);
+                var opponentivDef = checkIv($('#opponentivDef').val() || 0);
+                var opponentivStm = checkIv($('#opponentivStm').val() || 0);
+                var isOpponentBestBuddy = $('input[type=checkbox][name="opponentBestBuddy"]').is(":checked");
+                var isOpponentShadow = $('input[type=checkbox][name="opponentShadow"]').is(":checked") ? 1.2 : 1;
+                var opponentLevel = findLevel(OPPONENT_POKEMON, opponentivAtk, opponentivDef, opponentivStm, isOpponentBestBuddy);
+                const opponentFastmove = $('#opponentMoveSelect').val();
+                
+                // Breakpoints
+                var attackerBonus = isAttackerShadow * isOpponentShadow;
+                var oppoentDef = (OPPONENT_POKEMON.baseDef + opponentivDef) * CPM[(opponentLevel - 1)*2];
+                var damageBreak = 0;
+                for (let k = 0; k < 16; k++) {
+                    var attackerLevelInstance = findLevel(ATTACKER_POKEMON, k, attackerivDef, attackerivStm, isAttackerBestBuddy);
+                    var attackerAtk = (ATTACKER_POKEMON.baseAtk + k) * CPM[(attackerLevelInstance - 1)*2];
+                    var attackerDamage = calcDamage(ATTACKER_POKEMON, attackerAtk, OPPONENT_POKEMON, oppoentDef, ATTACKER_FASTMOVE, attackerBonus);
+                    
+                    if(attackerDamage > damageBreak || (attackerivAtk == k)){
+                        damageBreak = attackerDamage;
                         const li = document.createElement('li');
-                        li.textContent = `k = ${k}: y = ${bulkpoint} (Opponent: ${opponentPokemon})`;
+                        var effAtk = round(attackerAtk,1); 
+                        li.textContent = `개체 = ${k}: 대미지 = ${damageBreak} (유효: ${effAtk})`;
+                        breakpointsList.appendChild(li);
+                    }
+                }
+                
+                // Bulkpoints
+                var opponentAtk = (OPPONENT_POKEMON.baseAtk + opponentivAtk) * CPM[(opponentLevel - 1)*2];
+                var damageBulk = 0;
+                for (let k = 0; k < 16; k++) {
+                    var attackerLevelInstance = findLevel(ATTACKER_POKEMON, attackerivAtk, k, attackerivStm, isAttackerBestBuddy);
+                    var attackerDef = (ATTACKER_POKEMON.baseDef + k) * CPM[(attackerLevelInstance - 1)*2];
+                    var opponentDamage = calcDamage(OPPONENT_POKEMON, opponentAtk, ATTACKER_POKEMON, attackerDef, OPPONENT_FASTMOVE, attackerBonus);
+                    
+                    if(opponentDamage > damageBulk || (attackerivDef == k)){
+                        damageBulk = opponentDamage;
+                        const li = document.createElement('li');
+                        var effDef = round(attackerDef,1); 
+                        li.textContent = `개체 = ${k}: 대미지 = ${damageBulk} (유효: ${effDef})`;
                         bulkpointsList.appendChild(li);
                     }
                 }
             }
         }
+
+        function findLevel(pkm, atk, def, stm, isBestBuddy){
+			var minIv = MIN_IV;
+			var targetCP = TARGET_CP;
+			if(minIv < 0 || minIv > 15){
+				minIv = 0;
+			}
+			var extendLevelCap = isBestBuddy ? 1 : 0;
+			var levelCap = DEFAULT_LEVEL_CAP + extendLevelCap;
+			var cpm = 0;
+            var level = 0.5;
+            var calcCP = 10;
+            
+            while((level < levelCap) && (calcCP < targetCP)){
+                level += 0.5;
+                cpm = CPM[(level - 1) * 2];
+                calcCP = calculateCP(pkm, cpm, atk, def, stm);
+            }
+            if(calcCP > targetCP){
+                level -= 0.5;
+                cpm = CPM[(level - 1) * 2];
+                calcCP = calculateCP(pkm, cpm, atk, def, stm);
+            }
+            return level;
+        }
+
+        function calcDamage(attacker, attackerAtk, defender, defenderDef, move, bonus) {
+			var multipliers = 1;
+			if(attacker.pokeType.some(function(x){
+				return x == move.type;
+			})) {
+				multipliers *= DEFAULT_STAB;
+			}
+
+			var Effectiveness = Data.BattleSettings.TypeEffectiveness;
+
+			for(let idx in defender.pokeType){
+                var pokeType = defender.pokeType[idx];
+				multipliers *= Effectiveness[move.type][pokeType] || 1;
+			}
+			return Math.floor(0.65 * (attackerAtk / defenderDef) * move.power * multipliers * bonus) + 1;
+		}
 
         // Initial calculation to populate lists on page load
         document.addEventListener('DOMContentLoaded', () => {
@@ -373,13 +478,41 @@
         });
 
         // Recalculate when a move is selected
-        $('#attackerMoveSelect').on('change', calculateBreakpointsAndBulkpoints);
-        $('#opponentMoveSelect').on('change', calculateBreakpointsAndBulkpoints);
+        //$('#attackerMoveSelect').on('change', calculateBreakpointsAndBulkpoints);
+        //$('#opponentMoveSelect').on('change', calculateBreakpointsAndBulkpoints);
+        
+        $('input[type=radio][name="league"]').change(function() {
+            TARGET_CP = $(this).val();
+            calculateBreakpointsAndBulkpoints();
+        });
+
+        $('input[type=checkbox][name="attackerBestBuddy"]').on('change', calculateBreakpointsAndBulkpoints);
+        $('input[type=checkbox][name="opponentBestBuddy"]').on('change', calculateBreakpointsAndBulkpoints);
+        $('input[type=checkbox][name="attackerShadow"]').on('change', calculateBreakpointsAndBulkpoints);
+        $('input[type=checkbox][name="opponentShadow"]').on('change', calculateBreakpointsAndBulkpoints);
+
+        $('input[type=number][name="attackerivAtk"]').on('change', calculateBreakpointsAndBulkpoints);
+        $('input[type=number][name="attackerivDef"]').on('change', calculateBreakpointsAndBulkpoints);
+        $('input[type=number][name="attackerivStm"]').on('change', calculateBreakpointsAndBulkpoints);
+
+        $('input[type=number][name="opponentivAtk"]').on('change', calculateBreakpointsAndBulkpoints);
+        $('input[type=number][name="opponentivDef"]').on('change', calculateBreakpointsAndBulkpoints);
+        $('input[type=number][name="opponentivStm"]').on('change', calculateBreakpointsAndBulkpoints);
+
+        function initIvs(){
+            document.getElementById('attackerivAtk').defaultValue = 15;
+            document.getElementById('attackerivDef').defaultValue = 15;
+            document.getElementById('attackerivStm').defaultValue = 15;
+            document.getElementById('opponentivAtk').defaultValue = 15;
+            document.getElementById('opponentivDef').defaultValue = 15;
+            document.getElementById('opponentivStm').defaultValue = 15;
+        }
 
         $(function () {
             fetchPokemon();
             fetchMegaPokemon();
             fetchFastMove();
+            initIvs();
 
             const fastMoveDict = Data.FastMoves.reduce((acc, move) => {
                 acc[move.name] = move;
@@ -420,6 +553,17 @@
                 updateMoveSelect(idx, '#opponentMoveSelect', fastMoveDict);
 			});
 
+            $('#attackerMoveSelect').on('change', function() {
+                var name = $(this).val();
+                ATTACKER_FASTMOVE = fastMoveDict[name];
+                calculateBreakpointsAndBulkpoints();
+            });
+
+            $('#opponentMoveSelect').on('change', function() {
+                var name = $(this).val();
+                OPPONENT_FASTMOVE = fastMoveDict[name];
+                calculateBreakpointsAndBulkpoints();
+            });
         });
     </script>
 </body>
