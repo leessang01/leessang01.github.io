@@ -44,9 +44,24 @@
             <select id="attackerMoveSelect" placeholder="Pick a fast move..." style="width: 200px;"></select>
             <div>
                 <h3>IV</h3>
-                <input type="number" id="attackerivAtk" name="attackerivAtk" placeholder="공 0-15" style="width: 30%;">
-                <input type="number" id="attackerivDef" name="attackerivDef" placeholder="방 0-15" style="width: 30%;">
-                <input type="number" id="attackerivStm" name="attackerivStm" placeholder="체 0-15" style="width: 30%;">
+                <table>
+                    <tr>
+                        <th style="width: 50%;"></th>
+                        <th style="width: 50%;"></th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="attackerivAtk" name="attackerivAtk" placeholder="공 0-15" style="width: 100%;"></td>
+                        <td><span id="attackerEffAtk"></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="attackerivDef" name="attackerivDef" placeholder="방 0-15" style="width: 100%;"></td>
+                        <td><span id="attackerEffDef"></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="attackerivStm" name="attackerivStm" placeholder="체 0-15" style="width: 100%;"></td>
+                        <td><span id="attackerEffStm"></span></td>
+                    </tr>
+                </table>
             </div>
             <div>
                 <h3>Option</h3>
@@ -63,9 +78,24 @@
             <select id="opponentMoveSelect" placeholder="Pick a fast move..." style="width: 200px;"></select>
             <div>
                 <h3>IV</h3>
-                <input type="number" id="opponentivAtk" name="opponentivAtk" placeholder="공 0-15" style="width: 30%;">
-                <input type="number" id="opponentivDef" name="opponentivDef" placeholder="방 0-15" style="width: 30%;">
-                <input type="number" id="opponentivStm" name="opponentivStm" placeholder="체 0-15" style="width: 30%;">
+                <table>
+                    <tr>
+                        <th style="width: 50%;"></th>
+                        <th style="width: 50%;"></th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="opponentivAtk" name="opponentivAtk" placeholder="공 0-15" style="width: 100%;"></td>
+                        <td><span id="opponentEffAtk"></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="opponentivDef" name="opponentivDef" placeholder="방 0-15" style="width: 100%;"></td>
+                        <td><span id="opponentEffDef"></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="opponentivStm" name="opponentivStm" placeholder="체 0-15" style="width: 100%;"></td>
+                        <td><span id="opponentEffStm"></span></td>
+                    </tr>
+                </table>
             </div>
             <div>
                 <h3>Option</h3>
@@ -393,6 +423,12 @@
                 var opponentLevel = findLevel(OPPONENT_POKEMON, opponentivAtk, opponentivDef, opponentivStm, isOpponentBestBuddy);
                 const opponentFastmove = $('#opponentMoveSelect').val();
                 
+                // Effective Stats
+                //document.getElementById('attackerEffAtk').innerHTML = (ATTAKCER_POKEMON.baseAtk + attackerivAtk) * CPM[(attackerLevel - 1)*2];
+                //document.getElementById('attackerEffDef').innerHTML = (ATTAKCER_POKEMON.baseDef + attackerivDef) * CPM[(attackerLevel - 1)*2];
+                //document.getElementById('attackerEffStm').innerHTML = (ATTAKCER_POKEMON.baseStm + attackerivStm) * CPM[(attackerLevel - 1)*2];
+
+
                 // Breakpoints
                 var attackerBonus = isAttackerShadow * isOpponentShadow;
                 var oppoentDef = (OPPONENT_POKEMON.baseDef + opponentivDef) * CPM[(opponentLevel - 1)*2];
