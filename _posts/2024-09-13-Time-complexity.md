@@ -65,7 +65,9 @@ $$|3N + 2| \le 5 \times |N|\tag{5}$$
 
 #### 비교
 
-$O(1) < O(\log n) < O(n) < O(n \log n) < O(n^2) < O(n^3) < O(2^n) < O(n!)$
+$$
+O(1) < O(\log n) < O(n) < O(n \log n) < O(n^2) < O(n^3) < O(2^n) < O(n!)
+$$
 
 #### 사례
 

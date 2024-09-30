@@ -1,4 +1,5 @@
 ---
+published: false
 title: 포켓몬고 PVP 브레이크포인트 & 벌크포인트 계산기
 description: >-
     포켓몬고 PVP 개체에 따른 대미지 변화(브레이크포인트 또는 벌크포인트)를 확인할 수 있습니다.
