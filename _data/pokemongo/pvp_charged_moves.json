@@ -75,7 +75,7 @@
         "energy_delta": -50,
         "move_id": 26,
         "name": "Dig",
-        "power": 80,
+        "power": 70,
         "turn_duration": 1,
         "type": "Ground",
         "name_kor": "구멍파기"
@@ -361,16 +361,16 @@
         "energy_delta": -45,
         "move_id": 64,
         "name": "Rock Slide",
-        "power": 75,
+        "power": 65,
         "turn_duration": 1,
         "type": "Rock",
         "name_kor": "스톤샤워"
     },
     {
-        "energy_delta": -60,
+        "energy_delta": -50,
         "move_id": 65,
         "name": "Power Gem",
-        "power": 80,
+        "power": 85,
         "turn_duration": 1,
         "type": "Rock",
         "name_kor": "파워젬"
@@ -388,7 +388,7 @@
         "energy_delta": -35,
         "move_id": 67,
         "name": "Shadow Punch",
-        "power": 40,
+        "power": 55,
         "turn_duration": 1,
         "type": "Ghost",
         "name_kor": "섀도펀치"
@@ -435,10 +435,14 @@
         "name_kor": "아이언헤드"
     },
     {
-        "energy_delta": -55,
+        "buffs": {
+            "activation_chance": 0.66,
+            "attacker_defense_stat_stage_change": 1
+        },
+        "energy_delta": -50,
         "move_id": 75,
         "name": "Parabolic Charge",
-        "power": 65,
+        "power": 70,
         "turn_duration": 1,
         "type": "Electric",
         "name_kor": "파라볼라차지"
@@ -590,7 +594,7 @@
         "energy_delta": -35,
         "move_id": 94,
         "name": "Bone Club",
-        "power": 40,
+        "power": 55,
         "turn_duration": 1,
         "type": "Ground",
         "name_kor": "뼈다귀치기"
@@ -819,7 +823,7 @@
         "name_kor": "깨트리기"
     },
     {
-        "energy_delta": -40,
+        "energy_delta": -35,
         "move_id": 125,
         "name": "Swift",
         "power": 55,
@@ -858,7 +862,7 @@
         "energy_delta": -35,
         "move_id": 131,
         "name": "Body Slam",
-        "power": 60,
+        "power": 50,
         "turn_duration": 1,
         "type": "Normal",
         "name_kor": "누르기"
@@ -981,7 +985,7 @@
     },
     {
         "buffs": {
-            "activation_chance": 0.66,
+            "activation_chance": 0.33,
             "target_attack_stat_stage_change": -1
         },
         "energy_delta": -80,
@@ -1015,10 +1019,10 @@
         "name_kor": "브레이브버드"
     },
     {
-        "energy_delta": -50,
+        "energy_delta": -55,
         "move_id": 257,
         "name": "Sky Attack",
-        "power": 75,
+        "power": 85,
         "turn_duration": 1,
         "type": "Flying",
         "name_kor": "불새"
@@ -1060,10 +1064,10 @@
         "name_kor": "은빛바람"
     },
     {
-        "energy_delta": -55,
+        "energy_delta": -45,
         "move_id": 265,
         "name": "Night Shade",
-        "power": 60,
+        "power": 80,
         "turn_duration": 1,
         "type": "Ghost",
         "name_kor": "나이트헤드"
@@ -1125,7 +1129,7 @@
         "energy_delta": -65,
         "move_id": 275,
         "name": "Futuresight",
-        "power": 120,
+        "power": 110,
         "turn_duration": 1,
         "type": "Psychic",
         "name_kor": "미래예지"
@@ -1171,10 +1175,10 @@
         "name_kor": "속임수"
     },
     {
-        "energy_delta": -40,
+        "energy_delta": -45,
         "move_id": 284,
         "name": "Surf",
-        "power": 65,
+        "power": 75,
         "turn_duration": 1,
         "type": "Water",
         "name_kor": "파도타기"
@@ -1851,10 +1855,10 @@
         "name_kor": "미스트볼"
     },
     {
-        "energy_delta": -40,
+        "energy_delta": -35,
         "move_id": 367,
         "name": "Brutal Swing",
-        "power": 65,
+        "power": 55,
         "turn_duration": 1,
         "type": "Dark",
         "name_kor": "세차게휘두르기"
@@ -2085,7 +2089,7 @@
             "activation_chance": 1.0,
             "attacker_attack_stat_stage_change": 1
         },
-        "energy_delta": -50,
+        "energy_delta": -45,
         "move_id": 392,
         "name": "Trailblaze",
         "power": 65,
