@@ -3,7 +3,7 @@ title: 퀵 정렬(Quick Sort)
 description: >-
     분할 정복 알고리즘을 기반으로 하는 퀵 정렬에 대한 내용입니다.
 date: 2024-09-30 12:00:00 +0900
-categories: [자료구조, 이론]
+categories: [자료구조, 정렬]
 tags: [정렬, 알고리즘, 분할정복, 재귀]
 math: true
 mermaid: true
@@ -37,7 +37,7 @@ image:
 
 ```python
 def QUICK_SORT(array, low, high)
-    if low < high
+    if low < high:
         pivotIndex = PARTITION(array, low, high)
         QUICK_SORT(array, low, pivotIndex - 1)
         QUICK_SORT(array, pivotIndex + 1, high)
@@ -63,7 +63,7 @@ def PARTITION(array, low, high)
          swap array[i] with array[j]
 ```
 
-> 위 분할(partition) 알고리즘은 Tony Hoare[^tony-hoare]이 제안한 방법입니다. 피벗이 배열의 어느 위치에 선택되었는지에 따라 low 또는 high 포인터와의 교환이 결정됩니다. 본문에서는 **마지막 요소가 피벗인 경우**를 기준으로 하고 있습니다.
+> 위 분할(partition) 알고리즘[^book-algorithm][^book-datastructure]은 Tony Hoare[^tony-hoare]이 제안한 방법입니다. 피벗이 배열의 어느 위치에 선택되었는지에 따라 low 또는 high 포인터와의 교환이 결정됩니다. 본문에서는 **마지막 요소가 피벗인 경우**를 기준으로 하고 있습니다.
 - 마지막 요소가 피벗일 때: low 포인터와 교환
 - 첫 번째 요소가 피벗일 때: high 포인터와 교환
 - 중간 요소가 피벗일 때: 상황에 따라 low 또는 high 포인터와 교환
@@ -75,11 +75,11 @@ def PARTITION(array, low, high)
 
 퀵 정렬의 시간 복잡도는 피벗 선택 방법과 데이터의 분포에 따라 다릅니다.
 
-1. 최선의 경우(Best Case): $O(n \log n)$
+1. 최선의 경우(Best Case): $O(n\log_2 n)$
 
    - 피벗이 항상 배열의 중앙에 가까운 경우 배열이 매번 균등하게 분할되어 로그 깊이의 재귀 호출이 필요합니다.
 
-2. 평균의 경우(Average Case): $O(n \log n)$
+2. 평균의 경우(Average Case): $O(n\log_2 n)$
 
    - 대부분의 경우 피벗이 배열을 적당히 균등하게 분할하기 때문에 로그 깊이의 재귀 호출이 필요합니다.
 
@@ -89,12 +89,14 @@ def PARTITION(array, low, high)
 
 ### 공간 복잡도
 
-퀵 정렬은 추가적인 메모리를 거의 사용하지 않고 제자리에서(in-place) 정렬을 수행합니다. 그러나 재귀 호출로 인해 호출 스택에 로그 깊이의 추가 공간이 필요합니다. 즉 공간 복잡도가 $O(\log n)$인 알고리즘입니다.
+퀵 정렬은 추가적인 메모리를 거의 사용하지 않고 제자리에서(in-place) 정렬을 수행합니다. 그러나 재귀 호출 스택만큼의 추가 공간이 필요합니다.
 
+1. 최선, 평균의 경우: $O(\log_2 n)$
+2. 최악의 경우: $O(n)$
 
 ## 예시
 
-### 문제 1
+### 문제
 
 ```mermaid
 block-beta
@@ -120,8 +122,7 @@ block-beta
 
 ```mermaid
 block-beta
-    columns 9
-        2 space 1 space 5 space 4 space 3
+    2 space 1 space 5 space 4 space 3
     style 4 fill:#3F53D2,color:#fff
     style 2 fill:#D02519,color:#fff
     style 3 fill:#80A924,color:#fff
@@ -129,8 +130,7 @@ block-beta
 
 ```mermaid
 block-beta
-    columns 9
-        2 space 1 space 5 space 4 space 3
+    2 space 1 space 5 space 4 space 3
     2 --> 5
     style 4 fill:#3F53D2,color:#fff
     style 5 fill:#D02519,color:#fff
@@ -139,8 +139,7 @@ block-beta
 
 ```mermaid
 block-beta
-    columns 9
-        2 space 1 space 5 space 4 space 3
+    2 space 1 space 5 space 4 space 3
     4 --> 1
     style 1 fill:#3F53D2,color:#fff
     style 5 fill:#D02519,color:#fff
@@ -149,8 +148,7 @@ block-beta
 
 ```mermaid
 block-beta
-    columns 9
-        2 space 1 space 5 space 4 space 3
+    2 space 1 space 5 space 4 space 3
     3 --> 5
     5 --> 3
     style 1 fill:#3F53D2,color:#fff
@@ -160,8 +158,7 @@ block-beta
 
 ```mermaid
 block-beta
-    columns 9
-        2 space 1 space 3 space 4 space 5
+    2 space 1 space 3 space 4 space 5
     style 3 fill:#A7AEB4,color:#fff
 ```
 
@@ -169,8 +166,7 @@ block-beta
 
 ```mermaid
 block-beta
-    columns 9
-        2 space 1 space 3 space 4 space 5
+    2 space 1 space 3 space 4 space 5
     1 --> 2
     2 --> 1
     style 3 fill:#A7AEB4,color:#fff
@@ -180,16 +176,14 @@ block-beta
 
 ```mermaid
 block-beta
-    columns 9
-        1 space 2 space 3 space 4 space 5
+    1 space 2 space 3 space 4 space 5
     style 3 fill:#A7AEB4,color:#fff
     style 1 fill:#A7AEB4,color:#fff
 ```
 
 ```mermaid
 block-beta
-    columns 9
-        1 space 2 space 3 space 4 space 5
+    1 space 2 space 3 space 4 space 5
     style 3 fill:#A7AEB4,color:#fff
     style 1 fill:#A7AEB4,color:#fff
     style 2 fill:#A7AEB4,color:#fff
@@ -199,8 +193,7 @@ block-beta
 
 ```mermaid
 block-beta
-    columns 9
-        1 space 2 space 3 space 4 space 5
+    1 space 2 space 3 space 4 space 5
     style 3 fill:#A7AEB4,color:#fff
     style 1 fill:#A7AEB4,color:#fff
     style 2 fill:#A7AEB4,color:#fff
@@ -210,8 +203,7 @@ block-beta
 
 ```mermaid
 block-beta
-    columns 9
-        1 space 2 space 3 space 4 space 5
+    1 space 2 space 3 space 4 space 5
     style 3 fill:#A7AEB4,color:#fff
     style 1 fill:#A7AEB4,color:#fff
     style 2 fill:#A7AEB4,color:#fff
@@ -220,8 +212,7 @@ block-beta
 
 ```mermaid
 block-beta
-    columns 9
-        1 space 2 space 3 space 4 space 5
+    1 space 2 space 3 space 4 space 5
     style 3 fill:#A7AEB4,color:#fff
     style 1 fill:#A7AEB4,color:#fff
     style 2 fill:#A7AEB4,color:#fff
@@ -233,14 +224,11 @@ block-beta
 
 ```mermaid
 block-beta
-    columns 9
-        1 2 3 4 5
+    1 2 3 4 5
 ```
 
 ## 참고
 
-- 구종만, 알고리즘 문제 해결 전략 1, 인사이트(2012)
-- 윤성우, 열혈 자료구조, 오렌지미디어(2012)
-- Cormen, Thomas H, Charles Eric Leiserson, and Ronald L Rivest. "Quicksort," in *Introduction to Algorithms*. 4th ed. 182-204 Cambridge, Mass.: Mit Press, 2022.
-
-[^tony-hoare]: 위키피디아, Quicksort, [link](https://en.wikipedia.org/wiki/Tony_Hoare)
+[^book-algorithm]: Cormen, Thomas H, Charles Eric Leiserson, and Ronald L Rivest. "7 Quicksort," in *Introduction to Algorithms*. 4th ed. 182-204 Cambridge, Mass.: Mit Press, 2022.
+[^book-datastructure]: 윤성우, "10장. 정렬(sorting)" in *윤성우의 열혈 자료구조: C언어를 이용한 자료구조 학습서*, 오렌지미디어(2012)
+[^tony-hoare]: 위키피디아, Tony Hoare, [link](https://en.wikipedia.org/wiki/Tony_Hoare)
