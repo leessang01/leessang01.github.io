@@ -1,0 +1,1324 @@
+Wrap
+duration: 2900 → 3000
+damage_window_start: 2050 → 2150
+damage_window_end: 2700 → 2800
+
+Hyper Beam
+duration: 3800 → 4000
+damage_window_start: 3300 → 3500
+damage_window_end: 3600 → 3800
+
+Sludge
+duration: 2100 → 2000
+damage_window_start: 1200 → 1100
+damage_window_end: 1550 → 1450
+
+Vice Grip
+duration: 1900 → 2000
+damage_window_start: 1100 → 1200
+damage_window_end: 1500 → 1600
+
+Flame Wheel
+power: 60.0 → 55.0
+duration: 2700 → 2500
+damage_window_start: 2100 → 1900
+damage_window_end: 2400 → 2200
+
+Megahorn
+power: 110.0 → 105.0
+duration: 2200 → 2000
+damage_window_start: 1700 → 1500
+damage_window_end: 1900 → 1700
+
+Flamethrower
+power: 70.0 → 65.0
+duration: 2200 → 2000
+damage_window_start: 1500 → 1300
+damage_window_end: 1700 → 1500
+
+Dig
+duration: 4700 → 4500
+damage_window_start: 2800 → 2600
+damage_window_end: 4500 → 4300
+
+Psybeam
+power: 70.0 → 65.0
+duration: 3200 → 3000
+damage_window_start: 1300 → 1100
+damage_window_end: 2700 → 2500
+
+Earthquake
+duration: 3600 → 3500
+damage_window_start: 2700 → 2600
+damage_window_end: 3500 → 3400
+
+Stone Edge
+power: 100.0 → 105.0
+duration: 2300 → 2500
+damage_window_start: 700 → 900
+damage_window_end: 2100 → 2300
+
+Ice Punch
+duration: 1900 → 2000
+damage_window_start: 1300 → 1400
+damage_window_end: 1600 → 1700
+
+Heart Stamp
+duration: 1900 → 2000
+damage_window_start: 1100 → 1200
+damage_window_end: 1600 → 1700
+
+Flash Cannon
+duration: 2700 → 2500
+damage_window_start: 1600 → 1400
+damage_window_end: 2500 → 2300
+
+Drill Peck
+power: 65.0 → 70.0
+duration: 2300 → 2500
+damage_window_start: 1700 → 1900
+damage_window_end: 2100 → 2300
+
+Ice Beam
+power: 90.0 → 95.0
+duration: 3300 → 3500
+damage_window_start: 1300 → 1500
+damage_window_end: 2800 → 3000
+
+Blizzard
+duration: 3100 → 3000
+damage_window_start: 1500 → 1400
+damage_window_end: 2900 → 2800
+
+Aerial Ace
+duration: 2400 → 2500
+damage_window_start: 1900 → 2000
+damage_window_end: 2200 → 2300
+
+Drill Run
+power: 80.0 → 85.0
+duration: 2800 → 3000
+damage_window_start: 1700 → 1900
+damage_window_end: 2600 → 2800
+
+Petal Blizzard
+duration: 2600 → 2500
+damage_window_start: 1700 → 1600
+damage_window_end: 2300 → 2200
+
+Mega Drain
+duration: 2600 → 2500
+damage_window_start: 950 → 850
+damage_window_end: 2000 → 1900
+
+Bug Buzz
+power: 100.0 → 95.0
+duration: 3700 → 3500
+damage_window_start: 2000 → 1800
+damage_window_end: 3100 → 2900
+
+Poison Fang
+power: 35.0 → 30.0
+duration: 1700 → 1500
+damage_window_start: 900 → 700
+damage_window_end: 1400 → 1200
+
+Night Slash
+power: 50.0 → 45.0
+duration: 2200 → 2000
+damage_window_start: 1300 → 1100
+damage_window_end: 2000 → 1800
+
+Bubble Beam
+duration: 1900 → 2000
+damage_window_start: 1450 → 1550
+damage_window_end: 1700 → 1800
+
+Submission
+power: 60.0 → 55.0
+duration: 2200 → 2000
+damage_window_start: 1800 → 1600
+damage_window_end: 2000 → 1800
+
+Low Sweep
+duration: 1900 → 2000
+damage_window_start: 1300 → 1400
+damage_window_end: 1650 → 1750
+
+Aqua Jet
+duration: 2600 → 2500
+damage_window_start: 1700 → 1600
+damage_window_end: 2100 → 2000
+
+Aqua Tail
+duration: 1900 → 2000
+damage_window_start: 1200 → 1300
+damage_window_end: 1650 → 1750
+
+Seed Bomb
+duration: 2100 → 2000
+damage_window_start: 1200 → 1100
+damage_window_end: 1900 → 1800
+
+Psyshock
+power: 65.0 → 60.0
+duration: 2700 → 2500
+damage_window_start: 2000 → 1800
+damage_window_end: 2600 → 2400
+
+Rock Tomb
+power: 70.0 → 65.0
+duration: 3200 → 3000
+damage_window_start: 2250 → 2050
+damage_window_end: 3000 → 2800
+
+Rock Slide
+power: 80.0 → 75.0
+duration: 2700 → 2500
+damage_window_start: 1500 → 1300
+damage_window_end: 2600 → 2400
+
+Power Gem
+duration: 2900 → 3000
+damage_window_start: 1950 → 2050
+damage_window_end: 2700 → 2800
+
+Shadow Sneak
+duration: 2900 → 3000
+damage_window_start: 2200 → 2300
+damage_window_end: 2700 → 2800
+
+Shadow Punch
+power: 40.0 → 35.0
+duration: 1700 → 1500
+damage_window_start: 1300 → 1100
+damage_window_end: 1500 → 1300
+
+Ominous Wind
+power: 50.0 → 55.0
+duration: 2300 → 2500
+damage_window_start: 1850 → 2050
+damage_window_end: 2100 → 2300
+
+Magnet Bomb
+power: 70.0 → 75.0
+duration: 2800 → 3000
+damage_window_start: 2200 → 2400
+damage_window_end: 2600 → 2800
+
+Iron Head
+duration: 1900 → 2000
+damage_window_start: 1300 → 1400
+damage_window_end: 1700 → 1800
+
+Parabolic Charge
+power: 65.0 → 70.0
+duration: 2800 → 3000
+damage_window_start: 1200 → 1400
+damage_window_end: 2400 → 2600
+
+Thunder Punch
+power: 45.0 → 50.0
+duration: 1800 → 2000
+damage_window_start: 1700 → 1900
+damage_window_end: 1550 → 1750
+
+Thunder
+duration: 2400 → 2500
+damage_window_start: 1200 → 1300
+damage_window_end: 2200 → 2300
+
+Twister
+power: 45.0 → 50.0
+duration: 2800 → 3000
+damage_window_start: 950 → 1150
+damage_window_end: 2600 → 2800
+
+Dragon Pulse
+duration: 3600 → 3500
+damage_window_start: 2150 → 2050
+damage_window_end: 3300 → 3200
+
+Dragon Claw
+power: 50.0 → 45.0
+duration: 1700 → 1500
+damage_window_start: 1100 → 900
+damage_window_end: 1300 → 1100
+
+Disarming Voice
+duration: 3900 → 4000
+damage_window_start: 3200 → 3300
+damage_window_end: 3500 → 3600
+
+Draining Kiss
+duration: 2600 → 2500
+damage_window_start: 1000 → 900
+damage_window_end: 1300 → 1200
+
+Moonblast
+duration: 3900 → 4000
+damage_window_start: 2200 → 2300
+damage_window_end: 3700 → 3800
+
+Play Rough
+duration: 2900 → 3000
+damage_window_start: 1300 → 1400
+damage_window_end: 2700 → 2800
+
+Sludge Bomb
+power: 80.0 → 85.0
+duration: 2300 → 2500
+damage_window_start: 1100 → 1300
+damage_window_end: 2100 → 2300
+
+Sludge Wave
+power: 110.0 → 105.0
+duration: 3200 → 3000
+damage_window_start: 2000 → 1800
+damage_window_end: 3000 → 2800
+
+Gunk Shot
+duration: 3100 → 3000
+damage_window_start: 1700 → 1600
+damage_window_end: 2700 → 2600
+
+Bone Club
+duration: 1600 → 1500
+damage_window_start: 1000 → 900
+damage_window_end: 1400 → 1300
+
+Mud Bomb
+power: 55.0 → 60.0
+duration: 2300 → 2500
+damage_window_start: 1700 → 1900
+damage_window_end: 2100 → 2300
+
+Signal Beam
+duration: 2900 → 3000
+damage_window_start: 1800 → 1900
+damage_window_end: 2600 → 2700
+
+X Scissor
+duration: 1600 → 1500
+damage_window_start: 1200 → 1100
+damage_window_end: 1400 → 1300
+
+Flame Charge
+duration: 3800 → 4000
+damage_window_start: 2900 → 3100
+damage_window_end: 3450 → 3650
+
+Flame Burst
+duration: 2600 → 2500
+damage_window_start: 1000 → 900
+damage_window_end: 2100 → 2000
+
+Fire Blast
+duration: 4200 → 4000
+damage_window_start: 3100 → 2900
+damage_window_end: 3900 → 3700
+
+Brine
+power: 60.0 → 65.0
+duration: 2300 → 2500
+damage_window_start: 1500 → 1700
+damage_window_end: 2100 → 2300
+
+Water Pulse
+power: 70.0 → 65.0
+duration: 3200 → 3000
+damage_window_start: 2200 → 2000
+damage_window_end: 2900 → 2700
+
+Scald
+power: 80.0 → 75.0
+duration: 3700 → 3500
+damage_window_start: 1300 → 1100
+damage_window_end: 3400 → 3200
+
+Hydro Pump
+power: 130.0 → 135.0
+duration: 3300 → 3500
+damage_window_start: 900 → 1100
+damage_window_end: 3000 → 3200
+
+Psychic
+power: 90.0 → 95.0
+duration: 2800 → 3000
+damage_window_start: 1300 → 1500
+damage_window_end: 2600 → 2800
+
+Psystrike
+power: 90.0 → 95.0
+duration: 2300 → 2500
+damage_window_start: 1000 → 1200
+damage_window_end: 2000 → 2200
+
+Icy Wind
+power: 60.0 → 65.0
+duration: 3300 → 3500
+damage_window_start: 2000 → 2200
+damage_window_end: 2800 → 3000
+
+Giga Drain
+duration: 3900 → 4000
+damage_window_start: 1200 → 1300
+damage_window_end: 2200 → 2300
+
+Fire Punch
+power: 55.0 → 50.0
+duration: 2200 → 2000
+damage_window_start: 1500 → 1300
+damage_window_end: 1900 → 1700
+
+Solar Beam
+duration: 4900 → 5000
+damage_window_start: 2700 → 2800
+damage_window_end: 4700 → 4800
+
+Leaf Blade
+duration: 2400 → 2500
+damage_window_start: 1250 → 1350
+damage_window_end: 2200 → 2300
+
+Power Whip
+duration: 2600 → 2500
+damage_window_start: 1250 → 1150
+damage_window_end: 2350 → 2250
+
+Air Cutter
+power: 60.0 → 55.0
+duration: 2700 → 2500
+damage_window_start: 1800 → 1600
+damage_window_end: 2500 → 2300
+
+Hurricane
+power: 110.0 → 105.0
+duration: 2700 → 2500
+damage_window_start: 1200 → 1000
+damage_window_end: 2400 → 2200
+
+Brick Break
+duration: 1600 → 1500
+damage_window_start: 800 → 700
+damage_window_end: 1400 → 1300
+
+Swift
+power: 60.0 → 65.0
+duration: 2800 → 3000
+damage_window_start: 2000 → 2200
+damage_window_end: 2600 → 2800
+
+Horn Attack
+power: 40.0 → 45.0
+duration: 1850 → 2000
+damage_window_start: 800 → 950
+damage_window_end: 1650 → 1800
+
+Stomp
+power: 55.0 → 50.0
+duration: 1700 → 1500
+damage_window_start: 1100 → 900
+damage_window_end: 1500 → 1300
+
+Body Slam
+duration: 1900 → 2000
+damage_window_start: 1200 → 1300
+damage_window_end: 1700 → 1800
+
+Rest
+duration: 1900 → 2000
+damage_window_start: 1500 → 1600
+damage_window_end: 1700 → 1800
+
+Struggle
+duration: 2200 → 2000
+damage_window_start: 1200 → 1000
+damage_window_end: 2000 → 1800
+
+Scald Blastoise
+duration: 4700 → 4500
+damage_window_start: 2500 → 2300
+damage_window_end: 4600 → 4400
+
+Wrap Green
+duration: 2900 → 3000
+damage_window_start: 2050 → 2150
+damage_window_end: 2700 → 2800
+
+Wrap Pink
+duration: 2900 → 3000
+damage_window_start: 2050 → 2150
+damage_window_end: 2700 → 2800
+
+Fury Cutter
+power: 3.0 → 4.0
+duration: 400 → 500
+damage_window_start: 100 → 200
+damage_window_end: 400 → 500
+energy_delta: 6 → 8
+
+Sucker Punch
+power: 7.0 → 5.0
+duration: 700 → 500
+damage_window_start: 300 → 100
+damage_window_end: 700 → 500
+energy_delta: 8 → 6
+
+Thunder Shock
+power: 5.0 → 4.0
+duration: 600 → 500
+damage_window_start: 300 → 200
+damage_window_end: 600 → 500
+energy_delta: 8 → 7
+
+Spark
+power: 6.0 → 4.0
+duration: 700 → 500
+damage_window_start: 300 → 100
+damage_window_end: 700 → 500
+energy_delta: 9 → 6
+
+Low Kick
+power: 6.0 → 5.0
+duration: 600 → 500
+damage_window_start: 300 → 200
+damage_window_end: 600 → 500
+energy_delta: 6 → 5
+
+Karate Chop
+power: 8.0 → 10.0
+duration: 800 → 1000
+damage_window_start: 600 → 800
+damage_window_end: 800 → 1000
+energy_delta: 10 → 13
+
+Wing Attack
+power: 8.0 → 10.0
+duration: 800 → 1000
+damage_window_start: 550 → 750
+damage_window_end: 750 → 950
+energy_delta: 9 → 11
+
+Shadow Claw
+power: 9.0 → 6.0
+duration: 700 → 500
+damage_window_start: 250 → 50
+damage_window_end: 500 → 300
+energy_delta: 6 → 4
+
+Vine Whip
+power: 7.0 → 6.0
+duration: 600 → 500
+damage_window_start: 350 → 250
+damage_window_end: 600 → 500
+energy_delta: 6 → 5
+
+Mud Shot
+power: 5.0 → 4.0
+duration: 600 → 500
+damage_window_start: 350 → 250
+damage_window_end: 550 → 450
+energy_delta: 7 → 6
+
+Ice Shard
+power: 12.0 → 10.0
+duration: 1200 → 1000
+damage_window_start: 600 → 400
+damage_window_end: 900 → 700
+energy_delta: 12 → 10
+
+Frost Breath
+power: 10.0 → 11.0
+duration: 900 → 1000
+damage_window_start: 450 → 550
+damage_window_end: 750 → 850
+energy_delta: 8 → 9
+
+Quick Attack
+power: 8.0 → 10.0
+duration: 800 → 1000
+damage_window_start: 250 → 450
+damage_window_end: 550 → 750
+energy_delta: 10 → 13
+
+Pound
+power: 7.0 → 6.0
+duration: 600 → 500
+damage_window_start: 340 → 240
+damage_window_end: 540 → 440
+energy_delta: 6 → 5
+
+Poison Jab
+power: 10.0 → 13.0
+duration: 800 → 1000
+damage_window_start: 200 → 400
+damage_window_end: 800 → 1000
+energy_delta: 7 → 9
+
+Acid
+power: 9.0 → 11.0
+duration: 800 → 1000
+damage_window_start: 400 → 600
+damage_window_end: 600 → 800
+energy_delta: 8 → 10
+
+Psycho Cut
+power: 5.0 → 4.0
+duration: 600 → 500
+damage_window_start: 370 → 270
+damage_window_end: 570 → 470
+energy_delta: 8 → 7
+
+Rock Throw
+power: 12.0 → 13.0
+duration: 900 → 1000
+damage_window_start: 500 → 600
+damage_window_end: 800 → 900
+energy_delta: 7 → 8
+
+Metal Claw
+power: 8.0 → 6.0
+duration: 700 → 500
+damage_window_start: 430 → 230
+damage_window_end: 630 → 430
+energy_delta: 7 → 5
+
+Bullet Punch
+power: 9.0 → 10.0
+duration: 900 → 1000
+damage_window_start: 300 → 400
+damage_window_end: 900 → 1000
+energy_delta: 10 → 11
+
+Splash
+duration: 1730 → 1500
+damage_window_start: 1030 → 800
+damage_window_end: 1230 → 1000
+energy_delta: 20 → 17
+
+Mud Slap
+power: 18.0 → 19.0
+duration: 1400 → 1500
+damage_window_start: 1150 → 1250
+damage_window_end: 1350 → 1450
+energy_delta: 12 → 13
+
+Zen Headbutt
+power: 12.0 → 11.0
+duration: 1100 → 1000
+damage_window_start: 850 → 750
+damage_window_end: 1050 → 950
+energy_delta: 10 → 9
+
+Confusion
+power: 20.0 → 19.0
+duration: 1600 → 1500
+damage_window_start: 600 → 500
+damage_window_end: 1600 → 1500
+energy_delta: 15 → 14
+
+Poison Sting
+power: 5.0 → 4.0
+duration: 600 → 500
+damage_window_start: 375 → 275
+damage_window_end: 575 → 475
+energy_delta: 7 → 6
+
+Bubble
+power: 12.0 → 10.0
+duration: 1200 → 1000
+damage_window_start: 750 → 550
+damage_window_end: 1000 → 800
+energy_delta: 14 → 12
+
+Feint Attack
+power: 10.0 → 11.0
+duration: 900 → 1000
+damage_window_start: 750 → 850
+damage_window_end: 900 → 1000
+energy_delta: 9 → 10
+
+Steel Wing
+power: 11.0 → 14.0
+duration: 800 → 1000
+damage_window_start: 500 → 700
+damage_window_end: 800 → 1000
+energy_delta: 6 → 8
+
+Fire Fang
+power: 12.0 → 13.0
+duration: 900 → 1000
+damage_window_start: 640 → 740
+damage_window_end: 840 → 940
+energy_delta: 8 → 9
+
+Rock Smash
+power: 15.0 → 17.0
+duration: 1300 → 1500
+damage_window_start: 550 → 750
+damage_window_end: 800 → 1000
+energy_delta: 10 → 12
+
+Transform
+duration: 2230 → 2000
+damage_window_start: 300 → 70
+damage_window_end: 700 → 470
+
+Counter
+power: 12.0 → 13.0
+duration: 900 → 1000
+damage_window_start: 700 → 800
+damage_window_end: 900 → 1000
+energy_delta: 8 → 9
+
+Close Combat
+power: 100.0 → 105.0
+duration: 2300 → 2500
+damage_window_start: 1000 → 1200
+damage_window_end: 2300 → 2500
+
+Dynamic Punch
+power: 90.0 → 85.0
+duration: 2700 → 2500
+damage_window_start: 1200 → 1000
+damage_window_end: 2700 → 2500
+
+Aurora Beam
+duration: 3550 → 3500
+damage_window_start: 3350 → 3300
+damage_window_end: 3550 → 3500
+
+Charge Beam
+power: 8.0 → 7.0
+duration: 1100 → 1000
+damage_window_start: 850 → 750
+damage_window_end: 1050 → 950
+energy_delta: 15 → 14
+
+Volt Switch
+power: 14.0 → 13.0
+duration: 1600 → 1500
+damage_window_start: 700 → 600
+damage_window_end: 900 → 800
+energy_delta: 21 → 20
+
+Wild Charge
+duration: 2600 → 2500
+damage_window_start: 1700 → 1600
+damage_window_end: 2100 → 2000
+
+Zap Cannon
+duration: 3700 → 3500
+damage_window_start: 3000 → 2800
+damage_window_end: 3500 → 3300
+
+Dragon Tail
+power: 15.0 → 14.0
+duration: 1100 → 1000
+damage_window_start: 850 → 750
+damage_window_end: 1050 → 950
+energy_delta: 9 → 8
+
+Avalanche
+power: 90.0 → 85.0
+duration: 2700 → 2500
+damage_window_start: 1700 → 1500
+damage_window_end: 2100 → 1900
+
+Air Slash
+power: 14.0 → 12.0
+duration: 1200 → 1000
+damage_window_start: 1000 → 800
+damage_window_end: 1200 → 1000
+energy_delta: 10 → 8
+
+Rock Blast
+duration: 2100 → 2000
+damage_window_start: 1600 → 1500
+damage_window_end: 2000 → 1900
+
+Infestation
+power: 10.0 → 9.0
+duration: 1100 → 1000
+damage_window_start: 850 → 750
+damage_window_end: 1050 → 950
+energy_delta: 14 → 13
+
+Silver Wind
+power: 70.0 → 65.0
+duration: 3700 → 3500
+damage_window_start: 1700 → 1500
+damage_window_end: 3500 → 3300
+
+Astonish
+power: 8.0 → 7.0
+duration: 1100 → 1000
+damage_window_start: 700 → 600
+damage_window_end: 1050 → 950
+energy_delta: 14 → 13
+
+Hex
+power: 10.0 → 8.0
+duration: 1200 → 1000
+damage_window_start: 1000 → 800
+damage_window_end: 1200 → 1000
+energy_delta: 16 → 13
+
+Night Shade
+duration: 2600 → 2500
+damage_window_start: 2100 → 2000
+damage_window_end: 2500 → 2400
+
+Iron Tail
+power: 15.0 → 14.0
+duration: 1100 → 1000
+damage_window_start: 850 → 750
+damage_window_end: 1050 → 950
+energy_delta: 7 → 6
+
+Gyro Ball
+power: 80.0 → 85.0
+duration: 3300 → 3500
+damage_window_start: 3000 → 3200
+damage_window_end: 3300 → 3500
+
+Heavy Slam
+duration: 2100 → 2000
+damage_window_start: 1500 → 1400
+damage_window_end: 1900 → 1800
+
+Fire Spin
+power: 14.0 → 13.0
+duration: 1100 → 1000
+damage_window_start: 850 → 750
+damage_window_end: 1050 → 950
+energy_delta: 10 → 9
+
+Bullet Seed
+power: 8.0 → 7.0
+duration: 1100 → 1000
+damage_window_start: 850 → 750
+damage_window_end: 1050 → 950
+energy_delta: 14 → 13
+
+Grass Knot
+duration: 2600 → 2500
+damage_window_start: 1700 → 1600
+damage_window_end: 2600 → 2500
+
+Energy Ball
+duration: 3900 → 4000
+damage_window_start: 3000 → 3100
+damage_window_end: 3800 → 3900
+
+Extrasensory
+power: 12.0 → 11.0
+duration: 1100 → 1000
+damage_window_start: 850 → 750
+damage_window_end: 1050 → 950
+energy_delta: 12 → 11
+
+Future Sight
+power: 120.0 → 115.0
+duration: 2700 → 2500
+damage_window_start: 1400 → 1200
+damage_window_end: 2700 → 2500
+
+Mirror Coat
+duration: 2600 → 2500
+damage_window_start: 2300 → 2200
+damage_window_end: 2500 → 2400
+
+Outrage
+duration: 3900 → 4000
+damage_window_start: 2500 → 2600
+damage_window_end: 3700 → 3800
+
+Snarl
+power: 12.0 → 11.0
+duration: 1100 → 1000
+damage_window_start: 850 → 750
+damage_window_end: 1050 → 950
+energy_delta: 14 → 13
+
+Crunch
+power: 70.0 → 65.0
+duration: 3200 → 3000
+damage_window_start: 1300 → 1100
+damage_window_end: 3000 → 2800
+
+Take Down
+power: 8.0 → 7.0
+duration: 1200 → 1000
+damage_window_start: 950 → 750
+damage_window_end: 1100 → 900
+energy_delta: 10 → 8
+
+Waterfall
+power: 16.0 → 13.0
+duration: 1200 → 1000
+damage_window_start: 950 → 750
+damage_window_end: 1100 → 900
+energy_delta: 8 → 7
+
+Surf
+power: 65.0 → 60.0
+duration: 1700 → 1500
+damage_window_start: 1400 → 1200
+damage_window_end: 1600 → 1400
+
+Draco Meteor
+duration: 3600 → 3500
+damage_window_start: 3000 → 2900
+damage_window_end: 3500 → 3400
+
+Doom Desire
+power: 70.0 → 65.0
+duration: 1700 → 1500
+damage_window_start: 1400 → 1200
+damage_window_end: 1600 → 1400
+
+Yawn
+duration: 1700 → 1500
+damage_window_start: 1400 → 1200
+damage_window_end: 1600 → 1400
+energy_delta: 15 → 13
+
+Origin Pulse
+power: 130.0 → 120.0
+duration: 1700 → 1500
+damage_window_start: 1400 → 1200
+damage_window_end: 1600 → 1400
+
+Precipice Blades
+power: 130.0 → 120.0
+duration: 1700 → 1500
+damage_window_start: 1400 → 1200
+damage_window_end: 1600 → 1400
+
+Present
+power: 5.0 → 6.0
+duration: 1300 → 1500
+damage_window_start: 1100 → 1300
+damage_window_end: 1300 → 1500
+energy_delta: 20 → 23
+
+Weather Ball Fire
+duration: 1600 → 1500
+damage_window_start: 1350 → 1250
+damage_window_end: 1600 → 1500
+
+Weather Ball Ice
+duration: 1600 → 1500
+damage_window_start: 1350 → 1250
+damage_window_end: 1600 → 1500
+
+Weather Ball Rock
+duration: 1600 → 1500
+damage_window_start: 1350 → 1250
+damage_window_end: 1600 → 1500
+
+Weather Ball Water
+duration: 1600 → 1500
+damage_window_start: 1350 → 1250
+damage_window_end: 1600 → 1500
+
+Frenzy Plant
+duration: 2600 → 2500
+damage_window_start: 2145 → 2045
+damage_window_end: 2550 → 2450
+
+Smack Down
+power: 16.0 → 13.0
+duration: 1200 → 1000
+damage_window_start: 800 → 600
+damage_window_end: 1100 → 900
+energy_delta: 8 → 7
+
+Blast Burn
+power: 110.0 → 120.0
+duration: 3300 → 3500
+damage_window_start: 2750 → 2950
+damage_window_end: 3200 → 3400
+
+Hydro Cannon
+duration: 1900 → 2000
+damage_window_start: 500 → 600
+damage_window_end: 1600 → 1700
+
+Last Resort
+duration: 2900 → 3000
+damage_window_start: 2700 → 2800
+damage_window_end: 2850 → 2950
+
+Meteor Mash
+duration: 2600 → 2500
+damage_window_start: 2300 → 2200
+damage_window_end: 2500 → 2400
+
+Skull Bash
+duration: 3100 → 3000
+damage_window_start: 1800 → 1700
+damage_window_end: 2300 → 2200
+
+Earth Power
+duration: 3600 → 3500
+damage_window_start: 2700 → 2600
+damage_window_end: 3400 → 3300
+
+Crabhammer
+duration: 1900 → 2000
+damage_window_start: 1500 → 1600
+damage_window_end: 1750 → 1850
+
+Lunge
+duration: 2900 → 3000
+damage_window_start: 2400 → 2500
+damage_window_end: 2700 → 2800
+
+Crush Claw
+duration: 1900 → 2000
+damage_window_start: 1200 → 1300
+damage_window_end: 1700 → 1800
+
+Octazooka
+power: 50.0 → 55.0
+duration: 2300 → 2500
+damage_window_start: 1300 → 1500
+damage_window_end: 1600 → 1800
+
+Mirror Shot
+duration: 2400 → 2500
+damage_window_start: 1800 → 1900
+damage_window_end: 2200 → 2300
+
+Fell Stinger
+power: 50.0 → 45.0
+duration: 2200 → 2000
+damage_window_start: 1800 → 1600
+damage_window_end: 2000 → 1800
+
+Leaf Tornado
+duration: 3100 → 3000
+damage_window_start: 2000 → 1900
+damage_window_end: 2600 → 2500
+
+Drain Punch
+duration: 2400 → 2500
+damage_window_start: 1000 → 1100
+damage_window_end: 1500 → 1600
+
+Shadow Bone
+power: 80.0 → 85.0
+duration: 2800 → 3000
+damage_window_start: 2250 → 2450
+damage_window_end: 2700 → 2900
+
+Muddy Water
+power: 50.0 → 45.0
+duration: 2200 → 2000
+damage_window_start: 1200 → 1000
+damage_window_end: 1900 → 1700
+
+Blaze Kick
+power: 45.0 → 40.0
+duration: 1200 → 1000
+damage_window_start: 450 → 250
+damage_window_end: 800 → 600
+
+Razor Shell
+power: 45.0 → 55.0
+duration: 1300 → 1500
+damage_window_start: 650 → 850
+damage_window_end: 1000 → 1200
+
+Giga Impact
+duration: 4700 → 4500
+damage_window_start: 1000 → 800
+damage_window_end: 2400 → 2200
+
+Return
+power: 35.0 → 25.0
+duration: 700 → 500
+damage_window_start: 100 → 0
+damage_window_end: 350 → 150
+
+Synchronoise
+duration: 2600 → 2500
+damage_window_start: 850 → 750
+damage_window_end: 1600 → 1500
+
+Lock On
+power: 1.0 → 2.0
+duration: 300 → 500
+damage_window_start: 170 → 370
+damage_window_end: 300 → 500
+energy_delta: 6 → 10
+
+Thunder Fang
+power: 12.0 → 10.0
+duration: 1200 → 1000
+damage_window_start: 400 → 200
+damage_window_end: 900 → 700
+energy_delta: 16 → 13
+
+Horn Drill
+duration: 1900 → 2000
+damage_window_start: 500 → 600
+damage_window_end: 1500 → 1600
+
+Fissure
+duration: 2800 → 3000
+damage_window_start: 1000 → 1200
+damage_window_end: 2300 → 2500
+
+Sacred Sword
+power: 55.0 → 50.0
+duration: 1200 → 1000
+damage_window_start: 500 → 300
+damage_window_end: 1000 → 800
+
+Flying Press
+power: 110.0 → 115.0
+duration: 2300 → 2500
+damage_window_start: 1000 → 1200
+damage_window_end: 2000 → 2200
+
+Aura Sphere
+power: 90.0 → 100.0
+duration: 1800 → 2000
+damage_window_start: 1000 → 1200
+damage_window_end: 1600 → 1800
+
+Payback
+power: 100.0 → 95.0
+duration: 2200 → 2000
+damage_window_start: 1100 → 900
+damage_window_end: 2000 → 1800
+
+Rock Wrecker
+duration: 3600 → 3500
+damage_window_start: 2000 → 1900
+damage_window_end: 2700 → 2600
+
+Aeroblast
+duration: 3400 → 3500
+damage_window_start: 3200 → 3300
+damage_window_end: 3400 → 3500
+
+Fly
+power: 80.0 → 90.0
+duration: 1800 → 2000
+damage_window_start: 1200 → 1400
+damage_window_end: 1500 → 1700
+
+V Create
+power: 95.0 → 105.0
+duration: 2800 → 3000
+damage_window_start: 1700 → 1900
+damage_window_end: 2500 → 2700
+
+Incinerate
+power: 29.0 → 32.0
+duration: 2300 → 2500
+damage_window_start: 500 → 700
+damage_window_end: 2300 → 2500
+energy_delta: 20 → 22
+
+Feather Dance
+duration: 2800 → 3000
+damage_window_start: 1700 → 1900
+damage_window_end: 2500 → 2700
+
+Fairy Wind
+duration: 970 → 1000
+damage_window_start: 600 → 630
+damage_window_end: 970 → 1000
+
+Weather Ball Normal
+duration: 1600 → 1500
+damage_window_start: 1350 → 1250
+damage_window_end: 1600 → 1500
+
+Psychic Fangs
+power: 30.0 → 25.0
+duration: 1200 → 1000
+damage_window_start: 400 → 200
+damage_window_end: 1100 → 900
+
+Magical Leaf
+power: 16.0 → 17.0
+duration: 1400 → 1500
+damage_window_start: 750 → 850
+damage_window_end: 1300 → 1400
+energy_delta: 16 → 17
+
+Sacred Fire
+duration: 2600 → 2500
+damage_window_start: 1200 → 1100
+damage_window_end: 2400 → 2300
+
+Icicle Spear
+power: 60.0 → 55.0
+duration: 2200 → 2000
+damage_window_start: 1200 → 1000
+damage_window_end: 1800 → 1600
+
+Aeroblast Plus
+duration: 3400 → 3500
+damage_window_start: 3200 → 3300
+damage_window_end: 3400 → 3500
+
+Aeroblast Plus Plus
+duration: 3400 → 3500
+damage_window_start: 3200 → 3300
+damage_window_end: 3400 → 3500
+
+Sacred Fire Plus
+duration: 2600 → 2500
+damage_window_start: 1200 → 1100
+damage_window_end: 2400 → 2300
+
+Sacred Fire Plus Plus
+duration: 2600 → 2500
+damage_window_start: 1200 → 1100
+damage_window_end: 2400 → 2300
+
+Brutal Swing
+duration: 1900 → 2000
+damage_window_start: 1200 → 1300
+damage_window_end: 1600 → 1700
+
+Rollout
+power: 14.0 → 15.0
+duration: 1400 → 1500
+damage_window_start: 960 → 1060
+damage_window_end: 1200 → 1300
+energy_delta: 18 → 19
+
+Seed Flare
+power: 120.0 → 115.0
+duration: 2700 → 2500
+damage_window_start: 2500 → 2300
+damage_window_end: 2600 → 2400
+
+Obstruct
+duration: 1700 → 1500
+damage_window_start: 500 → 300
+damage_window_end: 1600 → 1400
+
+Shadow Force
+duration: 1900 → 2000
+damage_window_start: 1700 → 1800
+damage_window_end: 1900 → 2000
+
+Meteor Beam
+duration: 1900 → 2000
+damage_window_start: 1000 → 1100
+damage_window_end: 1900 → 2000
+
+Water Shuriken
+power: 10.0 → 9.0
+duration: 1100 → 1000
+damage_window_start: 1000 → 900
+damage_window_end: 1100 → 1000
+energy_delta: 15 → 14
+
+Fusion Flare
+duration: 2200 → 2000
+damage_window_start: 1500 → 1300
+damage_window_end: 2000 → 1800
+
+Poltergeist
+duration: 3600 → 3500
+damage_window_start: 2800 → 2700
+damage_window_end: 3000 → 2900
+
+High Horsepower
+power: 110.0 → 105.0
+duration: 1600 → 1500
+damage_window_start: 1000 → 900
+damage_window_end: 1200 → 1100
+
+Breaking Swipe
+power: 35.0 → 45.0
+duration: 800 → 1000
+damage_window_start: 270 → 470
+damage_window_end: 700 → 900
+
+Boomburst
+power: 140.0 → 150.0
+duration: 2300 → 2500
+damage_window_start: 1000 → 1200
+damage_window_end: 2000 → 2200
+
+Leafage
+power: 9.0 → 6.0
+duration: 700 → 500
+damage_window_start: 400 → 200
+damage_window_end: 900 → 700
+energy_delta: 6 → 4
+
+Natures Madness
+duration: 2100 → 2000
+damage_window_start: 1400 → 1300
+damage_window_end: 2000 → 1900
+
+Scorching Sands
+power: 95.0 → 90.0
+duration: 3200 → 3000
+damage_window_start: 1600 → 1400
+damage_window_end: 2500 → 2300
+
+Roar Of Time
+duration: 2200 → 2000
+damage_window_start: 1050 → 850
+damage_window_end: 2500 → 2300
+
+Bleakwind Storm
+power: 140.0 → 150.0
+duration: 2300 → 2500
+damage_window_start: 1800 → 2000
+damage_window_end: 2600 → 2800
+
+Sandsear Storm
+power: 140.0 → 150.0
+duration: 2300 → 2500
+damage_window_start: 1800 → 2000
+damage_window_end: 2600 → 2800
+
+Wildbolt Storm
+power: 140.0 → 150.0
+duration: 2300 → 2500
+damage_window_start: 1800 → 2000
+damage_window_end: 2600 → 2800
+
+Volt Tackle
+duration: 3400 → 3500
+damage_window_start: 2000 → 2100
+damage_window_end: 2500 → 2600
+
+Metal Sound
+power: 6.0 → 4.0
+duration: 700 → 500
+damage_window_start: 400 → 200
+damage_window_end: 900 → 700
+energy_delta: 9 → 6
+
+Sunsteel Strike
+duration: 3100 → 3000
+damage_window_start: 2300 → 2200
+damage_window_end: 3100 → 3000
+
+Moongeist Beam
+duration: 3100 → 3000
+damage_window_start: 2300 → 2200
+damage_window_end: 3100 → 3000
+
+Force Palm
+power: 9.0 → 10.0
+duration: 900 → 1000
+damage_window_start: 700 → 800
+damage_window_end: 900 → 1000
+energy_delta: 14 → 16

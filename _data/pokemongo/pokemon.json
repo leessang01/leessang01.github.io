@@ -4509,26 +4509,6 @@
         "has_shadow": true
     },
     {
-        "base_attack": 91,
-        "base_defense": 91,
-        "base_stamina": 134,
-        "form": "Normal",
-        "pokemon_id": 132,
-        "pokemon_name": "Ditto",
-        "type": [
-            "Normal"
-        ],
-        "charged_moves": [
-            "Struggle"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Transform"
-        ],
-        "pokemon_name_kor": "메타몽"
-    },
-    {
         "base_attack": 104,
         "base_defense": 114,
         "base_stamina": 146,
