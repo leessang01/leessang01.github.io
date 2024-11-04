@@ -4938,7 +4938,7 @@
             "Wing Attack"
         ],
         "pokemon_name_kor": "파이어",
-        "has_shadow": true
+        "has_shadow": false
     },
     {
         "base_attack": 251,
