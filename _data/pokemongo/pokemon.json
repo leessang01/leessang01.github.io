@@ -63,7 +63,8 @@
         "charged_moves": [
             "Sludge Bomb",
             "Petal Blizzard",
-            "Solar Beam"
+            "Solar Beam",
+            "Sludge"
         ],
         "elite_charged_moves": [
             "Frenzy Plant"
@@ -140,7 +141,8 @@
         "charged_moves": [
             "Fire Blast",
             "Dragon Claw",
-            "Overheat"
+            "Overheat",
+            "Air Cutter"
         ],
         "elite_charged_moves": [
             "Blast Burn",
@@ -373,7 +375,8 @@
         ],
         "fast_moves": [
             "Infestation",
-            "Poison Jab"
+            "Poison Jab",
+            "Poison Sting"
         ],
         "pokemon_name_kor": "독침붕",
         "has_shadow": true
@@ -657,7 +660,8 @@
         "fast_moves": [
             "Bite",
             "Acid",
-            "Dragon Tail"
+            "Dragon Tail",
+            "Poison Sting"
         ],
         "pokemon_name_kor": "아보크",
         "has_shadow": true
@@ -966,7 +970,9 @@
             "Thunder Punch",
             "Wild Charge",
             "Grass Knot",
-            "Trailblaze"
+            "Trailblaze",
+            "Psyshock",
+            "Surf"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -992,7 +998,8 @@
             "Thunder Punch",
             "Wild Charge",
             "Skull Bash",
-            "Trailblaze"
+            "Trailblaze",
+            "Surf"
         ],
         "elite_charged_moves": [
             "Thunder"
@@ -1187,7 +1194,9 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Poison Jab",
-            "Bite"
+            "Bite",
+            "Mud Slap",
+            "Poison Sting"
         ],
         "pokemon_name_kor": "니드퀸",
         "has_shadow": true
@@ -1266,7 +1275,8 @@
         "fast_moves": [
             "Poison Jab",
             "Iron Tail",
-            "Double Kick"
+            "Double Kick",
+            "Poison Sting"
         ],
         "pokemon_name_kor": "니드킹",
         "has_shadow": true
@@ -1873,7 +1883,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Scratch",
-            "Metal Claw"
+            "Metal Claw",
+            "Metal Sound"
         ],
         "pokemon_name_kor": "나옹",
         "has_shadow": true
@@ -2544,7 +2555,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Acid",
-            "Poison Jab"
+            "Poison Jab",
+            "Poison Sting"
         ],
         "pokemon_name_kor": "독파리",
         "has_shadow": true
@@ -2874,7 +2886,8 @@
             "Psychic",
             "Sludge Bomb",
             "Scald",
-            "Brutal Swing"
+            "Brutal Swing",
+            "Drain Punch"
         ],
         "elite_charged_moves": [
             "Surf"
@@ -2902,7 +2915,8 @@
             "Water Pulse",
             "Psychic",
             "Ice Beam",
-            "Scald"
+            "Scald",
+            "Drain Punch"
         ],
         "elite_charged_moves": [
             "Surf"
@@ -3060,7 +3074,8 @@
         "charged_moves": [
             "Drill Peck",
             "Aerial Ace",
-            "Brave Bird"
+            "Brave Bird",
+            "Trailblaze"
         ],
         "elite_charged_moves": [
             "Air Cutter"
@@ -3068,7 +3083,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Feint Attack",
-            "Steel Wing"
+            "Steel Wing",
+            "Peck"
         ],
         "pokemon_name_kor": "두트리오"
     },
@@ -3361,7 +3377,8 @@
         "charged_moves": [
             "Shadow Ball",
             "Focus Blast",
-            "Sludge Bomb"
+            "Sludge Bomb",
+            "Drain Punch"
         ],
         "elite_charged_moves": [
             "Sludge Wave",
@@ -4833,7 +4850,8 @@
         "charged_moves": [
             "Futuresight",
             "Ancient Power",
-            "Brave Bird"
+            "Brave Bird",
+            "Fly"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -4887,7 +4905,8 @@
         "charged_moves": [
             "Close Combat",
             "Ancient Power",
-            "Brave Bird"
+            "Brave Bird",
+            "Fly"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -4939,7 +4958,8 @@
         "charged_moves": [
             "Payback",
             "Ancient Power",
-            "Brave Bird"
+            "Brave Bird",
+            "Fly"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -5043,7 +5063,8 @@
             "Hyper Beam",
             "Outrage",
             "Dragon Claw",
-            "Super Power"
+            "Super Power",
+            "Thunder Punch"
         ],
         "elite_charged_moves": [
             "Draco Meteor",
@@ -5876,13 +5897,15 @@
         "charged_moves": [
             "Ominous Wind",
             "Futuresight",
-            "Aerial Ace"
+            "Aerial Ace",
+            "Psyshock"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
         "fast_moves": [
             "Air Slash",
-            "Feint Attack"
+            "Feint Attack",
+            "Peck"
         ],
         "pokemon_name_kor": "네이티오",
         "has_shadow": true
@@ -6337,7 +6360,8 @@
             "Earthquake",
             "Stone Edge",
             "Acid Spray",
-            "Mud Bomb"
+            "Mud Bomb",
+            "Drain Punch"
         ],
         "elite_charged_moves": [
             "Aqua Tail"
@@ -6442,7 +6466,8 @@
             "Futuresight",
             "Shadow Ball",
             "Sludge Wave",
-            "Scald"
+            "Scald",
+            "Psyshock"
         ],
         "elite_charged_moves": [
             "Surf"
@@ -7308,7 +7333,8 @@
             "Hydro Pump",
             "Blizzard",
             "Outrage",
-            "Octazooka"
+            "Octazooka",
+            "Swift"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [
@@ -7633,7 +7659,8 @@
             "Thunder",
             "Thunderbolt",
             "Wild Charge",
-            "Shadow Ball"
+            "Shadow Ball",
+            "Aura Sphere"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -7792,7 +7819,8 @@
         "charged_moves": [
             "Sky Attack",
             "Hydro Pump",
-            "Futuresight"
+            "Futuresight",
+            "Fly"
         ],
         "elite_charged_moves": [
             "Aeroblast"
@@ -7819,7 +7847,8 @@
         "charged_moves": [
             "Sky Attack",
             "Hydro Pump",
-            "Futuresight"
+            "Futuresight",
+            "Fly"
         ],
         "elite_charged_moves": [
             "Aeroblast Plus"
@@ -7846,7 +7875,8 @@
         "charged_moves": [
             "Sky Attack",
             "Hydro Pump",
-            "Futuresight"
+            "Futuresight",
+            "Fly"
         ],
         "elite_charged_moves": [
             "Aeroblast Plus Plus"
@@ -7966,7 +7996,8 @@
             "Psychic",
             "Dazzling Gleam",
             "Seed Bomb",
-            "Leaf Storm"
+            "Leaf Storm",
+            "Aura Sphere"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [
@@ -9279,7 +9310,8 @@
             "Power Gem",
             "Foul Play",
             "Shadow Sneak",
-            "Dazzling Gleam"
+            "Dazzling Gleam",
+            "Drain Punch"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -9339,7 +9371,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Tackle",
-            "Metal Claw"
+            "Metal Claw",
+            "Metal Sound"
         ],
         "pokemon_name_kor": "가보리",
         "has_shadow": true
@@ -9365,7 +9398,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Metal Claw",
-            "Iron Tail"
+            "Iron Tail",
+            "Metal Sound"
         ],
         "pokemon_name_kor": "갱도라",
         "has_shadow": true
@@ -9393,7 +9427,8 @@
         "fast_moves": [
             "Dragon Tail",
             "Iron Tail",
-            "Smack Down"
+            "Smack Down",
+            "Metal Sound"
         ],
         "pokemon_name_kor": "보스로라",
         "has_shadow": true
@@ -9833,7 +9868,8 @@
         "charged_moves": [
             "Overheat",
             "Solar Beam",
-            "Earthquake"
+            "Earthquake",
+            "Flame Wheel"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -9985,7 +10021,8 @@
             "Dragon Claw",
             "Stone Edge",
             "Boomburst",
-            "Scorching Sands"
+            "Scorching Sands",
+            "Sand Tomb"
         ],
         "elite_charged_moves": [
             "Earth Power"
@@ -10092,7 +10129,8 @@
         "charged_moves": [
             "Sky Attack",
             "Dazzling Gleam",
-            "Dragon Pulse"
+            "Dragon Pulse",
+            "Flamethrower"
         ],
         "elite_charged_moves": [
             "Moonblast"
@@ -10499,7 +10537,8 @@
         "charged_moves": [
             "Surf",
             "Blizzard",
-            "Hyper Beam"
+            "Hyper Beam",
+            "Wrap Green"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -10912,7 +10951,8 @@
         "charged_moves": [
             "Aurora Beam",
             "Body Slam",
-            "Water Pulse"
+            "Water Pulse",
+            "Surf"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -11104,7 +11144,8 @@
         "charged_moves": [
             "Flamethrower",
             "Dragon Pulse",
-            "Twister"
+            "Twister",
+            "Crunch"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -11130,7 +11171,9 @@
             "Fire Blast",
             "Hydro Pump",
             "Draco Meteor",
-            "Fly"
+            "Fly",
+            "Crunch",
+            "Brutal Swing"
         ],
         "elite_charged_moves": [
             "Outrage"
@@ -11186,7 +11229,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Zen Headbutt",
-            "Metal Claw"
+            "Metal Claw",
+            "Fury Cutter"
         ],
         "pokemon_name_kor": "메탕구",
         "has_shadow": true
@@ -11213,7 +11257,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Bullet Punch",
-            "Zen Headbutt"
+            "Zen Headbutt",
+            "Fury Cutter"
         ],
         "pokemon_name_kor": "메타그로스",
         "has_shadow": true
@@ -11313,7 +11358,8 @@
         "charged_moves": [
             "Psychic",
             "Outrage",
-            "Thunder"
+            "Thunder",
+            "Aura Sphere"
         ],
         "elite_charged_moves": [
             "Mist Ball"
@@ -11341,7 +11387,8 @@
         "charged_moves": [
             "Psychic",
             "Dragon Claw",
-            "Solar Beam"
+            "Solar Beam",
+            "Aura Sphere"
         ],
         "elite_charged_moves": [
             "Luster Purge"
@@ -11429,7 +11476,7 @@
         ],
         "elite_fast_moves": [],
         "exclusive_charged_moves": [
-                "Dragon Ascent"
+            "Dragon Ascent"
         ],
         "fast_moves": [
             "Air Slash",
@@ -11451,7 +11498,8 @@
         "charged_moves": [
             "Dazzling Gleam",
             "Psychic",
-            "Doom Desire"
+            "Doom Desire",
+            "Aura Sphere"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -11628,7 +11676,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Bite",
-            "Razor Leaf"
+            "Razor Leaf",
+            "Mud Slap"
         ],
         "pokemon_name_kor": "토대부기",
         "has_shadow": true
@@ -11781,7 +11830,8 @@
         "fast_moves": [
             "Waterfall",
             "Metal Claw",
-            "Steel Wing"
+            "Steel Wing",
+            "Metal Sound"
         ],
         "pokemon_name_kor": "엠페르트",
         "has_shadow": true
@@ -12423,7 +12473,8 @@
         "charged_moves": [
             "Thunder",
             "Thunderbolt",
-            "Thunder Punch"
+            "Thunder Punch",
+            "Hyper Fang"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -13178,7 +13229,8 @@
             "Outrage",
             "Earthquake",
             "Fire Blast",
-            "Sand Tomb"
+            "Sand Tomb",
+            "Breaking Swipe"
         ],
         "elite_charged_moves": [
             "Earth Power"
@@ -13418,14 +13470,16 @@
             "Dynamic Punch",
             "Mud Bomb",
             "Sludge Bomb",
-            "Shadow Ball"
+            "Shadow Ball",
+            "Drain Punch"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
         "fast_moves": [
             "Poison Jab",
             "Counter",
-            "Mud Shot"
+            "Mud Shot",
+            "Poison Sting"
         ],
         "pokemon_name_kor": "독개굴",
         "has_shadow": true
@@ -13795,7 +13849,8 @@
         "fast_moves": [
             "Air Slash",
             "Hidden Power",
-            "Charm"
+            "Charm",
+            "Peck"
         ],
         "pokemon_name_kor": "토게키스"
     },
@@ -14305,7 +14360,8 @@
             "Dragon Breath",
             "Metal Claw"
         ],
-        "pokemon_name_kor": "디아루가"
+        "pokemon_name_kor": "디아루가",
+        "has_shadow": true
     },
     {
         "base_attack": 270,
@@ -14358,7 +14414,8 @@
             "Dragon Breath",
             "Dragon Tail"
         ],
-        "pokemon_name_kor": "펄기아"
+        "pokemon_name_kor": "펄기아",
+        "has_shadow": true
     },
     {
         "base_attack": 286,
@@ -14415,7 +14472,8 @@
             "Fire Spin",
             "Bug Bite"
         ],
-        "pokemon_name_kor": "히드런"
+        "pokemon_name_kor": "히드런",
+        "has_shadow": true
     },
     {
         "base_attack": 287,
@@ -14432,7 +14490,9 @@
             "Focus Blast",
             "Thunder"
         ],
-        "elite_charged_moves": [],
+        "elite_charged_moves": [
+            "Crush Grip"
+        ],
         "elite_fast_moves": [],
         "fast_moves": [
             "Zen Headbutt",
@@ -14466,7 +14526,8 @@
             "Dragon Breath",
             "Shadow Claw"
         ],
-        "pokemon_name_kor": "기라티나"
+        "pokemon_name_kor": "기라티나",
+        "has_shadow": true
     },
     {
         "base_attack": 225,
@@ -15071,7 +15132,8 @@
             "Overheat",
             "Focus Blast",
             "Psychic",
-            "V Create"
+            "V Create",
+            "Psyshock"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -16336,7 +16398,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Bug Bite",
-            "Poison Jab"
+            "Poison Jab",
+            "Poison Sting"
         ],
         "pokemon_name_kor": "펜드라"
     },
@@ -16568,7 +16631,8 @@
             "Earthquake",
             "Crunch",
             "Outrage",
-            "Brick Break"
+            "Brick Break",
+            "Sand Tomb"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -16792,7 +16856,8 @@
         "charged_moves": [
             "Rock Blast",
             "X Scissor",
-            "Rock Slide"
+            "Rock Slide",
+            "Rock Tomb"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -17724,7 +17789,9 @@
             "Drill Run",
             "Aerial Ace"
         ],
-        "elite_charged_moves": [],
+        "elite_charged_moves": [
+            "Razor Shell"
+        ],
         "elite_fast_moves": [],
         "fast_moves": [
             "Counter",
@@ -18458,7 +18525,9 @@
             "Signal Beam",
             "Focus Blast"
         ],
-        "elite_charged_moves": [],
+        "elite_charged_moves": [
+            "Energy Ball"
+        ],
         "elite_fast_moves": [],
         "fast_moves": [
             "Acid",
@@ -18529,7 +18598,8 @@
         "charged_moves": [
             "Brick Break",
             "Low Sweep",
-            "Focus Blast"
+            "Focus Blast",
+            "Drain Punch"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -18554,7 +18624,8 @@
             "Grass Knot",
             "Stone Edge",
             "Blaze Kick",
-            "Brutal Swing"
+            "Brutal Swing",
+            "Drain Punch"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -18578,7 +18649,8 @@
         "charged_moves": [
             "Dragon Claw",
             "Night Slash",
-            "Hyper Beam"
+            "Hyper Beam",
+            "Rock Tomb"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -19757,7 +19829,8 @@
             "Flamethrower",
             "Flame Charge",
             "Fire Blast",
-            "Mystical Fire"
+            "Mystical Fire",
+            "Psyshock"
         ],
         "elite_charged_moves": [
             "Blast Burn"
@@ -22256,7 +22329,8 @@
             "Moonblast",
             "Thunderbolt",
             "Psychic",
-            "Draining Kiss"
+            "Draining Kiss",
+            "Psyshock"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -22578,7 +22652,8 @@
         "charged_moves": [
             "Stomp",
             "Ancient Power",
-            "Dragon Claw"
+            "Dragon Claw",
+            "Rock Tomb"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -22604,7 +22679,8 @@
             "Stone Edge",
             "Outrage",
             "Earthquake",
-            "Meteor Beam"
+            "Meteor Beam",
+            "Rock Tomb"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -23643,7 +23719,9 @@
             "Flame Charge",
             "Dark Pulse",
             "Blaze Kick",
-            "Darkest Lariat"
+            "Darkest Lariat",
+            "Drain Punch",
+            "Brutal Swing"
         ],
         "elite_charged_moves": [
             "Blast Burn"
@@ -24767,7 +24845,8 @@
             "Brick Break",
             "Close Combat",
             "Super Power",
-            "Brutal Swing"
+            "Brutal Swing",
+            "Drain Punch"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -25578,7 +25657,9 @@
             "Overheat",
             "Flamethrower",
             "Dragon Pulse",
-            "Flash Cannon"
+            "Flash Cannon",
+            "Brutal Swing",
+            "Dragon Claw"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -25726,13 +25807,15 @@
         "charged_moves": [
             "Power Whip",
             "Shadow Ball",
-            "Heavy Slam"
+            "Heavy Slam",
+            "Wrap Green"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
         "fast_moves": [
             "Astonish",
-            "Shadow Claw"
+            "Shadow Claw",
+            "Metal Sound"
         ],
         "pokemon_name_kor": "타타륜"
     },
@@ -25773,7 +25856,8 @@
         "charged_moves": [
             "Dragon Claw",
             "Brick Break",
-            "Dragon Pulse"
+            "Dragon Pulse",
+            "Rock Tomb"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],
@@ -25799,13 +25883,17 @@
             "Close Combat",
             "Flamethrower",
             "Boomburst",
-            "Brick Break"
+            "Brick Break",
+            "Upper Hand"
         ],
-        "elite_charged_moves": [],
+        "elite_charged_moves": [
+            "Clanging Scales"
+        ],
         "elite_fast_moves": [],
         "fast_moves": [
             "Poison Jab",
-            "Dragon Tail"
+            "Dragon Tail",
+            "Metal Sound"
         ],
         "pokemon_name_kor": "짜랑고우거"
     },
@@ -26004,7 +26092,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Confusion",
-            "Air Slash"
+            "Air Slash",
+            "Shadow Claw"
         ],
         "pokemon_name_kor": "루나아라"
     },
@@ -26832,7 +26921,9 @@
             "Brave Bird",
             "Iron Head"
         ],
-        "elite_charged_moves": [],
+        "elite_charged_moves": [
+            "Air Cutter"
+        ],
         "elite_fast_moves": [],
         "fast_moves": [
             "Steel Wing",
@@ -27846,7 +27937,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Metal Claw",
-            "Shadow Claw"
+            "Shadow Claw",
+            "Metal Sound"
         ],
         "pokemon_name_kor": "나이킹"
     },
@@ -28514,6 +28606,9 @@
             "Quick Attack",
             "Fire Fang"
         ],
+        "exclusive_charged_moves": [
+            "Behemoth Blade"
+        ],
         "pokemon_name_kor": "자시안"
     },
     {
@@ -28568,6 +28663,9 @@
             "Snarl",
             "Quick Attack",
             "Ice Fang"
+        ],
+        "exclusive_charged_moves": [
+            "Behemoth Bash"
         ],
         "pokemon_name_kor": "자마젠타"
     },
@@ -28763,7 +28861,9 @@
             "Thunder",
             "Zap Cannon"
         ],
-        "elite_charged_moves": [],
+        "elite_charged_moves": [
+            "Thunder Cage"
+        ],
         "elite_fast_moves": [],
         "fast_moves": [
             "Thunder Shock",
@@ -28788,7 +28888,9 @@
             "Dragon Pulse",
             "Breaking Swipe"
         ],
-        "elite_charged_moves": [],
+        "elite_charged_moves": [
+            "Dragon Energy"
+        ],
         "elite_fast_moves": [],
         "fast_moves": [
             "Bite"
@@ -28964,7 +29066,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Quick Attack",
-            "Air Slash"
+            "Air Slash",
+            "Fury Cutter"
         ],
         "pokemon_name_kor": "사마자르"
     },
@@ -29165,7 +29268,9 @@
             "Energy Ball",
             "Night Slash"
         ],
-        "elite_charged_moves": [],
+        "elite_charged_moves": [
+            "Frenzy Plant"
+        ],
         "elite_fast_moves": [],
         "fast_moves": [
             "Leafage",
@@ -29243,7 +29348,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Incinerate",
-            "Bite"
+            "Bite",
+            "Hex"
         ],
         "pokemon_name_kor": "라우드본"
     },
@@ -29308,9 +29414,12 @@
             "Aqua Jet",
             "Aerial Ace",
             "Liquidation",
-            "Close Combat"
+            "Close Combat",
+            "Aqua Step"
         ],
-        "elite_charged_moves": [],
+        "elite_charged_moves": [
+            "Hydro Cannon"
+        ],
         "elite_fast_moves": [],
         "fast_moves": [
             "Water Gun",
@@ -29502,7 +29611,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Spark",
-            "Charge Beam"
+            "Charge Beam",
+            "Thunder Shock"
         ],
         "pokemon_name_kor": "빠모"
     },
@@ -29523,11 +29633,14 @@
             "Wild Charge",
             "Thunder Punch"
         ],
-        "elite_charged_moves": [],
+        "elite_charged_moves": [
+            "Brick Break"
+        ],
         "elite_fast_moves": [],
         "fast_moves": [
             "Spark",
-            "Charge Beam"
+            "Charge Beam",
+            "Thunder Shock"
         ],
         "pokemon_name_kor": "빠모트"
     },
@@ -29554,7 +29667,8 @@
         "fast_moves": [
             "Spark",
             "Charge Beam",
-            "Low Kick"
+            "Low Kick",
+            "Thunder Shock"
         ],
         "pokemon_name_kor": "빠르모트"
     },
@@ -30683,7 +30797,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Lick",
-            "Poison Jab"
+            "Poison Jab",
+            "Metal Sound"
         ],
         "pokemon_name_kor": "부르롱"
     },
@@ -30708,7 +30823,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Lick",
-            "Poison Jab"
+            "Poison Jab",
+            "Metal Sound"
         ],
         "pokemon_name_kor": "부르르룸"
     },
@@ -31567,7 +31683,8 @@
         "charged_moves": [
             "Shadow Ball",
             "Dazzling Gleam",
-            "Focus Blast"
+            "Focus Blast",
+            "Power Gem"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [],

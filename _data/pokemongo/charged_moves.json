@@ -2531,47 +2531,143 @@
         "name_kor": "물거품아리아"
     },
     {
-        "duration": 2000,
+        "duration": 3000,
         "energy_delta": -50,
-        "move_id": 0,
-        "name": "Ice Burn",
-        "power": 90,
+        "move_id": 464,
+        "name": "Rage Fist",
+        "power": 100,
         "stamina_loss_scaler": 0.01,
-        "type": "Ice",
-        "damage_window_start": 1800,
-        "name_kor": "콜드플레어"
+        "type": "Ghost",
+        "name_kor": "분노의주먹"
+    },
+    {
+        "duration": 2700,
+        "energy_delta": -33,
+        "move_id": 465,
+        "name": "Flower Trick",
+        "power": 75,
+        "stamina_loss_scaler": 0.01,
+        "type": "Grass",
+        "name_kor": "트릭플라워"
     },
     {
         "duration": 1500,
         "energy_delta": -100,
-        "move_id": 0,
+        "move_id": 466,
         "name": "Freeze Shock",
         "power": 160,
         "stamina_loss_scaler": 0.01,
         "type": "Ice",
-        "damage_window_start": 900,
         "name_kor": "프리즈볼트"
     },
     {
+        "duration": 2000,
+        "energy_delta": -50,
+        "move_id": 467,
+        "name": "Ice Burn",
+        "power": 90,
+        "stamina_loss_scaler": 0.01,
+        "type": "Ice",
+        "name_kor": "콜드플레어"
+    },
+    {
         "duration": 3500,
-        "energy_delta": -100,
-        "move_id": 0,
+        "energy_delta": -50,
+        "move_id": 468,
         "name": "Torch Song",
         "power": 100,
         "stamina_loss_scaler": 0.01,
         "type": "Fire",
-        "damage_window_start": 2500,
         "name_kor": "플레어송"
     },
     {
-        "duration": 3000,
+        "duration": 3500,
+        "energy_delta": -100,
+        "move_id": 469,
+        "name": "Behemoth Blade",
+        "power": 200,
+        "stamina_loss_scaler": 0.01,
+        "type": "Steel",
+        "name_kor": "거수참"
+    },
+    {
+        "duration": 1500,
         "energy_delta": -50,
-        "move_id": 0,
-        "name": "Rage Fist",
+        "move_id": 470,
+        "name": "Behemoth Bash",
+        "power": 125,
+        "stamina_loss_scaler": 0.01,
+        "type": "Steel",
+        "name_kor": "거수탄"
+    },
+    {
+        "duration": 2000,
+        "energy_delta": -33,
+        "move_id": 471,
+        "name": "Upper Hand",
         "power": 50,
         "stamina_loss_scaler": 0.01,
-        "type": "Ghost",
-        "damage_window_start": 2750,
-        "name_kor": "분노의주먹"
+        "type": "Fighting",
+        "name_kor": "기선제압"
+    },
+    {
+        "duration": 3300,
+        "energy_delta": -100,
+        "move_id": 472,
+        "name": "Thunder Cage",
+        "power": 220,
+        "stamina_loss_scaler": 0.01,
+        "type": "Electric",
+        "name_kor": "썬더프리즌"
+    },
+    {
+        "duration": 1500,
+        "energy_delta": -100,
+        "move_id": 482,
+        "name": "Dynamax Cannon",
+        "power": 215,
+        "stamina_loss_scaler": 0.01,
+        "type": "Dragon",
+        "name_kor": "다이맥스포"
+    },
+    {
+        "duration": 3300,
+        "energy_delta": -100,
+        "move_id": 484,
+        "name": "Clanging Scales",
+        "power": 120,
+        "stamina_loss_scaler": 0.01,
+        "type": "Dragon",
+        "name_kor": "스케일노이즈"
+    },
+    {
+        "duration": 1800,
+        "energy_delta": -100,
+        "move_id": 485,
+        "name": "Crush Grip",
+        "power": 210,
+        "stamina_loss_scaler": 0.01,
+        "type": "Normal",
+        "name_kor": "묵사발"
+    },
+    {
+        "duration": 3300,
+        "energy_delta": -50,
+        "move_id": 486,
+        "name": "Dragon Energy",
+        "power": 155,
+        "stamina_loss_scaler": 0.01,
+        "type": "Dragon",
+        "name_kor": "드래곤에너지"
+    },
+    {
+        "duration": 3500,
+        "energy_delta": -33,
+        "move_id": 487,
+        "name": "Aqua Step",
+        "power": 55,
+        "stamina_loss_scaler": 0.01,
+        "type": "Water",
+        "name_kor": "아쿠아스텝"
     }
 ]
