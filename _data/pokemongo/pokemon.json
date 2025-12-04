@@ -28730,31 +28730,6 @@
         "pokemon_name_kor": "자마젠타"
     },
     {
-        "base_attack": 251,
-        "base_defense": 505,
-        "base_stamina": 452,
-        "form": "Eternamax",
-        "pokemon_id": 890,
-        "pokemon_name": "Eternatus",
-        "type": [
-            "Poison",
-            "Dragon"
-        ],
-        "charged_moves": [
-            "Cross Poison",
-            "Dragon Pulse",
-            "Flamethrower",
-            "Hyper Beam"
-        ],
-        "elite_charged_moves": [],
-        "elite_fast_moves": [],
-        "fast_moves": [
-            "Dragon Tail",
-            "Poison Jab"
-        ],
-        "pokemon_name_kor": "무한다이노"
-    },
-    {
         "base_attack": 278,
         "base_defense": 192,
         "base_stamina": 268,
@@ -28770,7 +28745,9 @@
             "Dragon Pulse",
             "Flamethrower"
         ],
-        "elite_charged_moves": [],
+        "elite_charged_moves": [
+            "Dynamax Cannon"
+        ],
         "elite_fast_moves": [],
         "fast_moves": [
             "Dragon Tail",

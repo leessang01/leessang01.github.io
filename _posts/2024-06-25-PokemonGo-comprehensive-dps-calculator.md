@@ -2,7 +2,7 @@
 title: 포켓몬고 레이드 성능표(게임프레스 버전)
 description: 게임프레스의 Comprehensive DPS 계산을 통해 평가된 포켓몬고 레이드 성능표입니다.
 date: 2024-06-26 15:00:00 +0900
-lastmod: 2024-07-15 12:00:00 +0900
+lastmod: 2025-12-04 12:30:00 +0900
 categories:
   - 포켓몬고
   - 계산기
@@ -18,6 +18,8 @@ test:
 ---
 
 ## 포켓몬고 레이드 성능표(게임프레스 버전)
+
+- 시즌: 보물찾기의 길(2025년 12월 2일~2026년 3월 3일)
 
 {% include calculator_based_on_gamepress.html %}
 
@@ -117,6 +119,6 @@ test:
 
 [^equivalent-rating]: [Analysis] Legendary/Mythical Signature Moves: Improving the GamePress Overall Metric and a Cross-type PvE Meta Overview, Reddit, [link](https://www.reddit.com/r/TheSilphRoad/comments/z3xuzc/analysis_legendarymythical_signature_moves/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 [^analysis]: 포켓몬고 Gamepress DPS 성능 계산 공식 분석, [link]({% post_url 2024-05-28-How-to-calculate-comprehensive-dps %})
-[^original]: How to Calculate Comprehensive DPS, GamePress, [link](https://gamepress.gg/pokemongo/how-calculate-comprehensive-dps)
+[^original]: How to Calculate Comprehensive DPS, GamePress, [link](https://pokebase.app/pokemon-go/p/how-to-calculate-comprehensive-dps)
 [^exclusive-filter]: 포켓몬고 인게임에서는 존재하지 않는 필터링입니다.
 [^effectiveness]: 포켓몬고 인게임에서는 효과적인 일반공격을 가진 경우에도 검색됩니다. <kbd>>바위</kbd>라고 검색하는 경우 잉어킹[튀어오르기/발버둥]이 포함됨
