@@ -1,13 +1,20 @@
 ---
 title: 포켓몬고 레이드 성능표(게임프레스 버전)
-description: >-
-    게임프레스의 Comprehensive DPS 계산을 통해 평가된 포켓몬고 레이드 성능표입니다.
+description: 게임프레스의 Comprehensive DPS 계산을 통해 평가된 포켓몬고 레이드 성능표입니다.
 date: 2024-06-26 15:00:00 +0900
 lastmod: 2024-07-15 12:00:00 +0900
-categories: [포켓몬고, 계산기]
-tags: [DPS, TDO, ER, 게임프레스, 레이드성능]
+categories:
+  - 포켓몬고
+  - 계산기
+tags:
+  - DPS
+  - TDO
+  - ER
+  - 게임프레스
+  - 레이드성능
 image:
-    path: /assets/img/comprehensive-dps-example.jpg
+  path: /assets/img/preview-season-precious-paths.png
+test:
 ---
 
 ## 포켓몬고 레이드 성능표(게임프레스 버전)

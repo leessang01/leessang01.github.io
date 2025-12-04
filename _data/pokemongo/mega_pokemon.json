@@ -434,7 +434,8 @@
         "fast_moves": [
             "Steel Wing",
             "Bite",
-            "Rock Throw"
+            "Rock Throw",
+            "Dragon Breath"
         ],
         "mega_name_kor": "프테라(메가)"
     },
@@ -623,7 +624,8 @@
         ],
         "fast_moves": [
             "Bite",
-            "Iron Tail"
+            "Iron Tail",
+            "Dragon Breath"
         ],
         "mega_name_kor": "마기라스(메가)"
     },
@@ -680,7 +682,8 @@
             "Focus Blast",
             "Overheat",
             "Brave Bird",
-            "Blaze Kick"
+            "Blaze Kick",
+            "Aura Sphere"
         ],
         "elite_charged_moves": [
             "Blast Burn",
@@ -689,7 +692,8 @@
         "elite_fast_moves": [],
         "fast_moves": [
             "Counter",
-            "Fire Spin"
+            "Fire Spin",
+            "Ember"
         ],
         "mega_name_kor": "번치코(메가)"
     },
@@ -1111,7 +1115,8 @@
             "Hydro Pump",
             "Blizzard",
             "Thunder",
-            "Surf"
+            "Surf",
+            "Avalanche"
         ],
         "elite_charged_moves": [
             "Origin Pulse"
@@ -1336,7 +1341,8 @@
             "Power Up Punch",
             "Aura Sphere",
             "Blaze Kick",
-            "Thunder Punch"
+            "Thunder Punch",
+            "Meteor Mash"
         ],
         "elite_charged_moves": [],
         "elite_fast_moves": [
@@ -1347,6 +1353,192 @@
             "Bullet Punch"
         ],
         "mega_name_kor": "루카리오(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Gallade",
+        "pokemon_id": 475,
+        "pokemon_name": "Gallade",
+        "stats": {
+            "base_attack": 326,
+            "base_defense": 230,
+            "base_stamina": 169
+        },
+        "type": [
+            "Psychic",
+            "Fighting"
+        ],
+        "charged_moves": [
+            "Close Combat",
+            "Psychic",
+            "Leaf Blade"
+        ],
+        "elite_charged_moves": [
+            "Synchronoise"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Confusion",
+            "Low Kick",
+            "Charm",
+            "Psycho Cut"
+        ],
+        "mega_name_kor": "엘레이드(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Audino",
+        "pokemon_id": 531,
+        "pokemon_name": "Audino",
+        "stats": {
+            "base_attack": 147,
+            "base_defense": 239,
+            "base_stamina": 230
+        },
+        "type": [
+            "Normal",
+            "Fairy"
+        ],
+        "charged_moves": [
+            "Disarming Voice",
+            "Dazzling Gleam",
+            "Hyper Beam"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Pound",
+            "Zen Headbutt"
+        ],
+        "mega_name_kor": "다부니(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 300,
+        "form": "Normal",
+        "mega_energy_required": 60,
+        "mega_name": "Mega Metagross",
+        "pokemon_id": 376,
+        "pokemon_name": "Metagross",
+        "stats": {
+            "base_attack": 300,
+            "base_defense": 289,
+            "base_stamina": 190
+        },
+        "type": [
+            "Steel",
+            "Psychic"
+        ],
+        "charged_moves": [
+            "Psychic",
+            "Flash Cannon",
+            "Earthquake"
+        ],
+        "elite_charged_moves": [
+            "Meteor Mash"
+        ],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Bullet Punch",
+            "Zen Headbutt",
+            "Fury Cutter"
+        ],
+        "mega_name_kor": "메타그로스(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Camerupt",
+        "pokemon_id": 323,
+        "pokemon_name": "Camerupt",
+        "stats": {
+            "base_attack": 253,
+            "base_defense": 183,
+            "base_stamina": 172
+        },
+        "type": [
+            "Fire",
+            "Ground"
+        ],
+        "charged_moves": [
+            "Earthquake",
+            "Overheat",
+            "Solar Beam",
+            "Earth Power"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Ember",
+            "Rock Smash",
+            "Incinerate"
+        ],
+        "mega_name_kor": "폭타(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Sharpedo",
+        "pokemon_id": 319,
+        "pokemon_name": "Sharpedo",
+        "stats": {
+            "base_attack": 289,
+            "base_defense": 144,
+            "base_stamina": 172
+        },
+        "type": [
+            "Water",
+            "Dark"
+        ],
+        "charged_moves": [
+            "Hydro Pump",
+            "Crunch",
+            "Poison Fang"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Bite",
+            "Waterfall"
+        ],
+        "mega_name_kor": "샤크니아(메가)"
+    },
+    {
+        "first_time_mega_energy_required": 200,
+        "form": "Normal",
+        "mega_energy_required": 40,
+        "mega_name": "Mega Mawile",
+        "pokemon_id": 303,
+        "pokemon_name": "Mawile",
+        "stats": {
+            "base_attack": 188,
+            "base_defense": 217,
+            "base_stamina": 137
+        },
+        "type": [
+            "Steel",
+            "Fairy"
+        ],
+        "charged_moves": [
+            "Play Rough",
+            "Vice Grip",
+            "Iron Head",
+            "Power Up Punch"
+        ],
+        "elite_charged_moves": [],
+        "elite_fast_moves": [],
+        "fast_moves": [
+            "Bite",
+            "Astonish",
+            "Ice Fang",
+            "Fire Fang",
+            "Fairy Wind"
+        ],
+        "mega_name_kor": "입치트(메가)"
     }
-    
 ]

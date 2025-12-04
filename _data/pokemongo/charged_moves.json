@@ -1142,16 +1142,6 @@
         "name_kor": "김밥말이"
     },
     {
-        "duration": 1000,
-        "energy_delta": 6,
-        "move_id": 232,
-        "name": "Water Gun Blastoise",
-        "power": 10,
-        "stamina_loss_scaler": 0.01,
-        "type": "Water",
-        "name_kor": "물대포"
-    },
-    {
         "critical_chance": 0.05,
         "duration": 2500,
         "energy_delta": -100,
@@ -2669,5 +2659,45 @@
         "stamina_loss_scaler": 0.01,
         "type": "Water",
         "name_kor": "아쿠아스텝"
+    },
+    {
+        "duration": 2000,
+        "energy_delta": -50,
+        "move_id": 487,
+        "name": "Aqua Step",
+        "power": 55,
+        "stamina_loss_scaler": 0.01,
+        "type": "Water",
+        "name_kor": "아쿠아스텝"
+    },
+    {
+        "duration": 3500,
+        "energy_delta": -33,
+        "move_id": 488,
+        "name": "Chilling Water",
+        "power": 65,
+        "stamina_loss_scaler": 0.01,
+        "type": "Water",
+        "name_kor": "찬물끼얹기"
+    },
+    {
+        "duration": 2000,
+        "energy_delta": -50,
+        "move_id": 489,
+        "name": "Secret Sword",
+        "power": 120,
+        "stamina_loss_scaler": 0.01,
+        "type": "Fighting",
+        "name_kor": "신비의칼"
+    },
+    {
+        "duration": 2500,
+        "energy_delta": -50,
+        "move_id": 4891,
+        "name": "Beak Blast",
+        "power": 125,
+        "stamina_loss_scaler": 0.01,
+        "type": "Flying",
+        "name_kor": "부리캐논"
     }
 ]
