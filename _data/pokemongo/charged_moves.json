@@ -2498,6 +2498,26 @@
         "damage_window_start": 2200,
         "name_kor": "섀도레이"
     },
+        {
+        "duration": 2700,
+        "energy_delta": -45,
+        "move_id": 406,
+        "name": "Aura Wheel Electric",
+        "power": 100,
+        "stamina_loss_scaler": 0.01,
+        "type": "Electric",
+        "name_kor": "오라휠(전기)"
+    },
+    {
+        "duration": 2700,
+        "energy_delta": -45,
+        "move_id": 407,
+        "name": "Aura Wheel Dark",
+        "power": 100,
+        "stamina_loss_scaler": 0.01,
+        "type": "Dark",
+        "name_kor": "오라휠(악)"
+    },
     {
         "duration": 1500,
         "energy_delta": -100,
