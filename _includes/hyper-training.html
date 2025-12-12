@@ -40,7 +40,7 @@
 			switch(tableTargetStat) {
 				case "atk":
 					for(let task of Data) {
-						var defaultTask = {}
+						var defaultTask = {};
 						$.extend(defaultTask, task);
 						defaultTask.task = defaultTask.taskAtk;
 						table.row.add(defaultTask);
@@ -48,7 +48,7 @@
 					break;
 				case "def":
 					for(let task of Data) {
-						var defaultTask = {}
+						var defaultTask = {};
 						$.extend(defaultTask, task);
 						defaultTask.task = defaultTask.taskDef;
 						table.row.add(defaultTask);
@@ -56,7 +56,7 @@
 					break;
 				case "stm":
 					for(let task of Data) {
-						var defaultTask = {}
+						var defaultTask = {};
 						$.extend(defaultTask, task);
 						defaultTask.task = defaultTask.taskStm;
 						table.row.add(defaultTask);
@@ -86,7 +86,7 @@
 			});
 
 			for(let task of Data) {
-				var defaultTask = {}
+				var defaultTask = {};
 				$.extend(defaultTask, task);
 				defaultTask.task = defaultTask.taskAtk;
 				table.row.add(defaultTask);
