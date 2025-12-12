@@ -37,6 +37,6 @@ image:
 
 ## 참고
 
-[^triple-stat-increase]: 포켓몬을 단련하는 새로운 방법, "대단한 특훈"이 "과거의 잔상" 이벤트에서 등장, PokemonGo, [link](http://pokemongo.com/ko/news/go-pass-ancients-recovered-2025)
+[^triple-stat-increase]: 포켓몬을 단련하는 새로운 방법, "대단한 특훈"이 "과거의 잔상" 이벤트에서 등장, PokemonGo, [link](https://pokemongo.com/ko/news/go-pass-ancients-recovered-2025)
 [^single-stat-increase]: "와일드 위크"에서 악타입, 페어리타입 포켓몬의 이야기를 쫓아가 보자!, PokemonGo, [link](https://pokemongo.com/ko/news/into-the-wild-2025)
 [^hyper-training]: "대단한 특훈"이란 무엇인가요?, Pokemon GO Help Center, [link](https://niantic.helpshift.com/hc/ko/6-pokemon-go/faq/5103-what-is-hyper-training)
