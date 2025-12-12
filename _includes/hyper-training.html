@@ -1,0 +1,104 @@
+<html lang="en">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
+	<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+
+	<div>
+		<input type="radio" name="stat" value="atk" checked="checked"/> 공격
+		<input type="radio" name="stat" value="def"/> 방어
+		<input type="radio" name="stat" value="stm"/> 체력
+	</div>
+
+	<table id="hyper-training-table" class="table table-striped table-bordered nowrap" style="width:100%; word-break:break-all;">
+		<thead></thead>
+		<tfoot></tfoot>
+		<tbody></tbody>
+	</table>
+
+	<script>
+		var Data = [];
+		var tableTargetStat = "atk";
+
+		function fetchData() {
+            var data = {{ site.data.pokemongo.hyper_training_task | jsonify }};
+        
+            $.each(data, function (i) {
+                var task = {
+                    targetStat: data[i].target_stat,
+                    taskAtk: data[i].task_attack,
+					taskDef: data[i].task_defense,
+					taskStm: data[i].task_stamina
+                };
+                Data.push(task);
+            });
+		}
+
+        function updateTable() {
+			var table = $("#hyper-training-table").DataTable();
+			table.clear()
+
+			switch(tableTargetStat) {
+				case "atk":
+					for(let task of Data) {
+						var defaultTask = {}
+						$.extend(defaultTask, task);
+						defaultTask.task = defaultTask.taskAtk;
+						table.row.add(defaultTask);
+					}
+					break;
+				case "def":
+					for(let task of Data) {
+						var defaultTask = {}
+						$.extend(defaultTask, task);
+						defaultTask.task = defaultTask.taskDef;
+						table.row.add(defaultTask);
+					}
+					break;
+				case "stm":
+					for(let task of Data) {
+						var defaultTask = {}
+						$.extend(defaultTask, task);
+						defaultTask.task = defaultTask.taskStm;
+						table.row.add(defaultTask);
+					}
+					break;
+			}
+
+			table.order([0, 'desc']);
+			table.draw();
+		}
+
+		$(function () {
+			fetchData();
+
+			var table = $("#hyper-training-table").DataTable({
+				lengthChange: false,
+				autoWidth: true,
+				deferRender: true,
+                responsive: true,
+				pageLength: 15,
+				sDom: 'lrt',
+				columns: [
+					{ title: "목표 개체", data: "targetStat", width: "10%" },
+					{ title: "과제", data: "task", type: "string", width: "90%" }
+				],
+				scrollX: true
+			});
+
+			for(let task of Data) {
+				var defaultTask = {}
+				$.extend(defaultTask, task);
+				defaultTask.task = defaultTask.taskAtk;
+				table.row.add(defaultTask);
+			}
+
+			table.order([0, 'desc']);
+			table.draw();
+
+			$('input[type=radio][name="stat"]').change(function() {
+				tableTargetStat = $(this).val();
+				updateTable();
+			});
+		});
+	</script>
+</html>
