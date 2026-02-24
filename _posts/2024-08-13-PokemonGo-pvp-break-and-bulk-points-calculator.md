@@ -8,6 +8,7 @@ tags: [PVP, 개체, 고배리, 랭킹, 브레이크포인트, 벌크포인트, �
 image:
     path: /assets/img/preview-pokemongo-pvp.jpg
 toc: false
+published: false
 ---
 
 ## 포켓몬고 PVP 브레이크포인트 & 벌크포인트 계산기
