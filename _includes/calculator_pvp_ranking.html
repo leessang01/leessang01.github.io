@@ -198,20 +198,20 @@
 		};
 
 		function fetchPokemon() {
-            var data = {{ site.data.pokemongo.pokemon | jsonify }};
+            var data = {{ site.data.pokemongo.new_pokemon | jsonify }};
         
             $.each(data, function (i) {
                 var pkm = {
-                    id: data[i].pokemon_id,
-                    name: data[i].pokemon_name_kor,
+                    id: data[i].id,
+                    name: data[i].name_ko,
                     form: data[i].form.toLowerCase(),
-                    form_kor: data[i].form_kor,
-                    baseAtk: data[i].base_attack,
-                    baseDef: data[i].base_defense,
-                    baseStm: data[i].base_stamina,
-                    fastMove: data[i].fast_moves.concat(data[i].elite_fast_moves).concat(data[i].exclusive_fast_moves),
-                    chargedMove: data[i].charged_moves.concat(data[i].elite_charged_moves).concat(data[i].exclusive_charged_moves),
-                    pokeType: data[i].type.map(x => x.toLowerCase()),
+                    form_kor: data[i].form_ko,
+                    baseAtk: data[i].stats.attack,
+                    baseDef: data[i].stats.defense,
+                    baseStm: data[i].stats.stamina,
+                    fastMove: (data[i].fast_moves || []).concat(data[i].elite_fast_moves || []).concat(data[i].exclusive_fast_moves || []),
+                    chargedMove: (data[i].charged_moves || []).concat(data[i].elite_charged_moves || []).concat(data[i].exclusive_charged_moves || []),
+                    pokeType: data[i].types.map(x => x.toLowerCase()),
                     hasShadow: data[i].has_shadow,
                     isShadow: data[i].is_shadow,
                     isPurified: data[i].is_purified
@@ -221,29 +221,6 @@
             Data.Pokemon.sort((a, b) => (a.name < b.name ? -1 : 1));
             Data.Pokemon.sorted = true;
 		}
-
-        
-        function fetchMegaPokemon() {
-            var data = {{ site.data.pokemongo.mega_pokemon | jsonify }};
-        
-            $.each(data, function (i) {
-                var pkm = {
-                    id: data[i].pokemon_id,
-                    name: data[i].mega_name_kor,
-                    form: data[i].form.toLowerCase(),
-                    form_kor: data[i].form_kor,
-                    baseAtk: data[i].stats.base_attack,
-                    baseDef: data[i].stats.base_defense,
-                    baseStm: data[i].stats.base_stamina,
-                    fastMove: data[i].fast_moves.concat(data[i].elite_fast_moves).concat(data[i].exclusive_fast_moves),
-                    chargedMove: data[i].charged_moves.concat(data[i].elite_charged_moves).concat(data[i].exclusive_charged_moves),
-                    pokeType: data[i].type.map(x => x.toLowerCase())
-                };
-                Data.Pokemon.push(pkm);
-            });
-            Data.Pokemon.sort((a, b) => (a.name < b.name ? -1 : 1));
-            Data.Pokemon.sorted = true;
-        }
 
 		function round(value, numDigits) {
 			var multiplier = Math.pow(10, parseInt(numDigits) || 0);
@@ -325,7 +302,6 @@
 
 		$(function () {
             fetchPokemon();
-            fetchMegaPokemon();
 
 			var table = $("#ranking_table").DataTable({
 				lengthChange: false,
@@ -358,7 +334,7 @@
 			var len = Data.Pokemon.length;
 			for (let idx=0; idx<len; idx++){
 				var name = Data.Pokemon[idx].name;
-				if (Data.Pokemon[idx].form !== "normal"){
+				if (Data.Pokemon[idx].form !== "normal" && !Data.Pokemon[idx].name.includes("(")){
 					name = Data.Pokemon[idx].name + "(" + (Data.Pokemon[idx].form_kor ? Data.Pokemon[idx].form_kor : Data.Pokemon[idx].form) + ")";
                 }
 				if (Data.Pokemon[idx].baseAtk < 1 || Data.Pokemon[idx].baseDef < 1 || Data.Pokemon[idx].baseStm < 1) {
