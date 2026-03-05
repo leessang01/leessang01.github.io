@@ -195,20 +195,20 @@
 		};
 
 		function fetchPokemon() {
-            var data = {{ site.data.pokemongo.pokemon | jsonify }};
+            var data = {{ site.data.pokemongo.new_pokemon | jsonify }};
         
             $.each(data, function (i) {
                 var pkm = {
-                    id: data[i].pokemon_id,
-                    name: data[i].pokemon_name_kor,
+                    id: data[i].id,
+                    name: data[i].name_ko,
                     form: data[i].form.toLowerCase(),
-                    form_kor: data[i].form_kor,
-                    baseAtk: data[i].base_attack,
-                    baseDef: data[i].base_defense,
-                    baseStm: data[i].base_stamina,
-                    fastMove: data[i].fast_moves.concat(data[i].elite_fast_moves).concat(data[i].exclusive_fast_moves),
-                    chargedMove: data[i].charged_moves.concat(data[i].elite_charged_moves).concat(data[i].exclusive_charged_moves),
-                    pokeType: data[i].type.map(x => x.toLowerCase()),
+                    form_kor: data[i].form_ko,
+                    baseAtk: data[i].stats.attack,
+                    baseDef: data[i].stats.defense,
+                    baseStm: data[i].stats.stamina,
+                    fastMove: (data[i].fast_moves || []).concat(data[i].elite_fast_moves || []).concat(data[i].exclusive_fast_moves || []),
+                    chargedMove: (data[i].charged_moves || []).concat(data[i].elite_charged_moves || []).concat(data[i].exclusive_charged_moves || []),
+                    pokeType: data[i].types.map(x => x.toLowerCase()),
                     hasShadow: data[i].has_shadow,
                     isShadow: data[i].is_shadow,
                     isPurified: data[i].is_purified
@@ -219,41 +219,18 @@
             Data.Pokemon.sorted = true;
 		}
 
-        
-        function fetchMegaPokemon() {
-            var data = {{ site.data.pokemongo.mega_pokemon | jsonify }};
-        
-            $.each(data, function (i) {
-                var pkm = {
-                    id: data[i].pokemon_id,
-                    name: data[i].mega_name_kor,
-                    form: data[i].form.toLowerCase(),
-                    form_kor: data[i].form_kor,
-                    baseAtk: data[i].stats.base_attack,
-                    baseDef: data[i].stats.base_defense,
-                    baseStm: data[i].stats.base_stamina,
-                    fastMove: data[i].fast_moves.concat(data[i].elite_fast_moves).concat(data[i].exclusive_fast_moves),
-                    chargedMove: data[i].charged_moves.concat(data[i].elite_charged_moves).concat(data[i].exclusive_charged_moves),
-                    pokeType: data[i].type.map(x => x.toLowerCase())
-                };
-                Data.Pokemon.push(pkm);
-            });
-            Data.Pokemon.sort((a, b) => (a.name < b.name ? -1 : 1));
-            Data.Pokemon.sorted = true;
-        }
-
 		function fetchFastMove() {
-            var data = {{ site.data.pokemongo.fast_moves | jsonify }};
+            var data = {{ site.data.pokemongo.new_fast_moves | jsonify }};
 
             $.each(data, function (i) {
                 var fmove = {
-                    id: data[i].move_id,
+                    id: data[i].id,
                     name: data[i].name,
-                    name_kor: data[i].name_kor,
+                    name_kor: data[i].name_ko,
                     energyDelta: data[i].energy_delta,
                     power: data[i].power,
                     duration: data[i].duration,
-                    dws: data[i].damage_window_start,
+                    dws: data[i].damage_window,
                     type: data[i].type.toLowerCase()
                 };
                 Data.FastMoves.push(fmove);
@@ -263,17 +240,17 @@
 		}
 
 		function fetchChargedMove() {
-            var data = {{ site.data.pokemongo.charged_moves | jsonify }};
+            var data = {{ site.data.pokemongo.new_charged_moves | jsonify }};
 
             $.each(data, function (i) {
                 var cmove = {
-                    id: data[i].move_id,
+                    id: data[i].id,
                     name: data[i].name,
-                    name_kor: data[i].name_kor,
+                    name_kor: data[i].name_ko,
                     energyDelta: data[i].energy_delta,
                     power: data[i].power,
                     duration: data[i].duration,
-                    dws: data[i].damage_window_start,
+                    dws: data[i].damage_window,
                     type: data[i].type.toLowerCase()
                 };
                 Data.ChargedMoves.push(cmove);
@@ -350,8 +327,9 @@
 			}
 
 			var Effectiveness = Data.BattleSettings.TypeEffectiveness;
+            var defenderTypes = Array.isArray(defender.pokeType) ? defender.pokeType : [defender.pokeType];
 
-			for(let pokeType in defender.pokeType){
+			for(let pokeType of defenderTypes){
 				multipliers *= Effectiveness[move.type][pokeType] || 1;
 			}
 
@@ -511,7 +489,6 @@
 
 		$(function () {
             fetchPokemon();
-            fetchMegaPokemon();
             fetchFastMove();
             fetchChargedMove();
 
@@ -544,11 +521,11 @@
 			};
 
 			const fastMoveDict = Data.FastMoves.reduce((acc, move) => {
-				acc[move.name] = move;
+				acc[move.id] = move;
 				return acc;
 			}, {});
 			const chargedMoveDict = Data.ChargedMoves.reduce((acc, move) => {
-				acc[move.name] = move;
+				acc[move.id] = move;
 				return acc;
 			}, {});
 			
@@ -586,7 +563,7 @@
 				if (pkm.isPurified) {
 					pkm.name = "정화 " + pkm.name;
                 }
-				if (pkm.form !== "normal"){
+				if (pkm.form !== "normal" && !pkm.name.includes("(")){
 					pkm.name = pkm.name + "(" + (pkm.form_kor ? pkm.form_kor : pkm.form) + ")";
                 }
 				if (pkm.baseAtk < 1 || pkm.baseDef < 1 || pkm.baseStm < 1) {
