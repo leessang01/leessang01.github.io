@@ -2651,7 +2651,7 @@
         "name_kor": "스케일노이즈"
     },
     {
-        "duration": 1800,
+        "duration": 2000,
         "energy_delta": -100,
         "move_id": 485,
         "name": "Crush Grip",
