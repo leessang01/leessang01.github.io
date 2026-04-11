@@ -30046,7 +30046,7 @@
     },
     "fast_moves": [
       "tackle",
-      "ember"
+      "fire_spin"
     ],
     "charged_moves": [
       "flame_charge",
@@ -30072,7 +30072,7 @@
     },
     "fast_moves": [
       "tackle",
-      "ember"
+      "fire_spin"
     ],
     "charged_moves": [
       "flame_charge",
@@ -30098,15 +30098,18 @@
     },
     "fast_moves": [
       "tackle",
-      "ember"
+      "fire_spin"
     ],
     "charged_moves": [
       "flame_charge",
       "flamethrower",
-      "focus_blast"
+      "focus_blast",
+      "pyro_ball"
     ],
     "elite_fast_moves": [],
-    "elite_charged_moves": [],
+    "elite_charged_moves": [
+      "blast_burn"
+    ],
     "exclusive_charged_moves": [],
     "name_ko": "에이스번",
     "has_shadow": false
@@ -34602,7 +34605,9 @@
       "heavy_slam"
     ],
     "elite_fast_moves": [],
-    "elite_charged_moves": [],
+    "elite_charged_moves": [
+      "giganton_hammer"
+    ],
     "exclusive_charged_moves": [],
     "name_ko": "두드리짱",
     "has_shadow": false

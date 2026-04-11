@@ -930,26 +930,6 @@
         "name_ko": "하이드로펌프"
     },
     {
-        "id": "wrap_green",
-        "name": "Wrap Green",
-        "type": "Normal",
-        "power": 25,
-        "energy_delta": -33,
-        "duration": 3000,
-        "damage_window": 2150,
-        "name_ko": "김밥말이"
-    },
-    {
-        "id": "wrap_pink",
-        "name": "Wrap Pink",
-        "type": "Normal",
-        "power": 25,
-        "energy_delta": -33,
-        "duration": 3000,
-        "damage_window": 2150,
-        "name_ko": "김밥말이"
-    },
-    {
         "id": "close_combat",
         "name": "Close Combat",
         "type": "Fighting",
@@ -1380,16 +1360,6 @@
         "name_ko": "덤벼들기"
     },
     {
-        "id": "crush_claw",
-        "name": "Crush Claw",
-        "type": "Normal",
-        "power": 0,
-        "energy_delta": 0,
-        "duration": 2000,
-        "damage_window": 1300,
-        "name_ko": "브레이크클로"
-    },
-    {
         "id": "octazooka",
         "name": "Octazooka",
         "type": "Water",
@@ -1438,16 +1408,6 @@
         "duration": 3000,
         "damage_window": 1900,
         "name_ko": "그래스믹서"
-    },
-    {
-        "id": "leech_life",
-        "name": "Leech Life",
-        "type": "Bug",
-        "power": 0,
-        "energy_delta": 0,
-        "duration": 2500,
-        "damage_window": 1150,
-        "name_ko": "흡혈"
     },
     {
         "id": "drain_punch",
@@ -1548,26 +1508,6 @@
         "duration": 2500,
         "damage_window": 750,
         "name_ko": "싱크로노이즈"
-    },
-    {
-        "id": "horn_drill",
-        "name": "Horn Drill",
-        "type": "Normal",
-        "power": 9000,
-        "energy_delta": -25,
-        "duration": 2000,
-        "damage_window": 600,
-        "name_ko": "뿔드릴"
-    },
-    {
-        "id": "fissure",
-        "name": "Fissure",
-        "type": "Ground",
-        "power": 9001,
-        "energy_delta": -25,
-        "duration": 3000,
-        "damage_window": 1200,
-        "name_ko": "땅가르기"
     },
     {
         "id": "sacred_sword",
@@ -2164,8 +2104,8 @@
         "name": "Aura Wheel Electric",
         "type": "Electric",
         "power": 100,
-        "energy_delta": -45,
-        "duration": 2700,
+        "energy_delta": -50,
+        "duration": 2500,
         "damage_window": null,
         "name_ko": "오라휠(전기)"
     },
@@ -2174,8 +2114,8 @@
         "name": "Aura Wheel Dark",
         "type": "Dark",
         "power": 100,
-        "energy_delta": -45,
-        "duration": 2700,
+        "energy_delta": -50,
+        "duration": 2500,
         "damage_window": null,
         "name_ko": "오라휠(악)"
     },
@@ -2215,7 +2155,7 @@
         "type": "Grass",
         "power": 75,
         "energy_delta": -33,
-        "duration": 2700,
+        "duration": 3000,
         "damage_window": null,
         "name_ko": "트릭플라워"
     },
@@ -2285,7 +2225,7 @@
         "type": "Electric",
         "power": 220,
         "energy_delta": -100,
-        "duration": 3300,
+        "duration": 3500,
         "damage_window": null,
         "name_ko": "썬더프리즌"
     },
@@ -2305,7 +2245,7 @@
         "type": "Dragon",
         "power": 120,
         "energy_delta": -100,
-        "duration": 3300,
+        "duration": 3500,
         "damage_window": null,
         "name_ko": "스케일노이즈"
     },
@@ -2315,7 +2255,7 @@
         "type": "Normal",
         "power": 210,
         "energy_delta": -100,
-        "duration": 1800,
+        "duration": 2000,
         "damage_window": null,
         "name_ko": "묵사발"
     },
@@ -2325,7 +2265,7 @@
         "type": "Dragon",
         "power": 155,
         "energy_delta": -50,
-        "duration": 3300,
+        "duration": 3500,
         "damage_window": null,
         "name_ko": "드래곤에너지"
     },
@@ -2336,16 +2276,6 @@
         "power": 55,
         "energy_delta": -33,
         "duration": 3500,
-        "damage_window": null,
-        "name_ko": "아쿠아스텝"
-    },
-    {
-        "id": "aqua_step",
-        "name": "Aqua Step",
-        "type": "Water",
-        "power": 55,
-        "energy_delta": -50,
-        "duration": 2000,
         "damage_window": null,
         "name_ko": "아쿠아스텝"
     },
@@ -2398,5 +2328,25 @@
         "duration": 4500,
         "damage_window": null,
         "name_ko": "드럼어택"
+    },
+    {
+        "id": "pyro_ball",
+        "name": "Pyro Ball",
+        "type": "Fire",
+        "power": 150,
+        "energy_delta": -100,
+        "duration": 2000,
+        "damage_window": null,
+        "name_ko": "화염볼"
+    },
+    {
+        "id": "giganton_hammer",
+        "name": "Giganton Hammer",
+        "type": "Steel",
+        "power": 300,
+        "energy_delta": -100,
+        "duration": 2000,
+        "damage_window": null,
+        "name_ko": "거대해머"
     }
 ]
