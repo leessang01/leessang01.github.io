@@ -426,5 +426,5 @@ Gamepress에서 제공하는 DPS는 꽤 오래 전부터 통용되었다. 다시
 ---
 
 ## 참고
-[^comprehensive-dps]: How to Calculate Comprehensive DPS, GamePress, [link](https://gamepress.gg/pokemongo/how-calculate-comprehensive-dps)
+[^comprehensive-dps]: How to Calculate Comprehensive DPS, GamePress, [link](https://pokebase.app/pokemon-go/p/how-to-calculate-comprehensive-dps)
 [^penalty-for-one-bar-charged-attack]: 1차징 공격의 경우 에너지를 가득 채워야 차징 공격이 가능하다. 레이드 배틀의 성능은 차징 공격을 자주 사용할 수 있어야 높게 쳐줄 수 있는데, 1차징 공격은 에너지를 채우다가 죽기 십상이고, 100을 넘어간 오버차징 에너지는 낭비되기 때문에 이것을 고려한 패널티를 유도 공식에 적용한다. "1차징 용성군 vs 2차징 역린"을 비교하며 자주 화두에 오른다. [Is Draco Meteor better than Outrage on Dragonite?](https://pokemongohub.net/post/meta/draco-meteor-better-outrage-dragonite)

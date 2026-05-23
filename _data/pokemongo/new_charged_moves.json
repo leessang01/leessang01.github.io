@@ -904,7 +904,7 @@
         "name": "Struggle",
         "type": "Normal",
         "power": 35,
-        "energy_delta": 0,
+        "energy_delta": -33,
         "duration": 2000,
         "damage_window": 1000,
         "name_ko": "발버둥"

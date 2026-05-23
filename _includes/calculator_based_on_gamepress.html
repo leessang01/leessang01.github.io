@@ -209,9 +209,10 @@
                     fastMove: (data[i].fast_moves || []).concat(data[i].elite_fast_moves || []).concat(data[i].exclusive_fast_moves || []),
                     chargedMove: (data[i].charged_moves || []).concat(data[i].elite_charged_moves || []).concat(data[i].exclusive_charged_moves || []),
                     pokeType: data[i].types.map(x => x.toLowerCase()),
-                    hasShadow: data[i].has_shadow,
+                    hasShadow: data[i].hasShadow,
                     isShadow: data[i].is_shadow,
-                    isPurified: data[i].is_purified
+                    isPurified: data[i].is_purified,
+					isUnreleased: data[i].unreleased
                 };
                 Data.Pokemon.push(pkm);
             });
@@ -566,7 +567,7 @@
 				if (pkm.form !== "normal" && !pkm.name.includes("(")){
 					pkm.name = pkm.name + "(" + (pkm.form_kor ? pkm.form_kor : pkm.form) + ")";
                 }
-				if (pkm.baseAtk < 1 || pkm.baseDef < 1 || pkm.baseStm < 1) {
+				if (pkm.isUnreleased || pkm.baseAtk < 1 || pkm.baseDef < 1 || pkm.baseStm < 1) {
 					continue;
 				}
 
