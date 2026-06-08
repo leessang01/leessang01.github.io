@@ -2,7 +2,7 @@
 title: 포켓몬고 레이드 성능표(게임프레스 버전)
 description: 게임프레스의 Comprehensive DPS 계산을 통해 평가된 포켓몬고 레이드 성능표입니다.
 date: 2024-06-26 15:00:00 +0900
-lastmod: 2026-03-05 08:00:00 +0900
+lastmod: 2026-06-08 17:00:00 +0900
 categories:
   - 포켓몬고
   - 계산기
@@ -13,19 +13,20 @@ tags:
   - 게임프레스
   - 레이드성능
 image:
-  path: /assets/img/preview-season-memories-in-motion.png
+  path: /assets/img/preview-season-forever-forward.png
 test:
 ---
 
 ## 포켓몬고 레이드 성능표(게임프레스 버전)
 
-- 시즌: 생생한 추억(2026년 3월 3일~2026년 6월 2일)
+- 시즌: 새로운 발걸음(2026년 6월 2일~2026년 9월 8일)
 
 {% include calculator_based_on_gamepress.html %}
 
 > - **DPS**: Damage Per Second. 상대에게 ‘1초당 가하는 피해량’으로 직역할 수 있습니다. TDO를 살아있는 시간으로 나눈 값으로 정의되며 포켓몬이 살아있는 동안 상대에게 가하는 평균 화력정도로 이해할 수 있습니다.
 > - **TDO**: Total Damage Output. 상대에게 가한 ‘전체 피해량’으로 직역할 수 있습니다. 포켓몬이 살아있는 동안 상대에게 가한 누적 피해량 또는 누적 대미지로 이해할 수 있습니다.
 > - **ER**: Equivalent Rating. DPS와 TDO 사이의 밸런스를 조정하여 기존의 PvE 종합 성능 공식(D3T)을 완화한 값입니다.[^equivalent-rating]
+> - 타입별 티어 리스트는 [PoGo Sim (레이드 티어 리스트)](https://pogoraidsim.com/ko/raid-tier-list)에서 참고 가능합니다.
 {: .prompt-info}
 
 ---

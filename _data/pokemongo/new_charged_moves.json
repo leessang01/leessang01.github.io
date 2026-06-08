@@ -2348,5 +2348,25 @@
         "duration": 2000,
         "damage_window": null,
         "name_ko": "거대해머"
+    },
+    {
+        "id": "plasma_fists",
+        "name": "Plasma Fists",
+        "type": "Electric",
+        "power": 135,
+        "energy_delta": -50,
+        "duration": 3500,
+        "damage_window": null,
+        "name_ko": "플라스마피스트"
+    },
+    {
+        "id": "glaive_rush",
+        "name": "Glaive Rush",
+        "type": "Dragon",
+        "power": 105,
+        "energy_delta": -50,
+        "duration": 2000,
+        "damage_window": null,
+        "name_ko": "대검돌격"
     }
 ]

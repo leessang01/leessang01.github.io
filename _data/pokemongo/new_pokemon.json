@@ -507,7 +507,8 @@
       "aerial_ace",
       "brave_bird",
       "feather_dance",
-      "heat_wave"
+      "heat_wave",
+      "twister"
     ],
     "elite_fast_moves": [
       "wing_attack",
@@ -4546,7 +4547,8 @@
       "thunder",
       "ice_beam",
       "psybeam",
-      "surf"
+      "surf",
+      "aqua_jet"
     ],
     "elite_fast_moves": [
       "tackle"
@@ -5256,7 +5258,8 @@
     "charged_moves": [
       "ancient_power",
       "water_pulse",
-      "stone_edge"
+      "stone_edge",
+      "aqua_jet"
     ],
     "elite_fast_moves": [
       "fury_cutter"
@@ -5405,7 +5408,8 @@
       "defense": 189
     },
     "fast_moves": [
-      "counter"
+      "counter",
+      "low_kick"
     ],
     "charged_moves": [
       "close_combat",
@@ -5652,7 +5656,9 @@
       "focus_blast",
       "flamethrower"
     ],
-    "elite_fast_moves": [],
+    "elite_fast_moves": [
+      "counter"
+    ],
     "elite_charged_moves": [
       "psystrike",
       "shadow_ball",
@@ -6162,13 +6168,15 @@
     "fast_moves": [
       "struggle_bug",
       "bug_bite",
-      "counter"
+      "counter",
+      "rollout"
     ],
     "charged_moves": [
       "bug_buzz",
       "silver_wind",
       "aerial_ace",
-      "dynamic_punch"
+      "dynamic_punch",
+      "acrobatics"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -6514,7 +6522,8 @@
       "ominous_wind",
       "future_sight",
       "aerial_ace",
-      "psyshock"
+      "psyshock",
+      "shadow_ball"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -7547,7 +7556,8 @@
       "sludge_wave",
       "acid_spray",
       "fell_stinger",
-      "scald"
+      "scald",
+      "shadow_ball"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -8005,7 +8015,8 @@
       "water_pulse",
       "ice_beam",
       "aerial_ace",
-      "bubble_beam"
+      "bubble_beam",
+      "twister"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -8119,7 +8130,8 @@
       "blizzard",
       "outrage",
       "octazooka",
-      "swift"
+      "swift",
+      "surf"
     ],
     "elite_fast_moves": [
       "water_gun"
@@ -11793,7 +11805,9 @@
       "thunder",
       "ice_beam",
       "aerial_ace",
-      "shadow_sneak"
+      "shadow_sneak",
+      "thunder_punch",
+      "dynamic_punch"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -14092,7 +14106,9 @@
       "fire_punch",
       "hyper_beam",
       "focus_blast",
-      "triple_axel"
+      "triple_axel",
+      "thunder_punch",
+      "shadow_ball"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -14911,7 +14927,8 @@
     },
     "fast_moves": [
       "waterfall",
-      "water_gun"
+      "water_gun",
+      "gust"
     ],
     "charged_moves": [
       "water_pulse",
@@ -15125,7 +15142,8 @@
       "stone_edge",
       "skull_bash",
       "super_power",
-      "breaking_swipe"
+      "breaking_swipe",
+      "drill_run"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [
@@ -17559,7 +17577,8 @@
     "elite_fast_moves": [],
     "elite_charged_moves": [],
     "exclusive_charged_moves": [],
-    "name_ko": "단굴"
+    "name_ko": "단굴",
+    "hasShadow": true
   },
   {
     "id": "boldore",
@@ -17585,7 +17604,8 @@
     "elite_fast_moves": [],
     "elite_charged_moves": [],
     "exclusive_charged_moves": [],
-    "name_ko": "암트르"
+    "name_ko": "암트르",
+    "hasShadow": true
   },
   {
     "id": "gigalith",
@@ -17601,7 +17621,8 @@
     },
     "fast_moves": [
       "mud_slap",
-      "smack_down"
+      "smack_down",
+      "lock_on"
     ],
     "charged_moves": [
       "rock_slide",
@@ -17614,7 +17635,8 @@
       "meteor_beam"
     ],
     "exclusive_charged_moves": [],
-    "name_ko": "기가이어스"
+    "name_ko": "기가이어스",
+    "hasShadow": true
   },
   {
     "id": "woobat",
@@ -17824,7 +17846,8 @@
     },
     "fast_moves": [
       "counter",
-      "poison_jab"
+      "poison_jab",
+      "force_palm"
     ],
     "charged_moves": [
       "dynamic_punch",
@@ -17912,7 +17935,8 @@
     "charged_moves": [
       "muddy_water",
       "earth_power",
-      "sludge_bomb"
+      "sludge_bomb",
+      "icy_wind"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -19307,13 +19331,15 @@
     },
     "fast_moves": [
       "water_gun",
-      "air_slash"
+      "air_slash",
+      "gust"
     ],
     "charged_moves": [
       "ice_beam",
       "bubble_beam",
       "hurricane",
-      "fly"
+      "fly",
+      "aqua_jet"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -22600,7 +22626,8 @@
     },
     "fast_moves": [
       "charm",
-      "charge_beam"
+      "charge_beam",
+      "fairy_wind"
     ],
     "charged_moves": [
       "moonblast",
@@ -23088,12 +23115,14 @@
     },
     "fast_moves": [
       "charm",
-      "quick_attack"
+      "quick_attack",
+      "fairy_wind"
     ],
     "charged_moves": [
       "moonblast",
       "dazzling_gleam",
-      "draining_kiss"
+      "draining_kiss",
+      "shadow_ball"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [
@@ -23225,13 +23254,15 @@
     },
     "fast_moves": [
       "water_gun",
-      "tackle"
+      "tackle",
+      "dragon_breath"
     ],
     "charged_moves": [
       "dragon_pulse",
       "sludge_wave",
       "muddy_water",
-      "water_pulse"
+      "water_pulse",
+      "body_slam"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -26497,54 +26528,6 @@
     "name_ko": "네크로즈마 (울트라)"
   },
   {
-    "id": "magearna",
-    "name": "Magearna",
-    "form": "Normal",
-    "types": [
-      "Steel",
-      "Fairy"
-    ],
-    "stats": {
-      "stamina": 190,
-      "attack": 246,
-      "defense": 225
-    },
-    "fast_moves": [
-      "struggle"
-    ],
-    "charged_moves": [
-      "struggle"
-    ],
-    "elite_fast_moves": [],
-    "elite_charged_moves": [],
-    "exclusive_charged_moves": [],
-    "name_ko": "마기아나"
-  },
-  {
-    "id": "magearna_original_color",
-    "name": "Magearna (Original_color)",
-    "form": "Original_color",
-    "types": [
-      "Steel",
-      "Fairy"
-    ],
-    "stats": {
-      "stamina": 190,
-      "attack": 246,
-      "defense": 225
-    },
-    "fast_moves": [
-      "struggle"
-    ],
-    "charged_moves": [
-      "struggle"
-    ],
-    "elite_fast_moves": [],
-    "elite_charged_moves": [],
-    "exclusive_charged_moves": [],
-    "name_ko": "마기아나 (Original_color)"
-  },
-  {
     "id": "marshadow",
     "name": "Marshadow",
     "form": "Normal",
@@ -26709,9 +26692,10 @@
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
-    "exclusive_charged_moves": [],
-    "name_ko": "제라오라",
-    "unreleased": true
+    "exclusive_charged_moves": [
+      "plasma_fists"
+    ],
+    "name_ko": "제라오라"
   },
   {
     "id": "meltan",
@@ -26757,7 +26741,8 @@
       "thunderbolt",
       "hyper_beam",
       "rock_slide",
-      "super_power"
+      "super_power",
+      "dynamic_punch"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [
@@ -28209,13 +28194,12 @@
     },
     "fast_moves": [
       "astonish",
-      "hex"
+      "tackle"
     ],
     "charged_moves": [
       "rock_blast",
-      "brine",
-      "night_shade",
-      "shadow_ball"
+      "power_gem",
+      "night_shade"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -29822,7 +29806,8 @@
     },
     "fast_moves": [
       "water_gun",
-      "wing_attack"
+      "wing_attack",
+      "low_kick"
     ],
     "charged_moves": [
       "aqua_jet",
@@ -32283,7 +32268,9 @@
       "icy_wind"
     ],
     "elite_fast_moves": [],
-    "elite_charged_moves": [],
+    "elite_charged_moves": [
+      "glaive_rush"
+    ],
     "exclusive_charged_moves": [],
     "name_ko": "드닐레이브"
   },
@@ -32738,7 +32725,8 @@
       "aerial_ace",
       "brave_bird",
       "feather_dance",
-      "heat_wave"
+      "heat_wave",
+      "twister"
     ],
     "elite_fast_moves": [
       "wing_attack",
@@ -33677,7 +33665,8 @@
       "fire_punch",
       "hyper_beam",
       "focus_blast",
-      "triple_axel"
+      "triple_axel",
+      "thunder_punch"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -34164,8 +34153,7 @@
       "hyper_beam"
     ],
     "exclusive_charged_moves": [],
-    "name_ko": "뮤츠 (메가 X)",
-    "unreleased": true
+    "name_ko": "뮤츠 (메가 X)"
   },
   {
     "id": "mewtwo_mega_y",
@@ -34199,7 +34187,6 @@
       "hyper_beam"
     ],
     "exclusive_charged_moves": [],
-    "name_ko": "뮤츠 (메가 Y)",
-    "unreleased": true
+    "name_ko": "뮤츠 (메가 Y)"
   }
 ]
