@@ -14,9 +14,9 @@ Linux 환경(ext4)에서 사용하던 하드디스크(HDD)를 Windows 11 PC에 �
 
 ## 사전 요구사항
 
-* Windows 11 환경
-* WSL2 및 Linux 배포판(예: Ubuntu)이 설치되어 있어야 합니다.
-* 작업은 관리자 권한을 필요로 하므로 **PowerShell을 관리자 권한으로 실행**해야 합니다.
+- Windows 11 환경
+- WSL2 및 Linux 배포판(예: Ubuntu)이 설치되어 있어야 합니다.
+- 작업은 관리자 권한을 필요로 하므로 **PowerShell을 관리자 권한으로 실행**해야 합니다.
 
 > 이 디스크 마운트 기능은 **WSL2**에서만 지원됩니다. WSL1 환경에서는 작동하지 않습니다.
 {: .prompt-warning }
@@ -76,11 +76,11 @@ WSL 버젼은 최신이지만, 현재 구동 중인 리눅스 배포판(Ubuntu)�
 #### 오류 B: `Wsl/Service/WSL_E_DISTRO_NOT_FOUND`
 배포판 이름을 찾지 못하는 오류입니다. `wsl -l -v`로 출력되는 정확한 배포판 이름을 지정해 주어야 합니다.
 
-* 예: 배포판 이름이 `Ubuntu-24.04`인 경우
+- 예: 배포판 이름이 `Ubuntu-24.04`인 경우
   ```powershell
   wsl --set-version Ubuntu-24.04 2
   ```
-* 만약 목록에 아무것도 없다면 리눅스 배포판이 완전히 설치되지 않은 것이므로 다음 명령어로 설치를 완료해야 합니다.
+- 만약 목록에 아무것도 없다면 리눅스 배포판이 완전히 설치되지 않은 것이므로 다음 명령어로 설치를 완료해야 합니다.
   ```powershell
   wsl --install -d Ubuntu
   ```
