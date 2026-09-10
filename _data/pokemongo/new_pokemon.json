@@ -741,7 +741,9 @@
       "dark_pulse",
       "sludge_wave",
       "gunk_shot",
-      "acid_spray"
+      "acid_spray",
+      "brutal_swing",
+      "wrap"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -942,7 +944,8 @@
       "grass_knot",
       "trailblaze",
       "psyshock",
-      "surf"
+      "surf",
+      "volt_tackle"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -973,7 +976,8 @@
       "wild_charge",
       "skull_bash",
       "trailblaze",
-      "surf"
+      "surf",
+      "volt_tackle"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [
@@ -1268,7 +1272,8 @@
       "sludge_wave",
       "megahorn",
       "earth_power",
-      "sand_tomb"
+      "sand_tomb",
+      "avalanche"
     ],
     "elite_fast_moves": [
       "fury_cutter"
@@ -2619,7 +2624,8 @@
     },
     "fast_moves": [
       "razor_leaf",
-      "acid"
+      "acid",
+      "sucker_punch"
     ],
     "charged_moves": [
       "leaf_blade",
@@ -3422,7 +3428,9 @@
       "dark_pulse",
       "gunk_shot",
       "sludge_wave",
-      "acid_spray"
+      "acid_spray",
+      "brutal_swing",
+      "ice_punch"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -4538,7 +4546,7 @@
     "fast_moves": [
       "water_gun",
       "psywave",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "hydro_pump",
@@ -5127,7 +5135,7 @@
     },
     "fast_moves": [
       "charge_beam",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "solar_beam",
@@ -5292,7 +5300,8 @@
       "iron_head",
       "hyper_beam",
       "rock_slide",
-      "earth_power"
+      "earth_power",
+      "brutal_swing"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -5314,7 +5323,8 @@
     },
     "fast_moves": [
       "zen_headbutt",
-      "lick"
+      "lick",
+      "psywave"
     ],
     "charged_moves": [
       "heavy_slam",
@@ -6233,7 +6243,8 @@
       "megahorn",
       "cross_poison",
       "lunge",
-      "trailblaze"
+      "trailblaze",
+      "foul_play"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -6255,7 +6266,8 @@
     },
     "fast_moves": [
       "air_slash",
-      "bite"
+      "bite",
+      "gust"
     ],
     "charged_moves": [
       "shadow_ball",
@@ -6425,7 +6437,7 @@
     },
     "fast_moves": [
       "peck",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "ancient_power",
@@ -6455,7 +6467,7 @@
     "fast_moves": [
       "extrasensory",
       "fairy_wind",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "ancient_power",
@@ -7238,7 +7250,7 @@
       "defense": 91
     },
     "fast_moves": [
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "struggle"
@@ -8043,7 +8055,8 @@
     "charged_moves": [
       "brave_bird",
       "sky_attack",
-      "flash_cannon"
+      "flash_cannon",
+      "drill_run"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -8094,13 +8107,15 @@
     },
     "fast_moves": [
       "snarl",
-      "fire_fang"
+      "fire_fang",
+      "incinerate"
     ],
     "charged_moves": [
       "crunch",
       "fire_blast",
       "foul_play",
-      "flamethrower"
+      "flamethrower",
+      "trailblaze"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -8215,7 +8230,7 @@
     "fast_moves": [
       "charge_beam",
       "lock_on",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "solar_beam",
@@ -8440,7 +8455,8 @@
       "body_slam",
       "gyro_ball",
       "thunderbolt",
-      "ice_beam"
+      "ice_beam",
+      "high_horsepower"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -8675,7 +8691,8 @@
       "sky_attack",
       "hydro_pump",
       "future_sight",
-      "fly"
+      "fly",
+      "earth_power"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [
@@ -8706,7 +8723,8 @@
       "sky_attack",
       "hydro_pump",
       "future_sight",
-      "fly"
+      "fly",
+      "earth_power"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [
@@ -8734,7 +8752,7 @@
       "extrasensory",
       "steel_wing",
       "incinerate",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "brave_bird",
@@ -8767,7 +8785,7 @@
       "extrasensory",
       "steel_wing",
       "incinerate",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "brave_bird",
@@ -10416,7 +10434,8 @@
       "stone_edge",
       "heavy_slam",
       "rock_tomb",
-      "meteor_beam"
+      "meteor_beam",
+      "brick_break"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -10604,12 +10623,14 @@
     },
     "fast_moves": [
       "struggle_bug",
-      "tackle"
+      "tackle",
+      "infestation"
     ],
     "charged_moves": [
       "signal_beam",
       "bug_buzz",
-      "thunderbolt"
+      "thunderbolt",
+      "lunge"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -10630,12 +10651,14 @@
     },
     "fast_moves": [
       "struggle_bug",
-      "tackle"
+      "tackle",
+      "infestation"
     ],
     "charged_moves": [
       "silver_wind",
       "bug_buzz",
-      "dazzling_gleam"
+      "dazzling_gleam",
+      "shadow_ball"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -12793,7 +12816,8 @@
     },
     "fast_moves": [
       "zen_headbutt",
-      "counter"
+      "counter",
+      "low_kick"
     ],
     "charged_moves": [
       "psycho_boost",
@@ -13386,7 +13410,7 @@
     "fast_moves": [
       "spark",
       "snarl",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "hyper_beam",
@@ -13416,7 +13440,7 @@
     },
     "fast_moves": [
       "razor_leaf",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "energy_ball",
@@ -13936,7 +13960,7 @@
     },
     "fast_moves": [
       "mud_slap",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "water_pulse",
@@ -13963,7 +13987,7 @@
     },
     "fast_moves": [
       "mud_slap",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "water_pulse",
@@ -14136,7 +14160,8 @@
     "charged_moves": [
       "shadow_ball",
       "dark_pulse",
-      "dazzling_gleam"
+      "dazzling_gleam",
+      "mystical_fire"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -15260,7 +15285,7 @@
       "air_slash",
       "charm",
       "peck",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "ancient_power",
@@ -15440,7 +15465,7 @@
     "fast_moves": [
       "charge_beam",
       "lock_on",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "solar_beam",
@@ -15478,7 +15503,8 @@
     "charged_moves": [
       "close_combat",
       "psychic",
-      "leaf_blade"
+      "leaf_blade",
+      "sacred_sword"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [
@@ -15980,7 +16006,7 @@
     },
     "fast_moves": [
       "zen_headbutt",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "giga_impact",
@@ -16149,12 +16175,14 @@
     },
     "fast_moves": [
       "snarl",
-      "feint_attack"
+      "feint_attack",
+      "sucker_punch"
     ],
     "charged_moves": [
       "focus_blast",
       "shadow_ball",
-      "dark_pulse"
+      "dark_pulse",
+      "foul_play"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [
@@ -16178,7 +16206,7 @@
     },
     "fast_moves": [
       "zen_headbutt",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "energy_ball",
@@ -16207,7 +16235,7 @@
     "fast_moves": [
       "zen_headbutt",
       "magical_leaf",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "energy_ball",
@@ -17766,7 +17794,8 @@
     },
     "fast_moves": [
       "pound",
-      "zen_headbutt"
+      "zen_headbutt",
+      "charge_beam"
     ],
     "charged_moves": [
       "disarming_voice",
@@ -18237,7 +18266,7 @@
     },
     "fast_moves": [
       "charm",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "energy_ball",
@@ -18263,7 +18292,7 @@
     "fast_moves": [
       "charm",
       "magical_leaf",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "petal_blizzard",
@@ -18842,7 +18871,8 @@
     "charged_moves": [
       "shadow_ball",
       "dark_pulse",
-      "psychic"
+      "psychic",
+      "energy_ball"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -19218,7 +19248,7 @@
     },
     "fast_moves": [
       "zen_headbutt",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "psyshock",
@@ -19245,7 +19275,7 @@
     },
     "fast_moves": [
       "zen_headbutt",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "psyshock",
@@ -19272,7 +19302,7 @@
     },
     "fast_moves": [
       "zen_headbutt",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "future_sight",
@@ -19696,7 +19726,7 @@
     },
     "fast_moves": [
       "waterfall",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "hydro_pump",
@@ -20109,7 +20139,8 @@
     "fast_moves": [
       "hex",
       "fire_spin",
-      "incinerate"
+      "incinerate",
+      "astonish"
     ],
     "charged_moves": [
       "energy_ball",
@@ -21193,7 +21224,8 @@
       "fusion_flare"
     ],
     "exclusive_charged_moves": [],
-    "name_ko": "레시라무"
+    "name_ko": "레시라무",
+    "hasShadow": true
   },
   {
     "id": "zekrom",
@@ -21886,7 +21918,8 @@
       "night_slash",
       "aerial_ace",
       "surf",
-      "hydro_pump"
+      "hydro_pump",
+      "brutal_swing"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [
@@ -25419,7 +25452,7 @@
     },
     "fast_moves": [
       "vine_whip",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "petal_blizzard",
@@ -26101,7 +26134,7 @@
     },
     "fast_moves": [
       "water_gun",
-      "hidden_power"
+      "hidden_power_*"
     ],
     "charged_moves": [
       "surf",
@@ -26688,7 +26721,8 @@
     "charged_moves": [
       "thunder_punch",
       "discharge",
-      "wild_charge"
+      "wild_charge",
+      "dynamic_punch"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -26978,10 +27012,13 @@
     "charged_moves": [
       "water_pulse",
       "surf",
-      "shadow_ball"
+      "shadow_ball",
+      "snipe_shot"
     ],
     "elite_fast_moves": [],
-    "elite_charged_moves": [],
+    "elite_charged_moves": [
+      "hydro_cannon"
+    ],
     "exclusive_charged_moves": [],
     "name_ko": "인텔리레온"
   },
@@ -27790,7 +27827,8 @@
       "acid_spray",
       "discharge",
       "wild_charge",
-      "power_up_punch"
+      "power_up_punch",
+      "swift"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -28114,7 +28152,8 @@
       "foul_play",
       "dark_pulse",
       "play_rough",
-      "power_up_punch"
+      "power_up_punch",
+      "draining_kiss"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -28551,7 +28590,7 @@
     "elite_fast_moves": [],
     "elite_charged_moves": [],
     "exclusive_charged_moves": [],
-    "name_ko": "에써르 (Female)"
+    "name_ko": "에써르 (암컷)"
   },
   {
     "id": "indeedee_male",
@@ -28577,7 +28616,7 @@
     "elite_fast_moves": [],
     "elite_charged_moves": [],
     "exclusive_charged_moves": [],
-    "name_ko": "에써르 (Male)"
+    "name_ko": "에써르 (수컷)"
   },
   {
     "id": "morpeko_full_belly",
@@ -29438,7 +29477,8 @@
     "fast_moves": [
       "tackle",
       "rock_smash",
-      "smack_down"
+      "smack_down",
+      "scratch"
     ],
     "charged_moves": [
       "fire_punch",
@@ -30795,12 +30835,14 @@
     },
     "fast_moves": [
       "mud_slap",
-      "poison_jab"
+      "poison_jab",
+      "scratch"
     ],
     "charged_moves": [
       "acid_spray",
       "poison_fang",
-      "sludge_bomb"
+      "sludge_bomb",
+      "foul_play"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -31266,7 +31308,8 @@
       "payback",
       "aerial_ace",
       "fly",
-      "rock_tomb"
+      "rock_tomb",
+      "drill_run"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -31593,7 +31636,8 @@
     },
     "fast_moves": [
       "wing_attack",
-      "double_kick"
+      "double_kick",
+      "peck"
     ],
     "charged_moves": [
       "aerial_ace",
@@ -31880,7 +31924,8 @@
     },
     "fast_moves": [
       "snarl",
-      "metal_claw"
+      "metal_claw",
+      "low_kick"
     ],
     "charged_moves": [
       "dark_pulse",
@@ -32700,7 +32745,9 @@
     "elite_charged_moves": [
       "drill_run"
     ],
-    "exclusive_charged_moves": [],
+    "exclusive_charged_moves": [
+      "fell_stinger_plus"
+    ],
     "name_ko": "독침붕 (메가)"
   },
   {
@@ -32925,7 +32972,8 @@
       "iron_head",
       "hyper_beam",
       "rock_slide",
-      "earth_power"
+      "earth_power",
+      "brutal_swing"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -33069,17 +33117,21 @@
     },
     "fast_moves": [
       "snarl",
-      "fire_fang"
+      "fire_fang",
+      "incinerate"
     ],
     "charged_moves": [
       "crunch",
       "fire_blast",
       "foul_play",
-      "flamethrower"
+      "flamethrower",
+      "trailblaze"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
-    "exclusive_charged_moves": [],
+    "exclusive_charged_moves": [
+      "dark_pulse_plus"
+    ],
     "name_ko": "헬가 (메가)"
   },
   {
@@ -33259,7 +33311,9 @@
     "charged_moves": [
       "power_gem",
       "foul_play",
-      "shadow_sneak"
+      "shadow_sneak",
+      "dazzling_gleam",
+      "drain_punch"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -33288,7 +33342,8 @@
       "stone_edge",
       "heavy_slam",
       "rock_tomb",
-      "meteor_beam"
+      "meteor_beam",
+      "brick_break"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
@@ -33695,6 +33750,7 @@
       "earthquake",
       "fire_blast",
       "sand_tomb",
+      "breaking_swipe",
       "twister"
     ],
     "elite_fast_moves": [],
@@ -33817,7 +33873,8 @@
     "charged_moves": [
       "close_combat",
       "psychic",
-      "leaf_blade"
+      "leaf_blade",
+      "sacred_sword"
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [
@@ -33841,7 +33898,8 @@
     },
     "fast_moves": [
       "pound",
-      "zen_headbutt"
+      "zen_headbutt",
+      "charge_beam"
     ],
     "charged_moves": [
       "disarming_voice",
@@ -34003,7 +34061,9 @@
       "draco_meteor",
       "dragon_pulse"
     ],
-    "exclusive_charged_moves": [],
+    "exclusive_charged_moves": [
+      "outrage_plus"
+    ],
     "name_ko": "망나뇽 (메가)"
   },
   {
@@ -34021,7 +34081,8 @@
     },
     "fast_moves": [
       "razor_leaf",
-      "acid"
+      "acid",
+      "sucker_punch"
     ],
     "charged_moves": [
       "leaf_blade",
@@ -34034,7 +34095,9 @@
       "magical_leaf"
     ],
     "elite_charged_moves": [],
-    "exclusive_charged_moves": [],
+    "exclusive_charged_moves": [
+      "acid_spray_plus"
+    ],
     "name_ko": "우츠보트 (메가)"
   },
   {
@@ -34063,7 +34126,9 @@
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
-    "exclusive_charged_moves": [],
+    "exclusive_charged_moves": [
+      "psybeam_plus"
+    ],
     "name_ko": "칼라마네로 (메가)"
   },
   {
@@ -34117,7 +34182,9 @@
     ],
     "elite_fast_moves": [],
     "elite_charged_moves": [],
-    "exclusive_charged_moves": [],
+    "exclusive_charged_moves": [
+      "brick_break_plus"
+    ],
     "name_ko": "대여르 (메가)"
   },
   {
@@ -34152,7 +34219,9 @@
       "shadow_ball",
       "hyper_beam"
     ],
-    "exclusive_charged_moves": [],
+    "exclusive_charged_moves": [
+      "dynamic_punch_plus"
+    ],
     "name_ko": "뮤츠 (메가 X)"
   },
   {
@@ -34186,7 +34255,278 @@
       "shadow_ball",
       "hyper_beam"
     ],
-    "exclusive_charged_moves": [],
+    "exclusive_charged_moves": [
+      "future_sight_plus"
+    ],
     "name_ko": "뮤츠 (메가 Y)"
+  },
+  {
+    "id": "skarmory_mega",
+    "name": "Skarmory (Mega)",
+    "form": "Mega",
+    "types": [
+      "Steel",
+      "Flying"
+    ],
+    "stats": {
+      "stamina": 163,
+      "attack": 273,
+      "defense": 228
+    },
+    "fast_moves": [
+      "steel_wing",
+      "air_slash"
+    ],
+    "charged_moves": [
+      "brave_bird",
+      "sky_attack",
+      "flash_cannon",
+      "drill_run"
+    ],
+    "elite_fast_moves": [],
+    "elite_charged_moves": [],
+    "exclusive_charged_moves": [
+      "drill_peck_plus"
+    ],
+    "name_ko": "무장조 (메가)"
+  },
+  {
+    "id": "raichu_mega_y",
+    "name": "Raichu (Mega Y)",
+    "form": "Mega Y",
+    "types": [
+      "Electric"
+    ],
+    "stats": {
+      "stamina": 155,
+      "attack": 339,
+      "defense": 157
+    },
+    "fast_moves": [
+      "volt_switch",
+      "spark",
+      "charm",
+      "thunder_shock"
+    ],
+    "charged_moves": [
+      "brick_break",
+      "thunder_punch",
+      "wild_charge",
+      "skull_bash",
+      "trailblaze",
+      "surf"
+    ],
+    "elite_fast_moves": [],
+    "elite_charged_moves": [
+      "thunder"
+    ],
+    "exclusive_charged_moves": [
+      "zap_cannon_plus"
+    ],
+    "name_ko": "라이츄 (메가 Y)"
+  },
+  {
+    "id": "raichu_mega_x",
+    "name": "Raichu (Mega X)",
+    "form": "Mega X",
+    "types": [
+      "Electric"
+    ],
+    "stats": {
+      "stamina": 155,
+      "attack": 277,
+      "defense": 203
+    },
+    "fast_moves": [
+      "volt_switch",
+      "spark",
+      "charm",
+      "thunder_shock"
+    ],
+    "charged_moves": [
+      "brick_break",
+      "thunder_punch",
+      "wild_charge",
+      "skull_bash",
+      "trailblaze",
+      "surf"
+    ],
+    "elite_fast_moves": [],
+    "elite_charged_moves": [
+      "thunder"
+    ],
+    "exclusive_charged_moves": [
+      "volt_tackle_plus"
+    ],
+    "name_ko": "라이츄 (메가 X)"
+  },
+  {
+    "id": "delphox_mega",
+    "name": "Delphox (Mega)",
+    "form": "Mega",
+    "types": [
+      "Fire",
+      "Psychic"
+    ],
+    "stats": {
+      "stamina": 181,
+      "attack": 331,
+      "defense": 235
+    },
+    "fast_moves": [
+      "scratch",
+      "fire_spin",
+      "zen_headbutt"
+    ],
+    "charged_moves": [
+      "psychic",
+      "flamethrower",
+      "flame_charge",
+      "fire_blast",
+      "mystical_fire",
+      "psyshock"
+    ],
+    "elite_fast_moves": [],
+    "elite_charged_moves": [
+      "blast_burn"
+    ],
+    "exclusive_charged_moves": [
+      "mystical_fire_plus"
+    ],
+    "name_ko": "마폭시 (메가)"
+  },
+  {
+    "id": "chesnaught_mega",
+    "name": "Chesnaught (Mega)",
+    "form": "Mega",
+    "types": [
+      "Grass",
+      "Fighting"
+    ],
+    "stats": {
+      "stamina": 204,
+      "attack": 242,
+      "defense": 282
+    },
+    "fast_moves": [
+      "low_kick",
+      "vine_whip",
+      "smack_down"
+    ],
+    "charged_moves": [
+      "gyro_ball",
+      "energy_ball",
+      "super_power",
+      "solar_beam",
+      "thunder_punch"
+    ],
+    "elite_fast_moves": [],
+    "elite_charged_moves": [
+      "frenzy_plant"
+    ],
+    "exclusive_charged_moves": [
+      "seed_bomb_plus"
+    ],
+    "name_ko": "브리가론 (메가)"
+  },
+  {
+    "id": "greninja_mega",
+    "name": "Greninja (Mega)",
+    "form": "Mega",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "stats": {
+      "stamina": 180,
+      "attack": 299,
+      "defense": 176
+    },
+    "fast_moves": [
+      "feint_attack",
+      "bubble",
+      "water_shuriken"
+    ],
+    "charged_moves": [
+      "night_slash",
+      "aerial_ace",
+      "surf",
+      "hydro_pump",
+      "brutal_swing"
+    ],
+    "elite_fast_moves": [],
+    "elite_charged_moves": [
+      "hydro_cannon"
+    ],
+    "exclusive_charged_moves": [
+      "surf_plus"
+    ],
+    "name_ko": "개굴닌자 (메가)"
+  },
+  {
+    "id": "starmie_mega",
+    "name": "Starmie (Mega)",
+    "form": "Mega",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "stats": {
+      "stamina": 155,
+      "attack": 276,
+      "defense": 229
+    },
+    "fast_moves": [
+      "water_gun",
+      "psywave",
+      "hidden_power_*"
+    ],
+    "charged_moves": [
+      "hydro_pump",
+      "power_gem",
+      "psychic",
+      "thunder",
+      "ice_beam",
+      "psybeam",
+      "surf",
+      "aqua_jet"
+    ],
+    "elite_fast_moves": [
+      "tackle"
+    ],
+    "elite_charged_moves": [],
+    "exclusive_charged_moves": [
+      "liquidation_plus"
+    ],
+    "name_ko": "아쿠스타 (메가)"
+  },
+  {
+    "id": "zoroark_hisui",
+    "name": "Zoroark (Hisui)",
+    "form": "Hisui",
+    "types": [
+      "Normal",
+      "Ghost"
+    ],
+    "stats": {
+      "stamina": 146,
+      "attack": 261,
+      "defense": 128
+    },
+    "fast_moves": [
+      "shadow_claw",
+      "snarl"
+    ],
+    "charged_moves": [
+      "shadow_ball",
+      "foul_play",
+      "sludge_bomb",
+      "flamethrower",
+      "swift"
+    ],
+    "elite_fast_moves": [],
+    "elite_charged_moves": [],
+    "exclusive_charged_moves": [],
+    "name_ko": "조로아크 (히스이)"
   }
 ]
