@@ -2,7 +2,7 @@
 title: 포켓몬고 레이드 성능표(게임프레스 버전)
 description: 게임프레스의 Comprehensive DPS 계산을 통해 평가된 포켓몬고 레이드 성능표입니다.
 date: 2024-06-26 15:00:00 +0900
-lastmod: 2026-06-08 17:00:00 +0900
+lastmod: 2026-09-10 12:00:00 +0900
 categories:
   - 포켓몬고
   - 계산기
@@ -13,13 +13,13 @@ tags:
   - 게임프레스
   - 레이드성능
 image:
-  path: /assets/img/preview-season-forever-forward.png
+  path: /assets/img/preview-season-twilight-trails.png
 test:
 ---
 
 ## 포켓몬고 레이드 성능표(게임프레스 버전)
 
-- 시즌: 새로운 발걸음(2026년 6월 2일~2026년 9월 8일)
+- 시즌: 황혼의 여정 (2026년 9월 8일~2026년 12월 1일)
 
 {% include calculator_based_on_gamepress.html %}
 
