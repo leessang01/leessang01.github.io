@@ -208,6 +208,7 @@
                     baseStm: data[i].stats.stamina,
                     fastMove: (data[i].fast_moves || []).concat(data[i].elite_fast_moves || []).concat(data[i].exclusive_fast_moves || []),
                     chargedMove: (data[i].charged_moves || []).concat(data[i].elite_charged_moves || []).concat(data[i].exclusive_charged_moves || []),
+                    exclusiveChargedMove: data[i].exclusive_charged_moves || [],
                     pokeType: data[i].types.map(x => x.toLowerCase()),
                     hasShadow: data[i].hasShadow,
                     isShadow: data[i].is_shadow,
@@ -224,10 +225,17 @@
             var data = {{ site.data.pokemongo.new_fast_moves | jsonify }};
 
             $.each(data, function (i) {
+                var name_kor = data[i].name_ko;
+                if (data[i].id.startsWith("hidden_power_")) {
+                    var typeKor = Data.BattleSettings.TypeTranslation[data[i].type.toLowerCase()];
+                    if (typeKor) {
+                        name_kor = name_kor + "(" + typeKor + ")";
+                    }
+                }
                 var fmove = {
                     id: data[i].id,
                     name: data[i].name,
-                    name_kor: data[i].name_ko,
+                    name_kor: name_kor,
                     energyDelta: data[i].energy_delta,
                     power: data[i].power,
                     duration: data[i].duration,
@@ -581,26 +589,64 @@
 				pkm.pokeType1_kor = TypeTranslation[pkm.pokeType[0]];
 				pkm.pokeType2_kor = TypeTranslation[pkm.pokeType[1]] == undefined ? "단일" : TypeTranslation[pkm.pokeType[1]];
 				
+				var expandedFastMoves = [];
 				for (let fmove of pkm.fastMove) {
+					if (fmove === 'hidden_power_*' || fmove.endsWith('*')) {
+						var prefix = fmove.endsWith('*') ? fmove.slice(0, -1) : fmove;
+						for (let move of Data.FastMoves) {
+							if (move.id.startsWith(prefix)) {
+								expandedFastMoves.push(move.id);
+							}
+						}
+					} else {
+						expandedFastMoves.push(fmove);
+					}
+				}
+				expandedFastMoves = [...new Set(expandedFastMoves)];
+
+				for (let fmove of expandedFastMoves) {
+					var fmoveTemplate = fastMoveDict[fmove];
+					if (!fmoveTemplate) {
+						continue;
+					}
+
 					for (let cmove of pkm.chargedMove) {
-						var pkmInstance = {};
-						$.extend(pkmInstance, pkm);
-						var fmoveInstance = fastMoveDict[fmove];
-						var cmoveInstance = chargedMoveDict[cmove];
-						pkmInstance.fmove = fmoveInstance ? fmoveInstance : "none";
-						pkmInstance.cmove = cmoveInstance ? cmoveInstance : "none";
-
-						if (pkmInstance.fmove == "none" || pkmInstance.cmove == "none") {
+						var cmoveTemplate = chargedMoveDict[cmove];
+						if (!cmoveTemplate) {
 							continue;
-                        }
+						}
 
-						calculateDPS(pkmInstance, Context);
-						pkmInstance.dps = round(pkmInstance.dps, 3);
-						pkmInstance.tdo = round(pkmInstance.tdo, 1);
-						pkmInstance.overall = round((pkmInstance.dps ** 3 * pkmInstance.tdo) ** 0.25, 2);
-						pkmInstance.fmove.type_kor = TypeTranslation[pkmInstance.fmove.type];
-						pkmInstance.cmove.type_kor = TypeTranslation[pkmInstance.cmove.type];
-						table.row.add(pkmInstance);
+						var isMegaPlus = pkm.form.includes('mega') && (pkm.exclusiveChargedMove || []).includes(cmove) && cmove.includes('_plus');
+						var levels = isMegaPlus ? [1, 2, 3, 4] : [1];
+						var plusMultipliers = [1.0, 1.1, 1.2, 1.3];
+
+						for (let lvl of levels) {
+							var pkmInstance = {};
+							$.extend(pkmInstance, pkm);
+
+							var fmoveInstance = $.extend({}, fmoveTemplate);
+							var cmoveInstance = $.extend({}, cmoveTemplate);
+
+							if (isMegaPlus) {
+								var baseKo = (cmoveTemplate.name_kor || cmoveTemplate.name_ko || '').replace(/\++$/, '');
+								var baseEn = (cmoveTemplate.name || '').replace(/\++$/, '');
+								var plusSuffix = '+'.repeat(lvl);
+								cmoveInstance.name_kor = baseKo + plusSuffix;
+								cmoveInstance.name = baseEn + plusSuffix;
+								cmoveInstance.power = Math.round(cmoveTemplate.power * plusMultipliers[lvl - 1] * 100) / 100;
+							}
+
+							pkmInstance.fmove = fmoveInstance;
+							pkmInstance.cmove = cmoveInstance;
+
+							calculateDPS(pkmInstance, Context);
+							pkmInstance.dps = round(pkmInstance.dps, 3);
+							pkmInstance.tdo = round(pkmInstance.tdo, 1);
+							pkmInstance.overall = round((pkmInstance.dps ** 3 * pkmInstance.tdo) ** 0.25, 2);
+							pkmInstance.fmove.type_kor = TypeTranslation[pkmInstance.fmove.type];
+							pkmInstance.cmove.type_kor = TypeTranslation[pkmInstance.cmove.type];
+							table.row.add(pkmInstance);
+						}
 					}
 				}
 			}

@@ -790,9 +790,159 @@
         "name_ko": "모래뿌리기"
     },
     {
-        "id": "hidden_power",
+        "id": "hidden_power_bug",
         "name": "Hidden Power",
-        "type": "Normal",
+        "type": "Bug",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_dark",
+        "name": "Hidden Power",
+        "type": "Dark",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_dragon",
+        "name": "Hidden Power",
+        "type": "Dragon",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_electric",
+        "name": "Hidden Power",
+        "type": "Electric",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_fighting",
+        "name": "Hidden Power",
+        "type": "Fighting",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_fire",
+        "name": "Hidden Power",
+        "type": "Fire",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_flying",
+        "name": "Hidden Power",
+        "type": "Flying",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_ghost",
+        "name": "Hidden Power",
+        "type": "Ghost",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_grass",
+        "name": "Hidden Power",
+        "type": "Grass",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_ground",
+        "name": "Hidden Power",
+        "type": "Ground",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_ice",
+        "name": "Hidden Power",
+        "type": "Ice",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_poison",
+        "name": "Hidden Power",
+        "type": "Poison",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_psychic",
+        "name": "Hidden Power",
+        "type": "Psychic",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_rock",
+        "name": "Hidden Power",
+        "type": "Rock",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_steel",
+        "name": "Hidden Power",
+        "type": "Steel",
+        "power": 15,
+        "energy_delta": 15,
+        "duration": 1500,
+        "damage_window": 1100,
+        "name_ko": "잠재파워"
+    },
+    {
+        "id": "hidden_power_water",
+        "name": "Hidden Power",
+        "type": "Water",
         "power": 15,
         "energy_delta": 15,
         "duration": 1500,
