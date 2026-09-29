@@ -2528,5 +2528,15 @@
         "duration": 3000,
         "damage_window": 2000,
         "name_ko": "아쿠아브레이크+"
+    },
+    {
+        "id": "brave_bird_plus",
+        "name": "Brave Bird+",
+        "type": "Flying",
+        "power": 150,
+        "energy_delta": -100,
+        "duration": 2000,
+        "damage_window": 1000,
+        "name_ko": "브레이브버드+"
     }
 ]

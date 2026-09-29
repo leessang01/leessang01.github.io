@@ -34528,5 +34528,38 @@
     "elite_charged_moves": [],
     "exclusive_charged_moves": [],
     "name_ko": "조로아크 (히스이)"
+  },
+  {
+    "id": "staraptor_mega",
+    "name": "Staraptor (Mega)",
+    "form": "Mega",
+    "types": [
+      "Fighting",
+      "Flying"
+    ],
+    "stats": {
+      "stamina": 198,
+      "attack": 278,
+      "defense": 207
+    },
+    "fast_moves": [
+      "wing_attack",
+      "quick_attack",
+      "sand_attack"
+    ],
+    "charged_moves": [
+      "brave_bird",
+      "heat_wave",
+      "close_combat",
+      "fly"
+    ],
+    "elite_fast_moves": [
+      "gust"
+    ],
+    "elite_charged_moves": [],
+    "exclusive_charged_moves": [
+      "brave_bird_plus"
+    ],
+    "name_ko": "찌르호크 (메가)"
   }
 ]
