@@ -4,7 +4,20 @@
 	<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
 
 	<div style="padding-bottom:10px;">
-	   <input type="text" id="searchX" name="searchX" placeholder="검색어" style="width:100%;">
+	   <div style="margin-bottom: 8px;">
+	      <input type="text" id="searchX" name="searchX" placeholder="검색어" style="width:100%;">
+	   </div>
+	   <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px;">
+	      <label style="margin: 0; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 6px; user-select: none;">
+	         <input type="checkbox" id="bestMovesetOnly" style="cursor: pointer; width: 16px; height: 16px;">
+	         <span>최고 성능 조합만 보기</span>
+	      </label>
+	      <div id="metricButtonGroup" style="display: inline-flex; border-radius: 4px; overflow: hidden; border: 1px solid #007bff;">
+	         <button type="button" class="btn-metric" data-metric="er" style="padding: 4px 12px; font-size: 13px; border: none; cursor: pointer; background: #007bff; color: #ffffff; font-weight: bold; transition: all 0.2s;">ER</button>
+	         <button type="button" class="btn-metric" data-metric="dps" style="padding: 4px 12px; font-size: 13px; border: none; border-left: 1px solid #007bff; cursor: pointer; background: #ffffff; color: #007bff; font-weight: bold; transition: all 0.2s;">DPS</button>
+	         <button type="button" class="btn-metric" data-metric="tdo" style="padding: 4px 12px; font-size: 13px; border: none; border-left: 1px solid #007bff; cursor: pointer; background: #ffffff; color: #007bff; font-weight: bold; transition: all 0.2s;">TDO</button>
+	      </div>
+	   </div>
 	</div>
 
 	<table id="ranking_table" class="table table-striped table-bordered nowrap" style="width:100%;">
@@ -565,6 +578,8 @@
 			var PokemonCollection = [];
 			PokemonCollection = Data.Pokemon.concat(ShadowPokemon);
 
+			var rowList = [];
+
 			for (let pkm of PokemonCollection) {
 				if (pkm.isShadow) {
 					pkm.name = "그림자 " + pkm.name;
@@ -645,24 +660,136 @@
 							pkmInstance.overall = round((pkmInstance.dps ** 3 * pkmInstance.tdo) ** 0.25, 2);
 							pkmInstance.fmove.type_kor = TypeTranslation[pkmInstance.fmove.type];
 							pkmInstance.cmove.type_kor = TypeTranslation[pkmInstance.cmove.type];
-							table.row.add(pkmInstance);
+							pkmInstance._data = [
+								pkmInstance.name,
+								pkmInstance.fmove.name_kor,
+								pkmInstance.cmove.name_kor,
+								pkmInstance.dps,
+								pkmInstance.tdo,
+								pkmInstance.overall,
+								pkmInstance.cp,
+								pkmInstance.pokeType1_kor,
+								pkmInstance.pokeType2_kor,
+								pkmInstance.fmove.type_kor,
+								pkmInstance.cmove.type_kor
+							];
+							rowList.push(pkmInstance);
 						}
 					}
 				}
 			}
 
-
+			table.rows.add(rowList);
 			table.order([3, 'desc']);
 			table.draw();
+
+			var currentMetric = 'er';
+			var cachedMatchingBestSet = null;
+			var lastFilterKey = '';
+
+			function updateMatchingBestSet() {
+				var filterString = $('#searchX').val() || '';
+				var isBestOnly = $('#bestMovesetOnly').is(':checked');
+				var key = isBestOnly + '_' + currentMetric + '_' + filterString;
+
+				if (key === lastFilterKey && cachedMatchingBestSet !== null) {
+					return cachedMatchingBestSet;
+				}
+
+				if (!isBestOnly) {
+					cachedMatchingBestSet = null;
+					lastFilterKey = key;
+					return null;
+				}
+
+				var maxMap = {};
+				for (let i = 0; i < rowList.length; i++) {
+					var r = rowList[i];
+					if (filterString === '' || filterRow(r._data, filterString)) {
+						var pName = r.name;
+						var score = parseFloat(r.overall);
+						if (currentMetric === 'dps') score = parseFloat(r.dps);
+						else if (currentMetric === 'tdo') score = parseFloat(r.tdo);
+
+						if (!maxMap[pName] || score > maxMap[pName]) {
+							maxMap[pName] = score;
+						}
+					}
+				}
+
+				var set = new Set();
+				for (let i = 0; i < rowList.length; i++) {
+					var r = rowList[i];
+					if (filterString === '' || filterRow(r._data, filterString)) {
+						var pName = r.name;
+						var score = parseFloat(r.overall);
+						if (currentMetric === 'dps') score = parseFloat(r.dps);
+						else if (currentMetric === 'tdo') score = parseFloat(r.tdo);
+
+						if (score === maxMap[pName]) {
+							set.add(i);
+						}
+					}
+				}
+
+				cachedMatchingBestSet = set;
+				lastFilterKey = key;
+				return set;
+			}
+
+			function updateMetricButtons() {
+				$('.btn-metric').each(function() {
+					var m = $(this).data('metric');
+					if (m === currentMetric) {
+						$(this).css({ 'background': '#007bff', 'color': '#ffffff' });
+					} else {
+						$(this).css({ 'background': '#ffffff', 'color': '#007bff' });
+					}
+				});
+			}
+
+			$('.btn-metric').on('click', function() {
+				currentMetric = $(this).data('metric');
+				updateMetricButtons();
+				if (!$('#bestMovesetOnly').is(':checked')) {
+					$('#bestMovesetOnly').prop('checked', true);
+				}
+				if (currentMetric === 'er') {
+					table.order([5, 'desc']);
+				} else if (currentMetric === 'dps') {
+					table.order([3, 'desc']);
+				} else if (currentMetric === 'tdo') {
+					table.order([4, 'desc']);
+				}
+				table.draw();
+			});
+
+			$('#bestMovesetOnly').on('change', function() {
+				if ($(this).is(':checked')) {
+					if (currentMetric === 'er') {
+						table.order([5, 'desc']);
+					} else if (currentMetric === 'dps') {
+						table.order([3, 'desc']);
+					} else if (currentMetric === 'tdo') {
+						table.order([4, 'desc']);
+					}
+				}
+				table.draw();
+			});
 
 			$('#searchX').keyup( function() {
 				table.draw();
 			} );
 
 			$.fn.dataTable.ext.search.push( function( settings, data, dataIndex ) {
-				var filterString = $('#searchX').val();
-				
-				if(filterString == '' || filterRow(data, filterString) ){
+				var isBestOnly = $('#bestMovesetOnly').is(':checked');
+				if (isBestOnly) {
+					var bestSet = updateMatchingBestSet();
+					return bestSet.has(dataIndex);
+				}
+
+				var filterString = $('#searchX').val() || '';
+				if (filterString == '' || filterRow(data, filterString)) {
 					return true;
 				}
 
