@@ -34438,9 +34438,9 @@
       "Dark"
     ],
     "stats": {
-      "stamina": 180,
       "attack": 299,
-      "defense": 176
+      "defense": 180,
+      "stamina": 176
     },
     "fast_moves": [
       "feint_attack",
@@ -34561,5 +34561,39 @@
       "brave_bird_plus"
     ],
     "name_ko": "찌르호크 (메가)"
+  },
+  {
+    "id": "chandelure_mega",
+    "name": "Chandelure (Mega)",
+    "form": "Mega",
+    "types": [
+      "Ghost",
+      "Fire"
+    ],
+    "stats": {
+      "attack": 335,
+      "defense": 227,
+      "stamina": 155
+    },
+    "fast_moves": [
+      "hex",
+      "fire_spin",
+      "incinerate",
+      "astonish"
+    ],
+    "charged_moves": [
+      "energy_ball",
+      "shadow_ball",
+      "overheat",
+      "flame_charge"
+    ],
+    "elite_fast_moves": [],
+    "elite_charged_moves": [
+      "poltergeist"
+    ],
+    "exclusive_charged_moves": [
+      "ominous_wind_plus"
+    ],
+    "name_ko": "샹델라 (메가)"
   }
 ]
